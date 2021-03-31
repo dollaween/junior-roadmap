@@ -1,6 +1,6 @@
 <div align="center">
 
-# Дорожная карта новичка
+# Junior Frontend Roadmap
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
