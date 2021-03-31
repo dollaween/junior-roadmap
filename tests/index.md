@@ -6,7 +6,7 @@
 |
 [Карта](https://github.com/dollaween/junior-roadmap/roadmap)
 |
-[Тесты](https://github.com/dollaween/junior-roadmap/tests)
+[Тесты](https://github.com/dollaween/junior-roadmap/tests/)
 |
 [Задачи](https://github.com/dollaween/junior-roadmap/tasks)
 
