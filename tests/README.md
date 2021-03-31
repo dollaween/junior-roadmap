@@ -4,10 +4,12 @@
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
-[Карта](https://github.com/dollaween/junior-roadmap/roadmap/README.md)
+[Карта](/roadmap/README.md)
 |
-[Тесты](https://github.com/dollaween/junior-roadmap/tests/README.md)
+[Тесты](/tests/README.md)
 |
-[Задачи](https://github.com/dollaween/junior-roadmap/tasks/README.md)
+[Задачи](/tasks/README.md)
 
 </div>
+
+---
