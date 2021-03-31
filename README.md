@@ -9,5 +9,5 @@
 ---
 
 * [Junior Roadmap](./map/junior) — актуальная карта обучения на позицию Frontend Junior
-* [Junior Roadmap Tests](./tests/junior)
-* [Junior Roadmap Tasks](./tasks/junior)
+* [Junior Roadmap Tests](./tests/junior) — тесты для закрепления материала
+* [Junior Roadmap Tasks](./tasks/junior) — задачи для закрепления материала
