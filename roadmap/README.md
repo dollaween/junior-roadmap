@@ -3,9 +3,6 @@
 # Junior Frontend Roadmap
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
-[Главная](/)
-[Главная](#)
-[Главная]()
 |
 [Карта](/roadmap/README.md)
 |
