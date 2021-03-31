@@ -4,12 +4,10 @@
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
-[Главная](/)
+[Карта](https://github.com/dollaween/junior-roadmap/roadmap)
 |
-[Карта](https://github.com/dollaween/javascript-roadmap/roadmap)
+[Тесты](https://github.com/dollaween/junior-roadmap/tests)
 |
-[Тесты](https://github.com/dollaween/javascript-roadmap/tests)
-|
-[Задачи](https://github.com/dollaween/javascript-roadmap/tasks)
+[Задачи](https://github.com/dollaween/junior-roadmap/tasks)
 
 </div>
