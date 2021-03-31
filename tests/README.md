@@ -14,4 +14,4 @@
 
 ---
 
-* [Переменные. `let`, const, var](./variables.md)
+* [Переменные. `let`, `const`, `var`](./variables.md)
