@@ -86,3 +86,53 @@ const title = 'Warcraft'
 </p>
 </details>
 
+---
+
+##### 4. Какой будет вывод?
+
+```javascript
+let age = 25
+age = 26
+console.log(age)
+```
+
+1. `25`
+2. `26`
+3. `undefined`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Значение переменных, объявленных через `let`, можно изменять.
+
+</p>
+</details>
+
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+let age = 25
+let age = 26
+console.log(age)
+```
+
+1. `25`
+2. `26`
+3. `undefined`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+В памяти уже существует переменная с идентификатором `age`. Поэтому повторное объявление переменной вызовет ошибку `SyntaxError`.
+
+</p>
+</details>
+
