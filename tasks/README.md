@@ -1,6 +1,6 @@
 <div align="center">
 
-# Список тестов
+# Список задач
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
