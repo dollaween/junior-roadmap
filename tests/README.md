@@ -136,3 +136,29 @@ console.log(age)
 </p>
 </details>
 
+---
+
+##### 6. Какой будет вывод?
+
+```javascript
+const planet = 'Earth'
+planet = 'Mars'
+console.log(planet)
+```
+
+1. `Earth`
+2. `Mars`
+3. `undefined`
+4. `TypeError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Ключевое слово `const` объявляет константу. При попытке изменить константу — будет выброшена ошибка.
+
+</p>
+</details>
+
+
