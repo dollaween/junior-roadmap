@@ -8,6 +8,8 @@
 |
 [Тесты](https://github.com/dollaween/junior-roadmap/tests/README.md)
 |
+[Тесты 2](tests/README.md)
+|
 [Задачи](https://github.com/dollaween/junior-roadmap/tasks/README.md)
 
 </div>
