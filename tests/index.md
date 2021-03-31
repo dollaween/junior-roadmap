@@ -2,7 +2,7 @@
 
 # Список тестов
 
-[Главная](https://github.com/dollaween/javascript-roadmap/)
+[Главная](https://github.com/dollaween/junior-roadmap/)
 |
 [Карта](https://github.com/dollaween/javascript-roadmap/roadmap)
 |
