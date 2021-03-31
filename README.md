@@ -8,6 +8,6 @@
 
 ---
 
-* [Junior Roadmap](./map/junior) — актуальная карта обучения на позицию Frontend Junior
+* [Junior Roadmap](./map/README.md) — актуальная карта обучения на позицию Frontend Junior
 * [Junior Roadmap Tests](./tests/README.md) — тесты для закрепления материала
-* [Junior Roadmap Tasks](./tasks/junior) — задачи для закрепления материала
+* [Junior Roadmap Tasks](./tasks/README.md) — задачи для закрепления материала
