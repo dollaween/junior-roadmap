@@ -14,5 +14,5 @@
 
 ---
 
-* [Переменные. `let`, `const`, `var`](./variables.md)
+* [Переменные, `let`, `const`, `var`](./variables.md)
 * [`Number`, `Math`, математические операторы](./numbers.md)
