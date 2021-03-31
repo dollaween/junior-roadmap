@@ -3,14 +3,15 @@
 # Junior Frontend Roadmap
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
+[Главная](/)
+[Главная](#)
+[Главная]()
 |
-[Карта](https://github.com/dollaween/junior-roadmap/roadmap/README.md)
+[Карта](/roadmap/README.md)
 |
-[Тесты](https://github.com/dollaween/junior-roadmap/tests/README.md)
+[Тесты](/tests/README.md)
 |
-[Тесты 2](/tests/README.md)
-|
-[Задачи](https://github.com/dollaween/junior-roadmap/tasks/README.md)
+[Задачи](/tasks/README.md)
 
 </div>
 
