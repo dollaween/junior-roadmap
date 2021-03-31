@@ -62,4 +62,27 @@ var title = 'Big Bang Theory'
 </p>
 </details>
 
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+console.log(title)
+const title = 'Warcraft'
+```
+
+1. `Warcraft`
+2. `undefined`
+3. `null`
+4. `ReferenceError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Объявление переменной через ключевое слово `const` аналогично объявлению переменной через ключевое слово `let`.
+
+</p>
+</details>
 
