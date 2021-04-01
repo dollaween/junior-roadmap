@@ -234,4 +234,35 @@ console.log('\t')
 </p>
 </details>
 
+---
+
+##### 10. Какой будет вывод?
+
+```javascript
+console.log('I'm programming')
+```
+
+1. `I'm programming`
+2. `Im programming`
+3. `undefined`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+При использовании символа одинарной кавычки `'` в строке обрамленной в одинарные кавычки — будет выброшена ошибка `SyntaxError`.
+
+Для корректного отображения одинарной кавычки в данном случае, перед ней нужно ставить символ обратного слэша '\':
+* `console.log('I\'m programming')` -> `I'm programming`
+* `console.log('You\'re awesome')` -> `You're awesome`
+
+Либо использовать двойные кавычки:
+* `console.log("I'm programming")` -> `I'm programming`
+* `console.log("You're awesome")` -> `You're awesome`
+
+</p>
+</details>
+
 
