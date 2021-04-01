@@ -339,7 +339,7 @@ console.log(app.substring(-3))
 
 Если любой из аргументов отрицательный, либо равен `NaN`, то он будет трактоваться равным `0`.
 
-Соответственно, `'Todoist'.slice(-3)` -> `'Todoist'.slice(0)` -> `Todoist`.
+Соответственно, `'Todoist'.substring(-3)` -> `'Todoist'.substring(0)` -> `Todoist`.
 
 </p>
 </details>
