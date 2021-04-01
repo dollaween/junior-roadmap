@@ -344,3 +344,33 @@ console.log(app.substring(-3))
 </p>
 </details>
 
+---
+
+##### 14. Какой будет вывод?
+
+```javascript
+const alphabet = 'abcdef'
+console.log(alphabet.split(''))
+```
+
+1. `abcdef`
+2. `['a', 'b', 'c', 'd', 'e', 'f']`
+3. `['abcdef']`
+4. `[a, b, c, d, e, f]`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Метод `split()` разбивает строку на массив строк путём разделения строки указанной подстрокой.
+
+Примеры:
+* `'Tom and Jerry'.split('')` -> `['T', 'o', 'm', ' ', 'a', 'n', 'd', ' ', 'J', 'e', 'r', 'r', 'y']`
+* `'Tom and Jerry'.split(' ')` -> `['Tom', 'and', 'Jerry']`
+* `'Tom and Jerry'.split(' and ')` -> `['Tom', 'Jerry']`
+
+</p>
+</details>
+
+
