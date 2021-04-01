@@ -222,7 +222,7 @@ console.log('\u00A9')
 1. `\t`
 2. ` `
 3. `&nbsp;`
-4. ` `` `` `` `
+4. `    `
 
 <details><summary><b>Ответ</b></summary>
 <p>
