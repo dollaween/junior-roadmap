@@ -1,6 +1,7 @@
 <div align="center">
 
-# Задачи: Математические операции
+### задачи
+# Математические операции
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
