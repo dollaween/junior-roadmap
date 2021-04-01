@@ -211,4 +211,27 @@ console.log(city + ' ' + street + ' ' + house)
 </p>
 </details>
 
+---
+
+##### 9. Какой будет вывод?
+
+```javascript
+console.log('\t')
+```
+
+1. `\t`
+2. ``
+3. `SyntaxError`
+4. `    `
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Символ обратного слэша `\` является служебным. В данном случае, `\t` — это табуляция.
+
+</p>
+</details>
+
 
