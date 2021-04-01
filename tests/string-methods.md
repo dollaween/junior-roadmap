@@ -272,3 +272,26 @@ console.log('TikTok'.slice(-2))
 </details>
 
 
+---
+
+##### 11. Какой будет вывод?
+
+```javascript
+const app = 'TikTok'
+console.log(app.slice(0, 3))
+```
+
+1. `Tik`
+2. `Ti`
+3. `Tok`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `slice()` возвращает новую строку, начинающуюся по индексу от первого параметра, заканчивающуюся по индексу второго параметра.
+
+</p>
+</details>
