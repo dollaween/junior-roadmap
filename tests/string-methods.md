@@ -373,4 +373,30 @@ console.log(alphabet.split(''))
 </p>
 </details>
 
+---
+
+##### 15. Какой будет вывод?
+
+```javascript
+console.log('Guardians of the Galaxy'.split('of the'))
+```
+
+1. `['Guardians', 'Galaxy']`
+2. `['Guardians ', ' Galaxy']`
+3. `['Guardians', 'of', 'the', 'Galaxy']`
+4. `['Guardians of the Galaxy']`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Метод `split()` разбивает строку на массив строк путём разделения строки указанной подстрокой.
+
+В исходной строке есть пробелы между `'Guardians'`, `'of the'` и `'Galaxy'`, поэтому при вырезании `'of the'`, пробелы будут сохранены в получившихся подстроках.
+
+</p>
+</details>
+
+
 
