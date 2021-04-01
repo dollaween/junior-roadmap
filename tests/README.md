@@ -16,7 +16,8 @@
 
 * [Переменные, `let`, `const`, `var`](./variables.md)
 * [`Number`, `Math`, математические операторы](./numbers.md)
-* [`String`, кавычки, конкатенация, методы](./string.md)
+* [`String`, кавычки, конкатенация](./string.md)
+* [Методы строки](./string-methods.md)
 * [`Boolean`, `NaN`, `undefined`, `null`](./boolean-nan-undefined-null.md)
 * [Условные конструкции](./condition.md)
 * [Приведение примитивных типов](./primitive-type-coercion.md)
