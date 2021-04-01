@@ -111,3 +111,51 @@ console.log(title.endsWith('space'))
 </p>
 </details>
 
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+console.log('Country Music'.toLowerCase())
+```
+
+1. `COUNTRY MUSIC`
+2. `Country Music`
+3. `Country music`
+4. `country music`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Метод `toLowerCase()` возвращает значение строки, преобразованное в нижний регистр.
+
+</p>
+</details>
+
+---
+
+##### 6. Какой будет вывод?
+
+```javascript
+console.log('Country Music'.toUpperCase())
+```
+
+1. `COUNTRY MUSIC`
+2. `Country Music`
+3. `Country music`
+4. `country music`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `toUpperCase()` возвращает значение строки, преобразованное в верхний регистр.
+
+</p>
+</details>
+
+
+
