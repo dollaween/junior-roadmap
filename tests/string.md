@@ -62,3 +62,53 @@ console.log(address + house)
 
 </p>
 </details>
+
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+const firstName = 'Jon'
+const lastName = "Snow"
+console.log(firstName + ' ' + lastName)
+```
+
+1. `TypeError: строки с разными кавычками складывать нельзя!`
+2. `Jon Snow`
+3. `JonSnow`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Одинарные и двойные кавычки ничем не отличаются и их можно конкатенировать.
+
+</p>
+</details>
+
+---
+
+##### 4. Какой будет вывод?
+
+```javascript
+const lastName = 'Snow'
+console.log('Jon lastName')
+```
+
+1. `Jon lastName`
+2. `Jon Snow`
+3. `JonSnow`
+4. `Jon undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Символы в одинарных и двойных кавычках являются обычным текстом. Исключение составляет только символ обратного слэша `\`.
+
+</p>
+</details>
+
