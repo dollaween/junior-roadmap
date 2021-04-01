@@ -31,7 +31,57 @@ console.log(phrase.charAt(1))
 
 **Ответ: 2**
 
-Метод `charAt(index)` — возвращает указанный символ строки. Счет начинается от `0`. То есть `charAt(0)` — `W`, `charAt(1)` — `i`.
+Метод `charAt()` — возвращает указанный символ строки. Счет начинается от `0`. То есть `charAt(0)` — `W`, `charAt(1)` — `i`.
+
+</p>
+</details>
+
+---
+
+##### 2. Какой будет вывод?
+
+```javascript
+console.log('Winter is coming'.includes('is'))
+```
+
+1. `Winter is coming`
+2. `is`
+3. `7`
+4. `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Метод `includes()` проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно `true` или `false`.
+
+</p>
+</details>
+
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+console.log(`Winter is coming`.startsWith('is'))
+```
+
+1. `Winter`
+2. `7`
+3. `true`
+4. `false`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Метод `startsWith()` помогает определить, начинается ли строка с символов указанных в скобках, возвращая, соответственно, `true` или `false`.
+
+Примеры:
+* `'Winter is comings'.startsWith('Winter')` —> `true`
+* `'Winter is comings'.startsWith('coming')` —> `false`
 
 </p>
 </details>
