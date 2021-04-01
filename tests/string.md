@@ -1,6 +1,6 @@
 <div align="center">
 
-# Тесты: String, кавычки, конкатенация, методы
+# Тесты: String, кавычки, конкатенация
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
