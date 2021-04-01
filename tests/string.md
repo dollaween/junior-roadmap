@@ -222,7 +222,7 @@ console.log('\t')
 1. `\t`
 2. ` `
 3. `SyntaxError`
-4. `\t`
+4. `&nbsp;`
 
 <details><summary><b>Ответ</b></summary>
 <p>
