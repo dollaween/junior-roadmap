@@ -161,4 +161,28 @@ console.log(`Wolf is ${color}`)
 </p>
 </details>
 
+---
+
+##### 7. Какой будет вывод?
+
+```javascript
+const color = 'red'
+console.log("Fox is ${color}")
+```
+
+1. `Fox is red`
+2. `Fox is ${color}`
+3. `Fox is red`
+4. `TypeError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Символы в одинарных и двойных кавычках являются обычным текстом. Исключение составляет только символ обратного слэша `\`.
+
+</p>
+</details>
+
 
