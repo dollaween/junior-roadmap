@@ -20,3 +20,4 @@
 * [`Boolean`, `NaN`, `undefined`, `null`](./boolean-nan-undefined-null.md)
 * [Условные конструкции](./condition.md)
 * [Приведение примитивных типов](./primitive-type-coercion.md)
+* [`Array`, циклы, методы, сортировка](./array.md)
