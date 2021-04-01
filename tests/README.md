@@ -18,3 +18,4 @@
 * [`Number`, `Math`, математические операторы](./numbers.md)
 * [`String`, кавычки, конкатенация, методы](./string.md)
 * [`Boolean`, `NaN`, `undefined`, `null`](./boolean-nan-undefined-null.md)
+* [Условные конструкции](./condition.md)
