@@ -186,5 +186,32 @@ console.log(place.trim())
 </p>
 </details>
 
+---
+
+##### 8. Какой будет вывод?
+
+```javascript
+const myAge = 'My age is 20'
+console.log(myAge.replace('20', '21'))
+```
+
+1. `My age is 20`
+2. `My age is 21`
+3. `My age is`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Метод `replace()` возвращает новую строку с заменой первого параметра на второй.
+
+Примеры:
+* `'My age is 20'.replace('My', 'His')` -> `His age is 20`
+* `'My age is 20'.replace('My age is 20', 'I\'m too old')` -> `I'm too old`
+
+</p>
+</details>
 
 
