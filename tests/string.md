@@ -216,11 +216,11 @@ console.log(city + ' ' + street + ' ' + house)
 ##### 9. Какой будет вывод?
 
 ```javascript
-console.log('\u00A9')
+console.log('\t')
 ```
 
 1. `\t`
-2. ` `
+2. ` `
 3. `&nbsp;`
 4. `    `
 
