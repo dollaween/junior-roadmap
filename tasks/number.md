@@ -1,6 +1,6 @@
 <div align="center">
 
-# Тесты: Математические операции
+# Задачи: Математические операции
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
