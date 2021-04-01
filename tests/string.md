@@ -137,3 +137,28 @@ console.log(x + y)
 </p>
 </details>
 
+---
+
+##### 6. Какой будет вывод?
+
+```javascript
+const color = 'grey'
+console.log(`Wolf is ${color}`)
+```
+
+1. `Wolf is grey`
+2. `Wolf is ${color}`
+3. `Wolf is color`
+4. `TypeError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+В обратных кавычках `\`` можно использовать переменные, если обернуть их в конструкцию `${}`.
+
+</p>
+</details>
+
+
