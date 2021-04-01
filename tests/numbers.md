@@ -31,7 +31,7 @@ console.log((x + y) / z)
 <details><summary><b>Ответ</b></summary>
 <p>
 
-**Ответ: 3**
+**Ответ: 2**
 
 </p>
 </details>
