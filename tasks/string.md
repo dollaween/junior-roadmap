@@ -19,12 +19,14 @@
 
 Даны две строки `Москва` и `Ленинский проспект`, а также число `10`. Используя конкатенацию строк выведите в консоль фразу `Москва, Ленинский проспект: 10`.
 
+*Решите задачу двумя способами*
+
 ```js
 console.log(/* ... */)
 // 'Москва, Ленинский проспект: 10'
 ```
 
-<details><summary><b>Решение</b></summary>
+<details><summary><b>Решение 1</b></summary>
 <p>
 
 ```js
@@ -33,6 +35,21 @@ const street = 'Ленинский проспект'
 const house = 10
 
 console.log(city + ', ' + street + ': ' + house)
+```
+
+</p>
+</details>
+
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+const city = 'Москва'
+const street = 'Ленинский проспект'
+const house = 10
+
+console.log(`${city}, ${street}: ${house}`)
 ```
 
 </p>
