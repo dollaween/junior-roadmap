@@ -157,5 +157,34 @@ console.log('Country Music'.toUpperCase())
 </p>
 </details>
 
+---
+
+##### 7. Какой будет вывод?
+
+```javascript
+const place = 'Cinema'
+console.log(place.trim())
+```
+
+1. `CINEMA`
+2. `Cinema`
+3. `cinema`
+4. `null`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Метод `trim()` удаляет пробельные символы с начала и конца строки.
+
+Примеры:
+* `'   Cinema'.trim()` —> `Cinema`
+* `'Cinema    '.trim()` —> `Cinema`
+* `'   Cinema  '.trim()` —> `Cinema`
+
+</p>
+</details>
+
 
 
