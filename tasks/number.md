@@ -131,4 +131,44 @@ console.log(Math.ceil(c))
 </p>
 </details>
 
+---
+
+##### 5. Самое большое и самое маленькое числа
+
+Даны числа `4`, `2`, `6` и `5`. Используя методы объекта `Math` выведите в консоль сперва самое большое число, а затем самое маленькое число.
+
+```js
+console.log(/* ... */)
+// 6
+
+console.log(/* ... */)
+// 2
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для определения самого большого числа используйте метод `Math.max()`.
+
+Для определения самого маленького числа используйте метод `Math.min()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const a = 4
+const b = 2
+const c = 6
+const d = 5
+
+console.log(Math.max(a, b, c, d))
+console.log(Math.min(a, b, c, d))
+```
+
+</p>
+</details>
+
 
