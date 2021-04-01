@@ -54,3 +54,35 @@ console.log(`${city}, ${street}: ${house}`)
 
 </p>
 </details>
+
+---
+
+##### 2. Вывод первого символа строки
+
+Дана строка ``. Выведите в консоль первый символ этой строки.
+
+```js
+console.log(/* ... */)
+// G
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для вывода символа из строки используйте метод `charAt()`, либо квадратные скобки `[]`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const title = 'Guardians of the Galaxy'
+console.log(title[0])
+console.log(title.charAt(0))
+```
+
+</p>
+</details>
+
