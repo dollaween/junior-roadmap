@@ -80,8 +80,33 @@ console.log(`Winter is coming`.startsWith('is'))
 Метод `startsWith()` помогает определить, начинается ли строка с символов указанных в скобках, возвращая, соответственно, `true` или `false`.
 
 Примеры:
-* `'Winter is comings'.startsWith('Winter')` —> `true`
-* `'Winter is comings'.startsWith('coming')` —> `false`
+* `'Winter is coming'.startsWith('Winter')` —> `true`
+* `'Winter is coming'.startsWith('coming')` —> `false`
+
+</p>
+</details>
+
+---
+
+##### 4. Какой будет вывод?
+
+```javascript
+let title = 'Hookah place'
+title = 'Hookah space'
+console.log(title.endsWith('space'))
+```
+
+1. `true`
+2. `false`
+3. `place`
+4. `space`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `endsWith()` позволяет определить, заканчивается ли строка символами указанными в скобках, возвращая, соответственно, `true` или `false`.
 
 </p>
 </details>
