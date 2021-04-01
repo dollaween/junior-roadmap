@@ -216,7 +216,7 @@ console.log(city + ' ' + street + ' ' + house)
 ##### 9. Какой будет вывод?
 
 ```javascript
-console.log('\u1234')
+console.log('\u00A9')
 ```
 
 1. `\t`
