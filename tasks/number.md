@@ -1,6 +1,6 @@
 <div align="center">
 
-# Тесты: Переменные
+# Тесты: Математические операции
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
