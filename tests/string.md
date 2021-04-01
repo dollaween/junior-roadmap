@@ -220,9 +220,9 @@ console.log('\t')
 ```
 
 1. `\t`
-2. ``
+2. ` `
 3. `SyntaxError`
-4. `    `
+4. `\t`
 
 <details><summary><b>Ответ</b></summary>
 <p>
