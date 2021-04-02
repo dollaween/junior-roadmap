@@ -112,4 +112,35 @@ console.log(+hasAccess + +balance)
 </p>
 </details>
 
+---
+
+##### 4. Какой будет вывод?
+
+```javascript
+const float = '12.34'
+console.log(typeof parseFloat(float))
+```
+
+1. `number`
+2. `string`
+3. `boolean`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Функция `parseFloat()` — принимает строку в качестве аргумента и возвращает число с плавающей точкой.
+
+Примеры:
+* `console.log(parseFloat('10'))` -> `10`
+* `console.log(parseFloat('10.501'))` -> `10.501`
+* `console.log(parseFloat('str'))` -> `NaN`
+* `console.log(parseFloat(true))` -> `NaN`
+
+</p>
+</details>
+
+
 
