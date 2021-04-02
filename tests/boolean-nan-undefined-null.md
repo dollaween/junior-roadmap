@@ -256,6 +256,28 @@ console.log('AAA' <= 'BBB')
 </p>
 </details>
 
+---
+
+##### 9. Какой будет вывод?
+
+```javascript
+console.log(isNaN('A2' / 'B4'))
+```
+
+1. `A2/B4`
+2. `A2B4`
+3. `null`
+4. `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Функция `isNaN()` возвращает `true`, если переданное значение является `NaN`.
+
+</p>
+</details>
 
 ---
 
