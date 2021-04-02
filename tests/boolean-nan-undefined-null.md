@@ -189,6 +189,33 @@ console.log(str * num)
 </p>
 </details>
 
+---
+
+##### 7. Какой будет вывод?
+
+```javascript
+let variable1
+var variable2
+
+console.log(variable1)
+console.log(variable2)
+```
+
+1. `undefined`, `undefined`
+2. `undefined` `null`
+3. `null`, `undefined`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Если переменной не присвоено никакое значение, то после объявления в нее будет записано значение `undefined`.
+
+</p>
+</details>
+
 
 ---
 
