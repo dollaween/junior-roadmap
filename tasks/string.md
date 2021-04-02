@@ -235,5 +235,46 @@ console.log(email.endsWith('yahoo.com'))
 </p>
 </details>
 
+---
+
+##### 7.Верхний и нижний регистры
+
+Приведите строку `email` к нижнему регистру, а строку `promocode` — к верхнему.
+
+```js
+const email = 'AwEsOme@mail.COM'
+const promocode = 'fest'
+
+console.log(/* ... */)
+// awesome@mail.com
+
+console.log(/* ... */)
+// FEST
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для приведения строки к нижнему регистру используйте метод `toLowerCase()`.
+
+Для приведения строки к верхнему регистру используйте метод `toUpperCase()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const email = 'AwEsOme@mail.COM'
+const promocode = 'fest'
+
+console.log(email.toLowerCase())
+console.log(promocode.toUpperCase())
+```
+
+</p>
+</details>
+
 
 
