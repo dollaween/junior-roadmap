@@ -57,7 +57,7 @@ console.log(`${city}, ${street}: ${house}`)
 
 ---
 
-##### 2. Вывод первого символа строки
+##### 2. Первый символ строки
 
 Дана строка `Guardians of the Galaxy`. Выведите в консоль первый символ этой строки.
 
@@ -85,4 +85,35 @@ console.log(title.charAt(0))
 
 </p>
 </details>
+
+---
+
+##### 3. Последний символ строки
+
+Дана строка `Guardians of the Galaxy`. Выведите в консоль последний символ этой строки.
+
+```js
+console.log(/* ... */)
+// y
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для вывода последнего символа строки используйте свойство `length` и квадратные скобки `[]`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const str = 'Guardians of the Galaxy'
+console.log(str[str.length - 1])
+```
+
+</p>
+</details>
+
 
