@@ -100,7 +100,7 @@ console.log(/* ... */)
 <details><summary><b>Подсказка</b></summary>
 <p>
 
-Для вывода последнего символа строки используйте свойство `length` и квадратные скобки `[]`.
+Для вывода последнего символа строки используйте свойство `length` и метод `charAt()` (либо квадратные скобки `[]`).
 
 </p>
 </details>
@@ -111,6 +111,7 @@ console.log(/* ... */)
 ```js
 const str = 'Guardians of the Galaxy'
 console.log(str[str.length - 1])
+console.log(str.charAt(str.length - 1))
 ```
 
 </p>
