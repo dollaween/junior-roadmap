@@ -372,4 +372,50 @@ console.log(message.replaceAll('John', 'Megan'))
 </p>
 </details>
 
+---
+
+##### 11. Возвращение подстроки
+
+Вырежьте из строки слово `they` и выведите его в консоль.
+*Решите задачу двумя разными методами строки*
+
+```js
+const phrase = 'Johnny, they are in the trees'
+
+console.log(/* ... */)
+// 'they'
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для возвращения подстроки из строки используйте методы `slice()`, `substring()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение 1</b></summary>
+<p>
+
+```js
+const phrase = 'Johnny, they are in the trees'
+
+console.log(phrase.slice(8, 12))
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+const phrase = 'Johnny, they are in the trees'
+
+console.log(phrase.substring(8, 12))
+```
+
+</p>
+</details>
+
 
