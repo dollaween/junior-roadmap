@@ -163,6 +163,32 @@ console.log(!!hasAccess)
 </p>
 </details>
 
+---
+
+##### 6. Какой будет вывод?
+
+```javascript
+const str = 'Hello'
+const num = 4
+
+console.log(str * num)
+```
+
+1. `Hello4`
+2. `HelloHelloHelloHello`
+3. `NaN`
+4. `null`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+Если в результате математической операции получается не число, то будет возвращено значение `NaN`.
+
+</p>
+</details>
+
 
 ---
 
