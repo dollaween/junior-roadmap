@@ -308,5 +308,36 @@ console.log(password.trim())
 </p>
 </details>
 
+---
+
+##### 9. Замена слов в строке
+
+Дана строка 'Jax Briggs'. Замените слово 'Jax' на 'Jacqui' и выведите в консоль
+
+```js
+const name = 'Jax Briggs'
+
+console.log(/* ... */)
+// Jacqui Briggs
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для замены подстроки в строке используйте метод `replace()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const name = 'Jax Briggs'
+console.log(name.replace('Jax', 'Jacqui'))
+```
+
+</p>
+</details>
 
 
