@@ -66,10 +66,10 @@ console.log(parseInt(rub) + parseInt(dol))
 Если строка начинается с цифр, а затем идут другие символы — то будут возвращены только цифры из начала строки.
 
 Примеры:
-* console.log(parseInt('10')) -> `10`
-* console.log(parseInt('10 рублей')) -> `10`
-* console.log(parseInt('10 рублей 5')) -> `10`
-* console.log(parseInt('рублей 10')) -> `NaN`
+* `console.log(parseInt('10'))` -> `10`
+* `console.log(parseInt('10 рублей'))` -> `10`
+* `console.log(parseInt('10 рублей 5'))` -> `10`
+* `console.log(parseInt('рублей 10'))` -> `NaN`
 
 </p>
 </details>
