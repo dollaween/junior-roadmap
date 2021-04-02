@@ -163,6 +163,8 @@ console.log(domain.includes(char))
 
 ##### 5. Начало строки
 
+Выведите в консоль `true`, если строка начинается с указанной подстроки, или `false` — если нет.
+
 ```js
 const domain = 'https://github.com'
 
@@ -198,6 +200,8 @@ console.log(domain.startsWith('https:'))
 ---
 
 ##### 6. Конец строки
+
+Выведите в консоль `true`, если строка заканчивается указанной подстрокой, или `false` — если нет.
 
 ```js
 const email = 'example@mail.com'
