@@ -68,5 +68,71 @@ console.log(str == num)
 
 ---
 
+##### 3. Какой будет вывод?
+
+```javascript
+const isLoginCorrect = true
+const isPasswordCorrect = false
+const canLogin = isLoginCorrect && isPasswordCorrect
+
+console.log(canLogin)
+```
+
+1. `true`
+2. `false`
+3. `undefined`
+4. `null`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Оператор 'логическое И' `&&` возвращает `true`, если оба его операнда истинны.
+
+Примеры:
+* `console.log(true && true)` -> `true`
+* `console.log(true && false)` -> `false`
+* `console.log(false && true)` -> `false`
+* `console.log(false && false)` -> `false`
+
+</p>
+</details>
+
+---
+
+##### 4. Какой будет вывод?
+
+```javascript
+const canRead = true
+const canWrite = false
+
+console.log(canRead || canWrite)
+```
+
+1. `true`
+2. `false`
+3. `undefined`
+4. `null`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Оператор 'логическое ИЛИ' возвращает `true`, если один из его операндов истинен.
+
+Примеры:
+* `console.log(true && true)` -> `true`
+* `console.log(true && false)` -> `true`
+* `console.log(false && true)` -> `true`
+* `console.log(false && false)` -> `false`
+
+</p>
+</details>
+
+
+---
+
 Источники:
 * [Приоритет операторов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
