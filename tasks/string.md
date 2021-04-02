@@ -195,5 +195,41 @@ console.log(domain.startsWith('https:'))
 </p>
 </details>
 
+---
+
+##### 6. Конец строки
+
+```js
+const email = 'example@mail.com'
+
+const template1 = 'mail.com'
+console.log(/* ... */)
+// true
+
+const template2 = 'yahoo.com'
+console.log(/* ... */)
+// false
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для определения, какой подстрокой заканчивается строка, используйте метод `endsWith()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const email = 'example@mail.com'
+console.log(email.endsWith('mail.com'))
+console.log(email.endsWith('yahoo.com'))
+```
+
+</p>
+</details>
+
 
 
