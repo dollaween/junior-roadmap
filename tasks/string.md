@@ -276,5 +276,37 @@ console.log(promocode.toUpperCase())
 </p>
 </details>
 
+---
+
+##### 8. Удаление пробелов с начала и конца строки
+
+Удалите пробелы с начала и конца строки и выведите результат в консоль.
+
+```js
+const password = ' 123456  '
+
+console.log(/* ... */)
+// '123456'
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для обрезания пробельных символов с начала и конца строки используйте метод `trim()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const password = ' 123456  '
+console.log(password.trim())
+```
+
+</p>
+</details>
+
 
 
