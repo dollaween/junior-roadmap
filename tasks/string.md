@@ -444,4 +444,36 @@ console.log(greet)
 </p>
 </details>
 
+---
+
+##### 13. Разбиение строки на массив
+
+Разбейте строку на массив строк, состоящих из слов исходной строки и выведите результат в консоль.
+
+```js
+const cartoon = 'Tom and Jerry'
+
+console.log(/* ... */)
+// ['Tom', 'and', 'Jerry']
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для разбиения строки на массив используйте метод `split()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const cartoon = 'Tom and Jerry'
+console.log(cartoon.split(' '))
+```
+
+</p>
+</details>
+
 
