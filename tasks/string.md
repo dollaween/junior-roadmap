@@ -419,4 +419,29 @@ console.log(phrase.substring(8, 12))
 </p>
 </details>
 
+---
+
+##### 12. Кавычки в кавычках
+
+Дана строка `'I'm "Frontend" developer!'`. В ней содержится ошибка. Исправьте ее и выведите в консоль.
+
+```js
+const greet = 'I'm "Frontend developer!"'
+
+console.log(greet)
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+Если строка обернута одинарными кавычками, то одинарные кавычки в самой строке нужно экранировать специальным символом `\`.
+
+```js
+const greet = 'I\'m "Frontend developer!"'
+console.log(greet)
+```
+
+</p>
+</details>
+
 
