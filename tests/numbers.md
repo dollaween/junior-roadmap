@@ -344,10 +344,10 @@ Math.floor(Math.random() * 100) + 1
 ##### 14. Какой будет вывод?
 
 ```javascript
-console.log(2 / 0)
+console.log(10 / 0)
 ```
 
-1. `2`
+1. `1`
 2. `0`
 3. `Infinity`
 4. `SyntaxError`
