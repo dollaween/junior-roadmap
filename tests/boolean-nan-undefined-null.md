@@ -216,6 +216,36 @@ console.log(variable2)
 </p>
 </details>
 
+---
+
+##### 8. Какой будет вывод?
+
+```javascript
+console.log(4 >= 2)
+console.log('AAA' <= 'BBB')
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Оператор больше или равно `>=` возвращает `true`, если левый операнд больше или равен правому операнду.
+
+Примеры:
+* `console.log(50 >= 10)` -> `true`
+* `console.log(10 >= 50)` -> `false`
+* `console.log('abc' >= 'def')` -> `false`
+* `console.log('def' >= 'abc')` -> `true`
+
+</p>
+</details>
+
 
 ---
 
