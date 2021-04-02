@@ -152,5 +152,42 @@ console.log(typeof parseFloat(float))
 </p>
 </details>
 
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+console.log(Boolean(1))
+console.log(Boolean(0))
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+Объект `Boolean` превращает передаваемый в него аргумент в `boolean` тип.
+
+Значения `0`, `''`, `undefined`, `null`, `NaN`, `false` будут преобразованы в `false`. Все остальные значения будут преобразованы в `true`.
+
+Примеры:
+* `console.log(Boolean(10))` -> `true`
+* `console.log(Boolean(0))` -> `false`
+* `console.log(Boolean(-5))` -> `true`
+* `console.log(Boolean('Hello'))` -> `true`
+* `console.log(Boolean(''))` -> `false`
+* `console.log(Boolean(NaN))` -> `false`
+* `console.log(Boolean(undefined))` -> `false`
+* `console.log(Boolean(null))` -> `false`
+* `console.log(Boolean(false))` -> `false`
+
+</p>
+</details>
+
 
 
