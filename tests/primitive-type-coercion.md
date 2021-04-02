@@ -133,7 +133,17 @@ console.log(typeof parseFloat(float))
 
 Функция `parseFloat()` — принимает строку в качестве аргумента и возвращает число с плавающей точкой.
 
-Примеры:
+Оператор `typeof` возвращает строку, указывающую тип операнда.
+
+Примеры `typeof`:
+* `console.log(typeof 10)` -> `'number'`
+* `console.log(typeof 'home')` -> `'string'`
+* `console.log(typeof true)` -> `'boolean'`
+* `console.log(typeof NaN)` -> `'number'`
+* `console.log(typeof undefined)` -> `'undefined'`
+* `console.log(typeof null)` -> `'object'`
+
+Примеры `parseFloat()`:
 * `console.log(parseFloat('10'))` -> `10`
 * `console.log(parseFloat('10.501'))` -> `10.501`
 * `console.log(parseFloat('str'))` -> `NaN`
