@@ -68,7 +68,7 @@ console.log(parseInt(rub) + parseInt(dol))
 Примеры:
 * `console.log(parseInt('10'))` -> `10`
 * `console.log(parseInt('10 рублей'))` -> `10`
-* `console.log(parseInt('10 рублей 5'))` -> `10`
+* `console.log(parseInt('10 или 5 рублей'))` -> `10`
 * `console.log(parseInt('рублей 10'))` -> `NaN`
 
 </p>
