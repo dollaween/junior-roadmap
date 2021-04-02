@@ -131,6 +131,38 @@ console.log(canRead || canWrite)
 </p>
 </details>
 
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+const hasAccess = true
+
+console.log(!hasAccess)
+console.log(!!hasAccess)
+```
+
+1. `true`, `true`
+2. `false`, `false`
+3. `true`, `false`
+4. `false`, `true`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Оператор 'логическое НЕ' переводит `true` в `false` и обратно. Если оператор указан два раза — сперва будет вызван первый, затем второй.
+
+Примеры:
+* `console.log(!true)` -> `false`
+* `console.log(!false)` -> `true`
+* `console.log(!!true)` -> `true`
+* `console.log(!!false)` -> `false`
+
+</p>
+</details>
+
 
 ---
 
