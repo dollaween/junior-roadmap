@@ -117,4 +117,46 @@ console.log(str.charAt(str.length - 1))
 </p>
 </details>
 
+---
+
+##### 4. Поиск подстроки
+
+Выведите в консоль `true`, если в строке есть указанная подстрока.
+
+```js
+const domain = 'https://google.com'
+
+let char = 'google.com'
+console.log(/* code... */)
+// true
+
+char = 'yahoo.com'
+console.log(/* code... */)
+// false
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для проверки нахождения подстроки в строке, используйте метод `includes()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const domain = 'https://google.com'
+
+let char = 'google.com'
+console.log(domain.includes(char))
+
+char = 'yahoo.com'
+console.log(domain.includes(char))
+```
+
+</p>
+</details>
+
 
