@@ -127,11 +127,11 @@ console.log(str.charAt(str.length - 1))
 const domain = 'https://google.com'
 
 let char = 'google.com'
-console.log(/* code... */)
+console.log(/* ... */)
 // true
 
 char = 'yahoo.com'
-console.log(/* code... */)
+console.log(/* ... */)
 // false
 ```
 
@@ -158,5 +158,42 @@ console.log(domain.includes(char))
 
 </p>
 </details>
+
+---
+
+##### 5. Начало строки
+
+```js
+const domain = 'https://github.com'
+
+const protocolHTTP = 'http:'
+console.log(/* ... */)
+// false
+
+const protocolHTTPS = 'https:'
+console.log(/* ... */)
+// true
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для определения, с какой подстроки начинается строка, используйте метод `startsWith()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const domain = 'https://github.com'
+console.log(domain.startsWith('http:'))
+console.log(domain.startsWith('https:'))
+```
+
+</p>
+</details>
+
 
 
