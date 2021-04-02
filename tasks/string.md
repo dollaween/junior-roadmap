@@ -340,4 +340,36 @@ console.log(name.replace('Jax', 'Jacqui'))
 </p>
 </details>
 
+---
+
+##### 10. Замена всех слов в строке
+
+Замените все слова `John` на `Megan` в строке и выведите в консоль.
+
+```js
+const message = 'John won. John earned 100 points. Good job, John'
+
+console.log(/* ... */)
+// 'Megan won. Megan earned 100 points. Good job, Megan'
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для замены всех вхождений подстроки в строке используйте метод `replaceAll()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const message = 'John won. John earned 100 points. Good job, John'
+console.log(message.replaceAll('John', 'Megan'))
+```
+
+</p>
+</details>
+
 
