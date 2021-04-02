@@ -74,4 +74,36 @@ console.log(parseInt(rub) + parseInt(dol))
 </p>
 </details>
 
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+const hasAccess = true
+const balance = '100'
+
+console.log(+hasAccess + +balance)
+```
+
+1. `1`
+2. `100`
+3. `101`
+4. `NaN`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+Унарный оператор `+` работает так же, как прокидывание параметров в объект `Number()` — превращает следуемый за ним тип данных в число.
+
+Примеры:
+* `console.log(+'22')` -> `22`
+* `console.log(+'20 рублей')` -> `NaN`
+* `console.log(+true)` -> `1`
+* `console.log(+false)` -> `0`
+
+</p>
+</details>
+
 
