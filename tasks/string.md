@@ -312,7 +312,7 @@ console.log(password.trim())
 
 ##### 9. Замена слов в строке
 
-Дана строка 'Jax Briggs'. Замените слово 'Jax' на 'Jacqui' и выведите в консоль
+Дана строка `Jax Briggs`. Замените слово `Jax` на `Jacqui` и выведите в консоль
 
 ```js
 const name = 'Jax Briggs'
