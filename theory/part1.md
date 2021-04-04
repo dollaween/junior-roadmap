@@ -91,13 +91,13 @@ let float = 10.36
 
 ```js
 // значение бесконечности больше любого другого числа
-console.log(Infinity > 99999999)   // true
-console.log(Infinity > -Infinity)  // true
+Infinity > 99999999   // true
+Infinity > -Infinity  // true
 
 // получить положительную бесконечность можно умножив любое число на Infinity
-console.log(Infinity * 10)  // Infinity
+Infinity * 10  // Infinity
 // либо разделив положительное число на ноль
-console.log(10 / 0)  // Infinity
+10 / 0  // Infinity
 ```
 
 
