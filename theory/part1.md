@@ -70,9 +70,35 @@ planet = 'Mars' // TypeError: Assignment to constant variable.
 
 ## Числа
 
+```js
+// пример целого числа
+let integer = 10
 
+// пример числа с плавающей точкой
+let float = 10.36
+```
 
+К числовому типу данных также относятся `Infinity`, `-Infinity` и `NaN`.
 
+Также к числовому типу данных относятся следующие три символьные величины:
+* `Infinity` — положительная бесконечность
+* `-Infinity` — отрицательная бесконечность
+* `NaN` — не число (Not a Number)
+
+---
+
+`Infinity` — положительная бесконечность
+
+```js
+// значение бесконечности больше любого другого числа
+console.log(Infinity > 99999999)   // true
+console.log(Infinity > -Infinity)  // true
+
+// получить положительную бесконечность можно умножив любое число на Infinity
+console.log(Infinity * 10)  // Infinity
+// либо разделив положительное число на ноль
+console.log(10 / 0)  // Infinity
+```
 
 
 
