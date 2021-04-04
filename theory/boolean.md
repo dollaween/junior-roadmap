@@ -49,10 +49,10 @@
 Оператор "Логическое НЕ" (`!`) переводит `true` в `false`, и наоборот.
 
 ```js
-* `console.log(!true)` -> `false`
-* `console.log(!false)` -> `true`
-* `console.log(!!true)` -> `true`
-* `console.log(!!false)` -> `false`
+console.log(!true) -> false
+console.log(!false) -> true
+console.log(!!true) -> true
+console.log(!!false) -> false
 ```
 
 ---
