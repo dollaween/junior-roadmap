@@ -47,6 +47,8 @@ var password = '12345'
 password = 'qwerty'
 ```
 
+* [mdn](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/var)
+
 ---
 
 `const` | [mdn](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const) — объявляет константу. Значение константы менять нельзя.
