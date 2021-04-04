@@ -122,3 +122,10 @@ Math.random()  // 0.759685260672438
 ```
 
 ---
+
+Источники:
+* [Number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number)
+* [Infinity](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Infinity)
+* [NaN](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+* [Арифметические операции](https://developer.mozilla.org/ru/docs/conflicting/Web/JavaScript/Reference/Operators#remainder)
+* [Math](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
