@@ -18,3 +18,4 @@
 
 * [Переменные](./variables.md)
 * [Числа](./number.md)
+* [Boolean](./boolean.md)
