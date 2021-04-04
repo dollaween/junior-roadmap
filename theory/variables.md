@@ -1,6 +1,6 @@
 <div align="center">
 
-# Часть 1
+# Переменные
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
