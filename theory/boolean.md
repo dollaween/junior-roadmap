@@ -1,6 +1,6 @@
 <div align="center">
 
-# Boolean
+# Логический тип (boolean), логические операторы
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
