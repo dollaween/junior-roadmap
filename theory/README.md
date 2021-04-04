@@ -6,6 +6,8 @@
 |
 [Карта](/roadmap/README.md)
 |
+[Теория](/theory/README.md)
+|
 [Тесты](/tests/README.md)
 |
 [Задачи](/tasks/README.md)
@@ -14,4 +16,5 @@
 
 ---
 
-* [Часть 1](./part1.md)
+* [Переменные](./variables.md)
+* [Числа](./number.md)
