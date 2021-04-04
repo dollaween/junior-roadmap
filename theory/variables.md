@@ -57,7 +57,7 @@ planet = 'Mars' // TypeError: Assignment to constant variable.
 
 ---
 
-Подробнее:
+Источники:
 * [let](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let)
 * [var](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/var)
 * [const](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const)
