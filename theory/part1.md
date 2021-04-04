@@ -49,7 +49,7 @@ password = 'qwerty'
 
 ---
 
-`const` — объявляет константу. Значение константы менять нельзя.
+`const` | [mdn](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const) — объявляет константу. Значение константы менять нельзя.
 
 ```js
 const planet = 'Earth'
@@ -57,5 +57,27 @@ const planet = 'Earth'
 // значение констант менять нельзя
 planet = 'Mars' // TypeError: Assignment to constant variable.
 ```
+
+
+## Числа
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
