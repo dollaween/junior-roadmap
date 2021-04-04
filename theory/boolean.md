@@ -90,6 +90,6 @@ console.log(!!false)  // false
 ---
 
 Источники:
-* [Логическое И](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
+* [Выражения и операторы](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators)
 
 
