@@ -51,6 +51,7 @@ if (password === 'abc') {
 Пример с инструкцией `else`:
 ```js
 const login = 'moderator'
+
 if (login === 'admin') {
   console.log('Эта инструкция не будет исполнена')
 } else {
