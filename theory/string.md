@@ -85,9 +85,17 @@ console.log(greet + target)  // 'Hello John'
 
 ---
 
+Свойство `length` — возвращает длину строки.
+
+```js
+console.log('This is string'.length)  // 14
+```
+
+---
+
 <div align="center">
 
-#### Преобразование строки в число
+### Преобразование строки в число
 
 </div>
 
