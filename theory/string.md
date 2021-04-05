@@ -126,7 +126,7 @@ parseFloat(true)            // NaN
 
 <div align="center">
 
-#### Методы поиска
+### Методы поиска
 
 </div>
 
