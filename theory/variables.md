@@ -57,7 +57,22 @@ planet = 'Mars' // TypeError: Assignment to constant variable.
 
 ---
 
+Оператор "Присваивание" (`=`) — присваивает левому операнду значение, основанное на значнии правого операнда.
+
+```js
+// присваивает переменной `login` значение `John`
+const login = 'John'
+
+// цепочка операторов присваивания задает нескольким переменным одно и то же значение
+const x = y = 10
+console.log(x)  // 10
+console.log(y)  // 10
+```
+
+---
+
 Источники:
 * [let](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let)
 * [var](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/var)
 * [const](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const)
+* [Операторы присваивания](https://developer.mozilla.org/ru/docs/conflicting/Web/JavaScript/Reference/Operators_8d54701de06af40a7c984517cbe87b3e)
