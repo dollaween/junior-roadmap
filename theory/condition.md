@@ -1,6 +1,6 @@
 <div align="center">
 
-# Условные конструкции
+# Условные инструкции
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
