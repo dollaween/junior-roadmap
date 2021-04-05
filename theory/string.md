@@ -154,9 +154,47 @@ str.charAt(99)  // ''
 
 ---
 
+Метод `includes()` — возвращает `true`, если строка содержит заданную подстроку.
+
+```js
+const str = 'Flawless victory'
+
+str.includes('Flawless')   // true
+str.includes('vic')        // true
+str.includes('Confident')  // false
+```
+
+---
+
+Метод `startsWith()` — возвращает `true`, если строка начинается с заданной подстроки.
+
+```js
+const domain = 'http://github.com'
+
+domain.startsWith('http:')   // true
+domain.startsWith('https:')  // false
+```
+
+---
+
+Метод `endsWith()` — возвращает `true`, если строка заканчивается заданной подстрокой.
+
+```js
+const email = 'example@mail.com'
+
+email.endsWith('mail.com')   // true
+email.endsWith('yandex.ru')  // false
+```
+
+---
+
 Источники:
 * [parseInt()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 * [parseFloat()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
+* [charAt()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/charAt)
+* [includes()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+* [startsWith()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
+* [endsWith](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
 
 
 
