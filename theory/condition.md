@@ -16,7 +16,7 @@
 
 ---
 
-Для работы с логическим типом данных в Javascript представлено три логических инструкции: `if ... else`, `.. ? .. : ..` и `switch`.
+Для работы с логическим типом данных в Javascript представлено три логических инструкции: `if ... else`, тернарный оператор `.. ? .. : ..` и `switch`.
 
 ---
 
@@ -96,6 +96,7 @@ age > 20 ? console.log('Вход выполнен!') : console.log('Отказа
 
 Источники:
 * [if ... else](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else)
+* [Тернарный оператор](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 
 
