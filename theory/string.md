@@ -281,6 +281,18 @@ greet.slice(7, -4)  // 'nice'
 
 ---
 
+Метод `split()` — разбивает строку на массив путем разделения строки указанной подстрокой.
+
+```js
+const path = 'me/home/doc'
+
+path.split('')      // ['m', 'e', '/', 'h', 'o', 'm', 'e', '/', 'd', 'o', 'c']
+path.split('/')     // ['me', 'home', 'doc']
+path.split('home')  // ['me/', '/doc']
+```
+
+---
+
 С остальными методами строки можно ознакомиться на MDN:
 [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String)
 
@@ -299,6 +311,7 @@ greet.slice(7, -4)  // 'nice'
 * [replace()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 * [substring()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 * [slice()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+* [split()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 
 
