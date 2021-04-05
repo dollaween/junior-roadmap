@@ -202,12 +202,27 @@ email.endsWith('yandex.ru')  // false
 
 ```js
 const nickname = 'AwEsOmE NiCkNaMe'
+
 nickname.toLowerCase()  // awesome nickname
 nickname.toUpperCase()  // AWESOME NICKNAME
 ```
 
+---
+
+Метод `trim()` — вырезает пробельные символы с начала и конца строки.
+
+```js
+const stringWithSpace = '    Spaceman  '
+
+stringWithSpace.trim()  // 'Spaceman'
+```
 
 
+
+---
+
+С остальными методами строки можно ознакомиться на MDN:
+[https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ---
 
@@ -219,6 +234,8 @@ nickname.toUpperCase()  // AWESOME NICKNAME
 * [startsWith()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
 * [endsWith()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
 * [toLowerCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
+* [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+* [trim()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 
 
 
