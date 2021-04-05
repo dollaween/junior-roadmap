@@ -34,12 +34,14 @@ if (false) {
 
 Примеры:
 ```js
+// Пример 1
 const a = 10
 const b = 5
 if (a > b) {
   console.log('Выполнено, условие истинно')
 }
 
+// Пример 2
 const password = '123'
 if (password === 'abc') {
   console.log('Не выполнено, условие ложно')
