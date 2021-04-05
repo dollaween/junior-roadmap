@@ -188,6 +188,29 @@ email.endsWith('yandex.ru')  // false
 
 ---
 
+<div align="center">
+
+### Методы работы со строкой
+
+</div>
+
+---
+
+Метод `toLowerCase()` — возвращает значение строки преобразованной в нижний регистр.
+
+Метод `toUpperCase()` — возвращает значение строки преобразованной в верхний регистр.
+
+```js
+const nickname = 'AwEsOmE NiCkNaMe'
+nickname.toLowerCase()  // awesome nickname
+nickname.toUpperCase()  // AWESOME NICKNAME
+```
+
+
+
+
+---
+
 Источники:
 * [parseInt()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 * [parseFloat()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
@@ -195,6 +218,7 @@ email.endsWith('yandex.ru')  // false
 * [includes()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
 * [startsWith()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
 * [endsWith()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
+* [toLowerCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 
 
 
