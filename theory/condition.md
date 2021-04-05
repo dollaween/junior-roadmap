@@ -1,0 +1,59 @@
+<div align="center">
+
+# Условные конструкции
+
+[Главная](https://github.com/dollaween/junior-roadmap/)
+|
+[Карта](/roadmap/README.md)
+|
+[Теория](/theory/README.md)
+|
+[Тесты](/tests/README.md)
+|
+[Задачи](/tasks/README.md)
+
+</div>
+
+---
+
+Для работы с логическим типом данных в Javascript представлено три логических инструкции: `if ... else`, `.. ? .. : ..` и `switch`.
+
+---
+
+Инструкция `if ... else` — выполняет инструкцию `if`, если указанное условие истинно (`true`), иначе будет выполнена инструкция `else`.
+
+```js
+if (true) {
+  console.log('Эта инструкция будет выполнена, потому что в блоке `if` условие истинно')
+}
+
+if (false) {
+  console.log('Эта инструкция выполнена не будет')
+}
+```
+
+Примеры:
+```js
+const a = 10
+const b = 5
+if (a > b) {
+  console.log('Выполнено, условие истинно')
+}
+
+const password = '123'
+if (password === 'abc') {
+  console.log('Не выполнено, условие ложно')
+}
+```
+
+Пример с инструкцией `else`:
+```js
+const login = 'moderator'
+if (login === 'admin') {
+  console.log('Эта инструкция не будет исполнена')
+} else {
+  console.log('А вот эта инструкция будет выполнена')
+}
+```
+
+---
