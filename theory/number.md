@@ -199,6 +199,12 @@ Math.random()  // 0.759685260672438
 
 ---
 
+С остальными методами и свойствами числа можно ознакомиться на MDN:
+[https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number)
+
+
+---
+
 Источники:
 * [Number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number)
 * [Infinity](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Infinity)
