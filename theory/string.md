@@ -36,4 +36,13 @@ const hi = "Hi"
 'We have "something" in storage'
 "We have \"something\" in storage"
 
+// все что внутри кавычек — это обычный текст, поэтому переменные в таких строках вызваны не будут
+const name = 'John'
+console.log('My name is ${name}')  // 'My name is ${name}'
+```
+
+В кавычках через апостроф можно вызывать переменные:
+```js
+const name = 'John'
+console.log(`My name is ${name}`)  // 'My name is John'
 ```
