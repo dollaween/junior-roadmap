@@ -217,6 +217,16 @@ const stringWithSpace = '    Spaceman  '
 stringWithSpace.trim()  // 'Spaceman'
 ```
 
+---
+
+Метод `replace()` — заменяет заданную подстроку другой строкой и возвращает получившийся результат.
+
+```js
+const age = 'My age is 20'
+
+age.replace('20', '21')                      // 'My age is 21'
+age.replace('My age is 20', 'I\', too old')  // "I'm too old"
+```
 
 
 ---
@@ -236,6 +246,7 @@ stringWithSpace.trim()  // 'Spaceman'
 * [toLowerCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 * [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 * [trim()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+* [replace()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
 
 
