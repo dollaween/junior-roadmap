@@ -85,6 +85,14 @@ console.log(greet + target)  // 'Hello John'
 
 ---
 
+<div align="center">
+
+#### Преобразование строки в число
+
+</div>
+
+---
+
 Функция `parseInt()` — принимает строку и возвращает целое число.
 
 Если преобразовать строку в число невозможнно, будет возвращено значение `NaN`.
@@ -116,5 +124,46 @@ parseFloat(true)            // NaN
 
 ---
 
+<div align="center">
+
+#### Методы поиска
+
+</div>
+
+---
+
+Метод `charAt()` — возвращает указанный символ из строки.
+
+Если символ не найден будет возвращена пустая строка.
+
+```js
+const str = 'What do you think?'
+
+str.charAt(0)   // 'W'
+str.charAt(5)   // 'd'
+str.charAt(99)  // ''
+```
+
+---
+
 Источники:
 * [parseInt()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+* [parseFloat()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
