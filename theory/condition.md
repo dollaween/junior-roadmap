@@ -93,7 +93,7 @@ age > 20 ? console.log('Вход выполнен!') : console.log('Отказа
 
 ---
 
-**Инструкция `switch`** — сравнивает выражение со случаями, перечисленными внутри неё, а затем выполняет соответствующие инструкции.
+**Инструкция `switch`** — сравнивает выражение со случаями `case`, перечисленными внутри неё, а затем выполняет соответствующие инструкции.
 
 ```js
 const role = 'moderator'
@@ -133,8 +133,9 @@ switch (country) {
 ---
 
 Источники:
-* [if ... else](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else)
+* [`if ... else`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else)
 * [Тернарный оператор](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+* [`switch`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
 
 
 
