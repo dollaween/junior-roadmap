@@ -16,6 +16,7 @@
 
 ---
 
+* [Введение](./introduction.md)
 * [Переменные](./variables.md)
 * [Числа](./number.md)
 * [Логический тип (boolean), логические операторы](./boolean.md)
