@@ -224,10 +224,60 @@ stringWithSpace.trim()  // 'Spaceman'
 ```js
 const age = 'My age is 20'
 
-age.replace('20', '21')                      // 'My age is 21'
-age.replace('My age is 20', 'I\', too old')  // "I'm too old"
+age.replace('20', '21')                       // 'My age is 21'
+age.replace('My age is 20', 'I\'m, too old')  // "I'm too old"
 ```
 
+---
+
+Метод `substring(start, stop)` — возвращает подстроку от индекса `start` до индекса `stop` (не включительно).
+
+```js
+const greet = 'Have a nice day'
+
+greet.substring(0, 4)   // 'Have'
+greet.substring(7, 11)  // 'nice'
+
+// если не указать индекс 'stop', то вернется строка от индекса 'start' и до конца
+greet.substring(12)  // 'day'
+
+// если ничего не найдено, то вернется пустая строка
+greet.substring(90)  // ''
+
+// при передаче отрицательного аргумента или NaN — он будет изменен на 0
+greet.substring(-10)  // 'Have a nice day'
+
+// если индекс 'start' больше индекса 'stop', то они будут изменены местами
+greet.substring(11, 7)  // 'nice'
+```
+
+---
+
+Метод `slice(start, stop)` — возвращает подстроку от индекса `start` до индекса `stop` (не включительно).
+
+Метод ведет себя так же, как `substring()`, но с небольшими отличиями.
+
+```js
+const greet = 'Have a nice day'
+
+greet.slice(0, 4)   // 'Have'
+greet.slice(7, 11)  // 'nice'
+
+// если не указать индекс 'stop', то вернется строка от индекса 'start' и до конца
+greet.slice(12)  // 'day'
+
+// если ничего не найдено, то вернется пустая строка
+greet.substring(90)  // ''
+
+// если индекс 'start' больше индекса 'stop', то будет возвращена пустая строка
+greet.slice(11, 7)  // ''
+
+// если индекс `start` отрицательный, то отсчет идет с конца строки
+greet.slice(-3)  // 'day'
+
+// если индекс 'stop' отрицательный, то будет обрезано указанное количество символов с конца строки
+greet.slice(7, -4)  // 'nice'
+```
 
 ---
 
@@ -247,6 +297,8 @@ age.replace('My age is 20', 'I\', too old')  // "I'm too old"
 * [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 * [trim()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 * [replace()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+* [substring()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
+* [slice()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 
 
 
