@@ -85,6 +85,17 @@ console.log(greet + target)  // 'Hello John'
 
 ---
 
+Функция `parseInt()` — принимает строку и возвращает целое число. Если преобразовать строку в число невозможнно, будет возвращено значение `NaN`.
 
+```js
+parseInt('10')            // 10
+parseInt('2D game')       // 2
+parseInt('My age is 20')  // NaN
+parseInt('-3')            // -3
+parseInt(true)            // NaN
+```
 
 ---
+
+Источники:
+* [parseInt()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
