@@ -46,3 +46,26 @@ console.log('My name is ${name}')  // 'My name is ${name}'
 const name = 'John'
 console.log(`My name is ${name}`)  // 'My name is John'
 ```
+
+---
+
+**Конкатенация строк** — объединение нескольких строк в одну.
+
+```js
+const greet = 'Hello'
+const target = 'world'
+
+console.log(greet + target) // 'Helloworld'
+
+// для объединения строк с пробелом, его можно вставить
+console.log(greet + ' ' + target)
+// либо использовать переменные в кавычках-апострофах
+console.log(`${greet} ${target}`)
+
+// либо в самой переменной добавить нужный пробел
+const name = ' John'
+console.log(greet + target)  // 'Hello John'
+```
+
+---
+
