@@ -33,6 +33,7 @@ const hi = "Hi"
 'I\'m programmer'
 
 // то же самое работает и с двойными кавычками
+'We have "something" in storage'
 "We have \"something\" in storage"
 
 ```
