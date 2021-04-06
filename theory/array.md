@@ -254,9 +254,30 @@ const upperAlphabet = alphabet.map((element) => {
   return element.toUpperCase()
 })
 
-console.log(upperAlphabet)
+console.log(upperAlphabet)  // ['ABC', 'DEF', 'JHI']
 ```
 
+---
+
+Метод `every()` — проверяет, удовлетворяют ли все элементы массива условию, заданному в передаваемой функции.
+
+```js
+const balances = [150, 70, 100]
+
+// Пример 1
+let result = balances.every((balance) => {
+  return balance > 50
+})
+
+console.log(result)  // true
+
+// Пример 2
+result = balances.every((balance) => {
+  return balance > 100
+})
+
+console.log(result)  // false
+```
 
 ---
 
