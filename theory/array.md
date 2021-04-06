@@ -32,6 +32,9 @@ const array = [2021, 'Javascript', true, numbers, { name: 'John', age: 33 }]
 // счет начинается с нуля
 array[0]  // 2021
 array[1]  // 'Javascript'
+
+// для получения длины массива нужно обратиться к свойству `length`
+array.lenght  // 5
 ```
 
 ---
