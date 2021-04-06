@@ -70,15 +70,24 @@ console.log(furniture)  // ['lamp', 'bed', 'table', 'chair', 'carpet']
 Метод `shift()` — удаляет первый элемент массива и возвращает его значение.
 
 ```js
-console.log()
+const ids = [4, 8, 15, 16, 23, 42]
+
+const deleted = ids.shift()
+
+console.log(deleted)  // 4
+console.log(ids)      // [8, 15, 16, 23, 42]
 ```
 
 ---
 
-Метод `reverse()` — переворачивает массив. Первый элемент становится последним и наоборот.
+Метод `reverse()` — переворачивает массив — первый элемент становится последним и наоборот.
 
 ```js
-console.log()
+const chars = ['A', 'B', 'C', 'D', 'E', 'F']
+
+chars.reverse()
+
+console.log(chars)  // ['F', 'E', 'D', 'C', 'B', 'A']
 ```
 
 ---
@@ -111,7 +120,11 @@ console.log(colors)  // ['blue', 'red', 'pink', 'purple', 'yellow', 'green']
 
 --- 
 
+<div align="center">
+
 ### Методы доступа
+
+</div>
 
 ---
 
@@ -123,7 +136,11 @@ console.log(colors)  // ['blue', 'red', 'pink', 'purple', 'yellow', 'green']
 
 ---
 
+<div align="center">
+
 ### Методы обхода
+
+</div>
 
 ---
 
