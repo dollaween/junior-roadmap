@@ -1,6 +1,6 @@
 <div align="center">
 
-# Тесты: Условные конструкции
+# Тесты: Условные инструкции
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
