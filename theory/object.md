@@ -15,3 +15,28 @@
 </div>
 
 ---
+
+Объект — это набор свойств, состоящих из пары 'ключ: значение'.
+
+```js
+const obj = {
+  'ключ': 'значение'
+}
+```
+
+Примеры:
+```js
+const person = {
+  name: 'John',
+  age: 33,
+  isWorking: true
+}
+
+const house = {
+  city: 'New York'
+  address: 'central street, 15'
+  rooms: 4,
+  hasBathroom: true,
+  cost: '4 000 000$'
+}
+```
