@@ -21,7 +21,7 @@
 * [`String`, кавычки, конкатенация](./string.md)
 * [Методы строки](./string-methods.md)
 * [`Boolean`, `NaN`, `undefined`, `null`](./boolean-nan-undefined-null.md)
-* [Условные конструкции](./condition.md)
+* [Условные инструкции](./condition.md)
 * [Приведение примитивных типов](./primitive-type-coercion.md)
 * [`Array`, циклы, методы, сортировка](./array.md)
 * [`Object`, циклы, методы](./object.md)
