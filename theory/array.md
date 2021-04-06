@@ -231,13 +231,29 @@ console.log(str)  // 'Янв,true,[object Object],66'
 
 ---
 
-Метод forEach() — выполняет переданную функцию для каждого элемента массива.
+Метод `forEach()` — выполняет указанную функцию для каждого элемента массива.
+
+```js
+const fighters = ['Jax', 'Johnny', 'Liu']
+
+fighters.forEach((element) => {
+  console.log(element)
+})
+```
 
 ---
 
-Метод map() — выполняет переданную функцию для каждого элемента массива, 
+Метод `map()` — выполняет переданную функцию для каждого элемента массива, 
 
+```js
+const alphabet = ['abc', 'def', 'jhi']
 
+const upperAlphabet = alphabet.map((element) => {
+  return element.toUpperCase()
+})
+
+console.log(upperAlphabet)
+```
 
 
 ---
