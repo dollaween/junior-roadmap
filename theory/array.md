@@ -40,7 +40,31 @@
 
 ---
 
-Метод splice()
+Метод `splice(start, deleteCount)` — удаляет существующие элементы и/или добавляет новые.
+
+`start` — индекс, с которого начать удаление.
+
+`deleteCount` — количество элементов, которые будут удалены.
+
+```js
+const colors = ['blue', 'red', 'yellow', 'green']
+
+const deletedColors = colors.splice(0, 2)
+
+// метод возвращает удаленные значения
+console.log(deletedColors)  // ['blue', 'red']
+// исходный массив изменяется
+console.log(colors)         // ['yellow', 'green']
+```
+
+Если после второго параметра указать через запятую значения — они будут вставлены в массив.
+```js
+const colors = ['blue', 'red', 'yellow', 'green']
+
+colors.splice(2, 0, 'pink', 'purple')
+
+console.log(colors)  // ['blue', 'red', 'pink', 'purple', 'yellow', 'green']
+```
 
 --- 
 
