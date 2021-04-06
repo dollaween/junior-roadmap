@@ -139,5 +139,21 @@ for (let car of cars) {
 
 ---
 
+Цикл `for ... in` — проходит по всем перечислимым свойствам объекта. Не рекомендуется использовать на массивах.
+
+```js
+let cars = { model: 'AUDI A8', year: '2019', color: 'brown' }
+
+for (key in obj) {
+  console.log(`${key} = ${obj[key]}`);
+}
+
+// 'model = AUDI A8'
+// 'year = 2019'
+// 'color = brown'
+```
+
+---
+
 Источники:
 * [Циклы и итерации](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration)
