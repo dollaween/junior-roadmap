@@ -132,6 +132,42 @@ console.log(colors)  // ['blue', 'red', 'pink', 'purple', 'yellow', 'green']
 
 ---
 
+Метод `indexOf()` — возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.
+
+```js
+const calendar = ['Янв', 'Фев', 'Март', 'Янв', 'Фев', 'Март']
+
+const index1 = calendar.indexOf('Март')
+const index2 = calendar.indexOf('Дек')
+
+console.log(index1)  // 2
+console.log(index2)  // -1
+```
+
+Можно указать индекс, откуда будет начинаться поиск:
+
+```js
+const calendar = ['Янв', 'Фев', 'Март', 'Янв', 'Фев', 'Март']
+
+console.log(calendar.indexOf('Март', 3))  // 5
+```
+
+---
+
+Метод `lastIndexOf()` — возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.
+
+```js
+const calendar = ['Янв', 'Фев', 'Март', 'Янв', 'Фев', 'Март']
+
+const index1 = calendar.lastIndexOf('Март')
+const index2 = calendar.lastIndexOf('Дек')
+
+console.log(index1)  // 5
+console.log(index2)  // -1
+```
+
+---
+
 Метод `slice(start, stop)` — возвращает копию массива от индекса `start` до индекса `stop` (не включительно).
 
 ```js
