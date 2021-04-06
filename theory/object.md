@@ -32,19 +32,21 @@ const person = {
   isWorking: true
 }
 
-const house = {
-  city: 'New York',
-  address: 'central street, 15',
-  rooms: 4,
-  hasBathroom: true,
-  cost: '4 000 000$'
-}
-
 // если в названии ключа есть пробелы, то его можно записать так:
 const planet = {
   name: 'Mars',
   ['Солнечная система?']: true,
   ['Can be reached']: true
+}
+
+// в объекте могут содержаться любые типы данных, включая и другие объекты:
+const house = {
+  city: 'New York',
+  address: 'central street, 15',
+  rooms: ['kitchen', 'bedroom'],
+  hasBathroom: true,
+  cost: 4000000,
+  owner: person
 }
 ```
 
