@@ -34,7 +34,7 @@ array[0]  // 2021
 array[1]  // 'Javascript'
 
 // для получения длины массива нужно обратиться к свойству `length`
-array.lenght  // 5
+array.length  // 5
 ```
 
 ---
