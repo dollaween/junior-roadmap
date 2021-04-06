@@ -47,3 +47,10 @@ const planet = {
   ['Can be reached']: true
 }
 ```
+
+---
+
+Источники:
+* [Работа с объектами](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_Objects)
+
+
