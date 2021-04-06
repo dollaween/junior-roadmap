@@ -157,6 +157,24 @@ console.log(sites)  // ['google.com', 'yahoo.com', 'facebook.com', 'instagram.co
 
 ---
 
+Метод `join(separator)` — объединяет все элементы массива в строку.
+
+Если указать `separator` — то он будет вставлен в строку между элементами.
+
+```js
+const strings = ['I', 'will', 'be', 'back']
+
+const example1 = strings.join()
+const example2 = strings.join(' ')
+const example3 = strings.join('-')
+
+console.log(example1)  // 'I,will,be,back'
+console.log(example2)  // 'I will be back'
+console.log(example3)  // 'I-will-be-back'
+```
+
+---
+
 <div align="center">
 
 ### Методы обхода
