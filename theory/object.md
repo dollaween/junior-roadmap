@@ -39,4 +39,11 @@ const house = {
   hasBathroom: true,
   cost: '4 000 000$'
 }
+
+// если в названии ключа есть пробелы, то его можно записать так:
+const planet = {
+  name: 'Mars',
+  ['Солнечная система?']: true,
+  ['Can be reached']: true
+}
 ```
