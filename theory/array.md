@@ -175,6 +175,18 @@ console.log(example3)  // 'I-will-be-back'
 
 ---
 
+Метод `toString()` — объединяет все элементы массива в строку. Метод работает так же, как и `join()`, но отсутствует передаваемый параметр.
+
+```js
+const elems = ['Янв', true, { name: 123 }, 66]
+
+const str = elems.toString()
+
+console.log(str)  // 'Янв,true,[object Object],66'
+```
+
+---
+
 <div align="center">
 
 ### Методы обхода
