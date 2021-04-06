@@ -123,5 +123,21 @@ for (let i = 0; i < 9; i++) {
 
 ---
 
+Цикл `for ... of` — проходит по всем элементам массива (и другим перечислимым объектам).
+
+```js
+const cars = ['Ford', 'Toyota', 'Lexus']
+
+for (let car of cars) {
+  console.log(car)
+}
+
+// 'Ford'
+// 'Toyota'
+// 'Lexus'
+```
+
+---
+
 Источники:
 * [Циклы и итерации](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration)
