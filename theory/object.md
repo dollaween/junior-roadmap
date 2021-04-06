@@ -33,8 +33,8 @@ const person = {
 }
 
 const house = {
-  city: 'New York'
-  address: 'central street, 15'
+  city: 'New York',
+  address: 'central street, 15',
   rooms: 4,
   hasBathroom: true,
   cost: '4 000 000$'
