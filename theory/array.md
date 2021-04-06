@@ -48,8 +48,8 @@ const roles = ['admin', 'moderator', 'reviewer']
 
 const deleted = roles.pop()
 
-console.log(deleted)   // 'reviewer'
-console.log(roles)  // ['admin', 'moderator']
+console.log(deleted)  // 'reviewer'
+console.log(roles)    // ['admin', 'moderator']
 ```
 
 ---
@@ -132,7 +132,28 @@ console.log(colors)  // ['blue', 'red', 'pink', 'purple', 'yellow', 'green']
 
 ---
 
-Метод slice(start, stop) — возвращает копию массива от индекса start до индекса stop.
+Метод `slice(start, stop)` — возвращает копию массива от индекса `start` до индекса `stop` (не включительно).
+
+```js
+const fruits = ['apple', 'orange', 'pear', 'banana']
+
+const result = fruits.slice(1, 3)
+
+console.log(result)  // ['orange', 'pear']
+```
+
+---
+
+Метод `concat()` — соединяет массив, на котором был вызван с заданным массивом и возвращает получившийся объединенный массив.
+
+```js
+const searchSites = ['google.com', 'yahoo.com']
+const socialNetworks = ['facebook.com', 'instagram.com']
+
+const sites = searchSites.concat(socialNetworks)
+
+console.log(sites)  // ['google.com', 'yahoo.com', 'facebook.com', 'instagram.com']
+```
 
 ---
 
