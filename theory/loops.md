@@ -56,3 +56,6 @@ for (let i = 0; i < countries.length; i++) {
 
 
 ---
+
+Источники:
+* [Циклы и итерации](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration)
