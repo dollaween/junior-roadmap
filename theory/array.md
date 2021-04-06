@@ -313,6 +313,22 @@ console.log(acceptedAges)  // [25, 44, 31]
 
 ---
 
+Метод `reduce()` — применяет переданную функцию к каждому элементу массива и возвращает результирующее значение.
+
+В отличии от метода `map()`, в `reduce()` в каждой итерации доступно результирующее значение `accumulator`.
+
+```js
+const rubles = [100, 1000, 500, 200]
+
+const sum = rubles.reduce((accumulator, element) => {
+  return accumulator + element
+}, 0)
+
+console.log(sum)  // 1800
+```
+
+---
+
 С остальными методами массива можно ознакомиться на MDN:
 [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
