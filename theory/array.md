@@ -272,11 +272,43 @@ let result = balances.every((balance) => {
 console.log(result)  // true
 
 // Пример 2
-result = balances.every((balance) => {
-  return balance > 100
-})
+result = balances.every((balance) => balance > 100)
 
 console.log(result)  // false
+```
+
+---
+
+Метод `some()` — проверяет, удовлетворяет ли какой-либо элемент массива условию, заданному в передаваемой функции.
+
+```js
+const names = ['John', 'Michael', 'Ethan']
+
+// Пример 1
+let result = names.some((name) => {
+  return name.length > 6
+})
+
+console.log(result)  // true
+
+// Пример 2
+result = names.some((name) => name.length > 14)
+
+console.log(result)  // false
+```
+
+---
+
+Метод `filter()` — создает новый массив со всеми элементами, удовлетворяющими условию в передаваемой функции.
+
+```js
+const ages = [25, 16, 23, 44, 31]
+
+const acceptedAges = ages.filter((age) => {
+  return age >= 25
+})
+
+console.log(acceptedAges)  // [25, 44, 31]
 ```
 
 ---
