@@ -37,6 +37,7 @@ for ([начало]; [условие]; [шаг]) {
 for (let i = 0; i < 5; i++) {
   console.log(i)
 }
+
 // 0
 // 1
 // 2
@@ -51,11 +52,36 @@ const countries = ['Russia', 'Ukraine', 'Kazakhstan']
 for (let i = 0; i < countries.length; i++) {
   console.log(countries[i])
 }
+
 // 'Russia'
 // 'Ukraine'
 // 'Kazakhstan'
 ```
 
+---
+
+Цикл `while` — выполняет действия, пока условие истинно.
+
+```js
+while ([условие]) {
+  [действия]
+}
+```
+
+Пример:
+
+```js
+let i = 0
+
+while (i < 3) {
+  i++
+  console.log(i)
+}
+
+// 1
+// 2
+// 3
+```
 
 ---
 
