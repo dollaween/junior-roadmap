@@ -405,9 +405,9 @@ console.log(result)
 
 Функция `isNaN()` — проверяет, является ли значение `NaN` (не число).
 
-`isNaN(undefined)` —> `true`
-`isNaN('true')` —> `true`
-`isNaN(0)` —> `false`  // `0` — число
+* `isNaN(undefined)` —> `true`
+* `isNaN('true')` —> `true`
+* `isNaN(0)` —> `false`, так как `0` — число
 
 </p>
 </details>
