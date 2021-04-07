@@ -210,6 +210,32 @@ console.log(result)
 </p>
 </details>
 
+---
+
+##### 8. Какой будет вывод?
+
+```javascript
+const characters = ['Mario', 'Luigi', 'Bowser', 'Toad']
+
+console.log(characters.indexOf('Toad'))
+console.log(characters.indexOf('Wario'))
+```
+
+1. `2`, `undefined`
+2. `2`, `null`
+3. `3`, `-1`
+4. `3`, `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+Метод `indexOf()` — возвращает первый индекс, по которому данный элемент может быть найден в массиве или `-1`, если такого индекса нет.
+
+</p>
+</details>
+
 
 
 
