@@ -379,6 +379,39 @@ console.log(hexs)
 </p>
 </details>
 
+---
+
+##### 14. Какой будет вывод?
+
+```javascript
+const array = [undefined, 0, 'true']
+
+const result = array.every((elem) => isNaN(elem))
+
+console.log(result)
+```
+
+1. `true`
+2. `false`
+3. `-1`
+4. `[]`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Метод `every()` — проверяет, удовлетворяют ли все элементы массива условию, заданному в передаваемой функции.
+
+Функция `isNaN()` — проверяет, является ли значение `NaN` (не число).
+
+`isNaN(undefined)` —> `true`
+`isNaN('true')` —> `true`
+`isNaN(0)` —> `false`  // `0` — число
+
+</p>
+</details>
+
 
 
 
