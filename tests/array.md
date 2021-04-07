@@ -34,6 +34,8 @@ console.log(dates[2])
 
 **Ответ: 3**
 
+Оператор `[index]` — возвращает элемент массива по индексу `index`.
+
 </p>
 </details>
 
@@ -221,8 +223,8 @@ console.log(characters.indexOf('Toad'))
 console.log(characters.indexOf('Wario'))
 ```
 
-1. `2`, `undefined`
-2. `2`, `null`
+1. `4`, `undefined`
+2. `4`, `null`
 3. `3`, `-1`
 4. `3`, `undefined`
 
@@ -235,6 +237,149 @@ console.log(characters.indexOf('Wario'))
 
 </p>
 </details>
+
+---
+
+##### 9. Какой будет вывод?
+
+```javascript
+const numbers = [5, 2, 1, 9, 5, 1, 8]
+
+console.log(numbers.lastIndexOf(1))
+```
+
+1. `0`
+2. `2`
+3. `5`
+4. `-1`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+Метод `lastIndexOf()` — возвращает первый индекс, по которому данный элемент может быть найден в массиве или `-1`, если такого индекса нет.
+
+</p>
+</details>
+
+---
+
+##### 10. Какой будет вывод?
+
+```javascript
+const brands = ['Calvin Klein', 'Tommy Hilfiger', 'Gucci', 'Fendi']
+
+brands.slice(0, 2)
+
+console.log(brands)
+```
+
+1. `['Fendi']`
+2. `['Gucci', 'Fendi']`
+3. `['Tommy Hilfiger', 'Gucci', 'Fendi']`
+4. `['Calvin Klein', 'Tommy Hilfiger', 'Gucci', 'Fendi']`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Метод `slice(start, stop)` — возвращает копию массива от индекса `start` до индекса `stop` (не включительно).
+
+Метод не изменяет исходный массив, поэтому массив `brands` не изменится.
+
+</p>
+</details>
+
+---
+
+##### 11. Какой будет вывод?
+
+```javascript
+const parts = ['will', 'i', 'am']
+
+const result = parts.join('.')
+
+console.log(result)
+```
+
+1. `'will.i.am'`
+2. `'william'`
+3. `'will . i . am'`
+4. `['will', '.', 'i', '.', 'am']`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `join(separator)` — объединяет все элементы массива в строку.
+
+Если указать `separator` — то он будет вставлен в строку между элементами.
+
+</p>
+</details>
+
+---
+
+##### 12. Какой будет вывод?
+
+```javascript
+const bools = [true, true, false, false]
+
+const result = bools.map((elem) => !elem)
+
+console.log(result)
+```
+
+1. `[true, true, false, false]`
+2. `[false, false, true, true]`
+3. `[]`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Метод `map()` — создает новый массив, выполняет переданную функцию для каждого элемента массива и заполняет результатами созданный массив.
+
+Оператором `!` — мы переводим `true` в `false`, и наоборот.
+
+</p>
+</details>
+
+---
+
+##### 13. Какой будет вывод?
+
+```javascript
+const hexs = ['FFFF00', 'FF00FF', '00FFFF', '000000']
+
+hexs.map((elem) => {
+  return elem.toLowerCase()
+})
+
+console.log(hexs)
+```
+
+1. `['FFFF00', 'FF00FF', '00FFFF', '000000']`
+2. `['00', '00', '00', '000000']`
+3. `undefined`
+4. `['ffff00', 'ff00ff', '00ffff', '000000']`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `map()` — не изменяет исходный массив, поэтому после всех операций массив `hexs` останется без изменений.
+
+</p>
+</details>
+
+
 
 
 
