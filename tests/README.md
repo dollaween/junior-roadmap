@@ -16,6 +16,7 @@
 
 ---
 
+### Часть 1. Примитивы
 * [Переменные, `let`, `const`, `var`](./variables.md)
 * [`Number`, `Math`, математические операторы](./numbers.md)
 * [`String`, кавычки, конкатенация](./string.md)
@@ -23,6 +24,8 @@
 * [`Boolean`, `NaN`, `undefined`, `null`](./boolean-nan-undefined-null.md)
 * [Условные инструкции](./condition.md)
 * [Приведение примитивных типов](./primitive-type-coercion.md)
+
+### Часть 2. Сложные типы
 * [`Array`, циклы, методы, сортировка](./array.md)
 * [`Object`, циклы, методы](./object.md)
 * [Сравнение сложных типов, деструктуризация, остаточные параметры](./type-comparison.md)
