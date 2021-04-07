@@ -412,6 +412,44 @@ console.log(result)
 </p>
 </details>
 
+---
+
+##### 15. Какой будет вывод?
+
+```javascript
+const bools = ['true', 'false', 1, '', null, undefined]
+
+const result = bools.some((elem) => {
+  return !!elem
+})
+
+console.log(result)
+```
+
+1. `true`
+2. `false`
+3. `[]`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `some()` — проверяет, удовлетворяет ли какой-либо элемент массива условию, заданному в передаваемой функции.
+
+Оператор `!` — преобразовывает `true` в `false`, и наоборот. Если значение не является логическим — то преобразует его в логическое значение.
+
+* `!!'true'` —> `true`
+* `!!'false'` —> `true`
+* `!!1` —> `true`
+* `!!''` —> `false`
+* `!!null` —> `false`
+* `!!undefined` —> `false`
+
+</p>
+</details>
+
 
 
 
