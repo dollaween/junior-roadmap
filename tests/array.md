@@ -182,4 +182,37 @@ console.log(chars)
 </p>
 </details>
 
+---
+
+##### 7. Какой будет вывод?
+
+```javascript
+const games = ['Anno', 'Age of Empires', 'StarCraft', 'XCOM']
+
+const result = games.splice(1, 1)
+
+console.log(games)
+console.log(result)
+```
+
+1. `['Anno', 'Age of Empires', 'StarCraft', 'XCOM']`, `''`
+2. `['Anno', 'StarCraft', 'XCOM']`, `'Age of Empires'`
+3. `['Age of Empires', 'StarCraft', 'XCOM']`, `['Anno']`
+4. `['Anno', 'StarCraft', 'XCOM']`, `['Age of Empires']`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Метод `splice(start, deleteCount)` — удаляет существующие элементы и/или добавляет новые. Возвращает **массив** удаленных значений.
+
+</p>
+</details>
+
+
+
+
+
+
 
