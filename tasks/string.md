@@ -482,6 +482,8 @@ console.log(cartoon.split(' '))
 
 ##### 14. Заглавная первая буква
 
+Переведите первую букву в верхний регистр и выведите слово в консоль.
+
 ```js
 const greet = 'hello'
 
@@ -489,17 +491,66 @@ console.log()
 // Hello
 ```
 
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для перевода букв в верхний регистр, используйте метод `toUpperCase()`.
+
+Для разбиения строки на подстроки, используйте метод `slice()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const greet = 'hello'
+
+console.log(greet[0].toUpperCase() + greet.slice(1))
+```
+
+</p>
+</details>
+
+
 ---
 
 ##### 15. Заглавная последняя буква
 
+Переведите последнюю букву в верхний регистр и выведите слово в консоль.
+
 ```js
-const str = 'house'
+const greet = 'hello'
 
 console.log()
-// housE
+// hellO
 ```
 
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для перевода букв в верхний регистр, используйте метод `toUpperCase()`.
+
+Для разбиения строки на подстроки, используйте метод `slice()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const greet = 'hello'
+
+const substring = greet.slice(0, greet.length - 1)
+const lastChar = greet[greet.length - 1].toUpperCase()
+
+console.log(substring + lastChar)
+```
+
+</p>
+</details>
 
 
 
