@@ -216,6 +216,46 @@ console.log(game.split('').reverse().join(''))
 </p>
 </details>
 
+---
+
+##### 6. Вывод индекса последнего из повторяющихся элементов
+
+В массиве представлено несколько элементов со значением `'grass'`. Выведите в консоль индекс первого и последнего из них.
+
+```js
+const forest = ['grass', 'log', 'grass', 'tree', 'rock', 'grass', 'rock']
+
+console.log(/* ... */)
+// 0
+
+console.log(/* ... */)
+// 5
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для возвращения первого индекса, по которому элемент может быть найден, используйте метод `indexOf()`.
+
+Для возвращения последнего индекса, по которому элемент может быть найден, используйте метод `indexOf()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const forest = ['grass', 'log', 'grass', 'tree', 'rock', 'grass', 'rock']
+
+console.log(forest.indexOf('grass'))
+console.log(forest.lastIndexOf('grass'))
+```
+
+</p>
+</details>
+
+
 
 
 
