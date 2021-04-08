@@ -478,4 +478,34 @@ console.log(cartoon.split(' '))
 </p>
 </details>
 
+---
+
+##### 14. Заглавная первая буква
+
+```js
+const greet = 'hello'
+
+console.log()
+// Hello
+```
+
+---
+
+##### 15. Заглавная последняя буква
+
+```js
+const str = 'house'
+
+console.log()
+// housE
+```
+
+
+
+
+
+
+
+
+
 
