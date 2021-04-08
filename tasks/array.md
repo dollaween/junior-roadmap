@@ -342,6 +342,60 @@ while (i < elements.length) {
 </p>
 </details>
 
+---
+
+##### 8. Возведение всех элементов в степень
+
+Выведите в консоль новый массив, значения которого возведены в степень 2.
+
+```js
+const nums = [2, 4, 6, 8, 10]
+
+console.log(/* ... */)
+// [4, 16, 36, 64, 100]
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+
+
+</p>
+</details>
+
+<details><summary><b>Решение 1</b></summary>
+<p>
+
+```js
+const nums = [2, 4, 6, 8, 10]
+
+const result = nums.map((elem) => {
+  return elem ** 2
+})
+
+console.log(result)
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+const nums = [2, 4, 6, 8, 10]
+const result = []
+
+for (let i = 0; i < nums.length; i++) {
+  const squared = nums[i] ** 2
+  result.push(squared)
+}
+
+console.log(result)
+```
+
+</p>
+</details>
 
 
 
