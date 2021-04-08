@@ -34,7 +34,7 @@ console.log(/* ... */)
 <details><summary><b>Подсказка</b></summary>
 <p>
 
-Для добавления элемента в массив используйте метод `push()`.
+Для добавления элемента в массив, используйте метод `push()`.
 
 </p>
 </details>
@@ -77,7 +77,7 @@ console.log(/* ... */)
 <details><summary><b>Подсказка</b></summary>
 <p>
 
-Для удаления первого элемента массива используйте метод `shift()`.
+Для удаления первого элемента массива, используйте метод `shift()`.
 
 </p>
 </details>
@@ -111,7 +111,7 @@ console.log(/* ... */)
 <details><summary><b>Подсказка</b></summary>
 <p>
 
-Для удаления последнего элемента используйте метод `pop()`.
+Для удаления последнего элемента, используйте метод `pop()`.
 
 Для вставки элемента в начало массива, используйте метод `unshift()`.
 
@@ -150,7 +150,7 @@ console.log(/* ... */)
 <details><summary><b>Подсказка</b></summary>
 <p>
 
-Для удаления элементов из массива по индексу используйте метод `splice()`.
+Для удаления элементов из массива по индексу, используйте метод `splice()`.
 
 </p>
 </details>
@@ -165,6 +165,52 @@ professions.splice(2, 1)
 professions.splice(4, 1)
 
 console.log(professions)
+```
+
+</p>
+</details>
+
+---
+
+##### 5. Переверните символы в строке
+
+```js
+const game = 'Counter-Strike: Global Offensive'
+
+console.log(/* ... */)
+// 'evisneffO labolG :ekirtS-retnuoC'
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для разбиения строки на массив, используйте метод `split(separator)`.
+
+Для переворчавания элементов массива, используйте метод `reverse()`.
+
+Для объединения элементов массива в строку, используйте метод `join(separator)`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const game = 'Counter-Strike: Global Offensive'
+
+let result = game.split('')
+result = result.reverse()
+result = result.join('')
+
+console.log(result)
+```
+
+Используя цепь методов, можно написать решение в одну строку:
+```js
+const game = 'Counter-Strike: Global Offensive'
+
+console.log(game.split('').reverse().join(''))
 ```
 
 </p>
