@@ -445,7 +445,7 @@ const space = ['sun', 'moon', 'star']
 console.log(/* ... */)
 // true
 
-/* ----- */
+// ==========
 
 const space2 = ['dust', 'asteroid']
 
@@ -473,7 +473,7 @@ const result = space.every((elem) => {
 
 console.log(result)
 
-/* ----- */
+// ==========
 
 const space2 = ['dust', 'asteroid']
 
