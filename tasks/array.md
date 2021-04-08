@@ -433,6 +433,60 @@ console.log(result)
 </p>
 </details>
 
+---
+
+##### 10. Проверка всех элементов массива по условию
+
+Проверьте, все ли слова по длине меньше пяти символов. Если меньше — выведите в консоль `true`, иначе — выведите в консоль `false`.
+
+```js
+const space = ['sun', 'moon', 'star']
+
+console.log(/* ... */)
+// true
+
+/* ----- */
+
+const space2 = ['dust', 'asteroid']
+
+console.log(/* ... */)
+// false
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для проверки чтобы все элементы массива удовлетворяли условию, используйте метод `every()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const space = ['sun', 'moon', 'star']
+
+const result = space.every((elem) => {
+  return elem.length < 5
+})
+
+console.log(result)
+
+/* ----- */
+
+const space2 = ['dust', 'asteroid']
+
+const result2 = space2.every((elem) => {
+  return elem.length < 5
+})
+
+console.log(result2)
+```
+
+</p>
+</details>
+
 
 
 
