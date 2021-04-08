@@ -487,6 +487,64 @@ console.log(result2)
 </p>
 </details>
 
+---
+
+##### 11. Фильтрация массива
+
+Удалите из массива все нули и выведите полученный массив в консоль.
+
+```js
+const nums = [0, 1, 2, 7, 0, 4, 0, 0]
+
+console.log(/* ... */)
+// [1, 2, 7, 4]
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для фильтрации элементов массива, используйте метод `filter()`.
+
+Либо используйте метод `for` и условную инструкцию `if .. else`.
+
+</p>
+</details>
+
+<details><summary><b>Решение 1</b></summary>
+<p>
+
+```js
+const nums = [0, 1, 2, 7, 0, 4, 0, 0]
+
+const result = nums.filter((elem) => {
+  return elem !== 0
+})
+
+console.log(result)
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+const nums = [0, 1, 2, 7, 0, 4, 0, 0]
+const result = []
+
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] !== 0) {
+    result.push(nums[i])
+  }
+}
+
+console.log(result)
+```
+
+</p>
+</details>
+
 
 
 
