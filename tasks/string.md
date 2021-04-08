@@ -487,7 +487,7 @@ console.log(cartoon.split(' '))
 ```js
 const greet = 'hello'
 
-console.log()
+console.log(/* ... */)
 // Hello
 ```
 
@@ -523,7 +523,7 @@ console.log(greet[0].toUpperCase() + greet.slice(1))
 ```js
 const greet = 'hello'
 
-console.log()
+console.log(/* ... */)
 // hellO
 ```
 
