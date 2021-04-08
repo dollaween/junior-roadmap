@@ -46,9 +46,12 @@ console.log(/* ... */)
 const os = ['Windows', 'MacOS']
 const linux = 'Linux'
 
-os.push('Linux')
+const length = os.push('Linux')
 
 console.log(os)
+console.log(length)
+
+// либо
 console.log(os.length)
 ```
 
