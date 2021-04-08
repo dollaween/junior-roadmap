@@ -545,6 +545,60 @@ console.log(result)
 </p>
 </details>
 
+---
+
+##### 12. Проверка элементов массива на удовлетворение условию
+
+Дан массив чисел. Если хотя бы один из элементов больше `17` — выведите в консоль `true`, иначе — выведите в консоль `false`.
+
+```js
+const nums = [5, 10, 15, 20, 15, 10, 5]
+
+console.log(/* ... */)
+// true
+
+// ==========
+
+const nums2 = [5, 10, 15, 10, 5]
+
+console.log(/* ... */)
+// false
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Чтобы проверить, что хотя бы один элемент массива удовлетворяет условию, используйте метод `some()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const nums = [5, 10, 15, 20, 15, 10, 5]
+
+const result = nums.some((elem) => {
+  return elem > 17
+})
+
+console.log(result)
+
+// ==========
+
+const nums2 = [5, 10, 15, 10, 5]
+
+const result2 = nums2.some((elem) => {
+  return elem > 17
+})
+
+console.log(result2)
+```
+
+</p>
+</details>
+
 
 
 
