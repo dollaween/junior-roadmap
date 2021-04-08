@@ -237,7 +237,7 @@ console.log(/* ... */)
 
 Для возвращения первого индекса, по которому элемент может быть найден, используйте метод `indexOf()`.
 
-Для возвращения последнего индекса, по которому элемент может быть найден, используйте метод `indexOf()`.
+Для возвращения последнего индекса, по которому элемент может быть найден, используйте метод `lastIndexOf()`.
 
 </p>
 </details>
@@ -255,6 +255,92 @@ console.log(forest.lastIndexOf('grass'))
 </p>
 </details>
 
+---
+
+##### 7. Вывод всех элементов в консоль
+
+Выведите в консоль все элементы массива.
+
+```js
+const elements = ['earth', 'water', 'fire', 'air']
+
+console.log(/* ... */)
+// 'earth'
+// 'water'
+// 'fire'
+// 'air'
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для перебора элементов массива, используйте методы `forEach()`, `map()`, или циклы `for`, `while`.
+
+</p>
+</details>
+
+<details><summary><b>Решение 1</b></summary>
+<p>
+
+Решение через метод `forEach()`:
+```js
+const elements = ['earth', 'water', 'fire', 'air']
+
+elements.forEach((elem) => {
+  console.log(elem)
+})
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+Решение через метод `map()`:
+```js
+const elements = ['earth', 'water', 'fire', 'air']
+
+elements.map((elem) => {
+  console.log(elem)
+})
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 3</b></summary>
+<p>
+
+Решение через цикл `for`:
+```js
+const elements = ['earth', 'water', 'fire', 'air']
+
+for (let i = 0; i < elements.length; i++) {
+  console.log(elements[i])
+}
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 4</b></summary>
+<p>
+
+Решение через цикл `while`:
+```js
+const elements = ['earth', 'water', 'fire', 'air']
+
+let i = 0
+
+while (i < elements.length) {
+  console.log(elements[i])
+  i++
+}
+```
+
+</p>
+</details>
 
 
 
