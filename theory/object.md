@@ -149,6 +149,11 @@ console.log(entries)
 
 ---
 
+С остальными методами и свойствами объекта можно ознакомиться на MDN:
+[https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+---
+
 Источники:
 * [Работа с объектами](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_Objects)
 * [`Object.keys()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
