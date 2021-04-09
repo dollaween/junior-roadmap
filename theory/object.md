@@ -149,6 +149,52 @@ console.log(entries)
 
 ---
 
+<div align="center">
+
+### Перебор ключей и значений объектов
+
+</div>
+
+---
+
+Цикл `for .. in` — перебирает ключи объекта.
+
+```js
+const player = {
+  hp: 100,
+  mp: 75,
+  armor: 10
+}
+
+for (let key in player) {
+  console.log(key)
+}
+
+// 'hp'
+// 'mp'
+// 'armor'
+```
+
+Для перебора значений объекта с помощью цикла `for .. in`, у объекта нужно вызвать ключ:
+
+```js
+const player = {
+  hp: 100,
+  mp: 75,
+  armor: 10
+}
+
+for (let key in player) {
+  console.log(player[key])
+}
+
+// 100
+// 75
+// 10
+```
+
+---
+
 С остальными методами и свойствами объекта можно ознакомиться на MDN:
 [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
