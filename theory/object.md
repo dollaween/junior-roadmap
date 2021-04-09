@@ -32,11 +32,11 @@ const person = {
   isWorking: true
 }
 
-// если в названии ключа есть пробелы, то его можно записать так:
+// если в названии ключа есть пробелы, то его можно записать в виде строки:
 const planet = {
   name: 'Mars',
-  ['Солнечная система?']: true,
-  ['Can be reached']: true
+  'Солнечная система?': true,
+  'Can be reached': true
 }
 
 // в объекте могут содержаться любые типы данных, включая и другие объекты:
@@ -58,7 +58,7 @@ const house = {
 const phone = {
   company: 'Apple',
   model: 'iPhone XR',
-  ['year of issue']: 2018
+  'year of issue': 2018
 }
 
 console.log(phone.company)
@@ -90,7 +90,81 @@ console.log(plant.title)
 
 ---
 
+<div align="center">
+
+### Методы объектов
+
+</div>
+
+---
+
+Метод `Object.keys()` — возвращает массив свойств объекта.
+
+```js
+const planet = {
+  title: 'Earth',
+  radius: 6371,
+  hasLife: true
+}
+
+const keys = Object.keys(planet)
+
+console.log(keys)
+// ['title', 'radius', 'hasLife']
+```
+
+---
+
+Метод `Object.values()` — возвращает массив значений объекта.
+
+```js
+const dates = {
+  'Крещение Руси': 998,
+  'Невская битва': 1240,
+  'Полтавская битва': 1709
+}
+
+const values = Object.values(dates)
+
+console.log(values)
+// [998, 1240, 1709]
+```
+
+---
+
+Метод `Object.entries()` — возвращает массив, содержащий пары `'ключ': 'значение'` в виде `['ключ', 'значение']`.
+
+```js
+const coordinates = {
+  x: 10,
+  y: 22,
+  z: 3
+}
+
+const entries = Object.entries(coordinates)
+
+console.log(entries)
+// [['x', 10], ['y', 22], ['z', 3]]
+```
+
+---
+
 Источники:
 * [Работа с объектами](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_Objects)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
