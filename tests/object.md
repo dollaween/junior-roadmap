@@ -249,6 +249,39 @@ console.log(Object.values(PI))
 </p>
 </details>
 
+---
+
+##### 9. Какой будет вывод?
+
+```javascript
+const coordinates = {
+  x: 115,
+  y: 25
+}
+
+for (let key in coordinates) {
+  console.log(key + 5)
+}
+```
+
+1. `120`, `30`
+2. `'1155'`, `'255'`
+3. `'x120'`, `'y30'`
+4. `'x5'`, `'y5'`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Цикл `for .. in` перебирает свойства объекта.
+
+В переменную `key` будет записано свойство объекта: `'x'` на первой итерации и `'y'` на второй итерации.
+
+</p>
+</details>
+
+
 
 
 
