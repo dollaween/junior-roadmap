@@ -34,7 +34,7 @@ console.log(person)
 <details><summary><b>Подсказка</b></summary>
 <p>
 
-Для добавления нового свойства к объекту, обратитесь к нему через оператор `.` или квадратных скобок `[]`.
+Для добавления нового свойства к объекту, обратитесь к нему через оператор `.` или квадратные скобки `[]`.
 
 </p>
 </details>
@@ -70,3 +70,103 @@ console.log(person)
 
 </p>
 </details>
+
+---
+
+##### 2. Вывод свойств объекта
+
+Выведите все названия свойств объекта в консоль
+
+```js
+const wallpaper = {
+  width: 1920,
+  height: 1080
+}
+
+/* ... */
+// 'width'
+// 'height'
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для итерации по свойствам объекта, используйте цикл `for .. in`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const wallpaper = {
+  width: 1920,
+  height: 1080
+}
+
+for (let key in wallpaper) {
+  console.log(key)
+}
+```
+
+</p>
+</details>
+
+---
+
+##### 3. Вывод значений объекта
+
+Выведите все значения объекта в консоль.
+
+```js
+const teapot = {
+  type: 'metal',
+  isNew: true
+}
+
+/* ... */
+// 'metal'
+// true
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для итерации по значениям объекта, используйте цикл `for .. in`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+const teapot = {
+  type: 'metal',
+  isNew: true
+}
+
+for (let key in teapot) {
+  console.log(teapot[key])
+}
+```
+
+</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
