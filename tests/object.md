@@ -104,4 +104,73 @@ const chair = {
 </p>
 </details>
 
+---
+
+##### 4. Какой будет вывод?
+
+```javascript
+const duplicate = {
+  key: 'value 1',
+  key: 'value 2'
+}
+
+console.log(duplicate)
+```
+
+1. `{ key: 'value 1', key: 'value 2' }`
+2. `{ key: 'value 1' }`
+3. `{ key: 'value 2' }`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+В объекте содержатся только уникальные свойства. Если несколько свойств имеют одно и то же имя, последнее из них перезатрет все предыдущие.
+
+</p>
+</details>
+
+---
+
+##### 5. Какой будет вывод?
+
+```javascript
+const route = {
+  title: 'home',
+  path: '/'
+}
+
+route[0] = 'main'
+
+console.log(route)
+```
+
+1. `{ 0: 'main', title: 'home', path: '/' }`
+2. `{ title: 'home', path: '/' }`
+3. `{ title: 'main', path: '/' }`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+В квадратных скобках `[]` мы задаем новое свойство для объекта, имя которого `0`.
+
+</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
 
