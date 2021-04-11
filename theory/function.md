@@ -68,7 +68,7 @@ console.log(sum(6, 13))
 
 Объявление **Function definition** состоит из:
 1. Переменной, которой будет присвоена функция.
-2. И далее так же, как и **function declaration**, за тем лишь исключением, что у функции может не быть имени.
+2. И далее так же, как и **Function declaration**, за тем лишь исключением, что у функции может не быть имени.
 
 ```js
 const square = function(number) {
@@ -80,6 +80,22 @@ console.log(square(3))
 ```
 
 В качестве параметра, функция может принимать любой тип данных, включая и другие функции.
+
+Отличие Function declaration от Function definition:
+* Функции, объявленные как Function declaration, **можно** вызывать до того места, где они записаны в коде.
+* Функции, объявленные как Function definition, **нельзя** вызывать до того места, где они записаны в коде.
+
+```js
+// Пример 1.
+fn()
+function fn() { console.log('Hello') }
+// 'Hello'
+
+// Пример 2
+fn()
+const fn = function() { console.log('Hello') }
+// 'ReferenceError'
+```
 
 ---
 
