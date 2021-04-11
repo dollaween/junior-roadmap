@@ -199,6 +199,62 @@ fn(true, false, false)
 </p>
 </details>
 
+---
+
+##### 7. Какой будет вывод?
+
+```javascript
+fn()
+
+function fn() {
+  console.log('Hello')
+}
+```
+
+1. `'Hello'`
+2. `undefined`
+3. `null`
+4. `ReferenceError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Функции, объявленные как **Function declaration**, можно вызывать до того места где они записаны в коде.
+
+</p>
+</details>
+
+---
+
+##### 8. Какой будет вывод?
+
+```javascript
+fn()
+
+const fn = function() {
+  console.log('World')
+}
+```
+
+1. `'World'`
+2. `undefined`
+3. `null`
+4. `ReferenceError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Функции, объявленные как **Function definition**, нельзя вызывать до того места, где они записаны в коде.
+
+Это отличает объявление Function definition от Function declaration.
+
+</p>
+</details>
+
 
 
 
