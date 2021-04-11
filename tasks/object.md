@@ -96,7 +96,7 @@ const wallpaper = {
 </p>
 </details>
 
-<details><summary><b>Решение</b></summary>
+<details><summary><b>Решение 1</b></summary>
 <p>
 
 ```js
@@ -108,6 +108,26 @@ const wallpaper = {
 for (let key in wallpaper) {
   console.log(key)
 }
+```
+
+</p>
+</details>
+
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+const wallpaper = {
+  width: 1920,
+  height: 1080
+}
+
+const keys = Object.keys(wallpaper)
+
+keys.forEach((elem) => {
+  console.log(elem)
+})
 ```
 
 </p>
@@ -138,7 +158,7 @@ const teapot = {
 </p>
 </details>
 
-<details><summary><b>Решение</b></summary>
+<details><summary><b>Решение 1</b></summary>
 <p>
 
 ```js
@@ -155,7 +175,24 @@ for (let key in teapot) {
 </p>
 </details>
 
+<details><summary><b>Решение 2</b></summary>
+<p>
 
+```js
+const teapot = {
+  type: 'metal',
+  isNew: true
+}
+
+const values = Object.values(teapot)
+
+values.forEach((elem) => {
+  console.log(elem)
+})
+```
+
+</p>
+</details>
 
 
 
