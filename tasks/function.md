@@ -44,3 +44,40 @@ sum(1, 2, 3)
 </p>
 </details>
 
+---
+
+##### 2. Косинус числа
+
+Напишите функцию, которая возвращает косинус числа.
+
+```js
+function cos() {
+  /* ... */
+}
+
+console.log(cos(1))
+// 0.5403023058681398
+```
+
+<details><summary><b>Подсказка</b></summary>
+<p>
+
+Для вычисления косинуса числа, используйте метод `Math.cos()`.
+
+</p>
+</details>
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function cos(num) {
+  return Math.cos(num)
+}
+
+cos(1)
+```
+
+</p>
+</details>
+
