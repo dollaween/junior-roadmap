@@ -41,3 +41,71 @@ console.log(subtraction(45, 10))
 </p>
 </details>
 
+---
+
+##### 2. Какой будет вывод?
+
+```javascript
+function getString(a, b, c) {
+  return a
+  return b
+  return c
+}
+
+getString('Maximum', 'Binary', 'Tree')
+```
+
+1. `'Maximum'`
+2. `'Binary'`
+3. `'Tree'`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Оператор `return` — завершает выполнение функции и возвращает значение. Данная функция всегда будет возвращать значение параметра `a`.
+
+</p>
+</details>
+
+---
+
+##### 3. Какой будет вывод?
+
+```javascript
+function showWarning(error) {
+  if (error) {
+    return 'Got error'
+  }
+  
+  return 'System error'
+}
+
+console.log(showWarning(''))
+```
+
+1. `'Got error'`, `'System error'`
+2. `'Got error'`
+3. `'System error'`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+В условии `if (error)` мы имеем следующие преобразования:
+1. `if (error)`
+2. `if ('')`
+3. `if (false)`
+
+Инструкция внутри `if` не будет выполнена, потому что условие ложно.
+
+Значит, функция дойдет до следующего оператора `return` и вернет `'System error'`.
+
+</p>
+</details>
+
+
