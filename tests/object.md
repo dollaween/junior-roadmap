@@ -73,16 +73,17 @@ console.log(obj)
 ```javascript
 const chair = {
   product type: 'Chair',
-  material: 'Wood',
-  color: '#222'
+  material: 'Wood'
 }
+
+chair.color = '#222'
 
 console.log(chair)
 ```
 
-1. ``
-2. ``
-3. ``
+1. `{ 'product type': 'Chair', material: 'Wood', color: '#222' }`
+2. `{ 'product type': 'Chair', material: 'Wood' }`
+3. `{ color: '#222' }`
 4. `SyntaxError`
 
 <details><summary><b>Ответ</b></summary>
