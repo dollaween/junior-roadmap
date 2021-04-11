@@ -222,6 +222,34 @@ console.log(Object.entries(domain))
 </p>
 </details>
 
+---
+
+##### 8. Какой будет вывод?
+
+```javascript
+const PI = {
+  value: 3.14159
+}
+
+console.log(Object.values(PI))
+```
+
+1. `[3.14159]`
+2. `3.14159`
+3. `'3.14159'`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `Object.values()` — возвращает массив значений объекта.
+
+</p>
+</details>
+
+
 
 
 
