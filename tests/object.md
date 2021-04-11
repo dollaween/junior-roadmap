@@ -162,6 +162,66 @@ console.log(route)
 </p>
 </details>
 
+---
+
+##### 6. Какой будет вывод?
+
+```javascript
+const chars = { a: '1', b: '2', c: '3' }
+
+console.log(chars.keys())
+```
+
+1. `['a', 'b', 'c']`
+2. `[1, 2, 3]`
+3. `[['a', 1], ['b', 2], 'c', 3]`
+4. `TypeError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+В объекте `chars` не содержится метода `keys()`. Для вызова метода `keys()` нужно обратиться к глобальному объекту `Object`:
+
+```js
+const chars = { a: '1', b: '2', c: '3' }
+
+console.log(Object.keys(chars))
+// ['a', 'b', 'c']
+```
+
+</p>
+</details>
+
+---
+
+##### 7. Какой будет вывод?
+
+```javascript
+const domain = {
+  protocol: 'https',
+  host: 'google.com'
+}
+
+console.log(Object.entries(domain))
+```
+
+1. `[['protocol', 'https'], ['host', 'goolge.com']]`
+2. `['protocol', 'host']`
+3. `['https', 'google.com']`
+4. `['protocol', 'https'], ['host', 'goolge.com']`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Метод `Object.entries()` — возвращает массив, содержащий пары `'ключ': 'значение'` в виде `['ключ', 'значение']`.
+
+</p>
+</details>
+
 
 
 
