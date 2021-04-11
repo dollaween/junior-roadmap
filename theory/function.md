@@ -62,7 +62,7 @@ function get10() {
   return 10
 }
 
-get10()
+console.log(get10())
 // 10
 ```
 
@@ -75,10 +75,10 @@ function firstLetter(str) {
   return str[0]
 }
 
-firstLetter('Hello')
+console.log(firstLetter('Hello'))
 // 'H'
 
-firstLetter()
+console.log(firstLetter())
 // null
 ```
 
