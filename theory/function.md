@@ -35,7 +35,7 @@
 Объявление **Function declaration** состоит из:
 1. Ключевого слова `function`.
 2. Имени функции.
-3. Списка аргументов, заключенных в круглые скобки `()`.
+3. Списка параметров (аргументов), заключенных в круглые скобки `()`.
 4. Инструкции, которая будет выполнена после вызова функции, заключенной в `{}`.
 
 Пример:
@@ -53,7 +53,7 @@ console.log(result2)
 // 25
 ```
 
-Аргументов может быть несколько:
+Параметров может быть несколько:
 ```js
 function sum(number1, number2) {
   return number1 + number2
@@ -79,7 +79,7 @@ console.log(square(3))
 // 9
 ```
 
-В качестве аргумента, функция может принимать любой тип данных, включая и другие функции.
+В качестве параметра, функция может принимать любой тип данных, включая и другие функции.
 
 ---
 
@@ -111,10 +111,83 @@ console.log(firstLetter())
 // null
 ```
 
+---
 
+<div align="center">
 
+### Параметры по-умолчанию
 
+</div>
 
+---
+
+Если параметр не был передан при вызове функции, то по-умолчанию, ему будет присвоено значение `undefined`.
+
+```js
+function showMessage(message) {
+  console.log(message)
+}
+
+showMessage()
+// undefined
+```
+
+Мы можем поменять значение по-умолчанию:
+
+```js
+function showMessage(message = 'Сообщение отсутствует') {
+  console.log(message)
+}
+
+showMessage()
+// 'Сообщение отсутствует'
+```
+
+Мы можем назначить значение по-умолчанию одному, или нескольким выбранным параметрам:
+
+```js
+// теперь у параметра `b` по-умолчанию значение `1`
+function multiply(a, b = 1) {
+  console.log(a * b)
+}
+
+multiply(10)
+// 10
+```
+
+---
+
+<div align="center">
+
+### Оставшиеся параметры
+
+</div>
+
+---
+
+**Оставшиеся параметры (rest parameters)** — позволяет представить неограниченное множество параметров в виде массива.
+
+```js
+function showArguments(...rest) {
+  console.log(rest)
+}
+
+showArguments(10, 'Hello', true)
+// [10, 'Hello', true]
+```
+
+Оставшиеся параметры:
+* Собирают в себя только те параметры, которые не были уже записаны в другие переменные.
+* Должны располагаться последними в списке параметров.
+
+```js
+function showNumbers(a, b, ...rest) {
+  console.log(rest)
+}
+
+showNumbers(1, 2, 3, 4, 5, 6)
+// [3, 4, 5, 6]
+```
 
 
 
@@ -130,5 +203,7 @@ console.log(firstLetter())
 Источники:
 * [Функции](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions)
 * [`return`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/return)
+* [Параметры по-умолчанию](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+* [Оставшиеся параметры](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters)
 
 
