@@ -32,7 +32,7 @@
 1. Function declaration
 2. Function definition
 
-Объявление Function declaration состоит из:
+Объявление **Function declaration** состоит из:
 1. Ключевого слова `function`.
 2. Имени функции.
 3. Списка аргументов, заключенных в круглые скобки `()`.
@@ -43,6 +43,14 @@
 function square(number) {
   return number * number
 }
+
+const result = square(10)
+console.log(result)
+// 100
+
+const result2 = square(5)
+console.log(result2)
+// 25
 ```
 
 Аргументов может быть несколько:
@@ -50,7 +58,28 @@ function square(number) {
 function sum(number1, number2) {
   return number1 + number2
 }
+
+console.log(sum(10, 5))
+// 15
+
+console.log(sum(6, 13))
+// 19
 ```
+
+Объявление **Function definition** состоит из:
+1. Переменной, которой будет присвоена функция.
+2. И далее так же, как и **function declaration**, за тем лишь исключением, что у функции может не быть имени.
+
+```js
+const square = function(number) {
+  return number * number
+}
+
+console.log(square(3))
+// 9
+```
+
+В качестве аргумента, функция может принимать любой тип данных, включая и другие функции.
 
 ---
 
