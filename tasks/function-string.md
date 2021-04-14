@@ -517,6 +517,46 @@ function upperCharInWords(str) {
 </p>
 </details>
 
+---
+
+##### 15. Заглавные четные слова
+
+Напишите функцию, которая принимает строку и возвращает новую строку, четные слова которой написаны большими буквами, а нечетные — маленькими.  
+Также функция должна вывести результат в консоль.
+
+```js
+function upperOddWords() { /* ... */ }
+
+upperOddWords('Someting more')      // 'SOMETHING more'
+upperOddWords('Show me the Money')  // 'SHOW me THE money'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function upperOddWords(str) {
+  const arr = str.split(' ')
+
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      arr[i] = arr[i].toUpperCase()
+    } else {
+      arr[i] = arr[i].toLowerCase()
+    }
+  }
+
+  const result = arr.join(' ')
+
+  console.log(result)
+
+  return result
+}
+```
+
+</p>
+</details>
+
 
 
 
