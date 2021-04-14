@@ -253,7 +253,7 @@ function evenChars(str) {
 ```js
 function returnEvenChars() { /* ... */ }
 
-returnEvenChars('Hello')  // 'Hlo'
+returnEvenChars('Hello')      // 'Hlo'
 returnEvenChars('Something')  // 'Smtig'
 ```
 
@@ -330,6 +330,45 @@ function firstAndLastChar(str) {
 
 </p>
 </details>
+
+---
+
+##### 10. Замена нечетных символов
+
+Напишите функцию, которая принимает строку, все нечетные символы заменяет точками и возвращает получившуюся строку.  
+Также функция должна вывести результат в консоль.
+
+```js
+function replaceOddChars() { /* ... */ }
+
+replaceOddChars('Hello')  // 'H.l.o'
+replaceOddChars('Something more')  // 'S.m.t.i.g.m.r.'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function replaceOddChars(str) {
+  let result = ''
+  
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0) {
+      result += str[i]
+    } else {
+      result += '.'
+    }
+  }
+  
+  console.log(result)
+  
+  return result
+}
+```
+
+</p>
+</details>
+
 
 
 
