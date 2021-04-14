@@ -404,6 +404,119 @@ function toArray(str) {
 </p>
 </details>
 
+---
+
+##### 12. Каждое слово — в консоль
+
+Напишите функцию, которая принимает строку и выводит в консоль каждое слово этой строки.  
+Также функция должна вывести результат в консоль.
+
+```js
+function consoleWords() { /* ... */ }
+
+consoleWords('Something more')
+// 'Something'
+// 'more'
+
+consoleWords('Show me the money')
+// 'Show'
+// 'me'
+// 'the'
+// 'money'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function consoleWords(str) {
+  const arr = str.split(' ')
+
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+  }
+}
+```
+
+</p>
+</details>
+
+---
+
+##### 13. Первая и последняя буква каждого слова
+
+Напишите функцию, которая принимает строку и выводит в консоль первую и последнюю букву каждого слова.
+Также функция должна вывести результат в консоль.
+
+```js
+function consoleCharInWords() { /* ... */ }
+
+consoleCharInWords('Something more')
+// 'S', 'g'
+// 'm', 'e'
+
+consoleCharInWords('Show me the money')
+// 'S', 'w'
+// 'm', 'e'
+// 't', 'e'
+// 'm', 'y'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function consoleCharInWords(str) {
+  const arr = str.split(' ')
+  
+  for (let i = 0; i < str.length; i++) {
+    const firstChar = arr[i][0]
+    const length = arr[i].length
+    const lastChar = arr[length - 1]
+    console.log(firstChar, lastChar)
+  }
+}
+```
+
+</p>
+</details>
+
+
+---
+
+##### 14. Заглавные первые буквы слов
+
+Напишите функцию, которая принимает строку и возвращает новую строку, у которой первая буква каждого слова — заглавная.  
+Также функция должна вывести результат в консоль.
+
+```js
+function upperCharInWords() { /* ... */ }
+
+upperCharInWords('something more')     // 'Something More'
+upperCharInWords('show me the money')  // 'Show Me The Money'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function upperCharInWords(str) {
+  const arr = str.split(' ')
+
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)
+  }
+
+  const result = arr.join(' ')
+  console.log(result)
+
+  return result
+}
+```
+
+</p>
+</details>
+
 
 
 
