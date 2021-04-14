@@ -160,6 +160,90 @@ function upperLastChar(str) {
 </p>
 </details>
 
+---
+
+##### 6. Все символы — в консоль
+
+Напишите функцию, которая принимает строку и выводит каждый её символ в консоль
+
+```js
+function consoleChars() { /* ... */ }
+
+consoleChars('Hello')
+// 'H'
+// 'e'
+// 'l'
+// 'l'
+// 'o'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function consoleChars(str) {
+  for (let i = 0; i < str.length; i++) {
+    console.log(str[i])
+  }
+}
+```
+
+</p>
+</details>
+
+---
+
+##### 7. Только четные символы — в консоль
+
+Напишите функцию, которая принимает строку и выводит в консоль только те символы, которые находятся по четному индексу.
+
+```js
+function evenChars() { /* ... */ }
+
+evenChars('Hello')
+// 'H'
+// 'l'
+// 'o'
+
+evenChars('Something')
+// 'S'
+// 'm'
+// 't'
+// 'i'
+// 'g'
+```
+
+<details><summary><b>Решение 1</b></summary>
+<p>
+
+```js
+function evenChars(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0) {
+      console.log(str[i])
+    }
+  }
+}
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+function evenChars(str) {
+  for (let i = 0; i < str.length; i += 2) {
+    console.log(str[i])
+  }
+}
+```
+
+</p>
+</details>
+
+
 
 
 
