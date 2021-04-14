@@ -369,6 +369,48 @@ function replaceOddChars(str) {
 </p>
 </details>
 
+---
+
+##### 11. Массив строк
+
+Напишите функцию, которая принимает строку, разбивает её на слова и возвращает получившийся массив строк. Если в функцию передана пустая строка — верните `null`. Обратите внимание: если в строке содержатся пробелы в начале или конце — они должны быть удалены.    
+Также функция должна вывести результат в консоль.
+
+```js
+function toArray() { /* ... */ }
+
+toArray('Hello')              // ['Hello']
+toArray('Show me the money')  // ['Show', 'me', 'the', 'money']
+toArray('  Something more ')  // ['Something', 'more']
+toArray('')                   // null
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function toArray(str) {
+  if (str.length === 0) {
+    return null
+  }
+
+  const trimmedStr = str.trim()
+  const result = trimmedStr.split(' ')
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
+
+
+
+
+
+
+
 
 
 
