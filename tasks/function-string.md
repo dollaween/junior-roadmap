@@ -243,6 +243,62 @@ function evenChars(str) {
 </p>
 </details>
 
+---
+
+##### 8. Возвращение только четных символов
+
+Напишите функцию, которая принимает строку и вырезает все нечетные символы и возвращает получившуюся строку.  
+Также функция должна вывести результат в консоль.
+
+```js
+function returnEvenChars() { /* ... */ }
+
+returnEvenChars('Hello')  // 'Hlo'
+returnEvenChars('Something')  // 'Smtig'
+```
+
+<details><summary><b>Решение 1</b></summary>
+<p>
+
+```js
+function returnEvenChars(str) {
+  let result = ''
+
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0) {
+      result += str[i]
+    }
+  }
+  
+  console.log(result)
+
+  return result
+}
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+function returnEvenChars(str) {
+  let result = ''
+
+  for (let i = 0; i < str.length; i += 2) {
+    result += str[i]
+  }
+  
+  console.log(result)
+
+  return result
+}
+```
+
+</p>
+</details>
+
 
 
 
