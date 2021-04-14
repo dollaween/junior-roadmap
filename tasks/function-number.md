@@ -101,6 +101,34 @@ function mult(a = 0, b = 1, c = 1, d = 1) {
 </p>
 </details>
 
+---
+
+##### 4. Возвращение косинуса
+
+Напишите функцию, которая принимает число и возвращает косинус переданного числа.  
+Также функция должна вывести результат в консоль.
+
+```js
+function cos() { /* ... */ }
+
+cos(1)    // 0.5403023058681398
+cos(0.5)  // 0.8775825618903728
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function cos(num) {
+  const result = Math.cos(num)
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
 
 
 
