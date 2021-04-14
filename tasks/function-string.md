@@ -481,45 +481,9 @@ function consoleCharInWords(str) {
 </p>
 </details>
 
-
 ---
 
-##### 14. Заглавные первые буквы слов
-
-Напишите функцию, которая принимает строку и возвращает новую строку, у которой первая буква каждого слова — заглавная.  
-Также функция должна вывести результат в консоль.
-
-```js
-function upperCharInWords() { /* ... */ }
-
-upperCharInWords('something more')     // 'Something More'
-upperCharInWords('show me the money')  // 'Show Me The Money'
-```
-
-<details><summary><b>Решение</b></summary>
-<p>
-
-```js
-function upperCharInWords(str) {
-  const arr = str.split(' ')
-
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)
-  }
-
-  const result = arr.join(' ')
-  console.log(result)
-
-  return result
-}
-```
-
-</p>
-</details>
-
----
-
-##### 15. Заглавные четные слова
+##### 14. Заглавные четные слова
 
 Напишите функцию, которая принимает строку и возвращает новую строку, четные слова которой написаны большими буквами, а нечетные — маленькими.  
 Также функция должна вывести результат в консоль.
@@ -557,6 +521,40 @@ function upperOddWords(str) {
 </p>
 </details>
 
+---
+
+##### 15. Заглавные первые буквы слов
+
+Напишите функцию, которая принимает строку и возвращает новую строку, у которой первая буква каждого слова — заглавная.  
+Также функция должна вывести результат в консоль.
+
+```js
+function upperCharInWords() { /* ... */ }
+
+upperCharInWords('something more')     // 'Something More'
+upperCharInWords('show me the money')  // 'Show Me The Money'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function upperCharInWords(str) {
+  const arr = str.split(' ')
+
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)
+  }
+
+  const result = arr.join(' ')
+  console.log(result)
+
+  return result
+}
+```
+
+</p>
+</details>
 
 
 
