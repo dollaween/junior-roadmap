@@ -472,7 +472,7 @@ function consoleCharInWords(str) {
   for (let i = 0; i < str.length; i++) {
     const firstChar = arr[i][0]
     const length = arr[i].length
-    const lastChar = arr[length - 1]
+    const lastChar = arr[i][length - 1]
     console.log(firstChar, lastChar)
   }
 }
