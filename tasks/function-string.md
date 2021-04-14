@@ -299,6 +299,37 @@ function returnEvenChars(str) {
 </p>
 </details>
 
+---
+
+##### 9. Первая и последняя буквы
+
+Напишите функцию, которая принимает строку и возвращает новую строку, состояющую из первой буквы в верхнем регистре, троеточия и последней буквы в верхнем регистре.  
+Также функция должна вывести результат в консоль.
+
+```js
+function firstAndLastChar() { /* ... */ }
+
+firstAndLastChar('Hello')           // 'H...O'
+firstAndLastChar('something more')  // 'S...E'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function firstAndLastChar(str) {
+  const firstChar = str[0].toUpperCase()
+  const lastChar = str[str.length - 1].toUpperCase()
+  const result = firstChar + '...' + lastChar
+
+  console.log(result)
+
+  return result
+}
+```
+
+</p>
+</details>
 
 
 
