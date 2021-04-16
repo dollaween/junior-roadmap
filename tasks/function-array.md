@@ -312,6 +312,57 @@ function getElements(arr, ...indexes) {
 </p>
 </details>
 
+---
+
+##### 10. Возведение чисел в квадрат
+
+Напишите функцию, которая принимает массив чисел и возвращает новый массив, числа которого возведены в квадрат.  
+Также функция должна вывести результат в консоль.
+
+```js
+function getSquaredNumbers() { /* ... */ }
+
+const arr = [4, 8, 15, 16, 23, 42]
+getSquaredNumber(arr)  // [16, 64, 225, 256, 529, 1764]
+```
+
+<details><summary><b>Решение 1</b></summary>
+<p>
+
+```js
+function getSquaredNumber(arr) {
+  const result = []
+
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i] ** 2
+    result.push(element)
+  }
+
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+function getSquaredNumber(arr) {
+  const result = arr.map(num => {
+    return num ** 2
+  })
+
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
 
 
 
