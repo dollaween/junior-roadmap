@@ -104,7 +104,7 @@ function getElement(arr, index) {
 
 ##### 4. Взятие двух элементов массива
 
-Напишите функцию, которая принимает массив и два индекса. Функция должна вернуть массив из двух элементов, соответствующих передаваемым индексам.  
+Напишите функцию, которая принимает массив и два индекса. Функция должна вернуть новый массив из двух элементов, соответствующих передаваемым индексам. Если в функцию передано меньше, чем два индекса — функция должна вернуть `null`.  
 Также функция должна вывести результат в консоль.
 
 ```js
@@ -113,6 +113,8 @@ function getTwoElements() { /* ... */ }
 const arr = ['Sam', 'Din', 'Castiel', 'Crowley', 'Lilith']
 getTwoElements(arr, 0, 1)  // ['Sam', 'Din']
 getTwoElements(arr, 2, 4)  // ['Castiel', 'Lilith']
+getTwoElements(arr, 3)     // null
+getTwoElements(arr)        // null
 ```
 
 <details><summary><b>Решение</b></summary>
@@ -120,6 +122,10 @@ getTwoElements(arr, 2, 4)  // ['Castiel', 'Lilith']
 
 ```js
 function getTwoElements(arr, index1, index2) {
+  if (index1 === undefined || index2 === undefined) {
+    return null
+  }
+
   const element1 = arr[index1]
   const element2 = arr[index2]
 
@@ -132,6 +138,47 @@ function getTwoElements(arr, index1, index2) {
 
 </p>
 </details>
+
+---
+
+##### 5. Взятие множества элементов массива
+
+Напишите функцию, которая принимает массив и сколько угодно индексов. Функция должна вернуть новый массив, состоящий из элементов, соответствующих передаваемым индексам. Если индексы в функцию не передаются, то верните `null`.  
+Также функция должна вывести результат в консоль.
+
+```js
+function getElements() { /* ... */ }
+
+const arr = ['Sam', 'Din', 'Castiel', 'Crowley', 'Lilith']
+getElements(arr, 1)        // ['Din']
+getElements(arr, 2, 3, 4)  // ['Castiel', 'Crowley', 'Lilith']
+getElements(arr)           // null
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function getElements(arr, ...indexes) {
+  if (indexes.length === 0) {
+    return null
+  }
+
+  const result = []
+  for (let i = 0; i < indexes.length; i++) {
+    const element = arr[indexes[i]]
+    result.push(element)
+  }
+
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
+
 
 
 
