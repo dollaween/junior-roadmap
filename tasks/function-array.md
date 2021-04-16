@@ -363,6 +363,41 @@ function getSquaredNumber(arr) {
 </p>
 </details>
 
+---
+
+##### 11. Фильтрация массива
+
+Напишите функцию, которая принимает массив и возвращает новый массив, состоящий только из `true`-значений.  
+Также функция должна вывести результат в консоль.
+
+```js
+function trueFilter() { /* ... */ }
+
+const arr1 = [true, true, false, true, false]
+const arr2 = [false, true, false, false]
+const arr3 = [false]
+trueFilter(arr1)  // [true, true, true]
+trueFilter(arr2)  // [true]
+trueFilter(arr3)  // []
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function trueFilter(arr) {
+  const result = arr.filter(element => {
+    return element === true
+  })
+  
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
 
 
 
