@@ -139,9 +139,42 @@ function getTwoElements(arr, index1, index2) {
 </p>
 </details>
 
+
 ---
 
-##### 5. Взятие множества элементов массива
+##### 5. Вывод всех элементов в консоль
+
+Напишите функцию, которая принимает массив и выводит все его элементы в консоль.  
+
+```js
+function showElements() { /* ... */ }
+
+const arr = ['Leonard', 'Sheldon', 'Penny', 'Howard', 'Raj']
+showElements(arr)
+// 'Leonard'
+// 'Sheldon'
+// 'Penny'
+// 'Howard'
+// 'Raj'
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function showElements(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+  }
+}
+```
+
+</p>
+</details>
+
+---
+
+##### 6. Взятие множества элементов массива
 
 Напишите функцию, которая принимает массив и сколько угодно индексов. Функция должна вернуть новый массив, состоящий из элементов, соответствующих передаваемым индексам. Если индексы в функцию не передаются, то верните `null`.  
 Также функция должна вывести результат в консоль.
@@ -166,7 +199,8 @@ function getElements(arr, ...indexes) {
 
   const result = []
   for (let i = 0; i < indexes.length; i++) {
-    const element = arr[indexes[i]]
+    const index = indexes[i]
+    const element = arr[index]
     result.push(element)
   }
 
@@ -177,6 +211,7 @@ function getElements(arr, ...indexes) {
 
 </p>
 </details>
+
 
 
 
