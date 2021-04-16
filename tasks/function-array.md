@@ -202,7 +202,79 @@ function showElements(arr) {
 
 ---
 
-##### 7. Взятие множества элементов массива
+##### 7. Первые три элемента массива
+
+Напишите функцию, которая принимает массив и возвращает три первых его элемента.  
+Также функция должна вывести результат в консоль.
+
+```js
+function getFirstThreeElements() { /* ... */ }
+
+const arr1 = ['Leonard', 'Sheldon', 'Penny', 'Howard', 'Raj']
+const arr2 = ['Sam', 'Din', 'Castiel', 'Crowley', 'Lilith']
+getFirstThreeElements(arr1)  // ['Leonard', 'Sheldon', 'Penny']
+getFirstThreeElements(arr2)  // ['Sam', 'Din', 'Castiel']
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function getFirstThreeElements(arr) {
+  const result = []
+
+  for (let i = 0; i < 3; i++) {
+    const element = arr[i]
+    result.push(element)
+  }
+
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
+---
+
+##### 8. Последние три элемента массива
+
+Напишите функцию, которая принимает массив и возвращает последние три его элемента.  
+Также функция должна вывести результат в консоль.
+
+```js
+function getLastThreeElements() { /* ... */ }
+
+const arr1 = ['Leonard', 'Sheldon', 'Penny', 'Howard', 'Raj']
+const arr2 = ['Sam', 'Din', 'Castiel', 'Crowley', 'Lilith']
+getLastThreeElements(arr1)  // ['Penny', 'Howard', 'Raj']
+getLastThreeElements(arr2)  // ['Castiel', 'Crowley', 'Lilith']
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function getLastThreeElements(arr) {
+  let result = []
+
+  for (let i = arr.length - 3; i < arr.length; i += 1) {
+    const element = arr[i]
+    result.push(element)
+  }
+
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
+---
+
+##### 9. Взятие множества элементов массива
 
 Напишите функцию, которая принимает массив и сколько угодно индексов. Функция должна вернуть новый массив, состоящий из элементов, соответствующих передаваемым индексам. Если индексы в функцию не передаются, то верните `null`.  
 Также функция должна вывести результат в консоль.
