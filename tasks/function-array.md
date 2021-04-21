@@ -409,9 +409,9 @@ function trueFilter(arr) {
 function isContainElements() { /* ... */ }
 
 const arr = ['Aragorn', 'Frodo', 'Gandalf', 'Gimli', 'Sauron']
-isContainElements(arr, 'Aragorn', 'Gimli')  // true
+isContainElements(arr, 'Aragorn', 'Gimli')   // true
 isContainElements(arr, 'Frodo', 'Celeborn')  // false
-isContainElements(arr)  // false
+isContainElements(arr)                       // false
 ```
 
 <details><summary><b>Решение</b></summary>
@@ -449,11 +449,11 @@ function isContainElements(arr, target1, target2) {
 function isContainManyElements() { /* ... */ }
 
 const arr = ['Aragorn', 'Frodo', 'Gandalf', 'Gimli', 'Sauron']
-isContainManyElements(arr, 'Aragorn')  // true
+isContainManyElements(arr, 'Aragorn')                    // true
 isContainManyElements(arr, 'Frodo', 'Gimli', 'Gandalf')  // true
-isContainManyElements(arr, 'Celeborn')  // false
-isContainManyElements(arr)  // false
-isContainManyElements()  // false
+isContainManyElements(arr, 'Celeborn')                   // false
+isContainManyElements(arr)                               // false
+isContainManyElements()                                  // false
 ```
 
 <details><summary><b>Решение</b></summary>
