@@ -438,6 +438,51 @@ function isContainElements(arr, target1, target2) {
 </p>
 </details>
 
+---
+
+##### 13. Поиск по множеству элементов массива
+
+Напишите функцию, которая принимает массив и неограниченное количество элементов. Функция должна вернуть `true`, если все переданные элементы содержатся в массиве.  
+Также функция должна вывести результат в консоль.
+
+```js
+function isContainManyElements() { /* ... */ }
+
+const arr = ['Aragorn', 'Frodo', 'Gandalf', 'Gimli', 'Sauron']
+isContainManyElements(arr, 'Aragorn')  // true
+isContainManyElements(arr, 'Frodo', 'Gimli', 'Gandalf')  // true
+isContainManyElements(arr, 'Celeborn')  // false
+isContainManyElements(arr)  // false
+isContainManyElements()  // false
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function isContainManyElements(arr, ...targets) {
+  if (!Array.isArray(arr) || targets.length === 0) {
+    return false
+  }
+
+  let result = true
+
+  for (let i = 0; i < targets.length; i++) {
+    if (arr.indexOf(targets[i]) === -1) {
+      result = false
+      break
+    }
+  }
+
+  console.log(result)
+
+  return result
+}
+```
+
+</p>
+</details>
+
 
 
 
