@@ -398,6 +398,45 @@ function trueFilter(arr) {
 </p>
 </details>
 
+---
+
+##### 12. Поиск двух элементов в массиве
+
+Напишите функцию, которая принимает массив и два элемента. Функция должна вернуть `true`, если массив содержит оба переданных элемента.  
+Также функция должна вывести результат в консоль.
+
+```js
+function isContainElements() { /* ... */ }
+
+const arr = ['Aragorn', 'Frodo', 'Gandalf', 'Gimli', 'Sauron']
+isContainElements(arr, 'Aragorn', 'Gimli')  // true
+isContainElements(arr, 'Frodo', 'Celeborn')  // false
+isContainElements(arr)  // false
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function isContainElements(arr, target1, target2) {
+  if (!target1 || !target2) {
+    return false
+  }
+
+  let result = false
+
+  if (arr.indexOf(target1) !== -1 && arr.indexOf(target2) !== -1) {
+    result = true
+  }
+
+  console.log(result)
+
+  return result
+}
+```
+
+</p>
+</details>
 
 
 
