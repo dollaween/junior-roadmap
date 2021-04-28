@@ -29,6 +29,7 @@
 * [Работа с числами](./function-number.md)
 * [Работа со строками](./function-string.md)
 * [Работа с массивами](./function-array.md)
+* [Работа с объектами](./function-object.md)
 
 ### Памятка
 * [Как решать задачи](./how-write-functions.md)
