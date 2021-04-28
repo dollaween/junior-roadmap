@@ -105,3 +105,143 @@ function setNameAndAge(name, age) {
 </p>
 </details>
 
+---
+
+##### 4. Перебор всех ключей
+
+Напишите функцию, которая принимает объект и выводит в консоль все свойства этого объекта.
+
+```js
+function showProperties() { /* ... */ }
+
+showProperties({ name: 'John', age: 33 })
+// name
+// age
+
+showProperties({
+  city: 'New York',
+  address: 'central street, 15',
+  rooms: ['kitchen', 'bedroom']
+})
+// city
+// address
+// rooms
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function showProperties(obj) {
+  for (let key in obj) {
+    console.log(key)
+  }
+}
+```
+
+</p>
+</details>
+
+---
+
+##### 5. Взятие всех значений
+
+Напишите функцию, которая принимает объект и возвращает все значения этого объекта в виде массива.  
+Также функция должна вывести результат в консоль.
+
+```js
+function getValues() { /* ... */ }
+
+getValues({ name: 'John', age: 33 })
+// ['John', 33]
+
+getValues({
+  city: 'New York',
+  address: 'central street, 15',
+  rooms: ['kitchen', 'bedroom']
+})
+// ['New York', 'central street, 15', ['kitchen', 'bedroom']]
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function getValues(obj) {
+  const result = Object.values(obj)
+  console.log(result)
+  return result
+}
+```
+
+</p>
+</details>
+
+---
+
+##### 6. Количество элементов
+
+Напишите функцию, которая принимает объект все значения которого — массивы. Функция должна вернуть количество всех элементов во всех массивах.  
+Также функция должна вывести результат в консоль.
+
+```js
+function getValuesLength() { /* ... */ }
+
+const notebook = {
+  A: ['Andrew', 'Ashley'],
+  B: ['Brad'],
+  C: ['Charlie', 'Cole']
+}
+
+const phones = {
+  800: [88001009090, 88002009090],
+  913: [89131009090]
+}
+
+getValuesLength(notebook)  // 5, так как всего у нас пять имен
+getValuesLength(phones)  // 3, так как всего у нас три номера телефона
+```
+
+<details><summary><b>Решение 1</b></summary>
+<p>
+
+```js
+function getValuesLength(obj) {
+  const values = Object.values(obj)
+  
+  // Используем метод `flat` чтобы превратить двумерный массив в одномерный
+  const length = values.flat().length
+  console.log(length)
+  return length
+}
+```
+
+</p>
+</details>
+
+
+<details><summary><b>Решение 2</b></summary>
+<p>
+
+```js
+function getValuesLength(obj) {
+  const values = Object.values(obj)
+  let length = 0
+
+  for (let i = 0; i < values.length; i++) {
+    length += values[i].length
+  }
+
+  console.log(length)
+  return length
+}
+```
+
+</p>
+</details>
+
+
+
+
+
+
