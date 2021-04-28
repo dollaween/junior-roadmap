@@ -240,6 +240,36 @@ function getValuesLength(obj) {
 </p>
 </details>
 
+---
+
+##### 7. Обнуление всех свойств
+
+Напишиту функцию, которая принимает объект. Функция должна вернуть объект с теми же свойствами, но значения всех свойств должны стать `null`.  
+Также функция должна вывести результат в консоль.
+
+```js
+function setValuesToNull() { /* ... */ }
+
+setValuesToNull({ name: 'John', age: 33 })  // { name: null, age: null }
+```
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```js
+function setValuesToNull(obj) {
+  for (let key in obj) {
+    obj[key] = null
+  }
+
+  console.log(obj)
+  return obj
+}
+```
+
+</p>
+</details>
+
 
 
 
