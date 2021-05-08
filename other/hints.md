@@ -14,9 +14,100 @@
 
 </div>
 
+
 ---
 
+<div align="center">
+
+### Числа
+
+</div>
+
+---
+
+Операторы:
+```js
++, -, /, *, **, %, ++, --
+```
+
+Создание:
+```js
+const num = 10
+```
+
+Приведение к числу:
+```js
+Number(value)     -> number / NaN
+parseInt(value)   -> number / NaN
+parseFloat(value) -> number / NaN
+number / 0        -> Infinity
+-number / 0       -> -Infinity
+NaN * number      -> NaN
+```
+
+---
+
+<div align="center">
+
+### Строки
+
+</div>
+
+---
+
+Создание:
+```js
+const str = 'string'
+const str = new String()
+```
+
+Строки неизменяемы!
+```js
+str.length          -> длина строки
+str[0]              -> первый символ
+str[str.length - 1] -> последний символ
+```
+
+Кавычки
+```js
+`My name is ${var}` -> 'My name is John'
+'I\'m programmer' -> "I'm programmer"
+```
+
+Преобразования
+```js
+parseInt(str)   -> number / NaN
+parseFloat(str) -> number / NaN
+Number(str)     -> number / NaN
+value + string  -> string (5 + '10' -> '510')
+```
+
+Методы поиска
+```js
+charAt(index)   -> string
+includes(str)   -> boolean
+startsWith(str) -> boolean
+endsWith(str)   -> boolean
+```
+
+Методы работы
+```js
+toLowerCase()           -> string
+toUpperCase()           -> string
+trim()                  -> string
+replace(target, substr) -> string
+substring(start, stop)  -> string
+slice(start, stop)      -> string
+split(str)              -> array
+```
+
+---
+
+<div align="center">
+
 ### Массивы
+
+</div>
 
 ---
 
@@ -30,7 +121,7 @@ const arr = Array.from(arrayLike)
 
 Методы изменения (изменяют текущий массив)
 ```js
-* push(elem)           -> array length
+* push(elem)           -> длина массива
 * pop()                -> deleted elem
 * unshift(elem)        -> array length
 * shift()              -> deleted elem
@@ -69,3 +160,8 @@ arr[arr.length - 1] -> последний элемент
 ```js
 Array.isArray(obj) -> boolean
 ```
+
+---
+
+
+
