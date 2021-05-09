@@ -87,3 +87,63 @@ buttonDiv.addEventListener('click', div)
 
 </p>
 </details>
+
+---
+
+##### 2. Конвертер валюты
+
+Напишите программу, в которой будет одно числовое поле ввода (означающее количество рублей) и три кнопки ("Конвертировать в доллары", "Конвертировать в евро", "Конвертировать в йены").  
+После того, как мы ввели в поле ввода число и нажали на одну из кнопок, в блоке "Результат" должно отображаться сколько денег у нас в соответствующей валюте (с точностью до двух знаков после запятой).
+
+
+
+<details><summary><b>Решение, HTML</b></summary>
+<p>
+
+```html
+<input type="number" id="input" value="0">
+<button id="buttonDol">Конвертировать в доллары</button>
+<button id="buttonEur">Конверировать в евро</button>
+<button id="buttonYen">Конвертировать в йены</button>
+<div class="output-wrapper">Результат: <span id="output">0</span></div>
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение, JS</b></summary>
+<p>
+
+```js
+const input = document.getElementById('input')
+const buttonDol = document.getElementById('buttonDol')
+const buttonEur = document.getElementById('buttonEur')
+const buttonYen = document.getElementById('buttonYen')
+const output = document.getElementById('output')
+
+function convertToDollar() {
+  const dollar = 77
+  const rubles = input.valueAsNumber || 0
+  output.innerHTML = (rubles / dollar).toFixed(2)
+}
+
+function convertToEuro() {
+  const euro = 90
+  const rubles = input.valueAsNumber
+  output.innerHTML = (rubles / euro).toFixed(2)
+}
+
+function convertToYen() {
+  const yen = 0.7
+  const rubles = input.valueAsNumber
+  output.innerHTML = (rubles / yen).toFixed(2)
+}
+
+buttonDol.addEventListener('click', convertToDollar)
+buttonEur.addEventListener('click', convertToEuro)
+buttonYen.addEventListener('click', convertToYen)
+
+```
+
+</p>
+</details>
