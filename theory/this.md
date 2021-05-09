@@ -76,13 +76,17 @@ person.method()
 Метод `bind(this)` — создает новую функцию, которая в качестве контекста выполнения `this` устанавливает переданное значение. В метод также передаётся набор аргументов, которые будут установлены перед переданными в привязанную функцию аргументами при её вызове.
 
 ```js
-function fn() {
+function fn(arg1, arg2) {
   console.log(this)
+  console.log(arg1)
+  console.log(arg2)
 }
 
-const newFn = fn.bind({ name: 'John' })
+const newFn = fn.bind({ name: 'John' }, 'Hello', 'world')
 newFn()
 // { name: 'John' }
+// 'Hello'
+// 'world'
 ```
 
 
