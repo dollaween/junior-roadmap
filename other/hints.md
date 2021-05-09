@@ -14,6 +14,20 @@
 
 </div>
 
+---
+
+
+<div align="center">
+
+### Пояснение
+
+</div>
+
+---
+
+Ниже представлена краткая справка в очень сжатом виде. Рекомендуется держать перед глазами при решении задач.
+
+`->` — означает что будет возвращено при вызове функции/метода, обращении к свойству.
 
 ---
 
@@ -25,24 +39,24 @@
 
 ---
 
-Операторы:
-```js
-+, -, /, *, **, %, ++, --
-```
-
 Создание:
 ```js
 const num = 10
 ```
 
+Математические операторы:
+```js
++, -, /, *, **, %, ++, --
+```
+
 Приведение к числу:
 ```js
-Number(value)     -> number / NaN
-parseInt(value)   -> number / NaN
-parseFloat(value) -> number / NaN
-number / 0        -> Infinity
--number / 0       -> -Infinity
-NaN * number      -> NaN
+Number(any)     -> number / NaN
+parseInt(any)   -> number / NaN
+parseFloat(any) -> number / NaN
+number / 0      -> Infinity
+-number / 0     -> -Infinity
+NaN * number    -> NaN
 ```
 
 ---
@@ -70,8 +84,8 @@ str[str.length - 1] -> последний символ
 
 Кавычки
 ```js
-`My name is ${var}` -> 'My name is John'
-'I\'m programmer' -> "I'm programmer"
+'I\'m programmer'    -> "I'm programmer"
+`My name is ${name}` -> 'My name is John'
 ```
 
 Преобразования
@@ -79,7 +93,7 @@ str[str.length - 1] -> последний символ
 parseInt(str)   -> number / NaN
 parseFloat(str) -> number / NaN
 Number(str)     -> number / NaN
-value + string  -> string (5 + '10' -> '510')
+any + string    -> string, например (5 + '10' -> '510')
 ```
 
 Методы поиска
@@ -160,24 +174,6 @@ arr[arr.length - 1] -> последний элемент
 ```js
 Array.isArray(obj) -> boolean
 ```
-
-#### Методы изменения
-| Метод | Возвращаемый результат | Описание |
-| --- | --- | --- |
-| `push(elem)` | длина массива | добавляет элемент в конец |
-| `pop()` | удаленный элемент | удаляет последний элемент |
-| `unshift(elem)` | длина массива | добавляет элемент в начало |
-| `shift()` | удаленный элемент | удаляет первый элемент |
-| `reverse()` | | переворачивает массив |
-| `splice(start, count)` | удаленные элементы | удаляет элементы и вставляет новые |
-
-#### Методы доступа
-| Метод | Возвращаемый результат | Описание |
-| --- | --- | --- |
-| `indexOf(elem)` | индекс ||
-| `lastIndexOf(elem)` | индекс ||
-| `slice(start, end)` | массив ||
-| `concat(arr)` | массив ||
 
 ---
 
