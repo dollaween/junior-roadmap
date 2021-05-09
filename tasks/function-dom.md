@@ -22,3 +22,68 @@
 После того, как мы ввели два числа и нажали на одну из кнопок — в блоке с выводом результата должен быть выведен результат сложения/вычитания/умножения/деления (в зависимости от того на какую кнопку нажали).
 
 <img width="228" alt="Снимок экрана 2021-05-09 в 23 50 09" src="https://user-images.githubusercontent.com/48933270/117586529-64510300-b121-11eb-9d99-5b54447ed453.png">
+
+<details><summary><b>Решение, HTML</b></summary>
+<p>
+
+```html
+<div>
+  <input type="number" id="input1" value="0">
+  <input type="number" id="input2" value="0">
+  <button id="buttonSum">+</button>
+  <button id="buttonSub">-</button>
+  <button id="buttonMult">*</button>
+  <button id="buttonDiv">/</button>
+  <div>Результат: <span id="output">0</span></div>
+</div>
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение, JS</b></summary>
+<p>
+
+```js
+const input1 = document.getElementById('input1')
+const input2 = document.getElementById('input2')
+const buttonSum = document.getElementById('buttonSum')
+const buttonSub = document.getElementById('buttonSub')
+const buttonMult = document.getElementById('buttonMult')
+const buttonDiv = document.getElementById('buttonDiv')
+const output = document.getElementById('output')
+
+function getInputNumbers() {
+  const num1 = input1.valueAsNumber || 0
+  const num2 = input2.valueAsNumber || 0
+  return [num1, num2]
+}
+
+function sum() {
+  const [num1, num2] = getInputNumbers()
+  output.innerHTML = num1 + num2
+}
+
+function sub() {
+  const [num1, num2] = getInputNumbers()
+  output.innerHTML = num1 - num2
+}
+
+function mult() {
+  const [num1, num2] = getInputNumbers()
+  output.innerHTML = num1 * num2
+}
+
+function div() {
+  const [num1, num2] = getInputNumbers()
+  output.innerHTML = num1 / num2
+}
+
+buttonSum.addEventListener('click', sum)
+buttonSub.addEventListener('click', sub)
+buttonMult.addEventListener('click', mult)
+buttonDiv.addEventListener('click', div)
+```
+
+</p>
+</details>
