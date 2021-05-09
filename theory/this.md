@@ -68,7 +68,7 @@ person.method()
 
 <div align="center">
 
-`this` в стрелочных функциях
+### `this` в стрелочных функциях
 
 </div>
 
