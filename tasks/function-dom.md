@@ -21,7 +21,7 @@
 Напишите программу, в которой будет два числовых поля ввода, четыре кнопки (`+`, `-`, `*`, `/`) и блок с выводом результата.  
 После того, как мы ввели два числа и нажали на одну из кнопок — в блоке с выводом результата должен быть выведен результат сложения/вычитания/умножения/деления (в зависимости от того на какую кнопку нажали).
 
-<img width="228" alt="Снимок экрана 2021-05-09 в 23 50 09" src="https://user-images.githubusercontent.com/48933270/117586529-64510300-b121-11eb-9d99-5b54447ed453.png">
+<img width="228" src="https://user-images.githubusercontent.com/48933270/117586529-64510300-b121-11eb-9d99-5b54447ed453.png">
 
 <details><summary><b>Решение, HTML</b></summary>
 <p>
@@ -95,7 +95,7 @@ buttonDiv.addEventListener('click', div)
 Напишите программу, в которой будет одно числовое поле ввода (означающее количество рублей) и три кнопки ("Конвертировать в доллары", "Конвертировать в евро", "Конвертировать в йены").  
 После того, как мы ввели в поле ввода число и нажали на одну из кнопок, в блоке "Результат" должно отображаться сколько денег у нас в соответствующей валюте (с точностью до двух знаков после запятой).
 
-<img width="225" alt="Снимок экрана 2021-05-10 в 00 25 42" src="https://user-images.githubusercontent.com/48933270/117587368-4934c200-b126-11eb-9613-984fb6249294.png">
+<img width="225" src="https://user-images.githubusercontent.com/48933270/117587368-4934c200-b126-11eb-9613-984fb6249294.png">
 
 <details><summary><b>Решение, HTML</b></summary>
 <p>
@@ -105,7 +105,7 @@ buttonDiv.addEventListener('click', div)
 <button id="buttonDol">Конвертировать в доллары</button>
 <button id="buttonEur">Конверировать в евро</button>
 <button id="buttonYen">Конвертировать в йены</button>
-<div class="output-wrapper">Результат: <span id="output">0.00</span></div>
+<div>Результат: <span id="output">0.00</span></div>
 ```
 
 </p>
@@ -142,7 +142,6 @@ function convertToYen() {
 buttonDol.addEventListener('click', convertToDollar)
 buttonEur.addEventListener('click', convertToEuro)
 buttonYen.addEventListener('click', convertToYen)
-
 ```
 
 </p>
