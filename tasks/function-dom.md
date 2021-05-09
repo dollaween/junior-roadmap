@@ -168,5 +168,52 @@ buttonYen.addEventListener('click', convertToYen)
 <img width="188" alt="Снимок экрана 2021-05-10 в 00 41 50" src="https://user-images.githubusercontent.com/48933270/117587868-acbfef00-b128-11eb-80fb-882d16ce1c82.png">
 
 
+<details><summary><b>Решение, HTML</b></summary>
+<p>
+
+```html
+<input type="text" id="login" placeholder="Введите логин">
+<input type="password" id="password" placeholder="Введите пароль">
+<button id="button">Войти</button>
+<div id="output"></div>
+```
+
+</p>
+</details>
+
+
+<details><summary><b>Решение, JS</b></summary>
+<p>
+
+```js
+const inputLogin = document.getElementById('login')
+const inputPassword = document.getElementById('password')
+const button = document.getElementById('button')
+const output = document.getElementById('output')
+
+const user = {
+  login: 'admin',
+  password: '12345'
+}
+
+function validate() {
+  const login = inputLogin.value
+  const password = inputPassword.value
+
+  if (login === user.login && password === user.password) {
+    output.style.color = 'green'
+    output.innerHTML = 'Вход разрешен'
+  } else {
+    output.style.color = 'red'
+    output.innerHTML = 'Неверный логин или пароль'
+  }
+}
+
+button.addEventListener('click', validate)
+
+```
+
+</p>
+</details>
 
 
