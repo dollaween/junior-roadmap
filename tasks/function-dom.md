@@ -129,13 +129,13 @@ function convertToDollar() {
 
 function convertToEuro() {
   const euro = 90
-  const rubles = input.valueAsNumber
+  const rubles = input.valueAsNumber || 0
   output.innerHTML = (rubles / euro).toFixed(2)
 }
 
 function convertToYen() {
   const yen = 0.7
-  const rubles = input.valueAsNumber
+  const rubles = input.valueAsNumber || 0
   output.innerHTML = (rubles / yen).toFixed(2)
 }
 
