@@ -184,3 +184,8 @@ fn.call({ name: 'John' }, 'Smith', 33)
 
 ---
 
+Источники:
+* [`this`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this)
+* [`bind()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+* [`call()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+* [`apply()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
