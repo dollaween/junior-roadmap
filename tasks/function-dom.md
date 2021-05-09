@@ -95,7 +95,7 @@ buttonDiv.addEventListener('click', div)
 Напишите программу, в которой будет одно числовое поле ввода (означающее количество рублей) и три кнопки ("Конвертировать в доллары", "Конвертировать в евро", "Конвертировать в йены").  
 После того, как мы ввели в поле ввода число и нажали на одну из кнопок, в блоке "Результат" должно отображаться сколько денег у нас в соответствующей валюте (с точностью до двух знаков после запятой).
 
-
+![image](https://user-images.githubusercontent.com/48933270/117587341-29050300-b126-11eb-9eeb-cbaf6da3858c.png)
 
 <details><summary><b>Решение, HTML</b></summary>
 <p>
@@ -105,7 +105,7 @@ buttonDiv.addEventListener('click', div)
 <button id="buttonDol">Конвертировать в доллары</button>
 <button id="buttonEur">Конверировать в евро</button>
 <button id="buttonYen">Конвертировать в йены</button>
-<div class="output-wrapper">Результат: <span id="output">0</span></div>
+<div class="output-wrapper">Результат: <span id="output">0.00</span></div>
 ```
 
 </p>
