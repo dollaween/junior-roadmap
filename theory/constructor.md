@@ -23,8 +23,10 @@
 2. Функция-конструктор должна быть вызвана через оператор `new`
 
 ```js
-function User() {}
-const user = new User()
+function User(name) {
+  this.name = name
+}
+const user = new User('Gimli')
 ```
 
 Когда мы вызываем функцию через оператор `new`, происходит следующее:
@@ -32,13 +34,16 @@ const user = new User()
 2. Выполняется код функции
 3. После завершения работы функции, возвращается значение this
 
-Итого, хоть мы ничего и не писали, наша функция `User()` будет иметь такой код внутри себя:
+Итого, наша функция `User()` будет иметь такой код внутри себя:
 ```js
-function User() {
-  // this = {}
-  // return this
+function User(name) {
+  // this = {} (неявно)
+  this.name = name
+  // return this (неявно)
 }
-const user = new User()
+const user = new User('Gimli')
+
+console.log(user)  // { name: 'Gimli' }
 ```
 
 ---
