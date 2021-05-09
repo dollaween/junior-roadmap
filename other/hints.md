@@ -177,5 +177,27 @@ Array.isArray(obj) -> boolean
 
 ---
 
+<div align="center">
+
+### Функции
+
+</div>
+
+---
+
+Ключевое слово `this`
+```js
+function fn() { console.log(this) }
+const arrow = () => { console.log(this) }
+const obj = {}
+
+console.log(this)                   -> Window
+obj.method = fn; obj.method()       -> object
+obj.method = arrow; obj.method()    -> Window
+fn.call(obj)                        -> object
+fn.apply(obj)                       -> object
+const newFn = fn.bind(obj); newFn() -> object
+```
+
 
 
