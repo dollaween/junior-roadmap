@@ -31,5 +31,8 @@
 * [Работа с массивами](./function-array.md)
 * [Работа с объектами](./function-object.md)
 
+### Часть 10. Задачи с DOM
+* [Работа с DOM](./function-dom.md)
+
 ### Памятка
 * [Как решать задачи](./how-write-functions.md)
