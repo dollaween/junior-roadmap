@@ -26,7 +26,7 @@ console.log(this)
 ```
 
 В пределах функции значение `this` зависит от того, каким образом вызвана функция.  
-При обычном способе вызова, `this` будет ссылаться на глобальный объект:
+При обычном способе вызова `this` будет ссылаться на глобальный объект:
 ```js
 function globalFunction() {
   console.log(this)
@@ -35,12 +35,12 @@ globalFunction()
 // Window
 ```
 
-При вызове функции как метода объекта, `this` будет ссылаться на этот объект:
+При вызове функции, как метода объекта, `this` будет ссылаться на этот объект:
 ```js
 const person = {
   name: 'John',
   age: 33,
-  fn: function fn() {
+  fn: function() {
     console.log(this)
   }
 }
@@ -48,6 +48,21 @@ person.fn()
 // { name: "John", age: 33, fn: ƒ }
 ```
 
+Обратите внимание, что если внутри метода вызвать функцию обычным способом, то `this` будет указывать, как и положено, на глобальный объект:
+```js
+const person = {
+  method: function() {
+    console.log('method', this)
+    function basic() {
+      console.log('basic', this)
+    }
+    basic()
+  }
+}
+person.method()
+// 'method', { method: f }
+// 'basic', Window
+```
 
 
 
