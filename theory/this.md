@@ -65,6 +65,53 @@ person.method()
 
 ---
 
+
+<div align="center">
+
+`this` в стрелочных функциях
+
+</div>
+
+---
+
+Стрелочные функции не имеют своего контекста выполнения, поэтому `this` в них берется из внешней функции.
+
+```js
+const fn = () => {
+  console.log(this)
+}
+fn()
+// Window
+```
+
+```js
+const person = {
+  name: 'John',
+  method: () => {
+    console.log(this)
+  }
+}
+person.method()
+// Window
+```
+
+Пример, когда `this` в стрелочных функциях будет взят из внешнего окружения:
+```js
+const person = {
+  name: 'John',
+  method: function() {
+    const arrow = () => {
+      console.log(this)
+    }
+    arrow()
+  }
+}
+person.method()
+// { name: "John", method: ƒ }
+```
+
+---
+
 <div align="center">
 
 ### `bind()`, `call()` и `apply()`
@@ -118,4 +165,22 @@ fn.call({ name: 'John' }, ['Smith', 33])
 // { name: 'John' }
 // ['Smith', 33]
 ```
+
+---
+
+Так как в стрелочных функциях контекст берется из внешнего окружения, то привязка `this` через `bind()`, `call()` и `apply()` будет проигнорирована:
+```js
+const fn = (arg1, arg2) => {
+  console.log(this)
+  console.log(arg1)
+  console.log(arg2)
+}
+
+fn.call({ name: 'John' }, 'Smith', 33)
+// Window
+// 'Smith'
+// 33
+```
+
+---
 
