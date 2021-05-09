@@ -73,3 +73,7 @@ console.log(user3)  // { login: 'Aragorn', password: '777' }
 ```
 
 ---
+
+Источники:
+* [Конструкторы, создание объектов через `new`](https://learn.javascript.ru/constructor-new)
+* [Оператор `new`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new)
