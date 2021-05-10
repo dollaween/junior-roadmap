@@ -36,7 +36,7 @@ const house = {
 const houseOfJohn = Object.create(house)
 ```
 
-Попробуем вывести объект `houseOfJohn` в консоль и посмотреть что получилось:
+Теперь `houseOfJohn` связан с `house`. Попробуем вывести объект `houseOfJohn` в консоль и посмотреть что получилось:
 ```js
 console.log(houseOfJohn)
 /*
@@ -51,7 +51,16 @@ console.log(houseOfJohn)
 */
 ```
 
+Сам наш объект `houseOfJohn` пустой, но у него появилось свойство `__proto__`, в котором содержаться все свойства и методы объекта `house`.
+```js
+// Теперь мы можем доставать то, что храниться в house таким путем:
+console.log(houseOfJohn.__proto__.city)          // 'Moscow'
+console.log(houseOfJohn.__proto__.getAddress())  // 'Moscow, Gorodskaya'
 
+// Писать __proto__ необязательно
+console.log(houseOfJohn.city)    // 'Moscow'
+console.log(houseOfJohn.street)  // 'Gorodskaya'
+```
 
 ---
 
