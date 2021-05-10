@@ -31,12 +31,12 @@ const house = {
 }
 ```
 
-Для того, чтобы создать объект с теми же свойствами и методами, воспользуемся методом `create()`:
+Для того, чтобы создать объект с тем же набором свойств и методов, воспользуемся методом `Object.create()`:
 ```js
 const houseOfJohn = Object.create(house)
 ```
 
-Теперь `houseOfJohn` связан с `house`. Попробуем вывести объект `houseOfJohn` в консоль и посмотреть что получилось:
+Попробуем вывести объект `houseOfJohn` в консоль и посмотреть что получилось:
 ```js
 console.log(houseOfJohn)
 /*
@@ -51,9 +51,9 @@ console.log(houseOfJohn)
 */
 ```
 
-Сам наш объект `houseOfJohn` пустой, но у него появилось свойство `__proto__`, в котором содержаться все свойства и методы объекта `house`.
+Сам наш объект `houseOfJohn` пустой, но у него появилось свойство `__proto__`, в котором содержатся все свойства и методы объекта `house`.
 ```js
-// Теперь мы можем доставать то, что храниться в house таким путем:
+// Теперь мы можем доставать то, что хранится в house таким путем:
 console.log(houseOfJohn.__proto__.city)          // 'Moscow'
 console.log(houseOfJohn.__proto__.getAddress())  // 'Moscow, Gorodskaya'
 
@@ -61,6 +61,23 @@ console.log(houseOfJohn.__proto__.getAddress())  // 'Moscow, Gorodskaya'
 console.log(houseOfJohn.city)    // 'Moscow'
 console.log(houseOfJohn.street)  // 'Gorodskaya'
 ```
+
+Каким образом работает `houseOfJohn.city`:
+1. Javascript смотрит, есть ли у объекта `houseOfJohn` свойство `city`.
+2. Если такого свойства нет, то он идет в объект `__proto__` и ищет свойство `city` там.
+3. Второй пункт будет повторяться до тех пор, пока свойство не будет найдено, либо пока не закончится вся цепочка прототипов.
+
+---
+
+<div align="center">
+
+### Работа с прототипами
+
+</div>
+
+---
+
+
 
 ---
 
