@@ -77,7 +77,42 @@ console.log(houseOfJohn.street)  // 'Gorodskaya'
 
 ---
 
+Каждый раз, когда мы будем что-то изменять в корневом объекте, все прототипы этого объекта будут получать эти изменения.
 
+```js
+const user = {
+  role: 'admin'
+}
+
+const anotherUser = Object.create(user)
+
+user.role = 'moderator'
+
+console.log(anotherUser.role)  // 'moderator'
+```
+
+---
+
+В протатипах мы можем переопределять все поля и добавлять новые — это никак не скажется на корневом объекте:
+
+```js
+const car = {
+  model: 'BMW',
+  hasWheels: true
+}
+
+const anotherCar = Object.create(car)
+
+anotherCar.model = 'Lexus'
+anotherCar.year = 2010
+
+console.log(car.model)             // 'BMW'
+console.log(car.hasWheels)         // true
+console.log(car.year)              // undefined
+console.log(anotherCar.model)      // 'Lexus'
+console.log(anotherCar.hasWheels)  // true
+console.log(anotherCar.year)       // 2010
+```
 
 ---
 
