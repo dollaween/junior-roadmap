@@ -53,7 +53,7 @@ console.log(houseOfJohn)
 
 Сам наш объект `houseOfJohn` пустой, но у него появилось свойство `__proto__`, в котором содержатся все свойства и методы объекта `house`.
 ```js
-// Теперь мы можем доставать то, что хранится в house таким путем:
+// Теперь мы можем доставать то, что хранится в house таким путем (такие свойства называются унаследованными):
 console.log(houseOfJohn.__proto__.city)          // 'Moscow'
 console.log(houseOfJohn.__proto__.getAddress())  // 'Moscow, Gorodskaya'
 
@@ -113,6 +113,70 @@ console.log(anotherCar.model)      // 'Lexus'
 console.log(anotherCar.hasWheels)  // true
 console.log(anotherCar.year)       // 2010
 ```
+
+---
+
+<div align="center">
+
+### Зачем нужны прототипы?
+
+</div>
+
+---
+
+С помощью прототипов мы можем создавать множество однотипных объектов, или объектов с общими свойствами и методами.
+
+Чтобы каждый раз вручную не создавать много однотипных объектов:
+```js
+const firstArticle = {
+  title: 'How to Code',
+  year: 2021,
+  author: 'John Smith',
+  getInfo: function() {
+    return `${this.title} by ${this.author}, ${this.year}`
+  }
+}
+
+const secondArticle = {
+  title: 'What is Closure?',
+  year: 2021,
+  author: 'Brad Force',
+  getInfo: function() {
+    return `${this.title} by ${this.author}, ${this.year}`
+  }
+}
+
+const thirdArticle = {
+  title: 'The Secret of Objects',
+  year: 2020,
+  author: 'John Smith',
+  getInfo: function() {
+    return `${this.title} by ${this.author}, ${this.year}`
+  }
+}
+```
+
+Мы можем написать объект, от которого будут наследоваться все остальные. Например, таким образом:
+```js
+const Article = {
+  constructor: function(title, year, author) {
+    this.title = title
+    this.year = year
+    this.author = author
+  }
+  getInfo: function() {
+    return `${this.title} by ${this.author}, ${this.year}`
+  }
+}
+
+const firstArticle = Object.create(Article).constructor('How to Code', 2021, 'John Smith')
+const secondArticle = Object.create(Article).constructor('What is Closure?', 2021, 'Brad Force')
+const thirdArticle = Object.create(Article).constructor('The Secret of Objects', 2020, 'John Smith')
+```
+
+1. Теперь мы можем создавать множество похожих объектов в более удобной форме.
+2. Чтобы изменить поведение метода `getInfo()` — нам достаточно отредактировать его только в корневом объекте `Article` и изменения сразу получат все прототипы.
+3. Чтобы расширить функционал — нам опять же достаточно только внести изменения в `Article`.
 
 ---
 
