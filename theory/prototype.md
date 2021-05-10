@@ -20,6 +20,38 @@
 
 **Наследование** — это передача свойств и методов из одного объекта в другой.
 
+Допустим, у нас есть объект:
+```js
+const house = {
+  city: 'Moscow',
+  street: 'Gorodskaya',
+  getAddress: function() {
+    return `${this.city}, ${this.street}`
+  }
+}
+```
+
+Для того, чтобы создать объект с теми же свойствами и методами, воспользуемся методом `create()`:
+```js
+const houseOfJohn = Object.create(house)
+```
+
+Попробуем вывести объект `houseOfJohn` в консоль и посмотреть что получилось:
+```js
+console.log(houseOfJohn)
+/*
+  {
+    __proto__: {
+      city: "Moscow",
+      getAddress: ƒ (),
+      street: "Gorodskaya",
+      __proto__: Object
+    }
+  }
+*/
+```
+
+
 
 ---
 
