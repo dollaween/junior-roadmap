@@ -18,6 +18,32 @@
 
 <div align="center">
 
+### `throw`
+
+</div>
+
+---
+
+**Инструкция `throw`** — позволяет создавать пользовательские ошибки. При этом выполнение текущей функции будет остановлено (инструкции после `throw` выполнены не будут).
+
+```js
+throw 'Произошла ошибка'
+// Uncaught Произошла ошибка
+```
+
+Обычно используется в связке с конструктором `Error`.
+
+**Конструктор Error** — создает объект ошибки.
+
+```js
+throw new Error('Пользовательский текст ошибки')
+// Uncaught Error: Пользовательский текст ошибки
+```
+
+---
+
+<div align="center">
+
 ### `try ... catch ... finally`
 
 </div>
@@ -91,3 +117,45 @@ try {
 }
 // 'Консоль 3'
 ```
+
+---
+
+<div align="center">
+
+### Типы ошибок
+
+</div>
+
+---
+
+Кроме конструктора `Error`, существует еще семь конструкторов ошибок.
+
+---
+
+Ошибка `ReferenceError` — выбрасывается, когда используется переменная, которая не была объявлена:
+
+```js
+console.log(num)  // переменная num нигде не объявлена
+// ReferenceError: num is not defined
+```
+
+---
+
+Ошибка `SyntaxError` — выбрасывается, если в коде была допущена синтаксическая ошибка.
+
+```js
+const = 10 + 5  // пропущено имя константы
+// SyntaxError: Unexpected token '='
+```
+
+---
+
+Ошибка `TypeError` — выбрасывается, 
+
+---
+
+Источники:
+- [`throw`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/throw)
+- [`Error`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Error)
+- [`try ... catch`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch)
+- [JavaScript Errors - Throw and Try to Catch](https://www.w3schools.com/js/js_errors.asp)
