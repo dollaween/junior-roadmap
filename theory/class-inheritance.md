@@ -93,6 +93,42 @@ dog.speak()  // 'Шарик издает звук'
 
 ---
 
+<div align="center">
+
+### Ключевое слово `super()`
+
+</div>
+
+---
+
+Ключевое слово `super` — вызывает функцию, принадлежащую родителю объекта.
+
+```js
+class Animal {
+  constructor(name) {
+    this.name = name
+  }
+
+  speak() {
+    console.log(`${this.name} издает звук`)
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    super.speak()
+    console.log(`${this.name} лает`)
+  }
+}
+
+const dog = new Dog('Шарик')
+dog.speak()
+// 'Шарик издает звук'
+// 'Шарик лает'
+```
+
+---
+
 Источники:
 - [Классы](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
 
