@@ -39,12 +39,19 @@ globalFunction()
 const person = {
   name: 'John',
   age: 33,
-  fn: function() {
+  speak: function() {
     console.log(this)
   }
 }
-person.fn()
+
+person.speak()
 // { name: "John", age: 33, fn: ƒ }
+
+// this будет ссылаться на объект только если был вызван как метод функции.
+// если вывести speak в отдельную переменную и вызвать как функцию — this потеряет связь с объектом
+const speak = person.speak()
+speak()
+// window
 ```
 
 Обратите внимание, что если внутри метода вызвать функцию обычным способом, то `this` будет указывать, как и положено, на глобальный объект:
