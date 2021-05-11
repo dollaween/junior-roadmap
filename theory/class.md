@@ -173,6 +173,11 @@ console.log(person.age)   // 33
 console.log(person.getInfo())  // 'John — 33 года'
 ```
 
+Синтаксис приватных полей за пределами класса использовать нельзя:
+```js
+person.#name
+// SyntaxError: Private field '#name' must be declared in an enclosing class
+```
 
 
 
