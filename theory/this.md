@@ -49,7 +49,7 @@ person.speak()
 
 // this будет ссылаться на объект только если был вызван как метод функции.
 // если вывести speak в отдельную переменную и вызвать как функцию — this потеряет связь с объектом
-const speak = person.speak()
+const speak = person.speak
 speak()
 // window
 ```
