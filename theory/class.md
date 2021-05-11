@@ -79,6 +79,8 @@ console.log(person)
 
 ```js
 class Person {
+  kind = 'human'
+
   constructor(name, age) {
     this.name = name
     this.age = age
@@ -88,8 +90,8 @@ class Person {
 const person1 = new Person('John', 33)
 const person2 = new Person('Brad', 25)
 
-console.log(person1)  // { name: 'John', age: 33 }
-console.log(person2)  // { name: 'Brad', age: 25 }
+console.log(person1)  // { kind: 'human', name: 'John', age: 33 }
+console.log(person2)  // { kind: 'human', name: 'Brad', age: 25 }
 ```
 
 
