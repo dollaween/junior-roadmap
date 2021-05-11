@@ -170,6 +170,11 @@ arr()  // пытаемся вызвать массив, как функцию, �
 // TypeError: arr is not a function
 ```
 
+```js
+undefined.name  // свойства name у undefined нет
+// TypeError: Cannot read property 'name' of undefined
+```
+
 ---
 
 Источники:
@@ -177,3 +182,4 @@ arr()  // пытаемся вызвать массив, как функцию, �
 - [`Error`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Error)
 - [`try ... catch`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch)
 - [JavaScript Errors - Throw and Try to Catch](https://www.w3schools.com/js/js_errors.asp)
+- [JavaScript ссылки на ошибки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Errors)
