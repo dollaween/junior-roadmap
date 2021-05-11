@@ -72,3 +72,34 @@ console.log(person)
   }
 */
 ```
+
+---
+
+Для задания индивидуальных значений свойств для каждого объекта, используется конструктор:
+
+```js
+class Person {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+}
+
+const person1 = new Person('John', 33)
+const person2 = new Person('Brad', 25)
+
+console.log(person1)  // { name: 'John', age: 33 }
+console.log(person2)  // { name: 'Brad', age: 25 }
+```
+
+
+
+
+
+
+
+
+
+
+
+
