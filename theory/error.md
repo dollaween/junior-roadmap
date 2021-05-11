@@ -150,7 +150,25 @@ const = 10 + 5  // пропущено имя константы
 
 ---
 
-Ошибка `TypeError` — выбрасывается, 
+Ошибка `TypeError` — выбрасывается, если используется значение не поддерживаемое данным типом.
+
+```js
+const num = 10
+num.toUpperCase()  // у чисел нет метода toUpperCase()
+// TypeError: num.toUpperCase is not a function
+```
+
+```js
+const str = 'Hello'
+str.unknownMethod()  // такого метода у строк нет
+// TypeError: str.unknownMethod is not a function
+```
+
+```js
+const arr = [1, 2, 3]
+arr()  // пытаемся вызвать массив, как функцию, что невозможно
+// TypeError: arr is not a function
+```
 
 ---
 
