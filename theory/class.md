@@ -94,9 +94,38 @@ console.log(person1)  // { kind: 'human', name: 'John', age: 33 }
 console.log(person2)  // { kind: 'human', name: 'Brad', age: 25 }
 ```
 
+---
 
+<div align="center">
 
+### Статические свойства и методы
 
+</div>
+
+---
+
+Свойства и методы класса с ключевым словом `static` — становятся статическими. Это значит, что в создаваемых объектах такие свойства доступны не будут.
+
+```js
+class Person {
+  static displayName = 'Пользователь'
+
+  constructor(name) {
+    this.name = name
+  }
+  
+  static getClassInfo() {
+    console.log('Имя класса: ' + this.displayName)
+  }
+}
+
+const person = new Person('John')
+
+console.log(person.displayName)     // undefined
+console.log(person.getClassInfo)    // undefined
+console.log(Person.displayName)     // 'Пользователь'
+console.log(Person.getClassInfo())  // 'Имя класса: Пользователь'
+```
 
 
 
