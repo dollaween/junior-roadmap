@@ -18,7 +18,7 @@
 
 <div align="center">
 
-### `try ... catch`
+### `try ... catch ... finally`
 
 </div>
 
@@ -47,5 +47,43 @@ try {
 }
 
 // 'Консоль 1'
+// 'Консоль 3'
+```
+
+---
+
+**Инструкция `finally`** — блок кода, который будет выполнен в любом случае.
+
+```js
+try {
+  console.log('Консоль 1')
+} catch(err) {
+  console.log('Консоль 2')
+} finally {
+  console.log('Консоль 3')
+}
+// 'Консоль 1'
+// 'Консоль 3'
+
+try {
+  throw new Error()
+  console.log('Консоль 1')
+} catch(err) {
+  console.log('Консоль 2')
+} finally {
+  console.log('Консоль 3')
+}
+// 'Консоль 2'
+// 'Консоль 3'
+
+try {
+  throw new Error()
+  console.log('Консоль 1')
+} catch(err) {
+  throw new Error()
+  console.log('Консоль 2')
+} finally {
+  console.log('Консоль 3')
+}
 // 'Консоль 3'
 ```
