@@ -26,7 +26,8 @@
 
 * [Введение](./css/introduction.md) [в разработке]
 * [Наследование](./css/inheritance.md) [в разработке]
-* [Селекторы и комбинаторы](./css/selectors.md) [в разработке]
+* [Селекторы](./css/selectors.md)
+* [Комбинаторы](./css/combinators.md)
 * [Специфичность](./css/specificity.md) [в разработке]
 * [Единицы измерения](./css/units.md) [в разработке]
 * [Цвет](./css/colors.md) [в разработке]
