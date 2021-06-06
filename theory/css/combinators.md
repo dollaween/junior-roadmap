@@ -23,14 +23,31 @@
 **Комбинатор потомков ` ` (пробел)** — выбирает элементы, которые находятся внутри указанного элемента.
 
 ```html
-<p>Example <span>first text</span></p>
-<p class="paragraph">Example <span>second text</span></p>
+<p class="first">Example <span>first text</span></p>
+<p class="second">Example <span>second text</span></p>
 ```
 
 ```css
-.paragraph span {
+/* Таким образом ко всем span внутри p будут применены стили */
+p span {
   color: red;
 }
 ```
 
-В результате, стили будут применены только к элементу `span`, который находится внутри элемента `p` с классом `paragraph`.
+```css
+/* А вот так стили будут применены только к span внутри элемента с классом second */
+.second span {
+  color: green;
+}
+```
+
+---
+
+
+
+
+
+
+
+
+
