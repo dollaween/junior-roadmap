@@ -16,7 +16,13 @@
 
 ---
 
-## CSS
+<div align="center">
+
+### CSS
+
+</div>
+
+---
 
 * [Введение](./css/introduction.md)
 * [Наследование](./css/inheritance.md)
@@ -41,7 +47,13 @@
 
 ---
 
-## Javascript
+<div align="center">
+
+### Javascript
+
+</div>
+
+---
 
 * [Введение](./introduction.md)
 
