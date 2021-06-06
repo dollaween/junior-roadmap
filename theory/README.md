@@ -39,6 +39,8 @@
 * [Функции](./css/functions.md)
 * [BEM](./css/bem.md)
 
+---
+
 ## Javascript
 
 * [Введение](./introduction.md)
