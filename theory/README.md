@@ -28,7 +28,7 @@
 * [Наследование](./css/inheritance.md) [в разработке]
 * [Селекторы](./css/selectors.md)
 * [Комбинаторы](./css/combinators.md)
-* [Специфичность](./css/specificity.md) [в разработке]
+* [Специфичность (приоритет)](./css/specificity.md)
 * [Единицы измерения](./css/units.md) [в разработке]
 * [Цвет](./css/colors.md) [в разработке]
 * [Псевдоклассы](./css/pseudo-classes.md) [в разработке]
