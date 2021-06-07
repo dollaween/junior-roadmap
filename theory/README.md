@@ -30,7 +30,7 @@
 * [Комбинаторы](./css/combinators.md)
 * [Специфичность (приоритет)](./css/specificity.md)
 * [Единицы измерения](./css/units.md)
-* [Цвет](./css/color.md) [в разработке]
+* [Цвет](./css/color.md)
 * [Псевдоклассы](./css/pseudo-classes.md) [в разработке]
 * [Псевдоэлементы](./css/pseudo-elements.md) [в разработке]
 * [Работа с текстом](./css/text.md) [в разработке]
