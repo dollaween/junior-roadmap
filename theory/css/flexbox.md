@@ -134,10 +134,26 @@
 
 ---
 
+<div align="center">
+
+### `flex-shrink`
+
+</div>
+
+---
+
+`flex-shrink` — определяет фактор сжатия элемента. Свойство начинает действовать, когда элементы не помещаются по ширине контейнера.
+
+* `0` — элементы никогда не будут сжаты по ширине.
+* `1` — элементы будут сжаты так, чтобы уместились по ширине в контейнер.
+
+---
+
 Источники:
 * [Flexbox](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox)
 * [`flex-wrap`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-wrap)
 * [`align-items`](https://developer.mozilla.org/ru/docs/Web/CSS/align-items)
 * [`justify-content`](https://developer.mozilla.org/ru/docs/Web/CSS/justify-content)
 * [`flex-grow`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow)
+* [`flex-shrink`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-shrink)
 
