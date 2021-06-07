@@ -43,6 +43,34 @@
 
 ---
 
+<div align="center">
+
+### Работа с `background`
+
+</div>
+
+---
+
+`background` — сокращенное свойство, которое устанавливает сразу все свойства стиля фона: цвет, изображение, источник, размер и метод повтора.
+
+---
+
+`background-color` — устанавливает цвет фона.
+
+---
+
+`background-image` — задает изображение для фона.
+
+```css
+.block {
+  width: 200px;
+  height: 200px;
+  background-image: url('https://picsum.photos/200')
+}
+```
+
+---
+
 Источники:
 * [Тег img](https://developer.mozilla.org/ru/docs/Web/HTML/Element/img)
 * [`object-fit`](https://developer.mozilla.org/ru/docs/Web/CSS/object-fit)
