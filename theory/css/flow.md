@@ -74,3 +74,4 @@
 
 Источники:
 * [Базовый поток](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Normal_Flow)
+* [Поточная раскладка](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Flow_Layout)
