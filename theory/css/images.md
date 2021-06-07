@@ -71,7 +71,26 @@
 
 ---
 
+`background-size` — задает размеры фона.
+
+---
+
+`background-position` — выравнивает фон внутри контейнера.
+
+---
+
+`background-repeate` — устанавливает, как фон будет повторяться.
+
+---
+
 Источники:
 * [Тег img](https://developer.mozilla.org/ru/docs/Web/HTML/Element/img)
 * [`object-fit`](https://developer.mozilla.org/ru/docs/Web/CSS/object-fit)
 * [`object-position`](https://developer.mozilla.org/ru/docs/Web/CSS/object-position)
+* [`background-image`](https://developer.mozilla.org/ru/docs/Web/CSS/background-image)
+* [`background-size`](https://developer.mozilla.org/ru/docs/Web/CSS/background-size)
+* [`background-position`](https://developer.mozilla.org/ru/docs/Web/CSS/background-position)
+* [`background-repeat`](https://developer.mozilla.org/ru/docs/Web/CSS/background-repeat)
+* [`background-clip`](https://developer.mozilla.org/ru/docs/Web/CSS/background-clip)
+* [`background-origin`](https://developer.mozilla.org/ru/docs/Web/CSS/background-origin)
+* [`background-attachment`](https://developer.mozilla.org/ru/docs/Web/CSS/background-attachment)
