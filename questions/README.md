@@ -16,4 +16,4 @@
 
 ---
 
-* [Вопросы по CSS](./questions/css.md)
+* [Вопросы по CSS](./css.md)
