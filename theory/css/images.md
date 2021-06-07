@@ -39,9 +39,11 @@
 
 ---
 
-`object-position` — 
+`object-position` — выравнивает изображение внутри контейнера.
 
 ---
 
 Источники:
 * [Тег img](https://developer.mozilla.org/ru/docs/Web/HTML/Element/img)
+* [`object-fit`](https://developer.mozilla.org/ru/docs/Web/CSS/object-fit)
+* [`object-position`](https://developer.mozilla.org/ru/docs/Web/CSS/object-position)
