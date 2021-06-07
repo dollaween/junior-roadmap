@@ -16,5 +16,5 @@
 * [Теория](./theory/README.md)
 * [Тесты](./tests/README.md)
 * [Задачи](./tasks/README.md)
-* [Вопросы](./questions.md)
+* [Вопросы](./questions/README.md)
 * [Подсказки](./other/hints.md)
