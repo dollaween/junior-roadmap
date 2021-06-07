@@ -63,7 +63,7 @@ div {
 }
 
 p {
-  border: inherit;  // значение будет такое же, как и у div
+  border: inherit;  /* значение будет такое же, как и у div */
 }
 ```
 
@@ -75,7 +75,7 @@ div {
 }
 
 p {
-  font-size: initial;  // значение браузера по-умолчанию, во многих случаях 14px или 16px.
+  font-size: initial;  /* значение браузера по-умолчанию, во многих случаях 14px или 16px. */
 }
 ```
 
@@ -91,8 +91,8 @@ h1 {
   border: inherit;
 }
 h1 {
-  font-size: unset;  // 28px. Так как font-size наследуется, то оно будет установлено в inherit
-  border: unset;     // none. Так как border не наследуется, то оно будет установлено в initial
+  font-size: unset;  /* 28px. Так как font-size наследуется, то оно будет установлено в inherit */
+  border: unset;     /* none. Так как border не наследуется, то оно будет установлено в initial */
 }
 ```
 
