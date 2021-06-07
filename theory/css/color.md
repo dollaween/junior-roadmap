@@ -146,4 +146,4 @@ div {
 
 Источники:
 * [W3C Color keywords](https://www.w3.org/wiki/CSS/Properties/color/keywords)
-* [<color>](https://developer.mozilla.org/ru/docs/Web/CSS/color_value)
+* [color](https://developer.mozilla.org/ru/docs/Web/CSS/color_value)
