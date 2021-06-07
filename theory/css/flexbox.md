@@ -211,6 +211,18 @@
 
 ---
 
+<div align="center">
+
+### `gap`
+
+</div>
+
+---
+
+`gap` — задает пространство между flex-элементами.
+
+---
+
 Источники:
 * [Flexbox](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox)
 * [`flex-wrap`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-wrap)
