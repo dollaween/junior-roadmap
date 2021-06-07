@@ -24,7 +24,6 @@
 
 ---
 
-* [Введение](./css/introduction.md) [в разработке]
 * [Наследование](./css/inheritance.md)
 * [Селекторы](./css/selectors.md)
 * [Комбинаторы](./css/combinators.md)
