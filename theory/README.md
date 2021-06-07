@@ -34,7 +34,7 @@
 * [Псевдоклассы](./css/pseudo-classes.md) [в разработке]
 * [Псевдоэлементы](./css/pseudo-elements.md) [в разработке]
 * [Работа с текстом](./css/text.md) [в разработке]
-* [Блочная модель](./css/box-model.md) [в разработке]
+* [Блочная модель](./css/box-model.md)
 * [Поток](./css/flow.md)
 * [Flexbox](./css/flexbox.md) [в разработке]
 * [Grid](./css/grid.md) [в разработке]
