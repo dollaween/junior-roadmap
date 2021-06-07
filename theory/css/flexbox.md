@@ -112,6 +112,24 @@
 
 <div align="center">
 
+### `flex`
+
+</div>
+
+---
+
+`flex` — сокращение трех свойств в таком порядке: `flex-grow`, `flex-shrink`, `flex-basis`.
+
+```css
+.item {
+  flex: 1 1 100%;
+}
+```
+
+---
+
+<div align="center">
+
 ### `flex-basis`
 
 </div>
@@ -166,6 +184,8 @@
 * [`flex-wrap`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-wrap)
 * [`align-items`](https://developer.mozilla.org/ru/docs/Web/CSS/align-items)
 * [`justify-content`](https://developer.mozilla.org/ru/docs/Web/CSS/justify-content)
+* [`flex`](https://developer.mozilla.org/ru/docs/Web/CSS/flex)
+* [`flex-basis`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-basis)
 * [`flex-grow`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow)
 * [`flex-shrink`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-shrink)
 
