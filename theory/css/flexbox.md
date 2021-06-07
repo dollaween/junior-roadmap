@@ -205,7 +205,8 @@
 
 ---
 
-`align-self` — выравнивает flex-элемент по вертикали. Перезаписывает свойство `align-items` контейнера.  
+`align-self` — выравнивает flex-элемент по вертикали. Перезаписывает свойство `align-items` контейнера.
+
 Значения такие же, как и у `align-items`.
 
 ---
@@ -220,4 +221,4 @@
 * [`flex-basis`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-basis)
 * [`flex-grow`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow)
 * [`flex-shrink`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-shrink)
-
+* [`align-self`](https://developer.mozilla.org/ru/docs/Web/CSS/align-self)
