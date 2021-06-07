@@ -39,6 +39,22 @@
 }
 ```
 
+Свойства, которые могут быть заданы flex-контейнеру:
+* `flex-wrap`
+* `flex-direction`
+* `justify-content`
+* `align-items`
+* `flex`
+* `flex-basis`
+* `flex-grow`
+* `flex-shrink`
+
+Свойства, которые можно задавать отдельным элементам внутри flex-контейнера:
+* `align-self`
+* `flex-basis`
+* `flex-grow`
+* `flex-shrink`
+
 ---
 
 <div align="center">
@@ -95,7 +111,17 @@
 * `stretch` — растягивает элементы по высоте.
 * `baseline` — выравнивает элементы по строке.
 
+---
 
+<div align="center">
+
+### `flex-grow`
+
+</div>
+
+---
+
+`flex-grow` — определяет, как много свободного пространства займет элемент.
 
 
 
