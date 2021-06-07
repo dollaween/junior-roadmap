@@ -29,7 +29,7 @@
 * [Селекторы](./css/selectors.md)
 * [Комбинаторы](./css/combinators.md)
 * [Специфичность (приоритет)](./css/specificity.md)
-* [Единицы измерения](./css/units.md) [в разработке]
+* [Единицы измерения](./css/units.md)
 * [Цвет](./css/colors.md) [в разработке]
 * [Псевдоклассы](./css/pseudo-classes.md) [в разработке]
 * [Псевдоэлементы](./css/pseudo-elements.md) [в разработке]
