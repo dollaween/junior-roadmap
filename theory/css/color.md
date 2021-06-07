@@ -41,7 +41,7 @@ p {
 
 <div align="center">
 
-### `rgb()`
+### RGB
 
 </div>
 
@@ -64,6 +64,14 @@ div {
   background: rgba(0, 0, 0, .5);  // полупрозрачный черный фон
 }
 ```
+
+---
+
+<div align="center">
+
+### HSL
+
+</div>
 
 ---
 
