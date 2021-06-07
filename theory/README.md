@@ -37,7 +37,7 @@
 * [Поток](./css/flow.md)
 * [Flexbox](./css/flexbox.md)
 * [Grid](./css/grid.md) [в разработке]
-* [Работа с изображениями](./css/images.md) [в разработке]
+* [Работа с изображениями](./css/images.md)
 * [SVG](./css/svg.md) [в разработке]
 * [Анимация](./css/animation.md) [в разработке]
 * [Адаптивность](./css/adaptive.md) [в разработке]
