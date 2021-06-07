@@ -100,3 +100,4 @@ h1 {
 
 Источники:
 * [Наследование](https://developer.mozilla.org/ru/docs/Web/CSS/inheritance)
+* [Каскад и наследование](https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
