@@ -39,5 +39,64 @@ div {
 
 ---
 
+<div align="center">
+
+### Контроль наследования
+
+</div>
+
+---
+
+CSS предоставляет четыре специальных универсальных значения свойства для контроля наследования. Каждое свойство CSS принимает эти значения.
+
+`inherit` — устанавливает значение свойства таким же, как у родительского элемента
+
+```html
+<div>
+  <p>Example text</p>
+</div>
+```
+
+```css
+div {
+  border: 1px solid red;
+}
+
+p {
+  border: inherit;  // значение будет такое же, как и у div
+}
+```
+
+`initial` — устанавливает значение свойства равным initial value (в соответствии с настройками браузера по-умолчанию).
+
+```css
+div {
+  font-size: 30px;
+}
+
+p {
+  font-size: initial;  // значение браузера по-умолчанию, во многих случаях 14px или 16px.
+}
+```
+
+`unset` — возвращает свойству его естественное значение. Если свойство наследуется — действует как `inherit`, иначе действует как `initial`.
+
+```css
+div {
+  font-size: 28px;
+  border: 1px solid red;
+}
+h1 {
+  font-size: inherit;
+  border: inherit;
+}
+h1 {
+  font-size: unset;  // 28px. Так как font-size наследуется, то оно будет установлено в inherit
+  border: unset;     // none. Так как border не наследуется, то оно будет установлено в initial
+}
+```
+
+---
+
 Источники:
 * [Наследование](https://developer.mozilla.org/ru/docs/Web/CSS/inheritance)
