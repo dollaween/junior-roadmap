@@ -112,6 +112,24 @@
 
 <div align="center">
 
+### `flex-direction`
+
+</div>
+
+---
+
+`flex-direction` — определяет, как будут расположены элементы внутри flex-контейнера.
+
+Значения:
+* `row` — элементы расположены по горизонтали, слева направо.
+* `row-reverse` — элементы расположены по горизонтали, справа налево.
+* `column` — элементы расположены по вертикали, сверху вниз.
+* `column-reverse` — элементы расположены по вертикали, снизу вверх.
+
+---
+
+<div align="center">
+
 ### `flex`
 
 </div>
@@ -179,11 +197,25 @@
 
 ---
 
+<div align="center">
+
+### `align-self`
+
+</div>
+
+---
+
+`align-self` — выравнивает flex-элемент по вертикали. Перезаписывает свойство `align-items` контейнера.  
+Значения такие же, как и у `align-items`.
+
+---
+
 Источники:
 * [Flexbox](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox)
 * [`flex-wrap`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-wrap)
 * [`align-items`](https://developer.mozilla.org/ru/docs/Web/CSS/align-items)
 * [`justify-content`](https://developer.mozilla.org/ru/docs/Web/CSS/justify-content)
+* [`flex-direction`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-direction)
 * [`flex`](https://developer.mozilla.org/ru/docs/Web/CSS/flex)
 * [`flex-basis`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-basis)
 * [`flex-grow`](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow)
