@@ -144,6 +144,24 @@ div {
 
 ---
 
+<div align="center">
+
+### `transparent`
+
+</div>
+
+---
+
+`transparent` — ключевое слово, которое делает цвет полностью прозрачным.
+
+```css
+div {
+  background: transparent;
+}
+```
+
+---
+
 Источники:
 * [W3C Color keywords](https://www.w3.org/wiki/CSS/Properties/color/keywords)
 * [color](https://developer.mozilla.org/ru/docs/Web/CSS/color_value)
