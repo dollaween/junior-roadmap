@@ -21,6 +21,7 @@
 С помощью Webpack можно:
 - Объединять несколько файлов в один.
 - Преобразовывать файлы. Например, SASS в CSS или Typescript в Javascript.
+- Перемещать файлы.
 
 ---
 
@@ -37,3 +38,20 @@ mkdir webpack-demo
 npm init
 npm i webpack webpack-cli
 ```
+
+---
+
+<div align="center">
+
+# CLI команды
+
+</div>
+
+---
+
+```bash
+# Запускает процесс сборки
+npx webpack --config webpack.config.js
+```
+
+
