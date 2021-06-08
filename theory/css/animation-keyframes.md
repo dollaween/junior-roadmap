@@ -195,6 +195,36 @@ div {
 
 ---
 
+<div align="center">
+
+### `animation-iteration-count`
+
+</div>
+
+---
+
+Свойство `animation-iteration-count` — определяет сколько раз будет проигрываться анимация.
+
+Значения:
+* Число
+* `infinite` — бесконечно.
+
+```css
+div {
+  animation-iteration-count: 7;
+}
+
+div {
+  animation-iteration-count: 5.4;
+}
+
+div {
+  animation-iteration-count: infinite;
+}
+```
+
+---
+
 Источники:
 * [Использование CSS-анимации](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 * [How to Use steps() in CSS Animations](https://designmodo.com/steps-css-animations/)
