@@ -37,7 +37,7 @@
 Нижеследующий набор правил будет изменять цвет фона от белого к черному:
 
 ```css
-@keyframes changeBackground {
+@keyframes animationName {
   from {
     background: white;
   }
@@ -51,7 +51,7 @@
 Можно изменять несколько свойств одновременно. Ключевых кадров тоже может быть несколько.
 
 ```css
-@keyframes effect {
+@keyframes changeColors {
   0% {
     background: white;
     border: 1px solid black;
