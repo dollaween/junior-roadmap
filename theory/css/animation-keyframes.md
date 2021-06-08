@@ -96,6 +96,29 @@ div {
 
 <div align="center">
 
+### `animation`
+
+</div>
+
+---
+
+`animation` — сокращенное свойство.
+
+```css
+/* duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+animation: 3s ease-in 1s 2 reverse both paused slidein;
+
+/* duration | timing-function | delay | name */
+animation: 3s linear 1s slidein;
+
+/* duration | name */
+animation: 3s slidein;
+```
+
+---
+
+<div align="center">
+
 ### `animation-duration`
 
 </div>
