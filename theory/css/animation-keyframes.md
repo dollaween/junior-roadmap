@@ -225,6 +225,40 @@ div {
 
 ---
 
+<div align="center">
+
+### `animation-direction`
+
+</div>
+
+---
+
+Свойство `animation-direction` — определяет, должна ли анимация воспроизводиться вперёд, назад или переменно вперёд и назад.
+
+Значения:
+* `normal` — анимация проигрывается вперед. Когда анимация заканчивается — она сбрасывается и снова проигрывается.
+* `reverse` — анимация проигрывается наоборот.
+* `alternate` — анимация меняет направление в каждом цикле. Начинает с проигрывания вперед, затем назад и так далее.
+* `alternate-reverse` — анимация меняет направление в каждом цикле. Начинает с конца, затем вперед и так далее.
+
+---
+
+<div align="center">
+
+### `animation-play-state`
+
+</div>
+
+---
+
+Свойство `animation-play-state` — определяет состояние анимации.
+
+Значения:
+* `running` — анимация проигрывается.
+* `paused` — анимация приостановлена.
+
+---
+
 Источники:
 * [Использование CSS-анимации](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 * [How to Use steps() in CSS Animations](https://designmodo.com/steps-css-animations/)
