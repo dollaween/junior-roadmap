@@ -115,7 +115,7 @@ div {
 ```css
 div {
   animation-name: changeColors, changeScale;
-  animation-duration: 1s, 300ms;
+  animation-duration: 5s, 800ms;
 }
 ```
 
@@ -124,17 +124,56 @@ div {
 ```css
 div {
   animation-name: name1, name2, name3, name4, name5;
-  animation-duration: 1s, 300ms;
+  animation-duration: 5s, 800ms;
 }
 
 /* Запись выше эквивалента этой: */
 div {
   animation-name: name1, name2, name3, name4, name5;
-  animation-duration: 1s, 300ms, 1s, 300ms, 1s, 300ms;
+  animation-duration: 5s, 800ms, 5s, 800ms, 5s, 800ms;
 }
 ```
 
 ---
 
+<div align="center">
+
+### `animation-delay`
+
+</div>
+
+---
+
+Свойство `animation-delay` — определяет время задержки перед началом анимации.
+
+При указании отрицательного значения, воспроизведение анимации начнётся не с первого ключевого кадра, а так, будто часть анимации уже была показана.
+
+---
+
+<div align="center">
+
+### `animation-timing-function`
+
+</div>
+
+---
+
+Свойство `animation-timing-function` — определяет как происходит анимация в течение длительности.
+
+Значения:
+* `linear`
+* `ease`
+* `ease-in`
+* `ease-out`
+* `ease-in-out`
+* `step-start`
+* `step-end`
+* `steps(framesCount, end)`
+
+Функция `steps()` — разбивает анимацию между ключевыми кадрами на дополнительное количество кадров.
+
+---
+
 Источники:
 * [Использование CSS-анимации](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+* [How to Use steps() in CSS Animations](https://designmodo.com/steps-css-animations/)
