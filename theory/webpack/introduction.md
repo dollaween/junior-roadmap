@@ -22,6 +22,7 @@
 - Объединять несколько файлов в один.
 - Преобразовывать файлы. Например, SASS в CSS или Typescript в Javascript.
 - Перемещать файлы.
+- Минифицировать файлы.
 
 ---
 
@@ -70,7 +71,15 @@ npx webpack --config webpack.config.js
 1. `test` — выбирает файлы по регулярному выражению.
 2. `use` — применяет к выбранным файлам лоадер. Лоадеров может быть несколько. В таком случае, начиная с последнего, каждый из них будет что-то делать с файлом и отдавать результат следующему лоадеру. Первый лоадер в списке вернет итоговый результат (который ожидается в виде Javascript).
 
-#### CSS
+---
+
+<div align="center">
+
+### Загрузка CSS
+
+</div>
+
+---
 
 ```bash
 npm install --save-dev style-loader css-loader
@@ -81,7 +90,7 @@ npm install --save-dev style-loader css-loader
 
 После того, как эти лоадеры будут запущены, будет создан тег `style` со стилями и помещен в тег `head`.
 
-```
+```js
 # webpack.config.js
 const path = require('path');
 
@@ -102,10 +111,68 @@ module.exports = {
 };
 ```
 
-#### SASS
+---
 
-```bash
+<div align="center">
 
+### Загрузка изображений
+
+</div>
+
+---
+
+Для скачанных изображений и иконок нужен лоадер.
+
+```js
+# webpack.config.js
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      }
+    ],
+  },
+};
 ```
 
+Пример использования в CSS:
+```css
+.img {
+  width: 200px;
+  height: 150px;
+  background-image: url('./terminator.jpeg');
+  background-size: cover;
+}
+```
+
+Пример использования в JS:
+```js
+import Icon from './icon.png';
+
+function component() {
+  const element = document.createElement('div');
+
+  const myIcon = new Image();
+  myIcon.src = Icon;
+
+  element.appendChild(myIcon);
+
+  return element;
+}
+
+document.body.appendChild(component());
+```
 
