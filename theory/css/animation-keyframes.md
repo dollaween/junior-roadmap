@@ -78,24 +78,6 @@
 
 <div align="center">
 
-### `animation-name`
-
-</div>
-
----
-
-Свойство `animation-name` — задает элементу указанные названия анимаций (которые мы использовали в @keyframes).
-
-```css
-div {
-  animation-name: changeColors, changeScale;
-}
-```
-
----
-
-<div align="center">
-
 ### `animation`
 
 </div>
@@ -113,6 +95,24 @@ animation: 3s linear 1s slidein;
 
 /* duration | name */
 animation: 3s slidein;
+```
+
+---
+
+<div align="center">
+
+### `animation-name`
+
+</div>
+
+---
+
+Свойство `animation-name` — задает элементу указанные названия анимаций (которые мы использовали в @keyframes).
+
+```css
+div {
+  animation-name: changeColors, changeScale;
+}
 ```
 
 ---
