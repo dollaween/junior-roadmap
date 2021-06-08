@@ -48,6 +48,32 @@
 }
 ```
 
+Можно изменять несколько свойств одновременно. Ключевых кадров тоже может быть несколько.
+
+```css
+@keyframes effect {
+  0% {
+    background: white;
+    border: 1px solid black;
+  }
+
+  30% {
+    background: red;
+    border: 1px solid green;
+  }
+
+  60% {
+    background: blue;
+    border: 1px solid red;
+  }
+
+  100% {
+    background: black;
+    border: 1px solid white;
+  }
+}
+```
+
 ---
 
 Источники:
