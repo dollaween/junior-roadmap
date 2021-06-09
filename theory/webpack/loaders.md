@@ -41,7 +41,7 @@ npm install --save-dev style-loader css-loader
 
 Оба лоадера поддерживают разные ES синтаксисы.
 
-[Не рекомендуется использовать вместе `style-loader` и `mini-css-extract-plugin`](https://webpack.js.org/loaders/style-loader/#recommend).
+> [Не рекомендуется использовать вместе `style-loader` и `mini-css-extract-plugin`](https://webpack.js.org/loaders/style-loader/#recommend).
 
 Пример:
 ```js
