@@ -52,9 +52,23 @@ npm i webpack webpack-cli
 ---
 
 ```bash
-# Запускает процесс сборки
+# Запускает процесс сборки с указанием конфигурационного файла
 npx webpack --config webpack.config.js
 ```
+
+---
+
+<div align="center">
+
+### Конфиг
+
+</div>
+
+---
+
+`mode`:
+- `development` — не минифицирует итоговый бандл.
+- `production` — миницифирует итоговый бандл.
 
 ---
 
