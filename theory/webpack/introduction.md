@@ -100,11 +100,15 @@ npx webpack --config webpack.config.js
 npm install --save-dev style-loader css-loader
 ```
 
-**style-loader** — внедряет CSS в DOM.  
+**style-loader** — внедряет CSS в DOM.
+
 **css-loader** — обрабатывает `@import` и `url()`, .
-Свойство | Тип | По-умолчанию | Описание
---- | --- | --- | ---
-`url` | `Boolean` | `true` | Включает/выключает обработку `url / image-set`
+
+| Свойство | Тип | По-умолчанию | Описание
+| --- | --- | --- | ---
+| `url` | `Boolean/Function` | `true` | Включает/выключает обработку `url / image-set`. Если передать функцию — то можно определять, как обрабатывать конкретные url.
+| `import` | `Boolean` | `true` | Включает/выключает обработку `@import`
+| 
 
 После того, как эти лоадеры будут запущены, будет создан тег `style` со стилями и помещен в тег `head`.
 
