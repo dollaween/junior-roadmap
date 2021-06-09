@@ -102,7 +102,7 @@ npm install --save-dev style-loader css-loader
 
 **style-loader** — внедряет CSS в DOM.
 
-**css-loader** — обрабатывает `@import` и `url()`, .
+**css-loader** — обрабатывает `@import`, `url()`, включает/выключает CSS Modules,.
 
 | Свойство | Тип | По-умолчанию | Описание
 | --- | --- | --- | ---
@@ -113,9 +113,9 @@ npm install --save-dev style-loader css-loader
 
 | Свойство | Тип                | По-умолчанию | Описание                                                                                                                      |
 | -------- | ------------------ | ------------ | -------- |
-| `url`    | `Boolean/Function` | `true`       | Включает/выключает обработку `url / image-set`. Если передать функцию — можно определять, как обрабатывать конкретные url. |
-| `import` | `Boolean/Function` | `true`       | Включает/выключает обработку `@import`. Если передать функцию — можно убирать обработку отдельных файлов лоадером |
-| 
+| `url`    | `Boolean | Function` | `true`       | Включает/выключает обработку `url / image-set`. Если передать функцию — можно определять, как обрабатывать конкретные url. |
+| `import` | `Boolean | Function` | `true`       | Включает/выключает обработку `@import`. Если передать функцию — можно убрать обработку отдельных файлов лоадером |
+| `modules` | `Boolean | String | Object` | 
 
 
 После того, как эти лоадеры будут запущены, будет создан тег `style` со стилями и помещен в тег `head`.
@@ -205,4 +205,9 @@ function component() {
 
 document.body.appendChild(component());
 ```
+
+---
+
+Источники:
+* [`css-loader`](https://webpack.js.org/loaders/css-loader/)
 
