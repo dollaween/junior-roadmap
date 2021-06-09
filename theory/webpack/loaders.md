@@ -92,6 +92,38 @@ setTimeout(function() {
 
 <div align="center">
 
+### Загрузка SASS
+
+</div>
+
+---
+
+```bash
+npm install --save-dev style-loader css-loader sass-loader sass node-sass
+```
+
+**[sass-loader](https://webpack.js.org/loaders/sass-loader/)** — загружает Sass/SCSS файлы и преобразует их в CSS.
+
+Пример:
+
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
+    ]
+  }
+};
+
+```
+
+---
+
+<div align="center">
+
 ### Загрузка изображений
 
 </div>
