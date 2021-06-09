@@ -115,3 +115,4 @@
 ---
 
 * [Введение](./webpack/introduction.md)
+* [Загрузчики (Loaders)](./webpack/loaders.md)
