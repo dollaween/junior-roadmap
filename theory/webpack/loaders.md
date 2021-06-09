@@ -130,7 +130,7 @@ module.exports = {
 
 ---
 
-Для скачанных изображений и иконок нужен лоадер.
+С помощью встроенного Asset Modules мы можем перетаскивать изображения, иконки и другие файлы в build-папку.
 
 ```js
 // webpack.config.js
@@ -168,6 +168,33 @@ document.body.appendChild(image);
 
 ---
 
-Источники:
-* [`css-loader`](https://webpack.js.org/loaders/css-loader/)
+<div align="center">
 
+### Загрузка шрифтов
+
+</div>
+
+---
+
+Так же, как и с изображениями, мы можем переносить шрифты в build-папку.
+
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      }
+    ]
+  }
+};
+
+```
+
+
+---
+
+Источники:
+* [Webpack Documentation](https://webpack.js.org/concepts/)
+* [Webpack Guides](https://webpack.js.org/guides/)
