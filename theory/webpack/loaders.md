@@ -36,13 +36,13 @@
 npm install --save-dev style-loader css-loader
 ```
 
-**style-loader** — внедряет CSS в DOM.  
+[**style-loader**](https://webpack.js.org/loaders/style-loader/) — внедряет CSS в DOM.  
 [**css-loader**](https://webpack.js.org/loaders/css-loader/) — обрабатывает `@import`, `url()`, включает/выключает CSS Modules, генерирует source maps.
 
 После того, как эти лоадеры будут запущены, будет создан тег `style` со стилями и помещен в тег `head`.
 
 ```js
-# webpack.config.js
+// webpack.config.js
 const path = require('path');
 
 module.exports = {
@@ -75,7 +75,7 @@ module.exports = {
 Для скачанных изображений и иконок нужен лоадер.
 
 ```js
-# webpack.config.js
+// webpack.config.js
 const path = require('path');
 
 module.exports = {
