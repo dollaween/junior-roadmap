@@ -43,6 +43,7 @@ npm install --save-dev style-loader css-loader
 
 [Не рекомендуется использовать вместе `style-loader` и `mini-css-extract-plugin`](https://webpack.js.org/loaders/style-loader/#recommend).
 
+Пример:
 ```js
 // webpack.config.js
 module.exports = {
