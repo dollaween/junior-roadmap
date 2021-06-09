@@ -93,20 +93,12 @@ module.exports = {
 
 Пример использования в JS:
 ```js
-import Icon from './icon.png';
+import Icon from './terminator.jpeg';
 
-function component() {
-  const element = document.createElement('div');
+const image = new Image();
+image.src = Icon
 
-  const myIcon = new Image();
-  myIcon.src = Icon;
-
-  element.appendChild(myIcon);
-
-  return element;
-}
-
-document.body.appendChild(component());
+document.body.appendChild(image)
 ```
 
 ---
