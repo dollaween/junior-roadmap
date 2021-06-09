@@ -55,6 +55,8 @@ module.exports = {
 
 Если точки входа будут сгенерированы плагинами, то в качестве значения `entry` можно указать пустой объект `{}`.
 
+У точек входа есть дополнительные свойства, которые помогают установить порядок загрузки и другое — [EntryDescription object](https://webpack.js.org/concepts/entry-points/#entrydescription-object)
+
 ---
 
 <div align="center">
