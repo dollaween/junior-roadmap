@@ -117,3 +117,4 @@
 * [Введение](./webpack/introduction.md)
 * [Конфигурационный файл](./webpack/config.md)
 * [Загрузчики (Loaders)](./webpack/loaders.md)
+* [Плагины](./webpack/plugins.md)
