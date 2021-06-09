@@ -99,7 +99,7 @@ setTimeout(function() {
 ---
 
 ```bash
-npm install --save-dev style-loader css-loader sass-loader sass node-sass
+npm install --save-dev style-loader css-loader sass-loader node-sass
 ```
 
 **[sass-loader](https://webpack.js.org/loaders/sass-loader/)** — загружает Sass/SCSS файлы и преобразует их в CSS.
