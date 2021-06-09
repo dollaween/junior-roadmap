@@ -37,7 +37,11 @@ npm install --save-dev style-loader css-loader
 ```
 
 [**css-loader**](https://webpack.js.org/loaders/css-loader/) — обрабатывает `@import`, `url()`, включает/выключает CSS Modules, генерирует source maps.  
-[**style-loader**](https://webpack.js.org/loaders/style-loader/) — внедряет CSS в DOM (путем вставки одного или нескольких тегов `<style>` (или `<link>`) в тег `<head>`), позволяет загружать CSS частями и только по требованию (lazy load)
+[**style-loader**](https://webpack.js.org/loaders/style-loader/) — внедряет CSS в DOM (путем вставки одного или нескольких тегов `<style>`/`<link>` в тег `<head>`), позволяет загружать CSS частями и только по требованию (lazy load), позволяет работать с переопределением DLLPlugin'ов. По-умолчанию CSS вставляется вниз тега `<head>`, что можно изменить.
+
+Оба лоадера поддерживают разные ES синтаксисы.
+
+[Не рекомендуется использовать вместе `style-loader` и `mini-css-extract-plugin`](https://webpack.js.org/loaders/style-loader/#recommend).
 
 ```js
 // webpack.config.js
