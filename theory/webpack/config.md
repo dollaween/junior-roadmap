@@ -55,7 +55,7 @@ module.exports = {
 
 Если точки входа будут сгенерированы плагинами, то в качестве значения `entry` можно указать пустой объект `{}`.
 
-У точек входа есть дополнительные свойства, которые помогают установить порядок загрузки и другое — [EntryDescription object](https://webpack.js.org/concepts/entry-points/#entrydescription-object)
+У точек входа есть дополнительные свойства, которые помогают установить порядок загрузки и другое — [EntryDescription object](https://webpack.js.org/concepts/entry-points/#entrydescription-object).
 
 ---
 
@@ -66,3 +66,34 @@ module.exports = {
 </div>
 
 ---
+
+Свойство `output` — описывает, как и куда должен быть записан итоговый скомпилированный бандл.
+
+> Если `entry points` может быть несколько, то `output` — только один.
+
+Пример простой записи, при которой итоговый бандл будет записан в папку `/dist` с именем `bundle.js`:
+```js
+module.exports = {
+  output: {
+    filename: 'bundle.js',
+    path: __dirname + '/dist',
+  },
+};
+```
+
+Пример конфигурации со множеством точек входа. Названия точек входа будет использовано в переменной `name`:
+```js
+module.exports = {
+  entry: {
+    app: './src/app.js',
+    search: './src/search.js',
+  },
+  output: {
+    filename: '[name].js',
+    path: __dirname + '/dist',
+  },
+};
+```
+
+
+
