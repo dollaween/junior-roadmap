@@ -101,7 +101,10 @@ npm install --save-dev style-loader css-loader
 ```
 
 **style-loader** — внедряет CSS в DOM.  
-**css-loader** — интерпретирует `@import` и `url()`.
+**css-loader** — обрабатывает `@import` и `url()`, .
+|||
+---
+`url` | `Boolean` | `true` | Включает/выключает обработку `url / image-set`
 
 После того, как эти лоадеры будут запущены, будет создан тег `style` со стилями и помещен в тег `head`.
 
