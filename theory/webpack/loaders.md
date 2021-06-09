@@ -37,7 +37,7 @@ npm install --save-dev style-loader css-loader
 ```
 
 [**css-loader**](https://webpack.js.org/loaders/css-loader/) — обрабатывает `@import`, `url()`, включает/выключает CSS Modules, генерирует source maps.
-[**style-loader**](https://webpack.js.org/loaders/style-loader/) — внедряет CSS в DOM путем вставки тега `<style>` в тег `head`.
+[**style-loader**](https://webpack.js.org/loaders/style-loader/) — внедряет CSS в DOM (путем вставки одного или нескольких тегов `<style>` (или `<link>`) в тег `<head>`), позволяет загружать CSS частями и только по требованию (lazy load)
 
 ```js
 // webpack.config.js
@@ -51,6 +51,31 @@ module.exports = {
     ],
   },
 };
+```
+
+Пример загрузки по требованию:
+```js
+// webpack.config.js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+};
+```
+
+```js
+// index.js
+import styles from './style.css';
+
+// Стили будут загружены в <head> через три секунды
+setTimeout(function() {
+  styles.use()
+}, 3000);
 ```
 
 ---
@@ -94,9 +119,9 @@ module.exports = {
 import Icon from './terminator.jpeg';
 
 const image = new Image();
-image.src = Icon
+image.src = Icon;
 
-document.body.appendChild(image)
+document.body.appendChild(image);
 ```
 
 ---
