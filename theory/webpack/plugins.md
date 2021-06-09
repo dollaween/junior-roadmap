@@ -28,7 +28,7 @@
 npm install --save-dev html-webpack-plugin
 ```
 
-HtmlWebpackPlugin — автоматически генерирует `index.html` файл и вставляет в него бандлы из `output`.
+[HtmlWebpackPlugin](https://github.com/jantimon/html-webpack-plugin) — автоматически генерирует `index.html` файл и вставляет в него бандлы из `output`.
 
 ```js
 const path = require('path');
