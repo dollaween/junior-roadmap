@@ -46,7 +46,15 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              injectType: 'linkTag'
+            }
+          },
+          'css-loader'
+        ],
       },
     ],
   },
