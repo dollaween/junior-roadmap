@@ -18,8 +18,8 @@
 
 Для автоматической компиляции кода есть следующие инструменты:
 1. Webpack Watch Mode
-2. webpack-dev-server
-3. webpack-dev-middleware
+2. `webpack-dev-server`
+3. `webpack-dev-middleware`
 
 ---
 
@@ -45,3 +45,64 @@
   },
 }
 ```
+
+Единственный минус — эта команда не обновляет страницу в браузере автоматически.
+
+---
+
+<div align="center">
+
+### `webpack-dev-server`
+
+</div>
+
+---
+
+```bash
+npm install --save-dev webpack-dev-server
+```
+
+[`webpack-dev-server`](https://webpack.js.org/guides/development/#using-webpack-dev-server) — представляет элементарный веб-сервер с возможностью перезагружать страницу в реальном времени.
+
+**webpack.config.js**
+```js
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  mode: 'development',
+  entry: ['./src/index.js', './src/print.js'],
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true
+  },
+  devServer: {
+    contentBase: './dist'
+  }
+};
+```
+
+**package.json**
+```json
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --open"
+  },
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
