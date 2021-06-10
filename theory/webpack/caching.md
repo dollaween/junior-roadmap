@@ -61,3 +61,55 @@ module.exports = {
   ]
 };
 ```
+
+
+---
+
+<div align="center">
+
+### Хэширование библиотек
+
+</div>
+
+---
+
+Хорошей практикой считается хэшировать библиотеки, так как они будут меняться гораздо реже, чем наш код.
+
+Таким образом можно захэшировать папку `node_modules`:
+```js
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
+    print: './src/print.js'
+  },
+  output: {
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true
+  },
+  optimization: {
+    runtimeChunk: true,
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    }
+  },
+  plugins: [
+    new HtmlWebpackPlugin(),
+  ]
+};
+```
+
+---
+
+Источники:
+* [Caching](https://webpack.js.org/guides/caching/)
