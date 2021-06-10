@@ -94,8 +94,17 @@ module.exports = {
 }
 ```
 
+---
 
+<div align="center">
 
+### `webpack-dev-middleware`
+
+</div>
+
+---
+
+[`webpack-dev-middleware`](https://webpack.js.org/guides/development/#using-webpack-dev-server) — это обертка, которая отправляет файлы, обработанный Webpack'ом, на сервер.
 
 
 
