@@ -26,3 +26,40 @@
 
 Решение:  
 Каждому файлу добавляем к имени уникальный хэш. Если в файле были изменения — обновляем хэш в имени.
+
+---
+
+<div align="center">
+
+### Добавление хэша к имени
+
+</div>
+
+---
+
+Добавить хэш к имени можно при помощи `[contenthash]` в файле бандла.
+
+Для автоматической подстановки названия бандла с хэшом в HTML — используется HTMLWebpackPlugin.
+
+```js
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
+    print: './src/print.js'
+  },
+  output: {
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+    }),
+  ]
+};
+```
