@@ -121,3 +121,4 @@
 * [Watch и LiveReload](./webpack/watch.md)
 * [Кэширование](./webpack/caching.md)
 * [Разделение кода (Code Splitting)](./webpack/code-splitting.md)
+* [Переменные окружения (Environment Variables)](./webpack/environment.md)
