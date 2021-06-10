@@ -57,9 +57,7 @@ module.exports = {
     clean: true
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Output Management',
-    }),
+    new HtmlWebpackPlugin()
   ]
 };
 ```
