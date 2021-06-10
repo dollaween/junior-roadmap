@@ -22,6 +22,20 @@
 
 <div align="center">
 
+### Mode
+
+</div>
+
+---
+
+Значения свойства `mode`:
+- `production` — миницифирует итоговый бандл.
+- `development` — не минифицирует итоговый бандл.
+
+---
+
+<div align="center">
+
 ### Entry Points
 
 </div>
@@ -76,7 +90,7 @@ module.exports = {
 module.exports = {
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/dist',
+    path: __dirname + '/dist'
   },
 };
 ```
@@ -86,14 +100,33 @@ module.exports = {
 module.exports = {
   entry: {
     app: './src/app.js',
-    search: './src/search.js',
+    search: './src/search.js'
   },
   output: {
     filename: '[name].js',
-    path: __dirname + '/dist',
+    path: __dirname + '/dist'
   },
 };
 ```
 
+Свойство `clean` — очищает папку с бандлом перед каждым билдом.
+```js
+module.exports = {
+  output: {
+    filename: 'bundle.js',
+    path: __dirname + '/dist',
+    clean: true
+  },
+};
+```
 
+---
+
+<div align="center">
+
+### 
+
+</div>
+
+---
 
