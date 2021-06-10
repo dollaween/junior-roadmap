@@ -119,4 +119,4 @@
 * [Загрузчики (Loaders)](./webpack/loaders.md)
 * [Плагины](./webpack/plugins.md)
 * [Watch и LiveReload](./webpack/watch.md)
-* [Разделение кода (Code Splitting)](./webpack/watch.md)
+* [Разделение кода (Code Splitting)](./webpack/code-splitting.md)
