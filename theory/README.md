@@ -118,3 +118,4 @@
 * [Конфигурационный файл](./webpack/config.md)
 * [Загрузчики (Loaders)](./webpack/loaders.md)
 * [Плагины](./webpack/plugins.md)
+* [Watch и LiveReload](./webpack/watch.md)
