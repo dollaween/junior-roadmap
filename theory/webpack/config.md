@@ -32,6 +32,13 @@
 - `production` — миницифирует итоговый бандл.
 - `development` — не минифицирует итоговый бандл.
 
+**webpack.config.js*
+```js
+module.exports = {
+  mode: 'development'
+};
+```
+
 ---
 
 <div align="center">
