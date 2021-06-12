@@ -338,4 +338,36 @@ span {
 </details>
 
 
+---
+
+##### 10. Какое значение свойства `color` будет у элемента `p`?
+
+```html
+<p id="id" class="class" style="color: green !important">Example text</p>
+```
+
+```css
+#id {
+  color: red !important;
+}
+
+.class {
+  color: blue !important;
+}
+```
+
+1. `red`
+2. `blue`
+3. `green`
+4. `black`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 3**
+
+  Инлайновые стили (стили, написанные в атрибуте `style`) с ключевым словом `!important` имеют самый высокий приоритет (специфичность), их нельзя перебить ничем.
+
+</p>
+</details>
 
