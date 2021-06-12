@@ -618,3 +618,45 @@ p {
 </p>
 </details>
 
+---
+
+##### 17. Какие значения свойства `padding` будут у элементов `button`?
+
+```html
+<button class="small">Small button</button>
+<button class="large">Large button</button>
+```
+
+```css
+html {
+  font-size: 16px;
+}
+
+.small {
+  font-size: 1em;
+  padding: 1em;
+}
+
+.large {
+  font-size: 2em;
+  padding: 1em;
+}
+```
+
+1. `small: 16px`, `large: 16px`
+2. `small: 32px`, `large: 32px`
+3. `small: 16px`, `large: 32px`
+4. `small: 32px`, `large: 16px`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 3**
+
+  `em` — это относительная единица измерения:
+  - `font-size` у элемента зависит от значения `font-size` родителя.
+  - Все остальные значения свойств элемента зависят от своего `font-size`.
+
+</p>
+</details>
+
