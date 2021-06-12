@@ -1,6 +1,6 @@
 <div align="center">
 
-# Список тестов
+# Тесты на знание базы CSS
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
