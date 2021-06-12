@@ -122,3 +122,4 @@
 * [Кэширование](./webpack/caching.md)
 * [Разделение кода (Code Splitting)](./webpack/code-splitting.md)
 * [Переменные окружения (Environment Variables)](./webpack/environment.md)
+* [Пример сборки проекта](./webpack/example.md)
