@@ -471,3 +471,49 @@ p {
 </p>
 </details>
 
+---
+
+##### 14. Какое значение свойства `font-size` будет у элемента `span`?
+
+```html
+<div>
+  <p>Example <span>text</span></p>
+</div>
+```
+
+```css
+html {
+  font-size: 16px;
+}
+
+div {
+  font-size: 0.5rem;
+}
+
+p {
+  font-size: 0.5rem;
+}
+
+span {
+  font-size: 1rem;
+}
+```
+
+1. `32px`
+2. `16px`
+3. `8px`
+4. `4px`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 2**
+  
+  `rem` — это относительная единица измерения, зависящая от значения `font-size` в теге `html`.
+
+  `1rem` равен значению `font-size` у элемента `html`.
+
+</p>
+</details>
+
+
