@@ -788,5 +788,42 @@ button > .primary {
 </p>
 </details>
 
+---
+
+##### 21. Какая итоговые размеры будут у элемента `div`?
+
+```html
+<div></div>
+```
+
+```css
+div {
+  width: 100px;
+  height: 50px;
+  padding: 20px;
+  border: 5px solid tan;
+  box-sizing: content-box;
+}
+```
+
+1. `ширина: 100px`, `высота: 50px`
+2. `ширина: 120px`, `высота: 70px`
+3. `ширина: 140px`, `высота: 90px`
+4. `ширина: 150px`, `высота: 100px`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+  
+  Значение `content-box` означает, что к ширине и высоте также будут добавлены размеры `padding` и `border`.
+  
+  Получается, что размеры контейнера будут высчитываться следующим образом:
+  - `ширина =  width + padding-left + padding-right + border-left + border-right = 100 + 20 + 20 + 5 + 5 = 150px`
+  - `высота = height + padding-top + padding-bottom + border-top + border-bottom = 50 + 20 + 20 + 5 + 5 = 100px`
+
+</p>
+</details>
+
 
 
