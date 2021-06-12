@@ -68,4 +68,4 @@ npx webpack --config webpack.config.js
 
 `mode`:
 - `development` — не минифицирует итоговый бандл.
-- `production` — миницифирует итоговый бандл.
+- `production` — минифицирует итоговый бандл.
