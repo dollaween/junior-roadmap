@@ -238,7 +238,7 @@ div p span {
 
 ```html
 <div>
-  <p>Exmaple <span class="purple">text</span></p>
+  <p>Exmaple <span>text</span></p>
 </div>
 ```
 
@@ -267,6 +267,42 @@ span {
 </p>
 </details>
 
+---
+
+##### 8. Какое значение `color` будет у `span`?
+
+```html
+<div class="wrapper">
+  <div>
+    <p>Exmaple <span class="target">text</span></p>
+  </div>
+</div>
+```
+
+```css
+.wrapper span.target {
+  color: green;
+}
+
+.wrapper div .target {
+  color: red;
+}
+```
+
+1. `green`
+2. `red`
+3. `black`
+4. `unset`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 2**
+
+  Указанные селекторы имеют одинаковую специфичность. При одинаковой специфичности применяются стили, написанные последними.
+
+</p>
+</details>
 
 
 
