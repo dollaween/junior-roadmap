@@ -516,4 +516,54 @@ span {
 </p>
 </details>
 
+---
+
+##### 15. Какое значение свойства `font-size` будет у элемента `span`?
+
+```html
+<div>
+  <p>Example <span>text</span></p>
+</div>
+```
+
+```css
+html {
+  font-size: 16px;
+}
+
+div {
+  font-size: 0.5em;
+}
+
+p {
+  font-size: 0.5em;
+}
+
+span {
+  font-size: 1em;
+}
+```
+
+1. `32px`
+2. `16px`
+3. `8px`
+4. `4px`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+  
+  `em` — это относительная единица измерения, свойство `font-size` которой зависит от значения `font-size` у родительского элемента.
+
+  `1em` равен значению `font-size` родительского элемента.
+  
+  Итого получает следующую цепочку:
+  - `html` — `16px`
+  - `div` — `0.5em = 16px / 2 = 8px`
+  - `p` — `0.5em = 8px / 2 = 4px`
+  - `span` — `1em = 4px`
+
+</p>
+</details>
 
