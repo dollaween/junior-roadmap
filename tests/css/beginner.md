@@ -197,4 +197,39 @@ p {
 </p>
 </details>
 
+---
+
+##### 6. Какое значение `color` будет у `span`?
+
+```html
+<div>
+  <p>Exmaple <span class="purple">text</span></p>
+</div>
+```
+
+```css
+.purple {
+  color: purple;
+}
+
+div p span {
+  color: pink;
+}
+```
+
+1. `purple`
+2. `pink`
+3. `black`
+4. `inherit`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  Селектор по классу всегда имеет более высокий приоритет (специфичность), чем селектор по типу. Поэтому значение `span` будет установлено в `purple`.
+
+</p>
+</details>
+
 
