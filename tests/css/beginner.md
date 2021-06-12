@@ -232,4 +232,41 @@ div p span {
 </p>
 </details>
 
+---
+
+##### 7. Какое значение `color` будет у `span`?
+
+```html
+<div>
+  <p>Exmaple <span class="purple">text</span></p>
+</div>
+```
+
+```css
+div p {
+  color: aqua;
+}
+
+span {
+  color: plum;
+}
+```
+
+1. `aqua`
+2. `plum`
+3. `black`
+4. `inherit`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 2**
+
+  Селектор `div p` не указывает прямо на элемент `span`. Селектор `span` же указывает конкретно на элемент `span`, поэтому он будет иметь более высокую специфичность.
+
+</p>
+</details>
+
+
+
 
