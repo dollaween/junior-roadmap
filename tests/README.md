@@ -16,6 +16,14 @@
 
 ---
 
+### CSS
+
+* [Тесты на знание базы](./css/beginner.md)
+
+---
+
+### Javascript
+
 ### Часть 1. Примитивы
 * [Переменные, `let`, `const`, `var`](./variables.md)
 * [`Number`, `Math`, математические операторы](./numbers.md)
