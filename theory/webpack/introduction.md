@@ -38,7 +38,7 @@
 ```bash
 mkdir webpack-demo
 npm init
-npm i webpack webpack-cli
+npm i webpack webpack-cli --save-dev
 ```
 
 ---
