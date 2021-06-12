@@ -660,3 +660,44 @@ html {
 </p>
 </details>
 
+---
+
+##### 18. Какое значение свойства `font-size` будет у элемента `li`?
+
+```html
+<ul>
+  <ul>
+    <ul>
+      <ul>
+        <li>Example element</li>
+      </ul>
+    </ul>
+  </ul>
+</ul>
+```
+
+```css
+html {
+  font-size: 32px;
+}
+
+ul {
+  font-size: 0.5em;
+}
+```
+
+1. `16px`
+2. `8px`
+3. `4px`
+4. `2px`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+
+  `em` — это относительная единица измерения, свойство `font-size` которой зависит от значения `font-size` у родительского элемента.
+
+</p>
+</details>
+
