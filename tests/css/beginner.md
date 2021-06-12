@@ -429,3 +429,45 @@ p {
 </p>
 </details>
 
+---
+
+##### 13. Какой из элементов не будет обладать прозрачностью?
+
+```html
+<div class="first">Element 1</div>
+<div class="second">Element 2</div>
+<div class="third">Element 3</div>
+<div class="fourth">Element 4</div>
+```
+
+```css
+.first {
+  color: hsl(100, 100%, 50%);
+}
+
+.second {
+  color: rgba(255, 100, 37, .9);
+}
+
+.third {
+  opacity: 0.4;
+}
+
+.fourth {
+  color: #FF378222;
+}
+```
+
+1. `.first`
+2. `.second`
+3. `.third`
+4. `.fourth`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+</p>
+</details>
+
