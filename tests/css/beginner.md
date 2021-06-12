@@ -46,3 +46,42 @@ div {
 </details>
 
 ---
+
+##### 2. Какое значение свойства `border` будет у `p` и `span`?
+
+```html
+<div>
+  <p>Example <span>text</span></p>
+</div>
+```
+
+```css
+div {
+  border: 1px solid blue;
+}
+
+p {
+  border: inherit;
+}
+
+span {
+  border: inherit;
+}
+```
+
+1. `p: none`, `span: none`
+2. `p: 1px solid blue`, `span: 1px solid blue`
+3. `p: 1px solid blue`, `span: none`
+4. `p: none`, `span: 1px solid blue`
+
+<details><summary><b>Ответ</b></summary>
+
+  **Ответ: 2**
+
+  Значение `inherit` — наследует значение свойства у родительского элемента.
+  
+  В данном случае, элемент `p` получает синюю рамку от своего родителя `div`. Затем `span` получает рамку от элемента `p`.
+
+</details>
+
+
