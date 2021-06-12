@@ -16,13 +16,27 @@
 
 ---
 
+
+<div align="center">
+
 ### CSS
+
+</div>
+
+---
 
 * [Тесты на знание базы](./css/beginner.md)
 
 ---
 
+
+<div align="center">
+
 ### Javascript
+
+</div>
+
+---
 
 ### Часть 1. Примитивы
 * [Переменные, `let`, `const`, `var`](./variables.md)
