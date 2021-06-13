@@ -1039,4 +1039,42 @@ span {
 </p>
 </details>
 
+---
+
+##### 28. Какое из следующих свойств выровняет последний элемент `li` по правому краю родительского контейнера?
+
+```html
+<ul>
+  <li>Element 1</li>
+  <li>Element 2</li>
+  <li>Element 3</li>
+  <li class="last">Element 4</li>
+</ul>
+```
+
+```css
+ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 600px;
+}
+
+li {
+  width: 100px;
+}
+```
+
+1. `.last { align-self: flex-end }`
+2. `.last { justify-content: flex-end; }`
+3. `.last { justify-self: end }`
+4. `.last { margin-left: auto }`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+
+</p>
+</details>
+
 
