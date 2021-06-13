@@ -410,6 +410,106 @@ p:not(p:last-child) {
 }
 ```
 
+---
+
+<div align="center">
+
+### `:required`
+
+</div>
+
+---
+
+Псевдокласс `:required` — находит элементы `input`, у которых есть атрибут `required`.
+
+Атрибут `required` означает, что это поле обязательно для заполнения.
+
+```html
+<input type="text" placeholder="Введите логин" required>
+<input type="text" placeholder="Введите страну">
+```
+
+```css
+/* Стили будут применены к первому `input` */
+input:required {
+  background: orange;
+}
+```
+
+---
+
+<div align="center">
+
+### `:optional`
+
+</div>
+
+---
+
+Псевдокласс `:optional` противоположен псевдоклассу `:required` — он находит элементы `input`, у которых не задан атрибут `required`.
+
+```html
+<input type="text" placeholder="Введите логин" required>
+<input type="text" placeholder="Введите страну">
+```
+
+```css
+/* Стили будут применены ко второму `input` */
+input:optional {
+  background: orange;
+}
+```
+
+---
+
+<div align="center">
+
+### `:checked`
+
+</div>
+
+---
+
+Псевдокласс `:checked` — находит элементы `<input type="radio">`, `<input type="checkbox">` или `<option>`, которые выбраны или включены.
+
+```html
+<input type="checkbox">
+```
+
+```css
+/* Эти стили будут применены, когда чекбокс будет выбран */
+input[type="checkbox"]:checked {
+  opacity: 0.3;
+}
+```
+
+---
+
+<div align="center">
+
+### `:disabled`
+
+</div>
+
+---
+
+Псевдокласс `:disabled` — находит элементы `input`, `select`, у которых установлен атрибут `disabled`.
+
+Атрибут `disabled` означает, что это поле нельзя редактировать.
+
+```html
+<input type="text">
+<input type="text" disabled>
+```
+
+```
+/* Эти стили будут применены ко второму элементу `input` */
+input:disabled {
+  background: #ccc;
+}
+```
+
+
 
 ---
 
@@ -426,4 +526,8 @@ p:not(p:last-child) {
 - [`:only-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:only-child)
 - [`:only-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:only-of-type)
 - [`:not()`](https://developer.mozilla.org/ru/docs/Web/CSS/:not)
+- [`:required`](https://developer.mozilla.org/ru/docs/Web/CSS/:required)
+- [`:optional`](https://developer.mozilla.org/ru/docs/Web/CSS/:optional)
+- [`:checked`](https://developer.mozilla.org/ru/docs/Web/CSS/:checked)
+- [`:disabled`](https://developer.mozilla.org/ru/docs/Web/CSS/:disabled)
 
