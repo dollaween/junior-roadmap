@@ -691,4 +691,3 @@ html {
 - [`:default`](https://developer.mozilla.org/ru/docs/Web/CSS/:default)
 - [`:target`](https://developer.mozilla.org/ru/docs/Web/CSS/:target)
 - [`:root`](https://developer.mozilla.org/ru/docs/Web/CSS/:root)
-
