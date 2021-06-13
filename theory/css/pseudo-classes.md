@@ -344,6 +344,71 @@ li:only-child {
 }
 ```
 
+---
+
+<div align="center">
+
+### `:only-of-type`
+
+</div>
+
+---
+
+Псевдокласс `:only-of-type` — находит элемент, который является единственным потомком такого типа (тега).
+
+```html
+<div>
+  <span>Example span</span>
+  <p>Example p</p>
+</div>
+
+<div>
+  <span>Example span</span>
+  <p>Example p 1</p>
+  <p>Example p 2</p>
+</div>
+```
+
+```css
+/*
+ * Эти стили будут применены к `p` в первом `div`, так как в нем `p` является единственным элементом такого типа.
+ * Второй `div` содержит два элемента типа `p`, поэтому к ним стили применены не будут.
+ */
+p:only-of-type {
+  background: orange;
+}
+```
+
+---
+
+<div align="center">
+
+### `:not()`
+
+</div>
+
+---
+
+Псевдокласс `:not()` — исключает из нахождения элементы, которые указаны внутри скобок.
+
+```html
+<p>Example text 1</p>
+<p class="dont-use-it">Example text 2</p>
+<p class="dont-use-it">Example text 3</p>
+<p>Example text 4</p>
+```
+
+```css
+/* Эти стили будут применены ко всем элементам `p`, у которых нет класса `dont-use-it` (то есть к первому и четвертому) */
+p:not(.dont-use-it) {
+  color: orange;
+}
+
+/* Эти стили будут применены ко всем элементам `p`, кроме последнего */
+p:not(p:last-child) {
+  background: green;
+}
+```
 
 
 ---
@@ -354,9 +419,11 @@ li:only-child {
 - [`:focus`](https://developer.mozilla.org/ru/docs/Web/CSS/:focus)
 - [`:first-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:first-child)
 - [`:last-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:last-child)
-- [`:nth-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:nth-child)
+- [`:nth-child()`](https://developer.mozilla.org/ru/docs/Web/CSS/:nth-child)
 - [`:first-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:first-of-type)
 - [`:last-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:last-of-type)
-- [`:nth-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:nth-of-type)
+- [`:nth-of-type()`](https://developer.mozilla.org/ru/docs/Web/CSS/:nth-of-type)
 - [`:only-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:only-child)
+- [`:only-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:only-of-type)
+- [`:not()`](https://developer.mozilla.org/ru/docs/Web/CSS/:not)
 
