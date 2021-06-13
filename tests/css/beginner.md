@@ -1065,7 +1065,7 @@ li {
 ```
 
 1. `.last { align-self: flex-end }`
-2. `.last { justify-content: flex-end; }`
+2. `.last { justify-content: flex-end }`
 3. `.last { justify-self: end }`
 4. `.last { margin-left: auto }`
 
@@ -1077,4 +1077,47 @@ li {
 </p>
 </details>
 
+---
+
+##### 29. Какое свойство нужно применить к элементу `.second`, чтобы он занял все свободное пространство родительского контейнера, не изменяя размеры `.first`?
+
+```html
+<div class="flex">
+  <div class="first">Element 1</div>
+  <div class="second">Element 2</div>
+</div>
+```
+
+```css
+.flex {
+  display: flex;
+  width: 400px;
+}
+
+.first {
+  width: 100px;
+}
+
+.second {
+  width: 100%;
+}
+```
+
+1. `.second { flex-grow: 1 }`
+2. `.second { width: 100% }`
+3. `.second { width: auto }`
+4. `.second { flex-shrink: 1 }`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+  
+  - Свойство `flex-grow` — определяет, как много свободного пространства займет элемент. При значении `1` — элемент займет все свободное пространство.
+  - Свойство `width: 100%` — растянет элемент на всю ширину, но из-за этого элемент `.first` будет уменьшен в размерах.
+  - Свойство `width: auto` — сделает ширину элемента по ширине содержимого (то есть изменений не будет).
+  - Свойство `flex-shrink` — определяет фактор сжатия элемента.
+
+</p>
+</details>
 
