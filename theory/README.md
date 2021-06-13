@@ -35,6 +35,7 @@
 * [Работа с текстом](./css/text.md) [в разработке]
 * [Блочная модель](./css/box-model.md)
 * [Поток](./css/flow.md)
+* [`vertical-align`](./css/vertical-align.md)
 * [Flexbox](./css/flexbox.md)
 * [Grid](./css/grid.md) [в разработке]
 * [Работа с изображениями](./css/images.md)
