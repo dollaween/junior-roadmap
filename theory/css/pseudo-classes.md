@@ -664,8 +664,12 @@ html {
 
 ---
 
+Полный список псевдоклассов можно найти по ссылке:  
+[Псевдоклассы](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
+
+---
+
 Источники:
-- [Псевдоклассы](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
 - [`:hover`](https://developer.mozilla.org/ru/docs/Web/CSS/:hover)
 - [`:active`](https://developer.mozilla.org/ru/docs/Web/CSS/:active)
 - [`:focus`](https://developer.mozilla.org/ru/docs/Web/CSS/:focus)
