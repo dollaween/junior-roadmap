@@ -960,5 +960,83 @@ div {
 </p>
 </details>
 
+---
+
+##### 26. Какие итоговые размеры будут у элемента `span`?
+
+```html
+<span></span>
+```
+
+```css
+span {
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
+}
+```
+
+1. `ширина: 0px`, `высота: 0px`
+2. `ширина: 100px`, `высота: 50px`
+3. `ширина: 100px`, `высота: 55px`
+4. `ширина: 0px`, `высота: 55px`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+  
+  У `inline`-элементов свойства `width` и `height` работать не будут.
+
+</p>
+</details>
+
+---
+
+##### 27. Какая высота будет у элемента `span`?
+
+```html
+<span class="first">Element 1</span>
+<span class="second">Element 2</span>
+```
+
+```css
+.first,
+.second {
+  height: 16px;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.first {
+  font-family: Arial;
+}
+
+.second {
+  font-family: Tahoma;
+}
+```
+
+1. `20px` у обоих
+2. `0px` у обоих
+3. `16px` у обоих
+4. У элементов высота будет отличаться
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+
+  Свойство `height` — никак не влияет на `inline`-элемент.  
+  Свойство `line-height` — влияет на межстрочное расстояние.
+  
+  На высоту самого `inline`-элемента влияют свойства `font-size` и `font-family`. Если с `font-size` все просто — сколько указали, столько и будет, то `font-family` может внести в высоту `inline`-элемента дополнительные пиксели. Разные шрифты добавляют разное количество доп. пикселей.
+
+  В данном примере, высоты будут следующие:
+  - `.first — 22px`
+  - `.second — 24px`
+
+</p>
+</details>
 
 
