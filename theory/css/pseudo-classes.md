@@ -250,7 +250,7 @@ li:nth-child(3) {
 
 Кроме указания конкретного элемента, поддерживаются два ключевых слова:
 - `even` — все нечетные элементы.
-- `odd` — все четные элементы
+- `odd` — все четные элементы.
 
 ```css
 /* Все нечетные элементы `li` будут иметь зеленый фон */
@@ -265,7 +265,7 @@ li:nth-child(odd) {
 }
 ```
 
-Также, если добавить к порядковому номеру букву `n` — тогда стили будут применены к каждому `n`-элементу:
+Также, если добавить к порядковому номеру букву `n` — тогда стили будут применены к каждому `n`-ому элементу:
 
 ```css
 /* Эти стили будут применены к каждому третьему элементу `li` */
@@ -276,10 +276,87 @@ li:nth-child(3n) {
 
 ---
 
+<div align="center">
+
+### `:first-of-type`, `:last-of-type`, `:nth-of-type()`
+
+</div>
+
+---
+
+В отличии от `first-child`, псевдокласс `first-of-type` находит первый элемент указанного типа (тега).
+
+```html
+<div>
+  <span>Example span 1</span>
+  <span>Example span 2</span>
+  <p>Example p 1</p>
+  <p>Example p 2</p>
+</div>
+```
+
+```css
+/* Первый элемент `p` будет иметь красный цвет */
+p:first-of-type {
+  color: red;
+}
+
+/* А вот эти стили применены не будут, так как элемент `p` — не первый среди всех элементов родителя */
+p:first-child {
+  background: orange;
+}
+```
+
+Псевдокласс `:last-of-type` — действует по аналогии с `last-child`, но находит последний элемент указанного типа (тега).
+
+Псевдокласс `:nth-of-type()` — действует по аналогии с `:nth-child()`, но также находит только элементы указанного типа (тега).
+
+---
+
+<div align="center">
+
+### `:only-child`
+
+</div>
+
+---
+
+Псевдокласс `:only-child` — находит элемент, являющийся единственным потомком родителя.
+
+```html
+<ul>
+  <li>Example element</li>
+</ul>
+
+<ul>
+  <li>Example element 1</li>
+  <li>Example element 2</li>
+</ul>
+```
+
+```css
+/*
+ * Эти стили будут применены к элементу `li` в первом `ul`, так как `li` является единственным потомком.
+ * Во втором списке `ul` к `li` стили применены не будут, так как потомков два.
+ */
+li:only-child {
+  color: green;
+}
+```
+
+
+
+---
+
 Источники:
 - [`:hover`](https://developer.mozilla.org/ru/docs/Web/CSS/:hover)
 - [`:active`](https://developer.mozilla.org/ru/docs/Web/CSS/:active)
 - [`:focus`](https://developer.mozilla.org/ru/docs/Web/CSS/:focus)
 - [`:first-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:first-child)
-- [`last-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:last-child)
+- [`:last-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:last-child)
+- [`:nth-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:nth-child)
+- [`:first-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:first-of-type)
+- [`:last-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:last-of-type)
+- [`:nth-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:nth-of-type)
+- [`:only-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:only-child)
 
