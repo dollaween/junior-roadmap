@@ -664,8 +664,8 @@ html {
 
 ---
 
-Полный список псевдоклассов можно найти по ссылке:  
-[Псевдоклассы](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
+Полный список псевдоклассов можно найти по ссылке ниже:  
+[Псевдоклассы | MDN](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
 
 ---
 
