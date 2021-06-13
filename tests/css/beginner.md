@@ -1154,3 +1154,41 @@ li {
 </p>
 </details>
 
+---
+
+##### 31. Какие из стилей отцентрируют `.target` по вертикали относительно родительского элемента?
+
+```html
+<div class="target"></div>
+```
+
+```css
+.target {
+  width: 100px;
+  height: 50px;
+  background: #333;
+}
+```
+
+1. `.target { margin: auto 0 }`
+2. `.target { display: flex; align-items: center; }`
+3. `.target { vertical-align: middle }`
+4. Ни одни из вышеперечисленных
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+
+  Без изменения родительского элемента невозможно отцентрировать `.target` по вертикали.
+
+  - Свойства `margin: auto 0` и `vertical-align` не центрируют блочные элементы по вертикали.
+  - Свойство `{ display: flex; align-items: center; }` — центрирует по вертикали только дочерние элементы.
+  
+  Варианты центрирования `.target` по вертикали
+  1. У родительского элемента прописать `{ display: flex; align-items: center; }`.
+  2. У родительского элемента прописать `{ position: relative }`, а у `.target` — `{ position: absolute; top: 50%; transform: translateY(-50%) }`.
+
+</p>
+</details>
+
