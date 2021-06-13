@@ -383,6 +383,36 @@ p:only-of-type {
 
 <div align="center">
 
+### `:empty`
+
+</div>
+
+---
+
+Псевдокласс `:empty` — находит элементы, у которых нет потомков.
+
+```html
+<div></div>
+
+<div>Example text</div>
+```
+
+```css
+div {
+  width: 100px;
+  height: 50px;
+}
+
+/* Эти стили будут применены только к первому `div`, так как у него нет потомков */
+div:empty {
+  background: orange;
+}
+```
+
+---
+
+<div align="center">
+
 ### `:not()`
 
 </div>
@@ -509,11 +539,40 @@ input:disabled {
 }
 ```
 
+---
 
+<div align="center">
+
+### `:indeterminate`
+
+</div>
+
+---
+
+Псевдокласс `:indeterminate` — находит элементы в неопределенном состоянии.
+
+Неопределнное состояние означает:
+1. Когда все элементы `<input type="radio">` в одной группе не выбраны.
+2. Когда элементам `<input type="checkbox">` свойство `indeterminate` установлено в `true` через Javascript.
+3. Когда элементы `<progress>` в неопределенном состоянии.
+
+```html
+<input type="radio" name="group">
+<input type="radio" name="group">
+<input type="radio" name="group">
+```
+
+```css
+/* Стили будут применены до тех пор, пока не будет выбрана одна из радио-кнопок */
+input[type="radio"]:indeterminate {
+  opacity: .3;
+}
+```
 
 ---
 
 Источники:
+- [Псевдоклассы](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
 - [`:hover`](https://developer.mozilla.org/ru/docs/Web/CSS/:hover)
 - [`:active`](https://developer.mozilla.org/ru/docs/Web/CSS/:active)
 - [`:focus`](https://developer.mozilla.org/ru/docs/Web/CSS/:focus)
@@ -525,9 +584,11 @@ input:disabled {
 - [`:nth-of-type()`](https://developer.mozilla.org/ru/docs/Web/CSS/:nth-of-type)
 - [`:only-child`](https://developer.mozilla.org/ru/docs/Web/CSS/:only-child)
 - [`:only-of-type`](https://developer.mozilla.org/ru/docs/Web/CSS/:only-of-type)
+- [`:empty`](https://developer.mozilla.org/ru/docs/Web/CSS/:empty)
 - [`:not()`](https://developer.mozilla.org/ru/docs/Web/CSS/:not)
 - [`:required`](https://developer.mozilla.org/ru/docs/Web/CSS/:required)
 - [`:optional`](https://developer.mozilla.org/ru/docs/Web/CSS/:optional)
 - [`:checked`](https://developer.mozilla.org/ru/docs/Web/CSS/:checked)
 - [`:disabled`](https://developer.mozilla.org/ru/docs/Web/CSS/:disabled)
+- [`:indeterminate`](https://developer.mozilla.org/ru/docs/Web/CSS/:indeterminate)
 
