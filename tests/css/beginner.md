@@ -924,5 +924,41 @@ div {
 </p>
 </details>
 
+---
+
+##### 25. Какое расстояние будет между элементами `span`?
+
+```html
+<p>
+  <span class="first">Element 1</span>
+  <span class="second">Element 2</span>
+</p>
+```
+
+```css
+.first {
+  margin-right: 40px;
+}
+
+.second {
+  margin-left: 60px;
+}
+```
+
+1. `40px`
+2. `60px`
+3. `100px`
+4. `0px`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 3**
+
+  Горизонтальный отступ между элементами суммируется. Расстояние будет равно `40px + 60px = 100px`.
+
+</p>
+</details>
+
 
 
