@@ -1121,3 +1121,36 @@ li {
 </p>
 </details>
 
+---
+
+##### 30. Какие из стилей отцентрируют `.target` по горизонтали родительского элемента?
+
+```html
+<div class="target"></div>
+```
+
+```css
+.target {
+  width: 100px;
+  height: 50px;
+  background: #333;
+}
+```
+
+1. `.target { margin: 0 auto }`
+2. `.target { display: flex; justify-content: center; }`
+3. `.target { display: grid; justify-content: center; }`
+4. Все вышеперечисленные
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+  
+  Варианты 2 и 3 будут центрировать дочерние элементы `.target`, но не сам элемент `.target`.
+  
+  Свойство `margin: 0 auto` — выровняет элемент `.target` по горизонтали относительно родительского элемента.
+
+</p>
+</details>
+
