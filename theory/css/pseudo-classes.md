@@ -571,6 +571,99 @@ input[type="radio"]:indeterminate {
 
 ---
 
+<div align="center">
+
+### `:default`
+
+</div>
+
+---
+
+Псевдокласс `:default` — находит элемент установленный по-умолчанию.
+
+```html
+<input type="radio" name="group">
+<input type="radio" name="group">
+<input type="radio" name="group" checked>
+<input type="radio" name="group">
+```
+
+```css
+/* Стили будут применены к третьему элементу `input`, так как он установлен по-умолчанию атрибутом `checked` */
+input:default {
+  opacity: .3;
+}
+```
+
+---
+
+<div align="center">
+
+### `:target`
+
+</div>
+
+---
+
+Псевдокласс `:target` — находит элементы, атрибут `id` которых равен фрагменту `#` в url.
+
+```html
+<h2 id="section1">Example heading 1</h2>
+<h2 id="section2">Example heading 2</h2>
+```
+
+```css
+/*
+ * Эти стили будут применены к первому элементу `h2` тогда, когда url будет вида 'example.com/index.html#section1'
+ */
+#section1:target {
+  color: orange;
+}
+
+/*
+ * Эти стили будут применены к первому элементу `h2` тогда, когда url будет вида 'example.com/index.html#section2'
+ */
+#section2:target {
+  color: orange;
+}
+```
+
+---
+
+<div align="center">
+
+### `:root`
+
+</div>
+
+---
+
+Псевдокласс `:root` — находит корневой элемент. В нашем случае, это тег `html`.
+
+```css
+:root {
+  font-size: 16px;
+  color: black
+}
+
+/* Запись выше эквивалентна этой записи: */
+html {
+  font-size: 16px;
+  color: black;
+}
+```
+
+Использование `:root` полезно для объявления переменных:
+
+```css
+:root {
+  --primary-color: #333;
+  --second-color: #666;
+}
+```
+
+---
+
 Источники:
 - [Псевдоклассы](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
 - [`:hover`](https://developer.mozilla.org/ru/docs/Web/CSS/:hover)
@@ -591,4 +684,7 @@ input[type="radio"]:indeterminate {
 - [`:checked`](https://developer.mozilla.org/ru/docs/Web/CSS/:checked)
 - [`:disabled`](https://developer.mozilla.org/ru/docs/Web/CSS/:disabled)
 - [`:indeterminate`](https://developer.mozilla.org/ru/docs/Web/CSS/:indeterminate)
+- [`:default`](https://developer.mozilla.org/ru/docs/Web/CSS/:default)
+- [`:target`](https://developer.mozilla.org/ru/docs/Web/CSS/:target)
+- [`:root`](https://developer.mozilla.org/ru/docs/Web/CSS/:root)
 
