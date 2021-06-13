@@ -41,3 +41,9 @@
 Ниже приведен скриншот, с указанием, на какую позицию будет ссылаться то или иное значение свойства `vertical-align`:
 
 ![Пример](https://i.stack.imgur.com/Ousrm.gif)
+
+---
+
+Источники:
+- [`vertical-align`](https://developer.mozilla.org/ru/docs/Web/CSS/vertical-align)
+- [font-size vs line-height vs actual height](https://stackoverflow.com/questions/41336177/font-size-vs-line-height-vs-actual-height)
