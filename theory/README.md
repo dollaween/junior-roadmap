@@ -31,7 +31,7 @@
 * [Единицы измерения](./css/units.md)
 * [Цвет](./css/color.md)
 * [Псевдоклассы](./css/pseudo-classes.md)
-* [Псевдоэлементы](./css/pseudo-elements.md) [в разработке]
+* [Псевдоэлементы](./css/pseudo-elements.md)
 * [Работа с текстом](./css/text.md) [в разработке]
 * [Блочная модель](./css/box-model.md)
 * [Поток](./css/flow.md)
