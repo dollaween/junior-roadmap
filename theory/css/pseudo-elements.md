@@ -78,9 +78,83 @@ p::first-line {
 
 ---
 
+Псевдоэлемент `::after` — создает псевдоэлемент (HTML-элемент), который является последним потомком выбранного элемента.
+
+```html
+<a href="#">Перейти по ссылке</a>
+```
+
+```css
+/* После ссылки будет создан элемент со стрелочкой */
+a::after {
+  content: "→";
+}
+```
+
+---
+
+<div align="center">
+
+### `::before`
+
+</div>
+
+---
+
+Псевдоэлемент `::before` — аналогичен псевдоэлементу `::after` за той лишь разницей, что элемент создается перед всеми потомками выбранного элемента.
+
+---
+
+<div align="center">
+
+### `::selection`
+
+</div>
+
+---
+
+Псевдоэлемент `::selection` — применяет стили к части документа, который выделил пользователь (например, мышью).
+
+```html
+<p>Example text</p>
+```
+
+```css
+/* Стили применятся тогда, когда пользователь выделит текст в элементе `p` */
+p::selection {
+  background: green;
+  color: white;
+}
+```
+
+---
+
+<div align="center">
+
+### `::placeholder`
+
+</div>
+
+---
+
+Псевдоэлемент `::placeholder` — применяет стили к тексту placeholder в `<input>` или `<textarea>`.
+
+```html
+<input type="text" placeholder="Введите логин">
+```
+
+```css
+input::placeholder {
+  color: red;
+}
+```
 
 ---
 
 Источники
 - [`::first-letter`](https://developer.mozilla.org/ru/docs/Web/CSS/::first-letter)
 - [`::first-line`](https://developer.mozilla.org/ru/docs/Web/CSS/::first-line)
+- [`::after`](https://developer.mozilla.org/ru/docs/Web/CSS/::after)
+- [`::before`](https://developer.mozilla.org/ru/docs/Web/CSS/::before)
+- [`::selection`](https://developer.mozilla.org/ru/docs/Web/CSS/::selection)
+- [`::placeholder`](https://developer.mozilla.org/ru/docs/Web/CSS/::placeholder)
