@@ -139,8 +139,8 @@ div:focus-within {
 ```html
 <div>
   <span>First element</span>
-  <p>Second element</p>
-  <div>Third element</div>
+  <div>Second element</div>
+  <p>Third element</p>
 </div>
 ```
 
@@ -151,8 +151,8 @@ p:first-child {
 ```
 
 1. `span`
-2. `p`
-3. `div`
+2. `div`
+3. `p`
 4. Никакой
 
 <details><summary><b>Ответ</b></summary>
@@ -167,5 +167,39 @@ p:first-child {
 </p>
 </details>
 
+---
+
+##### 6. Какой из элементов будет окрашен в зеленый цвет?
+
+```html
+<div>
+  <span>First element</span>
+  <p>Second element</p>
+  <div>Third element</div>
+</div>
+```
+
+```css
+div :last-child {
+  background: green;
+}
+```
+
+1. `span`
+2. `div`
+3. `p`
+4. Никакой
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 3**
+
+  Псевдокласс `:last-child` — находит элемент, который является последним в своем родителе.
+
+  Запись вида `div :last-child` (с пробелом перед двоеточием) аналогична записи `div *:last-child` — то есть будет найдет любой последний элемент внутри элемента `div`.
+
+</p>
+</details>
 
 
