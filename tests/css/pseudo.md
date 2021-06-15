@@ -275,4 +275,37 @@ li:nth-child(2n-1) {
 </p>
 </details>
 
+---
+
+##### 9. Какой из элементов будет окрашен в зеленый цвет?
+
+```html
+<div>
+  <span>First element</span>
+  <div>Second element</div>
+  <p>Third element</p>
+</div>
+```
+
+```css
+p:first-of-type {
+  background: green;
+}
+```
+
+1. `span`
+2. `div`
+3. `p`
+4. Никакой
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 3**
+
+  Псевдокласс `:first-of-type` находит первый элемент указанного типа (тега).
+
+</p>
+</details>
+
 
