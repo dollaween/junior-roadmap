@@ -132,4 +132,40 @@ div:focus-within {
 </p>
 </details>
 
+---
+
+##### 5. Какой из элементов будет окрашен в зеленый цвет?
+
+```html
+<div>
+  <span>First element</span>
+  <p>Second element</p>
+  <div>Third element</div>
+</div>
+```
+
+```css
+p:first-child {
+  background: green;
+}
+```
+
+1. `span`
+2. `p`
+3. `div`
+4. Никакой
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+
+  Псевдокласс `:first-child` — находит элемент, который является первым в своем родителе.
+
+  Элемент `p` — не является первым в списке.
+
+</p>
+</details>
+
+
 
