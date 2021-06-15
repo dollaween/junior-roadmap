@@ -183,6 +183,22 @@ li:first-child {
 }
 ```
 
+Запись вида `ul :first-child` аналогична записи `ul *:first-child` — то есть будет найден любой первый элемент тега `ul`.
+
+```html
+<div>
+  <p>First element</p>
+  <span>Second element</span>
+</div>
+```
+
+```css
+/* Стили будут применены к элементу `p` */
+div :first-child {
+  color: red;
+}
+```
+
 ---
 
 <div align="center">
