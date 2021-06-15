@@ -288,6 +288,11 @@ li:nth-child(odd) {
 li:nth-child(3n) {
   font-size: 30px;
 }
+
+/* Эти стили будут применены к каждому третьему элементу, начиная со второго */
+li:nth-child(3n - 1) {
+  line-height: 2;
+}
 ```
 
 ---
