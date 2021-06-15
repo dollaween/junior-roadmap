@@ -174,8 +174,8 @@ p:first-child {
 ```html
 <div>
   <span>First element</span>
-  <p>Second element</p>
-  <div>Third element</div>
+  <div>Second element</div>
+  <p>Third element</p>
 </div>
 ```
 
