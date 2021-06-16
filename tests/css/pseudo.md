@@ -585,6 +585,36 @@ input[type="radio"]:indeterminate {
 ```
 
 ```css
+input[type="radio"]:checked {
+  opacity: 0.3;
+}
+```
+
+1. Первому
+2. Второму
+3. Всем
+4. Никакому
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  Псевдокласс `:checked` — находит элементы `<input type="radio">`, `<input type="checkbox">` или `<option>`, которые выбраны или включены. В данном примере, с помощью атрибута `checked` выбран первый элемент.
+
+</p>
+</details>
+
+---
+
+##### 19. К какому элементу будут применены стили?
+
+```html
+<input type="radio" name="group" checked>
+<input type="radio" name="group">
+```
+
+```css
 input[type="radio"]:default {
   opacity: 0.3;
 }
@@ -600,7 +630,108 @@ input[type="radio"]:default {
 
   **Ответ: 1**
 
-  Псевдокласс `:default` — находит элемент установленный по-умолчанию. С помощью атрибута `checked` по-умолчанию отмеченный первый `input`.
+  Псевдокласс `:default` — находит элемент установленный по-умолчанию. С помощью атрибута `checked` по-умолчанию отмечен первый `input`.
+
+</p>
+</details>
+
+---
+
+##### 20. К какому элементу будут применены стили?
+
+```html
+<div disabled>First element</div>
+<p disabled>Second element</p>
+<input type="text" disabled>
+```
+
+```css
+*:disabled {
+  background: grey;
+}
+```
+
+1. Первому
+2. Второму
+3. Третьему
+4. Никакому
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 3**
+
+  Псевдокласс `:disabled` — находит элементы `input`, `select`, у которых установлен атрибут `disabled`.
+
+</p>
+</details>
+
+---
+
+##### 21. Когда псевдокласс `:target` будет применен?
+
+```html
+<h2 id="section">Example heading</h2>
+```
+
+```css
+#section1:target {
+  color: orange;
+}
+```
+
+1. Когда пользователь нажмет на элемент `h2`
+2. Когда страница будет прокручена до элемента `h2`
+3. Когда в url будет фрагмент `#section`
+4. Когда элемент `h2` будет видимым на экране
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 3**
+  
+  Псевдокласс `:target` — находит элементы, атрибут `id` которых равен фрагменту `#` в url.
+
+  Чтобы стили были применены к элементу `h2` нужно, чтобы url был вида `example.com/index.html#section`.
+
+</p>
+</details>
+
+---
+
+##### 22. К какому элементу будут применены стили? 
+
+```html
+<div>
+  <p>Example text</p>
+</div>
+```
+
+```css
+p:root {
+  background: green;
+}
+```
+
+1. `div`
+2. `p`
+3. `html`
+4. Никакому
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+
+  Псевдокласс `:root` — находит корневой элемент. Он всегда указывает на элемент `html`, но должен быть записан без каких-либо дополнительных селекторов.
+
+  Правильная запись:
+
+  ```css
+  :root {
+    background: green;
+  }
+  ```
 
 </p>
 </details>
