@@ -448,6 +448,42 @@ div:empty {
 </p>
 </details>
 
+---
+
+##### 14. Какие элементы будут окрашены в зеленый цвет?
+
+```html
+<div>
+  <span>First element</span>
+  <div>Second element</div>
+  <p>Third element</p>
+</div>
+```
+
+```css
+div *:not(p, span) {
+  background: green;
+}
+```
+
+1. `2`
+2. `1, 3`
+3. `3`
+4. `1, 2`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  Псевдокласс `:not()` — исключает из нахождения элементы, которые указаны внутри скобок.
+
+  Селектор `*:not(p, span)` — выбирает все элементы, кроме типов `p` и `span`.
+
+</p>
+</details>
+
+
 
 
 
