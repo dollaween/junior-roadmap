@@ -483,6 +483,66 @@ div *:not(p, span) {
 </p>
 </details>
 
+---
+
+##### 15. К какому элементу будут применены стили?
+
+```html
+<div required></div>
+<div></div>
+```
+
+```css
+div:required {
+  background: green;
+}
+```
+
+1. Первому
+2. Второму
+3. Всем
+4. Никакому
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+
+  Псевдокласс `:required` — находит элементы `<input>`, у которых есть атрибут `required`. У элемента `div` атрибут `required` не задается.
+
+</p>
+</details>
+
+---
+
+##### 16. К какому элементу будут применены стили?
+
+```html
+<input type="text" required>
+<input type="text">
+```
+
+```css
+input:optional {
+  background: green;
+}
+```
+
+1. Первому
+2. Второму
+3. Всем
+4. Никакому
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 2**
+
+  Псевдокласс `:optional` противоположен псевдоклассу `:required` — он находит элементы `input`, у которых не задан атрибут `required`.
+
+</p>
+</details>
+
 
 
 
