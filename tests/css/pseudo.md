@@ -308,4 +308,41 @@ p:first-of-type {
 </p>
 </details>
 
+---
+
+##### 10. Какие из элементов будут окрашены в зеленый цвет?
+
+```html
+<div>
+  <span>First element</span>
+  <div>Second element</div>
+  <p>Third element</p>
+  <p>Fourth element</p>
+  <p>Fifth element</p>
+</div>
+```
+
+```css
+div p:nth-of-type(2n) {
+  background: green;
+}
+```
+
+1. `2`
+2. `4`
+3. `2, 4`
+4. `3, 5`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 2**
+
+  Псевдокласс `:nth-of-type()` — действует по аналогии с `:nth-child()`, но находит только элементы указанного типа (тега).
+
+  Запись `p:nth-of-type(2n)` означает: найти каждый второй элемент `p`.
+
+</p>
+</details>
+
 
