@@ -99,21 +99,31 @@ img {
 }
 
 /* Эти стили будут применены, когда экран устройства по ширине 1000px и меньше */
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .wrapper div {
     width: 32%;
   }
 }
 
 /* Эти стили будут применены, когда экран устройства по ширине 500px и меньше */
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .wrapper div {
     width: 48%;
   }
 }
 ```
 
+Через оператор `and` можно добавить несколько условий:
+```css
+/* Эти стили будут применены, когда экран устройства по ширине и высоте до 500px */
+@media (max-width: 500px) and (max-height: 500px) {
+  .wrapper {
+    background: orange
+  }
+}
+```
 
 ---
 
 Источники:
+- [`@media`](https://developer.mozilla.org/ru/docs/Web/CSS/@media)
