@@ -110,6 +110,9 @@
 
 Источники:
 - [`grid-template-columns`](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-columns)
+- [`grid-template-rows`](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-rows)
+- [`grid-template-areas`](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-areas)
+- [`grid-template`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template)
 - [`<flex> (fr)`](https://developer.mozilla.org/ru/docs/Web/CSS/flex_value)
 
 
