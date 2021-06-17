@@ -1,6 +1,6 @@
 <div align="center">
 
-# Адаптивность (медиа-запросы)
+# Адаптивность (медиавыражения)
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
@@ -76,6 +76,42 @@ img {
 ---
 
 **Медиавыражения (медиа-запросы)** — это использование в коде at-правила `@media`.
+
+```html
+<div class="wrapper">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</div>
+```
+
+```css
+/* Эти стили будут применены по-умолчанию */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper div {
+  width: 20%;
+}
+
+/* Эти стили будут применены, когда экран устройства будет по ширине 1000px и меньше */
+@media screen and (max-width: 1000px) {
+  .wrapper div {
+    width: 32%;
+  }
+}
+
+/* Эти стили будут применены, когда экран устройства будет по ширине 500px и меньше */
+@media screen and (max-width: 500px) {
+  .wrapper div {
+    width: 48%;
+  }
+}
+```
 
 
 ---
