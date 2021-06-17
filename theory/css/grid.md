@@ -97,10 +97,13 @@
 `grid-template-areas` — определяет названия grid-области.
 
 Пример:
-`grid-template-areas: "a a a"
-                      "b c c"
-                      "b c c"`
-
+```css
+.grid {
+  grid-template-areas: "a a a"
+                       "b c c"
+                       "b c c";
+}
+```
 
 
 ---
