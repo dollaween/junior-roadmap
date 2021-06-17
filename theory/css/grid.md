@@ -39,6 +39,8 @@
 
 </div>
 
+---
+
 `grid-template-columns` — задает количество столбцов и определяет их ширину.
 
 Количество значений определяет количество столбцов:
@@ -62,10 +64,42 @@
 - `grid-template-columns: 200px 1fr` — первый столбец `200px`, второй использует всю оставшуюся ширину.
 - `grid-template-columns: repeat(auto-fill, 300px)` — создаст столько столбцов по `300px`, сколько влезет по ширине.
 
+
 ---
 
+<div align="center">
 
+### `grid-template-rows`
 
+</div>
+
+---
+
+`grid-template-rows` — задает высоту рядов и их названия.
+
+Количество значений определяет к каким столбцам будут применены значения:
+- `grid-template-rows: 100px` — только первый ряд будет высотой `100px`, а все остальные `auto`.
+- `grid-template-rows: 100px 100px` — два ряда будут высотой по `100px`, а все остальные `auto`.
+- и так далее.
+
+Возможные значения аналогичны `grid-template-columns`.
+
+---
+
+<div align="center">
+
+### `grid-template-areas`
+
+</div>
+
+---
+
+`grid-template-areas` — определяет названия grid-области.
+
+Пример:
+`grid-template-areas: "a a a"
+                      "b c c"
+                      "b c c"`
 
 
 
