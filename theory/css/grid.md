@@ -24,6 +24,8 @@
 
 Свойства, которые могут быть заданы grid-контейнеру:
 - `grid-template-columns`
+- `grid-template-rows`
+- `grid-template-areas`
 - `grid-gap`
 - `grid-auto-rows`
 
@@ -104,6 +106,16 @@
                        "b c c";
 }
 ```
+
+---
+
+<div align="center">
+
+### `grid-template-areas`
+
+</div>
+
+---
 
 
 ---
