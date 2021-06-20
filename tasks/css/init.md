@@ -22,15 +22,64 @@
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Examine?node-id=2%3A5)
 
-<details><summary><b>Решение</b></summary>
+<details><summary><b>Решение, Flow</b></summary>
 <p>
 
 ```html
-
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contacts</li>
+  <li>Service</li>
+  <li>FAQ</li>
+</ul>
 ```
 
 ```css
+ul {
+  width: max-content;
+  margin: 30px auto;
+  padding: 0;
+}
 
+li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение, Flexbox</b></summary>
+<p>
+
+```html
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contacts</li>
+  <li>Service</li>
+  <li>FAQ</li>
+</ul>
+```
+
+```css
+ul {
+  display: flex;
+  width: max-content;
+  margin: 30px auto;
+  padding: 0;
+  gap: 25px;
+}
+
+li {
+  list-style: none;
+}
 ```
 
 </p>
