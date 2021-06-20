@@ -47,7 +47,9 @@
 <header class="header">
   <nav class="navigation"></nav>
 </header>
+
 <section class="about"></section>
+
 <footer class="footer">
   <nav class="navigation"></nav>
 </footer>
