@@ -1,4 +1,3 @@
-![Component 7 (1)](https://user-images.githubusercontent.com/48933270/122678765-c7d65200-d1f0-11eb-8644-a297a36d0e05.png)
 <div align="center">
 
 # Базовые задачи
