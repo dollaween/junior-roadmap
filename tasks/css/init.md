@@ -42,8 +42,8 @@
 ##### 1. Расположите элементы так, как показано на скриншоте
 
 ![Component 7](https://user-images.githubusercontent.com/48933270/122678645-5a2a2600-d1f0-11eb-8164-ff40e8d66b55.png)
+![Component 7 (1)](https://user-images.githubusercontent.com/48933270/122678774-d45aaa80-d1f0-11eb-8eed-fca1be8b16a4.png)
 
-![Uploading Component 7 (1).png…]()
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Examine?node-id=2%3A3)
 
