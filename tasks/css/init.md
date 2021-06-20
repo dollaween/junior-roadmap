@@ -191,6 +191,42 @@ li:last-child::after {
 </p>
 </details>
 
+---
+
+##### 3. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122681278-2523d080-d1fc-11eb-9849-ec7210136af7.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A7)
+
+<details><summary><b>Решение Flow</b></summary>
+<p>
+
+```html
+
+```
+
+```css
+
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение Flexbox</b></summary>
+<p>
+
+```html
+
+```
+
+```css
+
+```
+
+</p>
+</details>
+
 
 
 
