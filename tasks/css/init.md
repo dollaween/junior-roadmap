@@ -20,6 +20,9 @@
 
 ![image](https://user-images.githubusercontent.com/48933270/122678812-fa804a80-d1f0-11eb-91ab-5906dd160045.png)
 
+![image](https://user-images.githubusercontent.com/48933270/122679082-1cc69800-d1f2-11eb-81c2-91041f0813ef.png)
+
+
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Examine?node-id=2%3A5)
 
 <details><summary><b>Решение</b></summary>
