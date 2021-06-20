@@ -36,3 +36,26 @@
 </p>
 </details>
 
+---
+
+##### 1. Расположите элементы так, как показано на скриншоте
+
+![Component 7](https://user-images.githubusercontent.com/48933270/122678645-5a2a2600-d1f0-11eb-8164-ff40e8d66b55.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Examine?node-id=2%3A3)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+
+```
+
+```css
+
+```
+
+</p>
+</details>
+
+
