@@ -20,7 +20,7 @@
 
 ![image](https://user-images.githubusercontent.com/48933270/122679095-3071fe80-d1f2-11eb-994d-b2c48dd95686.png)
 
-Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Examine?node-id=2%3A5)
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A5)
 
 <details><summary><b>Решение Flow</b></summary>
 <p>
@@ -86,6 +86,42 @@ li {
 </details>
 
 ---
+
+##### 2. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122679706-91023b00-d1f4-11eb-8947-b87a118799ee.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A6)
+
+
+<details><summary><b>Решение Flow</b></summary>
+<p>
+
+```html
+
+```
+
+```css
+
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение Flexbox</b></summary>
+<p>
+
+```html
+
+```
+
+```css
+
+```
+
+</p>
+</details>
+
 
 
 
