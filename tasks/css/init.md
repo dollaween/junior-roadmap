@@ -97,6 +97,8 @@ li {
 <details><summary><b>Решение Flow</b></summary>
 <p>
 
+В качестве точки-разделителя, использован символ шрифта `•`.
+
 ```html
 <ul>
   <li>Home</li>
@@ -143,12 +145,47 @@ li:last-child::after {
 <details><summary><b>Решение Flexbox</b></summary>
 <p>
 
+В качестве точки-разделителя сделан псевдоэлемент с размерами и фоном.
+  
 ```html
-
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contacts</li>
+  <li>Service</li>
+  <li>FAQ</li>
+</ul>
 ```
 
 ```css
+ul {
+  display: flex;
+  width: max-content;
+  margin: 30px auto;
+  padding: 0;
+  gap: 40px;
+}
 
+li {
+  list-style: none;
+  position: relative;
+}
+
+li::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #aaa;
+  border-radius: 50%;
+  top: 50%;
+  right: -23px;
+  transform: translateY(-50%);
+}
+
+li:last-child::after {
+  display: none;
+}
 ```
 
 </p>
