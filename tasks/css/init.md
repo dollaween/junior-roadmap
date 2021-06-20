@@ -98,11 +98,43 @@ li {
 <p>
 
 ```html
-
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contacts</li>
+  <li>Service</li>
+  <li>FAQ</li>
+</ul>
 ```
 
 ```css
+ul {
+  width: max-content;
+  margin: 30px auto;
+  padding: 0;
+}
 
+li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+
+li::after {
+  content: '•';
+  position: absolute;
+  color: #aaa;
+  top: 0;
+  right: -23px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li:last-child::after {
+  display: none;
+}
 ```
 
 </p>
