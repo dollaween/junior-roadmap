@@ -22,6 +22,9 @@
 
 ![image](https://user-images.githubusercontent.com/48933270/122679082-1cc69800-d1f2-11eb-81c2-91041f0813ef.png)
 
+![image](https://user-images.githubusercontent.com/48933270/122679095-3071fe80-d1f2-11eb-994d-b2c48dd95686.png)
+
+
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Examine?node-id=2%3A5)
 
