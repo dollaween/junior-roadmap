@@ -1,3 +1,4 @@
+![Component 7 (1)](https://user-images.githubusercontent.com/48933270/122678765-c7d65200-d1f0-11eb-8644-a297a36d0e05.png)
 <div align="center">
 
 # Базовые задачи
@@ -41,6 +42,8 @@
 ##### 1. Расположите элементы так, как показано на скриншоте
 
 ![Component 7](https://user-images.githubusercontent.com/48933270/122678645-5a2a2600-d1f0-11eb-8164-ff40e8d66b55.png)
+
+![Uploading Component 7 (1).png…]()
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Examine?node-id=2%3A3)
 
