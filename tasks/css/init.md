@@ -22,7 +22,7 @@
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Examine?node-id=2%3A5)
 
-<details><summary><b>Решение, Flow</b></summary>
+<details><summary><b>Решение Flow</b></summary>
 <p>
 
 ```html
@@ -55,7 +55,7 @@ li:last-child {
 </p>
 </details>
 
-<details><summary><b>Решение, Flexbox</b></summary>
+<details><summary><b>Решение Flexbox</b></summary>
 <p>
 
 ```html
