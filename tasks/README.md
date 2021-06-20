@@ -16,7 +16,11 @@
 
 ---
 
+<div align="center">
+
 ### CSS
+
+</div>
 
 ---
 
@@ -24,7 +28,11 @@
 
 ---
 
+<div align="center">
+
 ### Javascript
+
+</div>
 
 ---
 
