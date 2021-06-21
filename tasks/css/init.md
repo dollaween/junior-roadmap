@@ -16,7 +16,7 @@
 
 ---
 
-> Во всех решениях подключен файл [`reset.css`](https://meyerweb.com/eric/tools/css/reset/)
+> Во всех решениях перед стилями подключен файл [`reset.css`](https://meyerweb.com/eric/tools/css/reset/)
 
 ---
 
