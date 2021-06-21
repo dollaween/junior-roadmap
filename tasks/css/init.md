@@ -319,7 +319,7 @@ svg {
 
 ##### 4. Расположите элементы так, как показано на скриншоте
 
-![image](https://user-images.githubusercontent.com/48933270/122693882-4ad4c800-d244-11eb-8de1-cc7b065ef8a5.png)
+![image](https://user-images.githubusercontent.com/48933270/122694203-51177400-d245-11eb-841d-858128c2491b.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A8)
 
