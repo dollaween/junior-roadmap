@@ -16,6 +16,10 @@
 
 ---
 
+> Во всех решениях подключен файл [`reset.css`](https://meyerweb.com/eric/tools/css/reset/)
+
+---
+
 ##### 1. Расположите элементы так, как показано на скриншоте
 
 ![image](https://user-images.githubusercontent.com/48933270/122679095-3071fe80-d1f2-11eb-994d-b2c48dd95686.png)
