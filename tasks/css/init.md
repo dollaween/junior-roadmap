@@ -450,4 +450,116 @@ p {
 </p>
 </details>
 
+---
+
+##### 5. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122694484-237efa80-d246-11eb-870c-1fb6a942e562.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A9)
+
+<details><summary><b>Решение Flow</b></summary>
+<p>
+
+```html
+<div class="delivery">
+  <svg class="delivery__icon" viewBox="0 0 20 20">
+    <path d="M5.34119 4.57509C5.12965 4.36356 4.78669 4.36356 4.57515 4.57509C4.36362 4.78663 4.36362 5.12959 4.57515 5.34113L9.234 9.99997L4.65887 14.5751C4.44734 14.7866 4.44734 15.1296 4.65887 15.3411C4.87041 15.5527 5.21337 15.5527 5.42491 15.3411L10 10.766L14.5752 15.3411C14.7867 15.5527 15.1297 15.5527 15.3412 15.3411C15.5527 15.1296 15.5527 14.7866 15.3412 14.5751L10.7661 9.99997L15.4249 5.34113C15.6364 5.12959 15.6364 4.78663 15.4249 4.57509C15.2134 4.36356 14.8704 4.36356 14.6589 4.57509L10 9.23394L5.34119 4.57509Z" />
+  </svg>
+  <div class="delivery__text">
+    <p class="delivery__description">Deliver to</p>
+    <p class="delivery__country">Russian Federation</p>
+  </div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.delivery {
+  width: max-content;
+  margin: 30px auto;
+}
+
+.delivery__icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: 2px;
+}
+
+.delivery__text {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.delivery__description,
+.delivery__country {
+  margin: 0;
+}
+
+.delivery__country {
+  font-size: 16px;
+}
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение Flexbox</b></summary>
+<p>
+
+```html
+<div class="delivery">
+  <svg class="delivery__icon" viewBox="0 0 20 20">
+    <path d="M5.34119 4.57509C5.12965 4.36356 4.78669 4.36356 4.57515 4.57509C4.36362 4.78663 4.36362 5.12959 4.57515 5.34113L9.234 9.99997L4.65887 14.5751C4.44734 14.7866 4.44734 15.1296 4.65887 15.3411C4.87041 15.5527 5.21337 15.5527 5.42491 15.3411L10 10.766L14.5752 15.3411C14.7867 15.5527 15.1297 15.5527 15.3412 15.3411C15.5527 15.1296 15.5527 14.7866 15.3412 14.5751L10.7661 9.99997L15.4249 5.34113C15.6364 5.12959 15.6364 4.78663 15.4249 4.57509C15.2134 4.36356 14.8704 4.36356 14.6589 4.57509L10 9.23394L5.34119 4.57509Z" />
+  </svg>
+  <div class="delivery__text">
+    <p class="delivery__description">Deliver to</p>
+    <p class="delivery__country">Russian Federation</p>
+  </div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.delivery {
+  width: max-content;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+
+.delivery__icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: 2px;
+}
+
+.delivery__text {
+  margin-left: 10px;
+}
+
+.delivery__description,
+.delivery__country {
+  margin: 0;
+}
+
+.delivery__country {
+  font-size: 16px;
+}
+```
+
+</p>
+</details>
+
+
 
