@@ -710,5 +710,89 @@ p {
 </p>
 </details>
 
+---
+
+##### 7. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122695538-4e1e8280-d249-11eb-82d0-7c4b8c0c51c2.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A11)
+
+<details><summary><b>Решение Flexbox</b></summary>
+<p>
+
+```html
+<div class="menu">
+  <svg class="menu__icon" viewBox="0 0 20 20">
+    <path d="M5.34119 4.57509C5.12965 4.36356 4.78669 4.36356 4.57515 4.57509C4.36362 4.78663 4.36362 5.12959 4.57515 5.34113L9.234 9.99997L4.65887 14.5751C4.44734 14.7866 4.44734 15.1296 4.65887 15.3411C4.87041 15.5527 5.21337 15.5527 5.42491 15.3411L10 10.766L14.5752 15.3411C14.7867 15.5527 15.1297 15.5527 15.3412 15.3411C15.5527 15.1296 15.5527 14.7866 15.3412 14.5751L10.7661 9.99997L15.4249 5.34113C15.6364 5.12959 15.6364 4.78663 15.4249 4.57509C15.2134 4.36356 14.8704 4.36356 14.6589 4.57509L10 9.23394L5.34119 4.57509Z" />
+  </svg>
+
+  <ul class="menu__nav">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contacts</li>
+    <li>Service</li>
+  </ul>
+
+  <ul class="menu__profile">
+    <li class="menu__profile-item">
+      <svg class="menu__icon" viewBox="0 0 20 20">
+        <path d="M5.34119 4.57509C5.12965 4.36356 4.78669 4.36356 4.57515 4.57509C4.36362 4.78663 4.36362 5.12959 4.57515 5.34113L9.234 9.99997L4.65887 14.5751C4.44734 14.7866 4.44734 15.1296 4.65887 15.3411C4.87041 15.5527 5.21337 15.5527 5.42491 15.3411L10 10.766L14.5752 15.3411C14.7867 15.5527 15.1297 15.5527 15.3412 15.3411C15.5527 15.1296 15.5527 14.7866 15.3412 14.5751L10.7661 9.99997L15.4249 5.34113C15.6364 5.12959 15.6364 4.78663 15.4249 4.57509C15.2134 4.36356 14.8704 4.36356 14.6589 4.57509L10 9.23394L5.34119 4.57509Z" />
+      </svg>
+      <span>Exit</span>
+    </li>
+  </ul>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.menu {
+  width: 600px;
+  display: flex;
+  margin: 30px auto;
+}
+
+.menu__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.menu__nav {
+  display: flex;
+  gap: 20px;
+  margin-left: 40px;
+}
+
+.menu__profile {
+  margin-left: auto;
+}
+
+.menu__profile-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu__profile-item .menu__icon {
+  margin-right: 4px;
+}
+```
+
+</p>
+</details>
 
 
