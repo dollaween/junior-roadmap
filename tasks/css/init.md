@@ -944,4 +944,77 @@ li {
 </p>
 </details>
 
+---
+
+##### 9. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122789251-c7f15300-d2bf-11eb-98a6-30ff2a83c9fd.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A13)
+
+<details><summary><b>Решение Flexbox</b></summary>
+<p>
+
+```html
+<div class="card">
+  <div class="card__col">
+    <p class="card__price">50 000 ₽</p>
+    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p class="card__seller">Bill Gates</p>
+  </div>
+  <div class="card__col">
+    <button class="card__button">Buy</button>
+  </div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.card {
+  width: max-content;
+  margin: 30px auto;
+  display: flex;
+  gap: 20px;
+}
+
+.card__col:first-child {
+  width: 170px;
+}
+
+.card__price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.card__description {
+  margin-top: 4px;
+}
+
+.card__seller {
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.card__button {
+  background: #df2f2f;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  line-height: 20px;
+}
+```
+
+</p>
+</details>
 
