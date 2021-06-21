@@ -795,4 +795,153 @@ li {
 </p>
 </details>
 
+---
+
+##### 8. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122696521-ea498900-d24b-11eb-8000-1b7c09aa29da.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A12)
+
+<details><summary><b>Решение Flow</b></summary>
+<p>
+
+```html
+<div class="menu">
+  <div class="menu__col">
+    <h5 class="menu__title">Get to Know Us</h5>
+    <ul class="menu__list">
+      <li class="menu__list-item">Careers</li>
+      <li class="menu__list-item">Blog</li>
+      <li class="menu__list-item">About</li>
+      <li class="menu__list-item">Investor</li>
+    </ul>
+  </div>
+  <div class="menu__col">
+    <h5 class="menu__title">Let Us Help You</h5>
+    <ul class="menu__list">
+      <li class="menu__list-item">Your Account</li>
+      <li class="menu__list-item">Your Orders</li>
+      <li class="menu__list-item">Shipping Rates & Policies</li>
+      <li class="menu__list-item">Help</li>
+    </ul>
+  </div>
+</div>
+```
+
+```css
+body, h5 {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h5, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.menu {
+  width: max-content;
+  margin: 30px auto;
+}
+
+.menu__col {
+  margin-right: 90px;
+  display: inline-block;
+  width: 110px;
+  vertical-align: top;
+}
+
+.menu__col:last-child {
+  margin-right: 0;
+}
+
+.menu__list {
+  margin-top: 10px;
+}
+
+.menu__list-item {
+  margin-top: 4px;
+}
+```
+
+</p>
+</details>
+
+<details><summary><b>Решение Flexbox</b></summary>
+<p>
+
+```html
+<div class="menu">
+  <div class="menu__col">
+    <h5 class="menu__title">Get to Know Us</h5>
+    <ul class="menu__list">
+      <li class="menu__list-item">Careers</li>
+      <li class="menu__list-item">Blog</li>
+      <li class="menu__list-item">About</li>
+      <li class="menu__list-item">Investor</li>
+    </ul>
+  </div>
+  <div class="menu__col">
+    <h5 class="menu__title">Let Us Help You</h5>
+    <ul class="menu__list">
+      <li class="menu__list-item">Your Account</li>
+      <li class="menu__list-item">Your Orders</li>
+      <li class="menu__list-item">Shipping Rates & Policies</li>
+      <li class="menu__list-item">Help</li>
+    </ul>
+  </div>
+</div>
+```
+
+```css
+body, h5 {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h5, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.menu {
+  width: max-content;
+  margin: 30px auto;
+  display: flex;
+  gap: 90px;
+}
+
+.menu__col {
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__list {
+  margin-top: 10px;
+}
+
+.menu__list-item {
+  margin-top: 4px;
+}
+
+.menu__list-item:first-child {
+  margin-top: 0;
+}
+```
+
+</p>
+</details>
+
 
