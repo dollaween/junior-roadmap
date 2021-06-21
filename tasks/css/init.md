@@ -1111,6 +1111,103 @@ p {
 
 ##### 11. Расположите элементы так, как показано на скриншоте
 
+![image](https://user-images.githubusercontent.com/48933270/122801659-13f6c480-d2cd-11eb-819f-643961b06099.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A16)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="card">
+  <div class="card__col">
+    <img class="card__image" src="https://picsum.photos/102" alt="card-image">
+    <p class="card__title">Good name</p>
+  </div>
+  <div class="card__col">
+    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore ducimus esse et eveniet explicabo facilis?</p>
+    <div class="card__seller-info">
+      <svg class="card__icon" viewBox="0 0 20 20">
+        <path d="M5.34119 4.57509C5.12965 4.36356 4.78669 4.36356 4.57515 4.57509C4.36362 4.78663 4.36362 5.12959 4.57515 5.34113L9.234 9.99997L4.65887 14.5751C4.44734 14.7866 4.44734 15.1296 4.65887 15.3411C4.87041 15.5527 5.21337 15.5527 5.42491 15.3411L10 10.766L14.5752 15.3411C14.7867 15.5527 15.1297 15.5527 15.3412 15.3411C15.5527 15.1296 15.5527 14.7866 15.3412 14.5751L10.7661 9.99997L15.4249 5.34113C15.6364 5.12959 15.6364 4.78663 15.4249 4.57509C15.2134 4.36356 14.8704 4.36356 14.6589 4.57509L10 9.23394L5.34119 4.57509Z" />
+      </svg>
+      <div class="card__seller">
+        <p class="card__seller-name">Bill Gates</p>
+        <p class="card__seller-company">Microsoft</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p {
+  margin: 0;
+}
+
+.card {
+  width: max-content;
+  margin: 30px auto;
+  display: flex;
+  gap: 15px;
+}
+
+.card__col:first-child {
+  width: 100px;
+}
+
+.card__image {
+  width: 100%;
+  height: 102px;
+}
+
+.card__title {
+  margin-top: 4px;
+  text-align: center;
+}
+
+.card__col:last-child {
+  width: 265px;
+}
+
+.card__description {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__seller-info {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.card__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.card__seller {
+  margin-left: 8px;
+}
+
+.card__seller-name {
+  font-weight: bold;
+}
+```
+
+</p>
+</details>
+
+
+---
+
+##### 12. Расположите элементы так, как показано на скриншоте
+
 ![image](https://user-images.githubusercontent.com/48933270/122800287-6afb9a00-d2cb-11eb-9ced-a99ed5658555.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A15)
