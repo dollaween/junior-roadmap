@@ -1107,4 +1107,53 @@ p {
 </p>
 </details>
 
+---
+
+##### 11. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122800287-6afb9a00-d2cb-11eb-9ced-a99ed5658555.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A15)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="messages">
+  <span class="messages__text">Messages</span>
+  <div class="messages__count">8</div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.messages {
+  width: max-content;
+  margin: 30px auto;
+  position: relative;
+}
+
+.messages__count {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  right: -14px;
+  top: 0;
+  font-size: 8px;
+  line-height: 13px;
+  text-align: center;
+  background: #f5222d;
+  color: white;
+}
+```
+
+</p>
+</details>
+
 
