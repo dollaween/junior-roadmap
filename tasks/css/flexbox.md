@@ -393,7 +393,7 @@ body {
 
 - Высота элементов должна равняться высоте самого высокого элемента в строке.
 
-![image](https://user-images.githubusercontent.com/48933270/122972557-f1ca7880-d398-11eb-949c-2e44eb9c94a1.png)
+![image](https://user-images.githubusercontent.com/48933270/122972968-630a2b80-d399-11eb-9f85-55fe8e769b4b.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A25)
 
