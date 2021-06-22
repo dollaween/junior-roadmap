@@ -293,9 +293,9 @@ body {
 
 ##### 7. Расположите элементы так, как показано на скриншоте
 
-![image](https://user-images.githubusercontent.com/48933270/122966795-6b129d00-d392-11eb-9224-a9d1078765d2.png)
+![image](https://user-images.githubusercontent.com/48933270/122968049-cabd7800-d393-11eb-9292-d06b02ef310a.png)
 
-Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A23)
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A24)
 
 <details><summary><b>Решение</b></summary>
 <p>
@@ -336,6 +336,54 @@ body {
 </p>
 </details>
 
+---
+
+##### 8. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122968449-3bfd2b00-d394-11eb-8c9a-ff33c21b05af.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A23)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="container">
+  <div class="item">Lorem ipsum</div>
+  <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+  <div class="item">Lorem ipsum dolor sit amet, consectetur</div>
+  <div class="item">Lorem ipsum dolor sit amet</div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  width: calc(50% - 10px);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background: #69c0ff;
+  border: 10px solid #1890ff;
+}
+```
+
+</p>
+</details>
 
 
 
