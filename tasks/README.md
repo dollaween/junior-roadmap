@@ -24,7 +24,7 @@
 
 ---
 
-- [Базовые задачи на верстку](./css/init.md)
+- [Базовые задачи](./css/init.md)
 - [Flexbox](./css/flexbox.md)
 
 ---
