@@ -192,4 +192,52 @@
 </p>
 </details>
 
+---
+
+##### 5. Расположите элементы так, как показано на скриншоте
+
+- Второй и третий элементы должны быть прижаты к правому краю родительского контейнера.
+
+![image](https://user-images.githubusercontent.com/48933270/122964551-0eae7e00-d390-11eb-8bf1-19be4720b871.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A21)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+}
+
+.item {
+  width: 100px;
+  height: 120px;
+  background: #69c0ff;
+  border: 10px solid #1890ff;
+}
+
+.item:nth-child(3),
+.item:last-child {
+  background: #ffc069;
+  border-color: #fa8c16;
+}
+
+.item:nth-child(3) {
+  margin-left: auto;
+}
+```
+
+</p>
+</details>
+
 
