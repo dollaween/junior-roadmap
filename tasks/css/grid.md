@@ -159,8 +159,6 @@
     'l m m e'
     'k m m f'
     'j i h g';
-  grid-template-rows: repeat(4, calc(25% - 12px));
-  grid-template-columns: auto auto auto auto;
   gap: 16px;
 }
 
