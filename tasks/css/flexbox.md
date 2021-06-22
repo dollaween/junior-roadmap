@@ -25,7 +25,7 @@
 
 Каждый элемент должен занимать равную долю ширины родительского контейнера. Если элемента 2 — то каждый занимает по 50%, если элементов 4 — то каждый занимает по 25%, и так далее.
 
-![image](https://user-images.githubusercontent.com/48933270/122951770-34cf2080-d386-11eb-9b55-95dfa8c32510.png)
+![image](https://user-images.githubusercontent.com/48933270/122962479-21c04e80-d38e-11eb-8cdb-450c695feda9.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A17)
 
