@@ -56,3 +56,52 @@
 
 </p>
 </details>
+
+---
+
+##### 2. Расположите элементы так, как показано на скриншоте
+
+Условия:
+- Ширина всех элементов — `100px`.
+- Ширина последнего элемента — все оставшееся свободное пространство.
+
+![image](https://user-images.githubusercontent.com/48933270/122954140-db67f100-d387-11eb-9a30-93dc62dc0212.png)
+
+Макет: [Figma]()
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+}
+
+.item {
+  width: 100px;
+  height: 150px;
+  background: #69c0ff;
+  border: 10px solid #1890ff;
+}
+
+.item:last-child {
+  flex-grow: 1;
+  background: #ffc069;
+  border-color: #fa8c16;
+}
+```
+
+</p>
+</details>
+
+
+
