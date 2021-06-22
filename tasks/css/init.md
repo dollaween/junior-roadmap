@@ -369,10 +369,6 @@ svg {
   width: 20px;
   height: 20px;
 }
-
-p {
-  margin: 0;
-}
 ```
 
 </p>
@@ -428,10 +424,6 @@ svg {
   width: 20px;
   height: 20px;
 }
-
-p {
-  margin: 0;
-}
 ```
 
 </p>
@@ -483,11 +475,6 @@ body {
   margin-left: 8px;
 }
 
-.delivery__description,
-.delivery__country {
-  margin: 0;
-}
-
 .delivery__country {
   font-size: 16px;
 }
@@ -533,11 +520,6 @@ body {
 
 .delivery__text {
   margin-left: 10px;
-}
-
-.delivery__description,
-.delivery__country {
-  margin: 0;
 }
 
 .delivery__country {
@@ -593,10 +575,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-}
-
-p {
-  margin: 0;
 }
 
 .menu {
@@ -667,10 +645,6 @@ body {
   line-height: 20px;
 }
 
-p {
-  margin: 0;
-}
-
 .menu {
   width: max-content;
   margin: 30px auto;
@@ -737,10 +711,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-}
-
-ul {
-  margin: 0;
 }
 
 .menu {
@@ -818,10 +788,6 @@ body, h5 {
   line-height: 20px;
 }
 
-h5, ul {
-  margin: 0;
-}
-
 .menu {
   width: max-content;
   margin: 30px auto;
@@ -883,10 +849,6 @@ body, h5 {
   line-height: 20px;
 }
 
-h5, ul {
-  margin: 0;
-}
-
 .menu {
   width: max-content;
   margin: 30px auto;
@@ -945,10 +907,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-}
-
-p {
-  margin: 0;
 }
 
 .card {
@@ -1029,10 +987,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-}
-
-p {
-  margin: 0;
 }
 
 .card {
@@ -1116,10 +1070,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-}
-
-p {
-  margin: 0;
 }
 
 .card {
