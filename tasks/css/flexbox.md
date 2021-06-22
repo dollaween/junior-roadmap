@@ -438,5 +438,75 @@ body {
 </p>
 </details>
 
+---
+
+##### 10. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122980755-b4b6b400-d3a1-11eb-9243-3c8f219c88a1.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A25)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="container">
+  <div class="item">
+    <span>Lorem ipsum</span>
+    <button>Button</button>
+  </div>
+  <div class="item">
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+    <button>Button</button>
+  </div>
+  <div class="item">
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloribus facilis molestiae odio.</span>
+    <button>Button</button>
+  </div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.item {
+  width: calc(33.33% - 15px);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background: #69c0ff;
+  border: 10px solid #1890ff;
+}
+
+span {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  margin-top: auto;
+  padding: 7px 0;
+  color: white;
+  background: #ffc069;
+  border: 4px solid #fa8c16;
+}
+```
+
+</p>
+</details>
 
 
