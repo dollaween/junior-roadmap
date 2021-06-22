@@ -81,10 +81,6 @@ ul {
   padding: 0;
   gap: 25px;
 }
-
-li {
-  list-style: none;
-}
 ```
 
 </p>
@@ -172,7 +168,6 @@ ul {
 }
 
 li {
-  list-style: none;
   position: relative;
 }
 
@@ -757,10 +752,6 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
-
 .menu {
   width: 600px;
   display: flex;
@@ -841,10 +832,6 @@ h5, ul {
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
-
 .menu {
   width: max-content;
   margin: 30px auto;
@@ -909,10 +896,6 @@ body, h5 {
 h5, ul {
   margin: 0;
   padding: 0;
-}
-
-li {
-  list-style: none;
 }
 
 .menu {
