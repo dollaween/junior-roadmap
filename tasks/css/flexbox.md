@@ -484,7 +484,7 @@ body {
 }
 
 .item {
-  width: calc(33.33% - 15px);
+  width: 190px;
   display: flex;
   flex-direction: column;
   padding: 10px;
