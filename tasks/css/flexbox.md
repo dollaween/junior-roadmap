@@ -445,7 +445,7 @@ body {
 - Высота элементов должна равняться высоте самого высокого элемента в строке.
 - Элемент `button` должен быть прижат к нижней части родительского контейнера.
 
-![image](https://user-images.githubusercontent.com/48933270/122980755-b4b6b400-d3a1-11eb-9243-3c8f219c88a1.png)
+![image](https://user-images.githubusercontent.com/48933270/122980989-f5aec880-d3a1-11eb-870e-3bb6ac50a9c8.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A25)
 
