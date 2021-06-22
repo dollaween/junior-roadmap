@@ -47,7 +47,7 @@
 }
 
 .item {
-  height: 150px;
+  height: 120px;
   background: #69c0ff;
   border: 10px solid #1890ff;
   flex-grow: 1;
@@ -67,7 +67,7 @@
 
 ![image](https://user-images.githubusercontent.com/48933270/122962645-4d433900-d38e-11eb-9e14-50fea309fd73.png)
 
-Макет: [Figma]()
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A18)
 
 <details><summary><b>Решение</b></summary>
 <p>
@@ -88,7 +88,7 @@
 
 .item {
   width: 100px;
-  height: 150px;
+  height: 120px;
   background: #69c0ff;
   border: 10px solid #1890ff;
 }
@@ -103,5 +103,48 @@
 </p>
 </details>
 
+---
+
+##### 3. Расположите элементы так, как показано на скриншоте
+
+Условия:
+- Центральный элемент должен быть в 2 раза больше остальных.
+
+![image](https://user-images.githubusercontent.com/48933270/122963210-bd51bf00-d38e-11eb-895a-a73d7eb7e720.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A19)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+}
+
+.item {
+  height: 120px;
+  background: #69c0ff;
+  border: 10px solid #1890ff;
+  flex-grow: 1;
+}
+
+.item:nth-child(2) {
+  background: #ffc069;
+  border-color: #fa8c16;
+  flex-grow: 2;
+}
+```
+
+</p>
+</details>
 
 
