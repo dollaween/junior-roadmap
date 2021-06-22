@@ -29,7 +29,7 @@
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A17)
 
-<details><summary><b>Решение Flexbox</b></summary>
+<details><summary><b>Решение</b></summary>
 <p>
 
 ```html
