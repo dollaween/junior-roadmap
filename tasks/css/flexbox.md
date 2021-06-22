@@ -395,7 +395,7 @@ body {
 
 ![image](https://user-images.githubusercontent.com/48933270/122972968-630a2b80-d399-11eb-9f85-55fe8e769b4b.png)
 
-Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A25)
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A26)
 
 <details><summary><b>Решение</b></summary>
 <p>
