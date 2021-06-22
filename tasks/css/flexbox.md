@@ -340,7 +340,9 @@ body {
 
 ##### 8. Расположите элементы так, как показано на скриншоте
 
-![image](https://user-images.githubusercontent.com/48933270/122968449-3bfd2b00-d394-11eb-8c9a-ff33c21b05af.png)
+- Высота элементов должна равняться высоте содержимого контента.
+
+![image](https://user-images.githubusercontent.com/48933270/122972667-0f97dd80-d399-11eb-831b-788003545318.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A23)
 
@@ -368,11 +370,11 @@ body {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .item {
-  width: calc(50% - 10px);
+  width: calc(50% - 5px);
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
@@ -385,5 +387,55 @@ body {
 </p>
 </details>
 
+---
+
+##### 9. Расположите элементы так, как показано на скриншоте
+
+- Высота элементов должна равняться высоте самого высокого элемента в строке.
+
+![image](https://user-images.githubusercontent.com/48933270/122972557-f1ca7880-d398-11eb-949c-2e44eb9c94a1.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A25)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="container">
+  <div class="item">Lorem ipsum</div>
+  <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+  <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aspernatur delectus distinctio dolore dolorem</div>
+  <div class="item">Lorem ipsum dolor sit amet</div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item {
+  width: calc(50% - 5px);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background: #69c0ff;
+  border: 10px solid #1890ff;
+}
+```
+
+</p>
+</details>
 
 
