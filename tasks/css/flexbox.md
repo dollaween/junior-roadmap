@@ -419,7 +419,7 @@ body {
 .container {
   display: flex;
   width: 600px;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -437,5 +437,6 @@ body {
 
 </p>
 </details>
+
 
 
