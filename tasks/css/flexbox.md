@@ -1,6 +1,6 @@
 <div align="center">
 
-# Задачи на Flexbox
+# Задачи по Flexbox
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
