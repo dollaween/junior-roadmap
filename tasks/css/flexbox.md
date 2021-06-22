@@ -65,7 +65,7 @@
 - Ширина всех элементов — `100px`.
 - Ширина последнего элемента — все оставшееся свободное пространство.
 
-![image](https://user-images.githubusercontent.com/48933270/122954140-db67f100-d387-11eb-9a30-93dc62dc0212.png)
+![image](https://user-images.githubusercontent.com/48933270/122962645-4d433900-d38e-11eb-9e14-50fea309fd73.png)
 
 Макет: [Figma]()
 
