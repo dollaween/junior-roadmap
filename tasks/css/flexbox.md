@@ -246,7 +246,7 @@
 
 - Высота элементов должна равняться высоте содержимого контента.
 
-![image](https://user-images.githubusercontent.com/48933270/122966144-a496d880-d391-11eb-8781-83958efeec4d.png)
+![image](https://user-images.githubusercontent.com/48933270/122967861-9a75d980-d393-11eb-9d5f-2719a5a063f2.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A21)
 
