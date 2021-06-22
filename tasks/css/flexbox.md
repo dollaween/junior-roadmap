@@ -240,4 +240,53 @@
 </p>
 </details>
 
+---
+
+##### 6. Расположите элементы так, как показано на скриншоте
+
+- Высота элементов должна равняться высоте содержимого контента.
+
+![image](https://user-images.githubusercontent.com/48933270/122966144-a496d880-d391-11eb-8781-83958efeec4d.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A21)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="container">
+  <div class="item">First item</div>
+  <div class="item">Second item, which has 2 lines</div>
+  <div class="item">Third item, which has exactly three lines</div>
+  <div class="item">Last item, which can be more than one or two or three lines</div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  width: 600px;
+}
+
+.item {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background: #69c0ff;
+  border: 10px solid #1890ff;
+}
+```
+
+</p>
+</details>
+
 
