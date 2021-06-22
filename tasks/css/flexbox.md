@@ -512,4 +512,48 @@ button {
 </p>
 </details>
 
+---
+
+##### 11. Расположите элементы так, как показано на скриншоте
+
+![image](https://user-images.githubusercontent.com/48933270/122982565-b2555980-d3a3-11eb-80ad-ffb3d1d5c331.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=2%3A27)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.item {
+  width: calc(25% - 9px);
+  height: 80px;
+  box-sizing: border-box;
+  background: #69c0ff;
+  border: 10px solid #1890ff;
+}
+```
+
+</p>
+</details>
+
+
+
 
