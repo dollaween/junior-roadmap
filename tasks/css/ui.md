@@ -18,6 +18,9 @@
 
 ##### 1. Создайте и стилизуйте компонент Input
 
+- При наведении на элемент рамка должна менять цвет.
+- В состоянии фокуса рамка должна быть черной
+
 ![image](https://user-images.githubusercontent.com/48933270/123074398-eb331400-d41f-11eb-9846-438b07a09996.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A1)
