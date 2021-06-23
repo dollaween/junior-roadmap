@@ -27,7 +27,7 @@
 - [Базовые задачи](./css/init.md)
 - [Flexbox](./css/flexbox.md)
 - [Grid](./css/grid.md)
-- [UI](./css/ui.md)
+- [UI-компоненты](./css/ui.md)
 
 ---
 
