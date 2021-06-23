@@ -16,7 +16,7 @@
 
 ---
 
-##### 1. Сделайте компонент Input
+##### 1. Создайте и стилизуйте компонент Input
 
 ![image](https://user-images.githubusercontent.com/48933270/123074398-eb331400-d41f-11eb-9846-438b07a09996.png)
 
