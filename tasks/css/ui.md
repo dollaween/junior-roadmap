@@ -145,3 +145,83 @@
 </p>
 </details>
 
+---
+
+##### 3. Создайте и стилизуйте компонент Dropdown
+
+Механизм работы Dropdown:
+- При наведении мышкой на текст "Hover me" — должно открываться выпадающее меню.
+- Внутри выпадающего меню может находиться все что угодно (для примера показан список элементов).
+
+![image](https://user-images.githubusercontent.com/48933270/123455872-dfe01400-d5ea-11eb-90c9-22d3d231c874.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A3)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<div class="dropdown">
+  <div class="dropdown__trigger">
+    <span>Hover me</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5.11972 8.56009C5.11972 8.38009 5.18972 8.21009 5.32972 8.08009C5.59972 7.84009 6.00972 7.86009 6.24972 8.12009L11.99 14.4892L17.54 8.08006C17.78 7.81006 18.19 7.80006 18.46 8.04006C18.72 8.28006 18.74 8.69006 18.5 8.96006L12.51 15.8592C12.23 16.1692 11.75 16.1692 11.47 15.8592L5.28972 9.00009C5.16972 8.87009 5.11972 8.72009 5.11972 8.56009Z" fill="black"/>
+    </svg>
+  </div>
+  <div class="dropdown__menu">
+    <ul class="dropdown__list">
+      <li class="dropdown__item">Element Element Element Element Element Element 1</li>
+      <li class="dropdown__item">Element 2</li>
+      <li class="dropdown__item">Element 3</li>
+      <li class="dropdown__item">Element 4</li>
+    </ul>
+  </div>
+</div>
+```
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdown__menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown__trigger {
+  display: flex;
+  cursor: default;
+}
+
+.dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dropdown__item {
+  margin-bottom: 4px;
+}
+
+.dropdown__item:last-child {
+  margin-bottom: 0;
+}
+```
+
+</p>
+</details>
+
+
