@@ -224,4 +224,81 @@ body {
 </p>
 </details>
 
+---
+
+##### 4. Создайте и стилизуйте компонент Checkbox
+
+- При нажатии на чекбокс он должен переходить из выключенного состояния во включенное, и наоборот.
+- При наведении на чекбокс или текст — чекбокс должен подсвечиваться серым цветом.
+
+![image](https://user-images.githubusercontent.com/48933270/123468135-08233f00-d5fa-11eb-8335-72f7ecf8fac2.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A4)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<label class="checkbox">
+  <input class="checkbox__input" type="checkbox">
+  <span class="checkbox__icon-box">
+    <svg class="checkbox__icon" viewBox="3 3 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2118 15.7333C10.6014 16.0996 11.2413 16.0865 11.617 15.7071L17.766 9.4281C18.0999 9.0749 18.0721 8.53857 17.7104 8.22462C17.3487 7.91067 16.7644 7.92375 16.4305 8.27694L10.8796 13.9542L7.54075 10.8147C7.19295 10.4877 6.60865 10.4877 6.26085 10.8147C5.91305 11.1417 5.91305 11.6912 6.26085 12.0182L10.2118 15.7333Z"/>
+    </svg>
+  </span>
+  <span class="checkbox__text">Example text</span>
+</label>
+```
+
+```css
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox:hover .checkbox__icon-box {
+  background: #d9d9d9;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.checkbox__input:checked + .checkbox__icon-box {
+  background: #fa8c16;
+  border-color: #fa8c16;
+}
+.checkbox__input:checked + .checkbox__icon-box .checkbox__icon {
+  fill: white;
+}
+
+.checkbox__icon-box {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.checkbox__icon {
+  width: 14px;
+  height: 14px;
+  fill: transparent;
+}
+
+.checkbox__text {
+  margin-left: 4px;
+}
+```
+
+</p>
+</details>
 
