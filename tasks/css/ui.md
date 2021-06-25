@@ -400,3 +400,68 @@ body {
 </p>
 </details>
 
+---
+
+##### 6. Создайте и стилизуйте компонент Link
+
+- При наведении на ссылку — должно появляться нижнее подчеркивание.
+- Ссылка может быть как с иконкой, так и без нее. При наведении — иконка не должна подчеркиваться.
+
+![image](https://user-images.githubusercontent.com/48933270/123478963-dfef0c80-d608-11eb-981d-e89346b9b383.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A6)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+  Пользовательское подчеркивание можно добавить через `border-bottom`. Важно отметить, что корректно переноситься на несколько строк может только `display: inline` элемент (`inline-block` может быть перенесен только целиком).
+
+  Элемент `.link__text` специально обернут в элемент `.link__text-wrapper`, потому что дочерние элементы флексбокса не могут быть `inline`, а для реализации подчеркивания нам нужен именно `inline` элемент.
+  
+```html
+<a class="link" href="#">
+  <span class="link__text-wrapper">
+    <span class="link__text">Example text</span>
+  </span>
+  <svg class="link__icon" viewBox="0 0 24 24">
+    <path d="M11.02 18.1482C11.15 18.2882 11.32 18.3582 11.5 18.3582C11.66 18.3582 11.81 18.3082 11.94 18.1882L17.98 12.6982C18.29 12.4182 18.29 11.9382 17.98 11.6582L11.94 6.16817C11.67 5.92817 11.26 5.94817 11.02 6.20817C10.78 6.47817 10.79 6.88817 11.06 7.12817L15.8956 11.5282H5C4.64101 11.5282 4.35 11.8192 4.35 12.1782C4.35 12.5372 4.64101 12.8282 5 12.8282H15.8956L11.06 17.2282C10.8 17.4682 10.78 17.8782 11.02 18.1482Z" />
+  </svg>
+</a>
+```
+
+```css
+.link {
+  display: inline-flex;
+  align-items: center;
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #096dd9;
+}
+
+.link:hover .link__text {
+  border-color: #0050b3;
+}
+
+.link:hover .link__icon {
+  fill: #0050b3;
+}
+
+.link__text {
+  border-bottom: 1px solid transparent;
+}
+
+.link__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: #1890ff;
+  margin-left: 4px;
+}
+```
+
+</p>
+</details>
+
