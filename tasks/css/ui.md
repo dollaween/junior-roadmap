@@ -465,3 +465,112 @@ body {
 </p>
 </details>
 
+---
+
+##### 7. Создайте и стилизуйте компонент Pagination
+
+- При наведении на пункт пагинации — он должен быть подсвечен серым цветом.
+- Активный пункт пагинации должен иметь оранжевый цвет. При наведении на активный пункт — его цвет меняться не должен.
+- Переключение по страницам реализовывать не нужно.
+
+![image](https://user-images.githubusercontent.com/48933270/123482245-9b19a480-d60d-11eb-91ec-b4b120114f92.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A7)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<ul class="pagination">
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">
+      <svg class="pagination__arrow-icon pagination__arrow-icon_left" viewBox="0 0 20 20">
+        <path d="M4.26644 7.13341C4.26644 6.98341 4.32477 6.84175 4.44143 6.73341C4.66644 6.53341 5.0081 6.55008 5.2081 6.76675L9.99168 12.0744L14.6167 6.73339C14.8167 6.50839 15.1584 6.50006 15.3834 6.70006C15.6 6.90006 15.6167 7.24172 15.4167 7.46672L10.425 13.216C10.1917 13.4744 9.79168 13.4744 9.55835 13.216L4.4081 7.50008C4.3081 7.39174 4.26644 7.26674 4.26644 7.13341Z" />
+      </svg>
+    </a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">1</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">...</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">7</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">8</a>
+  </li>
+  <li class="pagination__item pagination__item_active">
+    <a class="pagination__link" href="#">9</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">10</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">11</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">...</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">24</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">
+      <svg class="pagination__arrow-icon pagination__arrow-icon_right" viewBox="0 0 20 20">
+        <path d="M4.26644 7.13341C4.26644 6.98341 4.32477 6.84175 4.44143 6.73341C4.66644 6.53341 5.0081 6.55008 5.2081 6.76675L9.99168 12.0744L14.6167 6.73339C14.8167 6.50839 15.1584 6.50006 15.3834 6.70006C15.6 6.90006 15.6167 7.24172 15.4167 7.46672L10.425 13.216C10.1917 13.4744 9.79168 13.4744 9.55835 13.216L4.4081 7.50008C4.3081 7.39174 4.26644 7.26674 4.26644 7.13341Z" />
+      </svg>
+    </a>
+  </li>
+</ul>
+```
+
+```css
+.pagination {
+  display: flex;
+}
+
+.pagination__item {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.pagination__item:hover:not(.pagination__item_active) {
+  background: #d9d9d9;
+}
+
+.pagination__item_active {
+  background: #fa8c16;
+  color: white;
+}
+
+.pagination__link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.pagination__arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.pagination__arrow-icon_left {
+  transform: rotate(90deg);
+}
+
+.pagination__arrow-icon_right {
+  transform: rotate(-90deg);
+}
+```
+
+</p>
+</details>
+
+
