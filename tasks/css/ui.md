@@ -170,7 +170,7 @@
   </div>
   <div class="dropdown__menu">
     <ul class="dropdown__list">
-      <li class="dropdown__item">Element Element Element Element Element Element 1</li>
+      <li class="dropdown__item">Element 1</li>
       <li class="dropdown__item">Element 2</li>
       <li class="dropdown__item">Element 3</li>
       <li class="dropdown__item">Element 4</li>
@@ -204,7 +204,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 200px;
+  width: 150px;
   padding: 10px;
   border-radius: 4px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
