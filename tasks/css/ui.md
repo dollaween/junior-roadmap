@@ -407,7 +407,7 @@ body {
 - При наведении на ссылку — должно появляться нижнее подчеркивание.
 - Ссылка может быть как с иконкой, так и без нее. При наведении — иконка не должна подчеркиваться.
 
-![image](https://user-images.githubusercontent.com/48933270/123478963-dfef0c80-d608-11eb-981d-e89346b9b383.png)
+![image](https://user-images.githubusercontent.com/48933270/123479611-db772380-d609-11eb-8320-9639a64790de.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A6)
 
