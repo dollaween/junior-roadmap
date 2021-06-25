@@ -1041,3 +1041,41 @@ span {
 </p>
 </details>
 
+
+---
+
+##### 28. Какая ширина будет у элемента `inner`?
+
+```html
+<div class="container">
+  <div class="inner">Lorem ipsum dolor sit amet, consectetur.</div>
+</div>
+```
+
+```css
+.container {
+  position: relative;
+  width: 100px;
+}
+
+.inner {
+  position: absolute;
+  max-width: 200px;
+}
+```
+
+1. `100px`
+2. `200px`
+3. `auto`
+4. Ширина будет равняться ширине контента
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  Максимальное значение свойства `max-width` не может превышать значения `width` родителя.
+
+</p>
+</details>
+
