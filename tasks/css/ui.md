@@ -473,7 +473,7 @@ body {
 - Активный пункт пагинации должен иметь оранжевый цвет. При наведении на активный пункт — его цвет меняться не должен.
 - Переключение по страницам реализовывать не нужно.
 
-![image](https://user-images.githubusercontent.com/48933270/123482245-9b19a480-d60d-11eb-91ec-b4b120114f92.png)
+![image](https://user-images.githubusercontent.com/48933270/123482475-e7fd7b00-d60d-11eb-86dc-d1d7bf31b657.png)
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A7)
 
