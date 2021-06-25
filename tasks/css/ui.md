@@ -306,3 +306,88 @@ body {
 </p>
 </details>
 
+---
+
+##### 5. Создайте и стилизуйте компонент Radio
+
+- При нажатии на радио-кнопку она должна переходить во включенное состояние (при всех последующих нажатиях радио-кнопка все равно должна оставаться во включенном состоянии до тех пор, пока не будет выбрана другая радио-кнопка в группе).
+- При наведении на радио-кнопку или текст — радио-кнопка должна подсвечиваться серым цветом.
+
+![image](https://user-images.githubusercontent.com/48933270/123470214-c6e05e80-d5fc-11eb-91d6-243244f7176e.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A5)
+
+<details><summary><b>Решение</b></summary>
+<p>
+  
+  Проблемы стандартных радио-кнопок `<input type="radio">` те же, что и у стандартных чекбоксов — ограниченная стилизация. И решение этой проблемы аналогичное — добавление заменителя (в примере это `.radio__icon-box`).
+
+```html
+<label class="radio">
+  <input class="radio__input" type="radio">
+  <span class="radio__icon-box"></span>
+  <span class="radio__text">Example text</span>
+</label>
+```
+
+```css
+.radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio:hover .radio__icon-box {
+  background: #d9d9d9;
+}
+
+.radio__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.radio__input:checked + .radio__icon-box {
+  border-color: #fa8c16;
+  background: white;
+}
+
+.radio__input:checked + .radio__icon-box:after {
+  background: #fa8c16;
+}
+
+.radio__icon-box {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.radio__icon-box:after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border-radius: 50%;
+}
+
+.radio__text {
+  margin-left: 4px;
+}
+```
+
+</p>
+</details>
+
