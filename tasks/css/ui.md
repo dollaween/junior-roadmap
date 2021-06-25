@@ -288,6 +288,7 @@ body {
   height: 14px;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   border: 1px solid #000;
   border-radius: 2px;
 }
@@ -366,6 +367,7 @@ body {
   height: 16px;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 50%;
