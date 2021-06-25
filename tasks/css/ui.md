@@ -657,4 +657,94 @@ body {
 </p>
 </details>
 
+---
+
+##### 9. Создайте и стилизуйте компонент Table
+
+- Каждый нечетный ряд должен иметь серый фон.
+- При наведении на ряд — он должен менять фон на серый.
+- Первый и последний столбцы должны занимать минимальное возможное пространство.
+- Последний столбец должен быть выравнен по правому краю.
+
+![image](https://user-images.githubusercontent.com/48933270/123490370-927c9a80-d61c-11eb-9d50-9ffe19f5f341.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A9)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+```html
+<table>
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>Date</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Terminator</td>
+      <td>26.10.1984</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Robocop</td>
+      <td>17.07.1987</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Back to the Future</td>
+      <td>03.07.1985</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Gremlins</td>
+      <td>08.06.1984</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```css
+table {
+  width: 400px;
+}
+
+thead {
+  font-weight: bold;
+}
+
+thead tr {
+  background: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background: #f0f0f0;
+}
+
+tr:hover {
+  background: #d9d9d9;
+}
+
+td {
+  padding: 4px 8px;
+  border: 1px solid #f0f0f0;
+}
+
+td:first-child,
+td:last-child {
+  width: 1%;
+}
+
+td:last-child {
+  text-align: right;
+}
+```
+
+</p>
+</details>
+
+
 
