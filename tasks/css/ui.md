@@ -573,4 +573,88 @@ body {
 </p>
 </details>
 
+---
+
+##### 8. Создайте и стилизуйте компонент Switch
+
+- При наведении на круг или текст цвет круга должен меняться.
+- При нажатии круг должен плавно перемещаться вправо, а цвет должен меняться на оранжевый.
+
+![image](https://user-images.githubusercontent.com/48933270/123488133-f9e41b80-d617-11eb-956a-85787d3f3379.png)
+
+Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A8)
+
+<details><summary><b>Решение</b></summary>
+<p>
+
+  В качестве основы нам отлично подойдет логика работы `<input type="checkbox">`, только заменитель оформляем в форме Switch.
+  
+```html
+<label class="switch">
+  <input class="switch__input" type="checkbox">
+  <span class="switch__icon-box"></span>
+  <span class="switch__text">Example text</span>
+</label>
+```
+
+```css
+.switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch:hover .switch__icon-box::after {
+  background: #d9d9d9;
+}
+
+.switch__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.switch__input:checked + .switch__icon-box {
+  background: #fa8c16;
+}
+
+.switch__input:checked + .switch__icon-box::after {
+  transform: translateX(12px);
+}
+
+.switch__icon-box {
+  position: relative;
+  width: 28px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: #000;
+  border-radius: 8px;
+  transition: .2s;
+}
+
+.switch__icon-box::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 2px;
+  border-radius: 50%;
+  background: white;
+  transition: .2s;
+}
+
+.switch__text {
+  margin-left: 4px;
+}
+```
+
+</p>
+</details>
+
 
