@@ -670,7 +670,7 @@ body {
 
 Макет: [Figma](https://www.figma.com/file/PnnS2RDlKkxS20vZGoKTRy/Tasks?node-id=188%3A9)
 
-<details><summary><b>Решение</b></summary>
+<details><summary><b>Решение Table</b></summary>
 <p>
 
 ```html
@@ -746,5 +746,74 @@ td:last-child {
 </p>
 </details>
 
+<details><summary><b>Решение Grid</b></summary>
+<p>
 
+Проблема с Grid может возникнуть в поиске решения для подсвечивания рядов при наведении мышью. Решение — дать рядам `display: contents` — в таком случае Grid будет игнорировать ряды при распределении ячеек по сетке + можно сделать наведение.
+
+```html
+<div class="table">
+  <div class="row head">
+    <div class="cell">ID</div>
+    <div class="cell">Title</div>
+    <div class="cell">Date</div>
+  </div>
+  <div class="row">
+    <div class="cell">1</div>
+    <div class="cell">Terminator</div>
+    <div class="cell">26.10.1984</div>
+  </div>
+  <div class="row">
+    <div class="cell">2</div>
+    <div class="cell">Robocop</div>
+    <div class="cell">17.07.1987</div>
+  </div>
+  <div class="row">
+    <div class="cell">3</div>
+    <div class="cell">Back to the Future</div>
+    <div class="cell">03.07.1985</div>
+  </div>
+  <div class="row">
+    <div class="cell">4</div>
+    <div class="cell">Gremlins</div>
+    <div class="cell">08.06 1984</div>
+  </div>
+</div>
+```
+  
+```css
+.table {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  width: 400px;
+}
+
+.head {
+  font-weight: bold;
+}
+
+.row {
+  display: contents;
+}
+
+.row:nth-child(odd) > .cell {
+  background: #f0f0f0;
+}
+
+.row:hover > .cell {
+  background: #d9d9d9;
+}
+
+.cell {
+  padding: 4px 8px;
+  border: 1px solid #f0f0f0;
+}
+
+.cell:last-child {
+  text-align: right;
+}
+```
+  
+</p>
+</details>
 
