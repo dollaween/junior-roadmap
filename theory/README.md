@@ -43,7 +43,7 @@
 * [SVG](./css/svg.md) [в разработке]
 * [Анимация через ключевые кадры](./css/animation-keyframes.md)
 * [Адаптивность (Медиа-запросы)](./css/media.md)
-* [Переменные](./css/variables.md) [в разработке]
+* [Переменные](./css/variables.md)
 * [Функции](./css/functions.md) [в разработке]
 * [БЭМ (BEM)](./css/bem.md)
 
