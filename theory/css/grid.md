@@ -117,6 +117,59 @@
 
 ---
 
+---
+
+<div align="center">
+
+### Фишки
+
+</div>
+
+---
+
+Ряды в Grid можно оборачивать дополнительным элементом. Но чтобы сетка не сломалась, дополнительным элементам нужно задать `display: contents`.
+
+Пример верстки таблицы на Grid:
+
+```html
+<div class="table">
+  <div class="row">
+    <div class="cell">1</div>
+    <div class="cell">Terminator</div>
+    <div class="cell">26.10.1984</div>
+  </div>
+  <div class="row">
+    <div class="cell">2</div>
+    <div class="cell">Robocop</div>
+    <div class="cell">17.07.1987</div>
+  </div>
+</div>
+```
+
+```css
+.table {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  width: 400px;
+}
+
+.row {
+  display: contents;
+}
+
+.row:nth-child(odd) > .cell {
+  background: #ddd;
+}
+
+.row:hover > .cell {
+  background: #ccc;
+}
+
+.cell {
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+}
+```
 
 ---
 
