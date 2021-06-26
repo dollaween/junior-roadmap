@@ -111,16 +111,6 @@
 
 <div align="center">
 
-### `grid-template-areas`
-
-</div>
-
----
-
----
-
-<div align="center">
-
 ### Фишки
 
 </div>
