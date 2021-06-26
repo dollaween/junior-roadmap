@@ -174,6 +174,7 @@
 ---
 
 Источники:
+- [CSS Grid Layout](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout)
 - [`grid-template-columns`](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-columns)
 - [`grid-template-rows`](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-rows)
 - [`grid-template-areas`](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-areas)
