@@ -16,4 +16,25 @@
 
 ---
 
-**Переменные** — это значения, которые можно 
+**Переменные** — это сущность которая хранит какое-либо значение.
+
+```css
+:root {
+  --main-color: #1890ff;
+  --main-bg: #bfbfbf;
+}
+
+.target {
+  color: var(--main-color);
+}
+
+.block {
+  color: var(--main-color);
+  background: var(--main-bg);
+}
+```
+
+---
+
+Источники:
+- [Использование переменных в CSS](https://developer.mozilla.org/ru/docs/Web/CSS/Using_CSS_custom_properties)
