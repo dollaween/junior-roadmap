@@ -27,7 +27,7 @@
 Для стилизации тега `img` можно использовать следующие свойства: width, height, padding, margin, border, border-radius, object-position, object-fit.
 
 ---
-
+ 
 `object-fit` — определяет, как изображение должно заполнять контейнер относительно его ширины и высоты.
 
 Значения:
