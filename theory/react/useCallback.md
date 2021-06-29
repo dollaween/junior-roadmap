@@ -16,7 +16,7 @@
 
 ---
 
-Хук `useCallback()` — возвращает мемоизированный колбэк.
+Хук `useCallback(fn, deps)` — возвращает мемоизированный колбэк.
 
 ### Проблема
 
@@ -64,6 +64,28 @@ export function Articles(titles) {
 
 export function Article({ onClick, title }) {
   return <div onClick={onClick}>{title}</div>
+}
+```
+
+Благодаря `useCallback()` — все компоненты `Article` не будут перерисовываться лишний раз.
+
+### Плохой пример
+
+В данном случае, компонент `Car` один и очень простой. Его перересовка стоит дешево и не создает проблемы для производительности.
+
+А вот чрезмерная оптимизация через `useCallback()` увеличивает сложность кода и добавляет лишние проверки.
+
+```js
+export function Cars(data) {
+  const handleClick = useCallback(() => {
+    console.log('Clicked')
+  }, [])
+
+  return <Car onClick={handleClick} data={data} />
+}
+
+export function Car({ onClick, data }) {
+  return <div onClick={onClick}>{data}</div>
 }
 ```
 
