@@ -41,6 +41,32 @@ export function Cars() {
 2. Когда используем `React.memo()` на дочерних элементах.
 3. Когда функция является зависимостью для других хуков (например, `useEffect()`)
 
+### Пример
+
+Идеальное место использования `useCallback()` — большие списки из 100+ элементов.
+
+```js
+import React, { useCallback } from 'react'
+
+export function List(items) {
+  const handleClick = useCallback(() => {
+    console.log('Clicked')
+  }, [])
+  
+  return (
+    <div>
+      {items.map((item) => (
+        <Option onClick={handleClick} item={item} />
+      ))}
+    </div>
+  )
+}
+
+export function Option({ item, onClick }) {
+  return <div onClick={onClick}>{item}</div>
+}
+```
+
 ---
 
 Источники:
