@@ -139,6 +139,47 @@ export function Car({ onClick, data }) {
 
 ---
 
+<div align="center">
+
+### Зависимости
+
+</div>
+
+---
+
+Так как `useCallback()` создает мемоизированную функцию, то и внешние данные для неё обновляться не будут.
+
+```js
+export function Component() {
+  const num = Math.random()
+
+  const callback = useCallback(() => {
+    // Здесь num — всегда будет одинаковым, сколько бы раз рендер компонента ни произошел
+    console.log(num)
+  }, [])
+
+  callback()
+  return null
+}
+```
+
+Для обновления внешних переменных внутри `useCallback`, нам нужно прокинуть их в массив зависимостей:
+```js
+export function Component() {
+  const num = Math.random()
+
+  const callback = useCallback(() => {
+    // Теперь num будет таким же, как и снаружи
+    console.log(num)
+  }, [num])
+
+  callback()
+  return null
+}
+```
+
+---
+
 Источники:
 * [React Documentation | useCallback()](https://ru.reactjs.org/docs/hooks-reference.html#usecallback)
 * [Всё ли вы знаете о useCallback()](https://habr.com/ru/post/529950/)
