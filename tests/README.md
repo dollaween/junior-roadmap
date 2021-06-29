@@ -30,7 +30,6 @@
 
 ---
 
-
 <div align="center">
 
 ### Javascript
@@ -57,3 +56,15 @@
 ### Часть 3. Функции и классы
 * [Функции](./function.md)
 * [Конструкторы, прототипы, `this`](./constructor.md)
+
+---
+
+<div align="center">
+
+### React
+
+</div>
+
+---
+
+* [Базовые тесты](./react/init.md)
