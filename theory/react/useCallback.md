@@ -48,22 +48,22 @@ export function Cars() {
 ```js
 import React, { useCallback } from 'react'
 
-export function List(items) {
+export function Articles(titles) {
   const handleClick = useCallback(() => {
     console.log('Clicked')
   }, [])
-  
+
   return (
     <div>
-      {items.map((item) => (
-        <Option onClick={handleClick} item={item} />
+      {titles.map((title) => (
+        <Article onClick={handleClick} title={title} />
       ))}
     </div>
   )
 }
 
-export function Option({ item, onClick }) {
-  return <div onClick={onClick}>{item}</div>
+export function Article({ onClick, title }) {
+  return <div onClick={onClick}>{title}</div>
 }
 ```
 
