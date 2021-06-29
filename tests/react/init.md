@@ -48,4 +48,39 @@ export function Child({ onClick }) {
 </details>
 
 
+---
+
+##### 2. В каком компоненте функция `handleClick` создается реже?
+
+```js
+export function ComponentA() {
+  const handleClick = () => {}
+  return null
+}
+
+export function ComponentB() {
+  const handleClick = useCallback(() => {}, [])
+  return null
+}
+```
+
+1. В `ComponentA`
+2. В `ComponentB`
+3. В обоих одинаково
+4. Будет ошибка
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 3**
+
+  В `ComponentA` функция будет создаваться при каждом рендере компонента.  
+  В `ComponentB` — функция через `useCallback` так же будет создаваться при каждом рендере.
+
+  `useCallback` — это самая обычная функция, которая внутри себя имеет в довесок место для хранения состояний и встроенные проверки. Каждый рендер она создается заново, получает **новую** функцию для мемоизации и **новый** массив зависимостей, и заново делает проверки.
+
+  Подробнее: [Все ли вы знаете о useCallback](https://habr.com/ru/post/529950/).
+
+</p>
+</details>
 
