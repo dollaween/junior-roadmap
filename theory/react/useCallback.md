@@ -180,6 +180,25 @@ export function Component() {
 
 Но что если нам нужна внешняя переменная, и при этом в массив зависимостей её передавать нельзя? С такой ситуацией ничего не сделать, необходимо изменять логику работы колбэка. Например, чтобы колбэк просто изменял стейт, а `useEffect` обрабатывал изменения стейта с использованием любых переменных.
 
+Пример:
+
+```js
+export function Component() {
+  const [value, setValue] = useState()
+  const num = Math.random()
+
+  const handleChange = useCallback((option) => {
+    setValue(option)
+  }, [])
+
+  useEffect(() => {
+    console.log(num)
+  }, [value])
+
+  return null
+}
+```
+
 ---
 
 Источники:
