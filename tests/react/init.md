@@ -47,18 +47,17 @@ export function Child({ onClick }) {
 </p>
 </details>
 
-
 ---
 
 ##### 2. В каком компоненте функция `handleClick` создается реже?
 
 ```js
-export function ComponentA() {
+function ComponentA() {
   const handleClick = () => {}
   return null
 }
 
-export function ComponentB() {
+function ComponentB() {
   const handleClick = useCallback(() => {}, [])
   return null
 }
@@ -84,3 +83,38 @@ export function ComponentB() {
 </p>
 </details>
 
+---
+
+##### 3. Какой будет вывод?
+
+```js
+function Component() {
+  const [count, setCount] = useState(0)
+  
+  function showCount() {
+    setTimeout(() => console.log(count), 3000)
+  }
+
+  if (count === 0) {
+    setCount(count + 1)
+    showCount()
+  }
+}
+```
+
+1. `0`
+2. `1`
+3. `2`
+4. `3`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  `count` является константой для каждого конкретного рендера. Функция `showCount` вызывается только на первом рендере, поэтому для нее `count` будет равен нулю.
+  
+  Это пример побочного эффекта (side effect), который должен решаться с помощью хука `useEffect`.
+
+</p>
+</details>
