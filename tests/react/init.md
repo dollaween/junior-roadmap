@@ -118,3 +118,34 @@ function Component() {
 
 </p>
 </details>
+
+---
+
+##### 4. Если по элементу `button` быстро кликнуть 3 раза — какой будет вывод в консоль?
+
+```js
+function Component() {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log(count)
+    }, 3000);
+  })
+
+  return <button onClick={() => setCount(count + 1)}>Click me</button>
+}
+```
+
+1. Одно сообщение: `0`
+2. Два сообщения: `1`, `2`
+3. Одно сообщение: `2`
+4. Два сообщения: `0`, `1`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 2**
+
+</p>
+</details>
