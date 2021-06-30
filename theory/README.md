@@ -136,4 +136,5 @@
 
 ---
 
+* [`useEffect()`](./react/useEffect.md)
 * [`useCallback()`](./react/useCallback.md)
