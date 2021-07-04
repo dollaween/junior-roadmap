@@ -42,17 +42,17 @@
 
 ```js
 test('did not rain', () => {
-  expect(inchesOfRain()).toBe(0);
-});
+  expect(inchesOfRain()).toBe(0)
+})
 ```
 
 Пример с промисом
 ```js
 test('has lemon in it', () => {
   return fetchBeverageList().then(list => {
-    expect(list).toContain('lemon');
-  });
-});
+    expect(list).toContain('lemon')
+  })
+})
 ```
 
 Пример с `each`
@@ -62,16 +62,16 @@ test.each([
   [1, 2, 3],
   [2, 1, 3],
 ])('.add(%i, %i)', (a, b, expected) => {
-  expect(a + b).toBe(expected);
-});
+  expect(a + b).toBe(expected)
+})
 
 test.each([
   { a: 1, b: 1, expected: 2 },
   { a: 1, b: 2, expected: 3 },
   { a: 2, b: 1, expected: 3 },
 ])('.add($a, $b)', ({ a, b, expected }) => {
-  expect(a + b).toBe(expected);
-});
+  expect(a + b).toBe(expected)
+})
 ```
 
 ---
@@ -93,6 +93,18 @@ test.each([
 - [`describe.skip(name, fn)`](https://jestjs.io/docs/api#describeskipname-fn) — пропускает текущий `describe`-блок.
 - [`describe.skip.each(table)(name, fn)`](https://jestjs.io/docs/api#describeskipname-fn)
 
+```js
+describe('my beverage', () => {
+  test('is delicious', () => {
+    expect(myBeverage.delicious).toBeTruthy()
+  })
+
+  test('is not sour', () => {
+    expect(myBeverage.sour).toBeFalsy()
+  })
+})
+```
+
 ---
 
 <div align="center">
@@ -109,6 +121,12 @@ test.each([
 - [`beforeAll(fn, timeout)`](https://jestjs.io/docs/api#beforeallfn-timeout) — запускает функцию `fn` перед всеми тестами.
 - [`beforeEach(fn, timeout)`](https://jestjs.io/docs/api#beforeeachfn-timeout) — запускает функцию `fn` перед каждым тестом.
 
+
+```js
+afterEach(() => {
+  cleanUpDatabase(globalDatabase);
+})
+```
 
 
 ---
