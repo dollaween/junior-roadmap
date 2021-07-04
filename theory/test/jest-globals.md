@@ -136,6 +136,7 @@ describte('', () => {
   let context
 
   beforeEach(() => {
+    // очищаем context перед каждым тестом
     context = {}
   })
   
