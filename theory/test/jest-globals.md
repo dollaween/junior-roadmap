@@ -128,6 +128,23 @@ afterEach(() => {
 })
 ```
 
+Как из `beforeEach()` или `beforeAll()` прокинуть переменную в тесты?  
+Из этих функций такое API Jest не предоставляет, нужно пользоваться обычным JS:
+
+```js
+describte('', () => {
+  let context
+
+  beforeEach(() => {
+    context = {}
+  })
+  
+  test('', () => {
+    // use context...
+  })
+})
+```
+
 
 ---
 
