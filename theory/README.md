@@ -138,3 +138,18 @@
 
 * [`useEffect()`](./react/useEffect.md)
 * [`useCallback()`](./react/useCallback.md)
+
+
+---
+
+<div align="center">
+
+### Тестирование
+
+</div>
+
+---
+
+* [Глобальные функции и объекты](./test/jest-globals.md)
+
+
