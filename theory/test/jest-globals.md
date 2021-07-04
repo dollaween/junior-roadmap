@@ -28,7 +28,7 @@
 - [`describe(name, fn)`](https://jestjs.io/docs/api#describename-fn) — группирует в один блок несколько тестов.
 - [`describe.each(table)(name, fn, timeout)`](https://jestjs.io/docs/api#describeeachtablename-fn-timeout) — запускает один и тот же тест, но с несколькими входными параметрами.
 - [`describe.only(name, fn)`](https://jestjs.io/docs/api#describeeachtablename-fn-timeout) — запускает тесты только в текущем `describe`-блоке, все остальные будут пропущены.
-- [`describe.only.each(table)(name, fn)`](https://jestjs.io/docs/api#describeonlyeachtablename-fn) — запускает тесты только в текущем `describe`-блоке с несколькими наоборами входных параметров.
+- [`describe.only.each(table)(name, fn)`](https://jestjs.io/docs/api#describeonlyeachtablename-fn) — запускает тесты только в текущем `describe`-блоке с несколькими наборами входных параметров.
 - [`describe.skip(name, fn)`](https://jestjs.io/docs/api#describeskipname-fn) — пропускает текущий `describe`-блок.
 - [`describe.skip.each(table)(name, fn)`](https://jestjs.io/docs/api#describeskipname-fn)
 
