@@ -16,11 +16,15 @@
 
 ---
 
-Нижеприведенные функции и объекты доступны в глобальной области видимости:
-- `afterAll(fn, timeout)` — запускает функцию `fn` после всех тестов.
-- `afterEach(fn, timeout)` — запускает функцию `fn` после каждого тесте.
-- `beforeAll(fn, timeout)` — запускает функцию `fn` перед всеми тестами.
-- `beforeEach(fn, timeout)` — запускает функцию `fn` перед каждым тестом.
+Нижеприведенные функции и объекты доступны в глобальной области видимости.
+
+Функции, полезные для очистки состоянии:
+- [`afterAll(fn, timeout)`](https://jestjs.io/docs/api#afterallfn-timeout) — запускает функцию `fn` после всех тестов.
+- [`afterEach(fn, timeout)`](https://jestjs.io/docs/api#aftereachfn-timeout) — запускает функцию `fn` после каждого тесте.
+- [`beforeAll(fn, timeout)`](https://jestjs.io/docs/api#beforeallfn-timeout) — запускает функцию `fn` перед всеми тестами.
+- [`beforeEach(fn, timeout)`](https://jestjs.io/docs/api#beforeeachfn-timeout) — запускает функцию `fn` перед каждым тестом.
+
+Функции группировки:
 - [`describe(name, fn)`](https://jestjs.io/docs/api#describename-fn) — группирует в один блок несколько тестов.
 - `describe.each(table)(name, fn, timeout)`
 - `describe.only(name, fn)`
