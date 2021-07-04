@@ -17,11 +17,11 @@
 ---
 
 Нижеприведенные функции и объекты доступны в глобальной области видимости:
-- `afterAll(fn, timeout)`
-- `afterEach(fn, timeout)`
-- `beforeAll(fn, timeout)`
-- `beforeEach(fn, timeout)`
-- `describe(name, fn)`
+- `afterAll(fn, timeout)` — запускает функцию `fn` после всех тестов.
+- `afterEach(fn, timeout)` — запускает функцию `fn` после каждого тесте.
+- `beforeAll(fn, timeout)` — запускает функцию `fn` перед всеми тестами.
+- `beforeEach(fn, timeout)` — запускает функцию `fn` перед каждым тестом.
+- [`describe(name, fn)`](https://jestjs.io/docs/api#describename-fn) — группирует в один блок несколько тестов.
 - `describe.each(table)(name, fn, timeout)`
 - `describe.only(name, fn)`
 - `describe.only.each(table)(name, fn)`
@@ -39,3 +39,9 @@
 - `test.skip.each(table)(name, fn)`
 - `test.todo(name)`
 
+Подробнее про каждый из них можно прочесть в официальной документации: [Globals](https://jestjs.io/docs/api).
+
+---
+
+Источники:
+- [Globals](https://jestjs.io/docs/api)
