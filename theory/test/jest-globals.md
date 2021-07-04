@@ -32,6 +32,16 @@
 - [`describe.skip(name, fn)`](https://jestjs.io/docs/api#describeskipname-fn) — пропускает текущий `describe`-блок.
 - [`describe.skip.each(table)(name, fn)`](https://jestjs.io/docs/api#describeskipname-fn)
 
+---
+
+<div align="center">
+
+### `test` (`it`)
+
+</div>
+
+---
+
 Методы, которые запускают тесты (`it` является алиасом для `test`):
 - [`test(name, fn, timeout)`](https://jestjs.io/docs/api#describeskipname-fn) — запускает функцию `fn`.
 - [`test.each(table)(name, fn, timeout)`](https://jestjs.io/docs/api#testeachtablename-fn-timeout) — запускает функцию `fn` с несколькими наборами входных параметров.
