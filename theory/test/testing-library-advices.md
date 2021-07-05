@@ -44,7 +44,7 @@ const errorMessageNode = screen.getByRole('alert')
 
 <div align="center">
 
-### Используйте верные утверждения в `expect`
+### Используйте семантические утверждения в `expect`
 
 </div>
 
