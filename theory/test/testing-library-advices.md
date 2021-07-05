@@ -15,3 +15,16 @@
 </div>
 
 ---
+
+### Используйте `screen`
+
+---
+
+```js
+// ❌
+const {getByRole} = render(<Example />)
+const errorMessageNode = getByRole('alert')
+// ✅
+render(<Example />)
+const errorMessageNode = screen.getByRole('alert')
+```
