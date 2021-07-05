@@ -150,9 +150,9 @@
 
 ---
 
-* [Тесты](./test/test.md)
 * [Jest — Глобальные функции и объекты](./test/jest-globals.md)
 * [Jest — `expect` и правила проверки](./test/jest-expect.md)
 * [Testing Library — советы](./test/testing-library-advices.md)
+* [Примеры тестов](./test/examples.md)
 
 
