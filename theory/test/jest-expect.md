@@ -32,7 +32,7 @@
 ```js
 // Устанавливает страну у person2 такую же, как и у person1
 function changeCountry(person1, person2) {
-  person1.country = person2.country  // здесь допущена ошибка! должно было быть person2.country = person1.country
+  person1.country = person2.country  // ❌ здесь допущена ошибка! должно было быть person2.country = person1.country
 }
 
 it('should move person2 to person1', function () {
@@ -51,7 +51,7 @@ it('should move person2 to person1', function () {
 ```js
 // Устанавливает страну у person2 такую же, как и у person1
 function changeCountry(person1, person2) {
-  person1.country = person2.country  // все еще присутствует ошибка!
+  person1.country = person2.country  // ❌ все еще присутствует ошибка!
 }
 
 it('should move person2 to person1', function () {
