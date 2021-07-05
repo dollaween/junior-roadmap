@@ -16,7 +16,11 @@
 
 ---
 
+<div align="center">
+
 ### Используйте `screen`
+
+</div>
 
 ---
 
@@ -24,7 +28,17 @@
 // ❌
 const {getByRole} = render(<Example />)
 const errorMessageNode = getByRole('alert')
+
 // ✅
+import {render, screen} from '@testing-library/react'
+
 render(<Example />)
 const errorMessageNode = screen.getByRole('alert')
 ```
+
+Преимущество `screen` в том, что больше не нужно держать зависимости в деструктуризации, добавляя/удаляя их каждый раз при надобности.
+
+---
+
+Источники:
+- [Common mistakes with React Testing Library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
