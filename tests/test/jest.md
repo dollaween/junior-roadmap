@@ -110,4 +110,32 @@ it.each([
 </details>
 
 
+---
+
+##### 4. Будет ли пройден тест?
+
+```js
+test.each`
+  a    | b    | expected
+  ${1} | ${1} | ${2}
+  ${1} | ${2} | ${3}
+  ${2} | ${1} | ${3}
+`('returns $expected when $a is added $b', ({a, b, expected}) => {
+  expect(a + b).toBe(expected)
+})
+```
+
+1. Да
+2. Нет
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  Да, такая запись полностью валидна.
+
+</p>
+</details>
+
 
