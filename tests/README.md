@@ -68,3 +68,15 @@
 ---
 
 * [Базовые тесты](./react/init.md)
+
+---
+
+<div align="center">
+
+### Тестирование
+
+</div>
+
+---
+
+* [Jest](./test/jest.md)
