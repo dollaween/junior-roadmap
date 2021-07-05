@@ -26,11 +26,13 @@
 
 ```js
 // ❌
+import { render } from '@testing-library/react'
+
 const {getByRole} = render(<Example />)
 const errorMessageNode = getByRole('alert')
 
 // ✅
-import {render, screen} from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 render(<Example />)
 const errorMessageNode = screen.getByRole('alert')
