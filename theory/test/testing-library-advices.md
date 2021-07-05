@@ -140,6 +140,59 @@ const submitButton = await screen.findByRole('button', {name: /submit/i})
 
 > `find*` использует под капотом `waitFor`.
 
+---
+
+<div align="center">
+
+### Всегда заполняйте колбэк в `waitFor`
+
+</div>
+
+---
+
+```js
+// ❌
+await waitFor(() => {})
+expect(window.fetch).toHaveBeenCalledWith('foo')
+expect(window.fetch).toHaveBeenCalledTimes(1)
+
+// ✅
+await waitFor(() => expect(window.fetch).toHaveBeenCalledWith('foo'))
+expect(window.fetch).toHaveBeenCalledTimes(1)
+```
+
+Пустой колбэк в `waitFor` означает — "подожди один тик". Такой тест является хрупким, потому что при изменении асинхронной логики в компоненте тест может быть сломан.
+
+---
+
+<div align="center">
+
+### Не обрабатывайте логику с побочными эффектами в `waitFor`
+
+</div>
+
+---
+
+```js
+// ❌
+await waitFor(() => {
+  fireEvent.keyDown(input, {key: 'ArrowDown'})
+  expect(screen.getAllByRole('listitem')).toHaveLength(3)
+})
+
+// ✅
+fireEvent.keyDown(input, {key: 'ArrowDown'})
+await waitFor(() => {
+  expect(screen.getAllByRole('listitem')).toHaveLength(3)
+})
+```
+
+`waitFor` предназначен для тестов, у которых есть некоторый промежуток времени между действием и утверждением. Колбэк `waitFor` может вызываться (или проверяться на наличие ошибок) множество раз (он вызывается как по определенному интервалу, так и при наличии изменений в DOM). Это означает, что логика с побочными эффектами может быть вызвана множество раз.
+
+Это так же означает, что снэпшоты делать в `waitFor` нельзя.
+
+
+
 
 ---
 
