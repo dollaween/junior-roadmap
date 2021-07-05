@@ -41,8 +41,8 @@ it('should move person2 to person1', function () {
 
   changeCountry(person1, person2)
 
-  expect(person2.country).toBe(person1.country);
-});
+  expect(person2.country).toBe(person1.country)
+})
 ```
 
 Мы допустили ошибку, но тест все равно пройден. Сейчас тест не проверяет, что именно в `person2` мы устанавливаем новое значение. Это надо исправить.
@@ -62,8 +62,8 @@ it('should move person2 to person1', function () {
 
   changeCountry(person1, person2)
 
-  expect(person2.country).toBe(PERSON1_COUNTRY);
-});
+  expect(person2.country).toBe(PERSON1_COUNTRY)
+})
 ```
 
 Теперь наш тест упадет и действительно отобразит ошибку.
