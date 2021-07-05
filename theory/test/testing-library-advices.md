@@ -129,7 +129,7 @@ expect(screen.queryByRole('alert')).not.toBeInTheDocument()
 ```js
 // ❌
 const submitButton = await waitFor(() =>
-  screen.getByRole('button', {name: /submit/i}),
+  screen.getByRole('button', { name: /submit/i }),
 )
 
 // ✅
@@ -176,12 +176,12 @@ expect(window.fetch).toHaveBeenCalledTimes(1)
 ```js
 // ❌
 await waitFor(() => {
-  fireEvent.keyDown(input, {key: 'ArrowDown'})
+  fireEvent.keyDown(input, { key: 'ArrowDown' })
   expect(screen.getAllByRole('listitem')).toHaveLength(3)
 })
 
 // ✅
-fireEvent.keyDown(input, {key: 'ArrowDown'})
+fireEvent.keyDown(input, { key: 'ArrowDown' })
 await waitFor(() => {
   expect(screen.getAllByRole('listitem')).toHaveLength(3)
 })
@@ -191,8 +191,71 @@ await waitFor(() => {
 
 Это так же означает, что снэпшоты делать в `waitFor` нельзя.
 
+---
 
+<div align="center">
 
+### Не используйте `cleanup`
+
+</div>
+
+---
+
+```js
+// ❌
+import { render, screen, cleanup } from '@testing-library/react'
+afterEach(cleanup)
+
+// ✅
+import {render, screen} from '@testing-library/react'
+```
+
+`cleanup` автоматически встроен в современные фреймворки, поддерживающие функцию `afterEach` (Jest, Jasmine, Mocha).
+
+---
+
+<div align="center">
+
+### Не используйте запросы непосредственно на контейнере
+
+</div>
+
+---
+
+```js
+// ❌
+const { container } = render(<Example />)
+const button = container.querySelector('.btn-primary')
+expect(button).toHaveTextContent(/click me/i)
+
+// ✅
+render(<Example />)
+screen.getByRole('button', { name: /click me/i })
+```
+
+Тесты, с запросами на контейнере, сложнее читать и они будут чаще ломаться.
+
+---
+
+<div align="center">
+
+### Отдавайте преимущество поиску по тексту
+
+</div>
+
+---
+
+```js
+// ❌
+screen.getByTestId('submit-button')
+
+// ✅
+screen.getByRole('button', { name: /submit/i })
+```
+
+Наибольшая проблема с поиском по тексту — это изменение текста в компоненте, от чего тест сломается. Но:
+1. Тест легко и быстро восстановить.
+2. Изменение текста с `Username` на `Email` — это весомое изменение. И поломка теста — это даже хорошо, потому что мы будем в курсе о таких изменениях.
 
 ---
 
