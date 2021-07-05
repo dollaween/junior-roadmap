@@ -239,7 +239,36 @@ screen.getByRole('button', { name: /click me/i })
 
 <div align="center">
 
-### Отдавайте преимущество поиску по тексту
+### Отдавайте преимущество поискам `*ByRole`
+
+</div>
+
+---
+
+```js
+// assuming we've got this DOM structure to work with
+// <button><span>Hello</span> <span>World</span></button>
+screen.getByText(/hello world/i)
+// ❌ fails with the following error:
+// Unable to find an element with the text: /hello world/i. This could be
+// because the text is broken up by multiple elements. In this case, you can
+// provide a function for your text matcher to make your matcher more flexible.
+
+screen.getByRole('button', {name: /hello world/i})
+// ✅ works!
+```
+
+Скринридеры различают элементы по их свойству `role`. Использование правильных `role`-элементов в коде — уже хорошая практика.
+
+К тому же, `*ByRole` найдет элемент, если его содержимое разделено на части (как в примере выше).
+
+> Список доступных ролей: [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
+
+---
+
+<div align="center">
+
+### Используйте поиск по тексту
 
 </div>
 
