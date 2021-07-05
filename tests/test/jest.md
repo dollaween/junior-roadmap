@@ -16,7 +16,7 @@
 
 ---
 
-##### 1. Будет ли пройден тест?
+##### 1. Валиден ли следующий тест?
 
 ```js
 it('should sum a + b', () => {
@@ -40,7 +40,7 @@ it('should sum a + b', () => {
 
 ---
 
-##### 2. Будет ли пройден тест?
+##### 2. Валиден ли следующий тест?
 
 ```js
 it('should check equal between two objects', () => {
@@ -77,7 +77,7 @@ it('should check equal between two objects', () => {
 
 ---
 
-##### 3. Будет ли пройден тест?
+##### 3. Валиден ли следующий тест?
 
 ```js
 it.each([
@@ -112,7 +112,7 @@ it.each([
 
 ---
 
-##### 4. Будет ли пройден тест?
+##### 4. Валиден ли следующий тест?
 
 ```js
 test.each`
@@ -137,5 +137,59 @@ test.each`
 
 </p>
 </details>
+
+---
+
+##### 5. Валиден ли следующий тест?
+
+```js
+// Устанавливает страну у person2 такую же, как и у person1
+function changeCountry(person1, person2) {
+  person2.country = person1.country
+}
+
+it('should move person2 to person1', function () {
+  const person1 = { country: 'Spain' }
+  const person2 = { country: 'Italy' }
+
+  changeCountry(person1, person2)
+
+  expect(person2.country).toBe(person1.country)
+})
+```
+
+1. Да
+2. Нет
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 2**
+  
+  Нет, тест не валиден, потому что при изменении `changeCountry` на `person1.country = person2.country` — тест не упадет, а должен.
+  
+  В утверждениях `.toBe` нужно использовать константы, чтобы избежать подобных побочных эффектов.
+  
+  ```js
+  // Устанавливает страну у person2 такую же, как и у person1
+  function changeCountry(person1, person2) {
+    person2.country = person1.country
+  }
+
+  it('should move person2 to person1', function () {
+    const PERSON1_COUNTRY = 'Spain'
+
+    const person1 = { country: PERSON1_COUNTRY }
+    const person2 = { country: 'Italy' }
+
+    changeCountry(person1, person2)
+
+    expect(person2.country).toBe(PERSON1_COUNTRY)
+  })
+  ```
+
+</p>
+</details>
+
 
 
