@@ -289,5 +289,72 @@ screen.getByRole('button', { name: /submit/i })
 
 ---
 
+<div align="center">
+
+### Избегайте ненужной абстракции
+
+</div>
+
+---
+
+Зачастую можно встретить подобный код:
+
+```js
+describe('Login', () => {
+  let user,
+    utils,
+    handleSubmit,
+    clickSubmit
+
+  beforeEach(() => {
+    handleSubmit = jest.fn()
+    utils = render(<Login onSubmit={handleSubmit}>)
+    user = { username: 'John', password: '12345' }
+    clickSubmit = () => userEvents.click(utils.getByText(/submit/i))
+  })
+
+  describe('when the submit button is clicked', () => {
+    beforeEach(() => {
+      clickSubmit()
+    })
+
+    it('should call onSubmit with the username and password', () => {
+      expect(handleSubmit).toHaveBeenCalledTimes(1)
+      expect(handleSubmit).toHaveBeenCalledWith(user)
+    })
+  })
+
+  // ...
+})
+```
+
+У такого кода сразу несколько проблем:
+1. Появляется излишняя абстрактность, усложняющая чтение кода.
+2. На строке `expect` не понятно откуда взялись `handleSubmit` и `user`. Чтобы узнать о них — нужно перейти к их объявлениям. А после еще необходимо проверить, не были ли эти переменные изменены во вложенных `beforeEach`.
+
+Решение — использовать инлайновые тесты:
+
+```js
+test('calls onSubmit with the username and password when submit is clicked', () => {
+  const handleSubmit = jest.fn()
+  render(<Login onSubmit={handleSubmit} />)
+  const user = { username: 'John', password: '12345 }
+  
+  userEvent.type(screen.getByLabelText(/username/i), user.username)
+  userEvent.type(screen.getByLabelText(/password/i), user.password)
+  userEvent.click(screen.getByText(/submit/i))
+
+  expect(handleSubmit).toHaveBeenCalledTimes(1)
+  expect(handleSubmit).toHaveBeenCalledWith(user)
+})
+```
+
+А чтобы избежать излишнего дублирования кода, можно использовать самые обычные Javascript-функции.
+
+Подробнее про проблему здесь: [Avoid Nesting when you're Testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
+
+---
+
 Источники:
 - [Common mistakes with React Testing Library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
+- [Avoid Nesting when you're Testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
