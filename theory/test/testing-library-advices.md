@@ -246,16 +246,17 @@ screen.getByRole('button', { name: /click me/i })
 ---
 
 ```js
-// assuming we've got this DOM structure to work with
+// Предположим, структуру нашего DOM такая:
 // <button><span>Hello</span> <span>World</span></button>
+
 screen.getByText(/hello world/i)
-// ❌ fails with the following error:
+// ❌ такой вызов упадет со следующей ошибкой:
 // Unable to find an element with the text: /hello world/i. This could be
 // because the text is broken up by multiple elements. In this case, you can
 // provide a function for your text matcher to make your matcher more flexible.
 
 screen.getByRole('button', {name: /hello world/i})
-// ✅ works!
+// ✅ такой вызов найдет элемент!
 ```
 
 Скринридеры различают элементы по их свойству `role`. Использование правильных `role`-элементов в коде — уже хорошая практика.
