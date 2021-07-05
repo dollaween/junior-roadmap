@@ -92,7 +92,54 @@ userEvent.type(input, 'hello world')
 
 Например:  
 `fireEvent.change` — вызывает только одно событие у `input`.  
-`userEvent.type` — вызывает события `keyDown`, `keyPress` и `keyUp` для каждого написанного символа.
+`userEvent.type` — вызывает события `keyDown`, `keyPress` и `keyUp` для каждого написанного символа, что больше соответствует реальному поведению пользователя.
+
+---
+
+<div align="center">
+
+### Используйте `query*` только для проверки на отсутствие элемента
+
+</div>
+
+---
+
+```js
+// ❌
+expect(screen.queryByRole('alert')).toBeInTheDocument()
+
+// ✅
+expect(screen.getByRole('alert')).toBeInTheDocument()
+expect(screen.queryByRole('alert')).not.toBeInTheDocument()
+```
+
+`get*` — выбрасывает ошибку, если элемент не найден.  
+`query*` — возвращает `null`, если элемент не найден.
+
+---
+
+<div align="center">
+
+### Используйте `find*` для того чтобы найти элемент, который недоступен прямо сейчас
+
+</div>
+
+---
+
+```js
+// ❌
+const submitButton = await waitFor(() =>
+  screen.getByRole('button', {name: /submit/i}),
+)
+
+// ✅
+const submitButton = await screen.findByRole('button', {name: /submit/i})
+```
+
+Эти два примера эквиваленты, но второй проще и сообщение об ошибке будет более конструктивное.
+
+> `find*` использует под капотом `waitFor`.
+
 
 ---
 
