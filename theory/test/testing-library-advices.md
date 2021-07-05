@@ -349,7 +349,22 @@ test('calls onSubmit with the username and password when submit is clicked', () 
 })
 ```
 
-А чтобы избежать излишнего дублирования кода, можно использовать самые обычные Javascript-функции.
+Так код становится понятнее, все сразу на виду. Появление некоторой дублируемости кода — не большая цена за простоту чтения тестов. Но если все же хочется избежать излишнего дублирования кода, то можно использовать самые обычные Javascript-функции.
+
+```js
+function setup() {
+  const handleSubmit = jest.fn()
+  const utils = render(<Login onSubmit={handleSubmit}>)
+  const user = { username: 'John', password: '12345' }
+  const clickSubmit = () => userEvents.click(utils.getByText(/submit/i))
+  return { ...utils, user, handleSubmit, clickSubmit }
+}
+
+test('calls onSubmit with the username and password when submit is clicked', () => {
+  const { handleSubmit, user } = setup()
+  // ...
+})
+```
 
 Подробнее про проблему здесь: [Avoid Nesting when you're Testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
 
