@@ -246,7 +246,7 @@ screen.getByRole('button', { name: /click me/i })
 ---
 
 ```js
-// Предположим, структуру нашего DOM такая:
+// Предположим, структура нашего DOM такая:
 // <button><span>Hello</span> <span>World</span></button>
 
 screen.getByText(/hello world/i)
