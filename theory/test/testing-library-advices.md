@@ -255,7 +255,7 @@ screen.getByText(/hello world/i)
 // because the text is broken up by multiple elements. In this case, you can
 // provide a function for your text matcher to make your matcher more flexible.
 
-screen.getByRole('button', {name: /hello world/i})
+screen.getByRole('button', { name: /hello world/i })
 // ✅ такой вызов найдет элемент!
 ```
 
