@@ -203,6 +203,30 @@ p {
 
 ---
 
+<div align="center">
+
+### `word-break`
+
+</div>
+
+---
+
+Свойство [`word-break`](https://developer.mozilla.org/ru/docs/Web/CSS/word-break) — определяет, где будет установлен перевод на новую строку, если слово не вмещается в блок.
+
+Значения:
+- `normal` — перевод будет осуществляться только на месте пробельных символов. Если слово начинается с начала блока и не влезает в него — то оно не будет никак обработано.
+- `break-all` — если слово не вмещается, то остаток будет перенесен на новую строку.
+
+```css
+p {
+  word-break: break-all;
+}
+```
+
+
+
+---
+
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
@@ -213,3 +237,4 @@ p {
 - [`line-height`](https://developer.mozilla.org/ru/docs/Web/CSS/line-height)
 - [`text-align`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align)
 - [`white-space`](https://developer.mozilla.org/ru/docs/Web/CSS/white-space)
+- [`word-break`](https://developer.mozilla.org/ru/docs/Web/CSS/word-break)
