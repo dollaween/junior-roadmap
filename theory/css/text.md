@@ -223,6 +223,60 @@ p {
 }
 ```
 
+---
+
+<div align="center">
+
+### `text-indent`
+
+</div>
+
+---
+
+Свойство [`text-indent`](https://developer.mozilla.org/ru/docs/Web/CSS/text-indent) — определяет размер отступа перед первой строкой блока.
+
+```css
+p {
+  text-indent: 30px;
+}
+```
+
+---
+
+<div align="center">
+
+### `text-decoration`
+
+</div>
+
+---
+
+Свойство [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) — это сокращение для свойств `text-decoration-line`, `text-decoration-color`, `text-decoration-style` и `text-decoration-thickness`.
+
+---
+
+<div align="center">
+
+### `text-decoration-line`
+
+</div>
+
+---
+
+Свойство [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line) — определяет декоративную линию у текста.
+
+Значения:
+- `none` — линия отсутствует.
+- `underline` — линия под текстом.
+- `overline` — линия над текстом.
+- `line-through` — линия, зачеркивающая текст.
+- `underline overline` — можно указать несколько значений одновременно.
+
+```css
+p {
+  text-decoration: underline;
+}
+```
 
 
 ---
@@ -238,3 +292,6 @@ p {
 - [`text-align`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align)
 - [`white-space`](https://developer.mozilla.org/ru/docs/Web/CSS/white-space)
 - [`word-break`](https://developer.mozilla.org/ru/docs/Web/CSS/word-break)
+- [`text-indent`](https://developer.mozilla.org/ru/docs/Web/CSS/text-indent)
+- [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
+- [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)
