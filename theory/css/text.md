@@ -299,6 +299,33 @@ p {
 
 ---
 
+<div align="center">
+
+### `text-decoration-style`
+
+</div>
+
+---
+
+Свойство [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style) — определяет вид декоративной линии.
+
+Значения:
+- `solid` — сплошная линия.
+- `double` — двойная линия.
+- `dotted` — линия из точек.
+- `dashed` — пунктирная линия.
+- `wavy` — волнистая линия.
+
+```css
+p {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+```
+
+
+---
+
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
@@ -314,3 +341,4 @@ p {
 - [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
 - [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)
 - [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)
+- [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
