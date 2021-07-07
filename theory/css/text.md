@@ -278,6 +278,24 @@ p {
 }
 ```
 
+---
+
+<div align="center">
+
+### `text-decoration-line`
+
+</div>
+
+---
+
+Свойство [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color) — определяет цвет декоративной линии.
+
+```css
+p {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+```
 
 ---
 
@@ -295,3 +313,4 @@ p {
 - [`text-indent`](https://developer.mozilla.org/ru/docs/Web/CSS/text-indent)
 - [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
 - [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)
+- [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)
