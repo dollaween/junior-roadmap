@@ -46,6 +46,7 @@
 * [Переменные](./css/variables.md)
 * [Функции](./css/functions.md) [в разработке]
 * [БЭМ (BEM)](./css/bem.md)
+* [Контрольные вопросы](./css/exam.md)
 
 ---
 
