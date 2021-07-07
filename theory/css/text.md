@@ -385,4 +385,4 @@ p {
 - [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)
 - [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)
 - [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
-- [`writing-mode`]([`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode))
+- [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
