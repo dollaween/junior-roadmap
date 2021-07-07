@@ -24,7 +24,7 @@
 
 ---
 
-Свойство `color` — задает цвет текста.  
+Свойство [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) — задает цвет текста.  
 Цвет может быть указан несколькими способами (подробнее в главе [«Цвет»](./color.md)).
 
 ```css
@@ -43,7 +43,7 @@ p {
 
 ---
 
-Свойство `font` — это сокращение для свойств `font-style`, `font-variant`, `font-weight`, `font-stretch`, `font-size`, `line-height` и `font-family`.
+Свойство [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font) — это сокращение для свойств `font-style`, `font-variant`, `font-weight`, `font-stretch`, `font-size`, `line-height` и `font-family`.
 
 ---
 
@@ -55,7 +55,7 @@ p {
 
 ---
 
-Свойство `font-size` — определяет размер шрифта.  
+Свойство [`font-size`](https://developer.mozilla.org/ru/docs/Web/CSS/font-size) — определяет размер шрифта.  
 Размер шрифта может быть задан с помощью нескольких единиц измерения (подробнее в главе [«Единицы измерения»](./units.md))
 
 ```css
@@ -74,7 +74,7 @@ p {
 
 ---
 
-Свойство `font-weight` — определяет насыщенность шрифта (то есть его жирность).
+Свойство [`font-weight`](https://developer.mozilla.org/ru/docs/Web/CSS/font-weight) — определяет насыщенность шрифта (то есть его жирность).
 
 Доступные значения:
 - Числа `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, чем больше — тем жирнее начертание шрифта. Не у всех шрифтов есть все типы начертаний, у многих есть только `400` и `700`.
@@ -113,6 +113,7 @@ p {
 
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+- [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
 - [`font-size`](https://developer.mozilla.org/ru/docs/Web/CSS/font-size)
 - [`font-weight`](https://developer.mozilla.org/ru/docs/Web/CSS/font-weight)
 - [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing)
