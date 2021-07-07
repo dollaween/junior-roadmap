@@ -369,6 +369,29 @@ p {
 
 ---
 
+<div align="center">
+
+### `text-orientation`
+
+</div>
+
+---
+
+Свойство [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation) — определяет ориентацию букв в строке. Это свойство применимо только если `writing-mode` установлен в `vertical-rl`/`vertical-lr`.
+
+Значения:
+- `mixed` — поворачивает буквы на 90 градусов.
+- `upright` — размещает буквы в вертикальном положении.
+
+```css
+p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+```
+
+---
+
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
@@ -386,3 +409,4 @@ p {
 - [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)
 - [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
 - [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
+- [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)
