@@ -24,7 +24,8 @@
 
 ---
 
-Свойство `color` — задает цвет текста. Цвет может быть указан несколькими способами (подробнее в главе [«Цвет»](./color.md)).
+Свойство `color` — задает цвет текста.  
+Цвет может быть указан несколькими способами (подробнее в главе [«Цвет»](./color.md)).
 
 ```css
 p {
@@ -32,4 +33,36 @@ p {
 }
 ```
 
+---
 
+<div align="center">
+
+### `font`
+
+</div>
+
+---
+
+Свойство `font` — это сокращение для свойств `font-style`, `font-variant`, `font-weight`, `font-stretch`, `font-size`, `line-height` и `font-family`.
+
+---
+
+<div align="center">
+
+### `font-size`
+
+</div>
+
+---
+
+Свойство `font-size` — определяет размер шрифта.  
+Размер шрифта может быть задан с помощью нескольких единиц измерения (подробнее в главе [«Единицы измерения»](./unit.md))
+
+```css
+```
+
+---
+
+Источники:
+- [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+- [`font-size`](https://developer.mozilla.org/ru/docs/Web/CSS/font-size)
