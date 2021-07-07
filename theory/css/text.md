@@ -323,6 +323,25 @@ p {
 }
 ```
 
+---
+
+<div align="center">
+
+### `text-decoration-thickness`
+
+</div>
+
+---
+
+Свойство `text-decoration-thickness` — определяет толщину декоративной линии.
+
+```css
+p {
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+}
+```
+
 
 ---
 
