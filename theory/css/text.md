@@ -342,6 +342,30 @@ p {
 }
 ```
 
+---
+
+<div align="center">
+
+### `writing-mode`
+
+</div>
+
+---
+
+Свойство [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode) — определяет как будет расположено содержимое — вертикально или горизонтально.
+
+Значения:
+- `horizontal-tb` — содержимое будет расположено по горизонтали слева направо, по вертикали — сверху вниз.
+- `horizontal-bt` — содержимое будет расположено по горизонтали слева направо, по вертикали — снизу вверх.
+- `vertical-rl` — содержимое будет расположено по вертикали сверху вниз, по горизонтали — справа налево.
+- `vertical-lr` — содержимое будет расположено по вертикали сверху вниз, по горизонтали — слева направо.
+
+```css
+p {
+  writing-mode: vertical-rl;
+}
+```
+
 
 ---
 
@@ -361,3 +385,4 @@ p {
 - [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)
 - [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)
 - [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
+- [`writing-mode`]([`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode))
