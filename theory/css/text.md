@@ -92,6 +92,27 @@ span {
 
 ---
 
+<div align="center">
+
+### `letter-spacing`
+
+</div>
+
+---
+
+Свойство [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing) — определяет расстояние между буквами в тексте.  
+Положительные значения увеличивают расстояние между буквами, отрицательные значения — уменьшают.
+
+```css
+p {
+  letter-spacing: 4px;
+}
+```
+
+---
+
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font-size`](https://developer.mozilla.org/ru/docs/Web/CSS/font-size)
+- [`font-weight`](https://developer.mozilla.org/ru/docs/Web/CSS/font-weight)
+- [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing)
