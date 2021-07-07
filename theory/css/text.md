@@ -101,6 +101,7 @@ span {
 ---
 
 Свойство [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing) — определяет расстояние между буквами в тексте.  
+
 Положительные значения увеличивают расстояние между буквами, отрицательные значения — уменьшают.
 
 ```css
@@ -111,9 +112,68 @@ p {
 
 ---
 
+<div align="center">
+
+### `word-spacing`
+
+</div>
+
+---
+
+Свойство [`word-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/word-spacing) — определяет расстояние между словами в тексте.
+
+Положительные значения увеличивают расстояние между словами, отрицательные значения — уменьшают.
+
+```css
+p {
+  word-spacing: 10px;
+}
+```
+
+---
+
+<div align="center">
+
+### `line-height`
+
+</div>
+
+---
+
+Свойство [`line-height`](https://developer.mozilla.org/ru/docs/Web/CSS/line-height) — устанавливает величину пространства между строками. Больше число — больше расстояние.
+
+```css
+p {
+  line-height: 24px;
+}
+```
+
+---
+
+<div align="center">
+
+### `text-align`
+
+</div>
+
+---
+
+Свойство [`text-align`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align) — выравнивает линейное содержимое (такое как `inline`, `inline-block`).
+
+Значения:
+- `left` — выравнивает содержимое по левому краю.
+- `right` — выравнивает содержимое по правому краю.
+- `center` — выравнивает содержимое по центру.
+- `justify` — выравнивает текст так, чтобы его левая и правая границы соприкасались с границами родительского контейнера.
+
+---
+
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
 - [`font-size`](https://developer.mozilla.org/ru/docs/Web/CSS/font-size)
 - [`font-weight`](https://developer.mozilla.org/ru/docs/Web/CSS/font-weight)
 - [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing)
+- [`word-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/word-spacing)
+- [`line-height`](https://developer.mozilla.org/ru/docs/Web/CSS/line-height)
+- [`text-align`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align)
