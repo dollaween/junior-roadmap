@@ -34,7 +34,7 @@
 * [Псевдоэлементы](./css/pseudo-elements.md)
 * [Работа с текстом](./css/text.md) [в разработке]
 * [Блочная модель](./css/box-model.md)
-* [Поток](./css/flow.md)
+* [Базовый поток](./css/flow.md)
 * [`vertical-align`](./css/vertical-align.md)
 * [Flexbox](./css/flexbox.md)
 * [Grid](./css/grid.md)
