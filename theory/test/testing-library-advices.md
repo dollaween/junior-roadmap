@@ -370,6 +370,38 @@ test('calls onSubmit with the username and password when submit is clicked', () 
 
 ---
 
+<div align="center">
+
+###  Не оборачивайте `render` и `fireEvent` в `act`
+
+</div>
+
+---
+
+```js
+// ❌
+act(() => {
+  render(<Example />)
+})
+const input = screen.getByRole('textbox', {name: /choose a fruit/i})
+act(() => {
+  fireEvent.keyDown(input, {key: 'ArrowDown'})
+})
+
+// ✅
+render(<Example />)
+const input = screen.getByRole('textbox', {name: /choose a fruit/i})
+fireEvent.keyDown(input, {key: 'ArrowDown'})
+```
+
+`render` и `fireEvent` внутри уже обернуты в `act`.
+
+Исправить ошибку `not wrapperd in ac(...)` можно по следующей инструкции:  
+[https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning](https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning)
+
+---
+
 Источники:
 - [Common mistakes with React Testing Library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
 - [Avoid Nesting when you're Testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
+- [Fix the "not wrapped in act(...)" warning](https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning)
