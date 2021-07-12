@@ -396,7 +396,7 @@ fireEvent.keyDown(input, {key: 'ArrowDown'})
 
 `render` и `fireEvent` внутри уже обернуты в `act`.
 
-Исправить ошибку `not wrapperd in ac(...)` можно по следующей инструкции:  
+Исправить ошибку `not wrapped in ac(...)` можно по следующей инструкции:  
 [https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning](https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning)
 
 ---
