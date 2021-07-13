@@ -263,7 +263,7 @@ screen.getByRole('button', { name: /hello world/i })
 
 К тому же, `*ByRole` найдет элемент, если его содержимое разделено на части (как в примере выше).
 
-> Список доступных ролей: [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
+> Список доступных ролей: [Using ARIA: Roles, states, and properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)
 
 ---
 
