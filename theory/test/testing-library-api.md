@@ -24,7 +24,7 @@
 
 ---
 
-`render` — рендерит компонент, оборачивает его в `div` и помещает в `document.body`.
+Метод `render` — рендерит компонент, оборачивает его в `div` и помещает в `document.body`.
 
 ```js
 import { render } from '@testing-library/react'
@@ -37,7 +37,9 @@ render(<Example />)
 - `baseElement` — по-умолчанию, это ссылка на `document.body`.
 - `debug` — выводит в консоль содержимое `baseElement`.
 - `rerender` — перерисовывает текущий компонент еще раз.
+- `unmount` — размонтирует текущий компонент.
 - `...queries` — `getByRole`, `getByTestId` и другие (подробнее в главе про "Запросы").
+- `asFragment`
 
 
 ---
@@ -50,7 +52,7 @@ render(<Example />)
 
 ---
 
-`rerender` — перерисовывает тот же самый компонент.
+Метод `rerender` — перерисовывает тот же самый компонент.
 
 Полезно, чтобы проверить компонент на корректное изменение передаваемых параметров.
 
@@ -74,7 +76,7 @@ rerender(<Example number={2} />)
 
 ---
 
-`debug` — выводит в консоль содержимое `baseElement`.
+Метод `debug` — выводит в консоль содержимое `baseElement`.
 
 Этот метод — обертка над `console.log(prettyDOM(baseElement))`.
 
@@ -92,6 +94,26 @@ debug()
 //   </div>
 // </body>
 ```
+
+---
+
+<div align="center">
+
+### `unmount`
+
+</div>
+
+---
+
+Метод `unmount` — размонтирует текущий компонент.
+
+Этот метод полезен для проверки, что все обработчики событий будут очищены после удаления компонента.
+
+```js
+const { container, unmount } = render(<Example />)
+unmount()
+```
+
 
 
 ---
