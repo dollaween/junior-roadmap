@@ -166,6 +166,61 @@ const input = getByDisplayValue(/example text/i);
 
 ---
 
+<div align="center">
+
+### `getByAltText`
+
+</div>
+
+---
+
+`getByAltText` — находит элемент, у которого атрибут `alt` равен указанному.
+
+```js
+const { getByAltText } = render(<img alt="Example img" />);
+
+const img = getByAltText(/example img/i);
+```
+
+---
+
+<div align="center">
+
+### `getByAltTitle`
+
+</div>
+
+---
+
+`getByAltTitle` — находит элемент, у которого атрибут `title` равен указанному.
+
+```js
+const { getByTitle } = render(<img alt="img" title="Example img" />);
+
+const img = getByTitle(/example img/i);
+```
+
+---
+
+<div align="center">
+
+### `getByTestId`
+
+</div>
+
+---
+
+`getByTestId` — находит элемент по указанному `data-testid`.
+
+```js
+const { getByTestId } = render(<div data-testid="example">123</div>);
+
+const elem = getByTestId(/example/i);
+```
+
+
+---
+
 - [Testing Library — About Queries](https://testing-library.com/docs/queries/about)
 - [Using ARIA: Roles, states, and properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)
 - [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
