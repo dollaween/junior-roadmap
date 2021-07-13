@@ -60,13 +60,35 @@ const h1 = getByText('Hello World')
 
 <div align="center">
 
+### Приоритет запросов
+
+</div>
+
+---
+
+Тесты должны быть максимально похожи на то, как пользователь взаимодействует с компонентом.
+
+Исходя из этого, приоритет использования запросов следующий:
+- `getByRole`
+- `getByLabelText`
+- `getByPlaceholderText`
+- `getByText`
+- `getByDisplayValue`
+- `getByAltText`
+- `getByTitle`
+- `getByTestId`
+
+---
+
+<div align="center">
+
 ### `getByRole`
 
 </div>
 
 ---
 
-`getByRole` — находит элемент по атрибуту `role` ([список ролей](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles))
+`getByRole` — находит элемент по атрибуту `role` ([список ролей](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)).
 
 ```js
 const { getByRole } = render(<input id="login" />);
