@@ -361,6 +361,7 @@ function setup() {
 }
 
 test('calls onSubmit with the username and password when submit is clicked', () => {
+  // вот таким образом мы явно понимаем откуда берутся handleSubmit и user
   const { handleSubmit, user } = setup()
   // ...
 })
