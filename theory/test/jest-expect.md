@@ -20,16 +20,20 @@
 
 Пример:
 ```js
-expect(1 + 1).toBe(2)            // true
-expect('Hello').toHaveLength(5)  // true
+expect(1 + 1).toBe(2)               // true
+expect('Hello').toHaveLength(5)     // true
 expect({ a: 1 }).toEqual({ a: 1 })  // true (для проверки объектов нужно использовать toEqual, вместо toBe)
 ```
 
 Для проверки, что результат не равен какому-либо значению, необходимо использовать `.not.`:
 ```js
-expect(1 + 1).not.toBe(11)            // true
-expect('Hello').not.toHaveLength(10)  // true
+expect(1 + 1).not.toBe(11)              // true
+expect('Hello').not.toHaveLength(10)    // true
+expect({ a: 1 }).not.toEqual({ b: 1 })  // true
 ```
+
+
+
 
 ---
 
