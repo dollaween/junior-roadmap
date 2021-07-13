@@ -16,6 +16,20 @@
 
 ---
 
+`expect` — это набор правил, которые проверяют, что значения соответствуют определенным условиям.
+
+Пример:
+```js
+expect(1 + 1).toBe(2)            // true
+expect('Hello').toHaveLength(5)  // true
+```
+
+Для проверки, что результат не равен какому-либо значению, необходимо использовать `.not.`:
+```js
+expect(1 + 1).not.toBe(11)            // true
+expect('Hello').not.toHaveLength(10)  // true
+```
+
 ---
 
 <div align="center">
