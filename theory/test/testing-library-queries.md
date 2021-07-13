@@ -66,7 +66,7 @@ const h1 = getByText('Hello World')
 
 ---
 
-`getByRole` — находит элемент по атрибуту `role` ([список ролей](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)
+`getByRole` — находит элемент по атрибуту `role` ([список ролей](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles))
 
 ```js
 const { getByRole } = render(<input id="login" />);
@@ -110,6 +110,59 @@ const { getByLabelText } = render(
 const input = getByLabelText(/enter login/i);
 ```
 
+---
+
+<div align="center">
+
+### `getByPlaceholderText`
+
+</div>
+
+---
+
+`getByPlaceholderText` — находит элемент с указанным `placeholder`.
+
+```js
+const { getByPlaceholderText } = render(<input placeholder="Login" />);
+
+const input = getByPlaceholderText(/login/i);
+```
+
+---
+
+<div align="center">
+
+### `getByText`
+
+</div>
+
+---
+
+`getByText` — находит элемент с указанным текстом.
+
+```js
+const { getByText } = render(<p>Example text</p>);
+
+const text = getByText(/example text/i);
+```
+
+---
+
+<div align="center">
+
+### `getByDisplayValue`
+
+</div>
+
+---
+
+`getByDisplayValue` — находит элемент формы, у которого атрибут `value` равен указанному.
+
+```js
+const { getByDisplayValue } = render(<input value="Example text" onChange={() => {}} />);
+
+const input = getByDisplayValue(/example text/i);
+```
 
 ---
 
