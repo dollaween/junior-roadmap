@@ -60,21 +60,42 @@ const h1 = getByText('Hello World')
 
 <div align="center">
 
-### Приоритет запросов
+### `getByRole`
 
 </div>
 
 ---
 
-Запросы, в порядке приоритета использования:
+`getByRole` — находит элемент по атрибуту `role` ([список ролей](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)
 
-`getByRole` — находит элемент по атрибуту `role` ([список ролей](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles))
 ```js
 const { getByRole } = render(<input id="login" />);
 
-const input = await getByRole('textbox');
+const input = getByRole('textbox');
 ```
 
+Если по роли находится несколько элементов, можно через `name` задать более узкий запрос:
+
+```js
+const { getByRole } = render(
+  <div>
+    <button>First button</button>
+    <button>Second button</button>
+  </div>
+);
+
+const button = getByRole('button', { name: /first button/i });
+```
+
+---
+
+<div align="center">
+
+### `getByLabelText`
+
+</div>
+
+---
 
 `getByLabelText` — находит элемент на который указывает `<label>`
 
@@ -86,11 +107,12 @@ const { getByLabelText } = render(
   </div>
 );
 
-const input = await getByLabelText(/enter login/i);
+const input = getByLabelText(/enter login/i);
 ```
 
 
 ---
 
 - [Testing Library — About Queries](https://testing-library.com/docs/queries/about)
+- [Using ARIA: Roles, states, and properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)
 - [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
