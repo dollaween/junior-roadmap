@@ -32,7 +32,9 @@ expect('Hello').not.toHaveLength(10)    // true
 expect({ a: 1 }).not.toEqual({ b: 1 })  // true
 ```
 
-
+Список доступных правил проверок:
+- [Jest](https://jestjs.io/ru/docs/expect)
+- [JestDOM](https://github.com/testing-library/jest-dom)
 
 
 ---
