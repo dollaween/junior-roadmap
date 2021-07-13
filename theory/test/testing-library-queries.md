@@ -52,10 +52,45 @@ const h1 = getByText('Hello World')
   - `findAllBy...` — возвращает промис. Если в результате будут найдены элементы — сработает `resolve`. Если элементов не найдено — сработает `reject`.
 
 Итого:
-- `getBy`, `getAllBy` — используются в большинстве ситуаций, стоит отдавать предпочтение этим методам.
-- `queryBy`, `queryAllBy` — используются, если необходимо проверить на отстуствие элементов.
-- `findBy`, `findAllBy` — используются, чтобы найти элементы, который недоступны сразу.
+- `getBy...`, `getAllBy...` — используются в большинстве ситуаций, стоит отдавать предпочтение этим методам.
+- `queryBy...`, `queryAllBy...` — используются, если необходимо проверить на отстуствие элементов.
+- `findBy...`, `findAllBy...` — используются, чтобы найти элементы, который недоступны сразу.
+
+---
+
+<div align="center">
+
+### Приоритет запросов
+
+</div>
+
+---
+
+Запросы, в порядке приоритета использования:
+
+`getByRole` — находит элемент по атрибуту `role` ([список ролей](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles))
+```js
+const { getByRole } = render(<input id="login" />);
+
+const input = await getByRole('textbox');
+```
+
+
+`getByLabelText` — находит элемент на который указывает `<label>`
+
+```js
+const { getByLabelText } = render(
+  <div>
+    <label htmlFor="login">Enter login</label>
+    <input id="login" />
+  </div>
+);
+
+const input = await getByLabelText(/enter login/i);
+```
+
 
 ---
 
 - [Testing Library — About Queries](https://testing-library.com/docs/queries/about)
+- [WAI-ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
