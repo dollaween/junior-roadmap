@@ -18,6 +18,32 @@
 
 <div align="center">
 
+### `render`
+
+</div>
+
+---
+
+`render` — рендерит компонент, оборачивает его в `div` и помещает в `document.body`.
+
+```js
+import { render } from '@testing-library/react'
+
+render(<Example />)
+```
+
+`render` возвращает объект, содержащий:
+- `container` — `div`, в который будет обернут ваш компонент.
+- `baseElement` — по-умолчанию, это ссылка на `document.body`.
+- `debug` — выводит в консоль содержимое `baseElement`.
+- `rerender` — перерисовывает текущий компонент еще раз.
+- `...queries` — `getByRole`, `getByTestId` и другие (подробнее в главе про "Запросы").
+
+
+---
+
+<div align="center">
+
 ### `rerender`
 
 </div>
@@ -36,6 +62,37 @@ const { rerender } = render(<Example number={1} />)
 // Перерендеривает тот же самый компонент, но с другими параметрами
 rerender(<Example number={2} />)
 ```
+
+
+---
+
+<div align="center">
+
+### `debug`
+
+</div>
+
+---
+
+`debug` — выводит в консоль содержимое `baseElement`.
+
+Этот метод — обертка над `console.log(prettyDOM(baseElement))`.
+
+```js
+import React from 'react'
+import { render } from '@testing-library/react'
+
+const { debug } = render(<h1>Hello World</h1>)
+debug()
+// <body>
+//   <div>
+//     <h1>
+//       Hello World
+//     </h1>
+//   </div>
+// </body>
+```
+
 
 ---
 
