@@ -53,7 +53,7 @@ let variable = 3  // SyntaxError: Identifier 'variable' has already been declare
 
 ---
 
-`var` — объявляет переменную область видимости которой является вся функция.
+`var` — объявляет переменную, область видимости которой является вся функция.
 
 ```js
 var password = '12345'
