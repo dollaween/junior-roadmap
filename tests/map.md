@@ -297,8 +297,8 @@ const weakMap = new WeakMap()
 weakMap.set({ login: 'Aragorn' }, 'online')
 weakMap.set({ login: 'Aragorn' }, 'online')
 
-for (let item in weakMap) {
-  console.log(item)
+for (let item of weakMap) {
+  console.log(1)
 }
 ```
 
@@ -310,9 +310,11 @@ for (let item in weakMap) {
 <details><summary><b>Ответ</b></summary>
 <p>
 
-**Ответ: 1**
+**Ответ: 4**
 
-Объект `WeakMap` не поддерживает методы для работы со всей коллекцией сразу.
+`TypeError: weakMap is not iterable`
+
+Объект `WeakMap` не является итерируемым и не поддерживает методы для работы со всей коллекцией сразу. Цикл `for ... of` выбросит ошибку.
 
 </p>
 </details>
