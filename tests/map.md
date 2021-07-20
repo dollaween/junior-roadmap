@@ -115,7 +115,7 @@ console.log(map.entries())
 1. `{}`
 2. `[{ name: 'John' }, { age: 33 }]`
 3. `{{ name: 'John' }, { age: 33 }}`
-4. `[]`
+4. `Symbol`
 
 <details><summary><b>Ответ</b></summary>
 <p>
