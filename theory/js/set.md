@@ -54,11 +54,7 @@ console.log(set.size)
 // 3
 
 console.log(set)
-// Set {
-//   0: 'Aragorn'
-//   1: 'Frodo'
-//   2: 'Gandalf'
-// }
+// Set(3) {"Aragorn", "Frodo", "Gandalf"}
 
 console.log(set[0])  // таким образом обращаться к значениям нельзя
 // undefined
