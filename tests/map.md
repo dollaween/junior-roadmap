@@ -1,6 +1,6 @@
 <div align="center">
 
-# `Map`
+# Map и Set
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
