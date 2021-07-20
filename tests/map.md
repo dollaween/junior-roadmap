@@ -185,5 +185,30 @@ console.log(set.delete('User'))
 
 ---
 
+##### 7. Какой будет вывод?
+
+```js
+const set = new Set(['apple', 'orange', 'cherry', 'apple', 'cherry'])
+
+console.log(set.size)
+```
+
+1. `2`
+2. `3`
+3. `4`
+4. `5`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Коллекция `Set` хранит только уникальные значения, все дубликаты будут удалены.
+
+</p>
+</details>
+
+---
+
 
 
