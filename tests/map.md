@@ -1,6 +1,6 @@
 <div align="center">
 
-# Map и Set
+# Map, Set, WeakMap и WeakSet
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
@@ -204,6 +204,32 @@ console.log(set.size)
 **Ответ: 2**
 
 Коллекция `Set` хранит только уникальные значения, все дубликаты будут удалены.
+
+</p>
+</details>
+
+---
+
+
+##### 8. Какой будет вывод?
+
+```js
+const set = new Set(['apple', 'orange', 'apple', 'cherry', 'cherry'])
+
+console.log(set[2])
+```
+
+1. `apple`
+2. `cherry`
+3. `orange`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+`set[2]` — таким образом обратиться к значению в коллекции `Set` нельзя.
 
 </p>
 </details>
