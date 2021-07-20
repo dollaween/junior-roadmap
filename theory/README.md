@@ -75,6 +75,7 @@
 * [Объекты](./js/object.md)
 * [Map](./js/map.md)
 * [Set](./js/set.md)
+* [WeakMap и WeakSet](./js/weakmap-weakset.md)
 * [Приведение сложных типов](./js/type-coercion.md) [в разработке]
 
 #### Часть 3. Функции и классы
