@@ -152,7 +152,9 @@ const map = new Map([
   ['20:57', 'sunset']
 ])
 
-const arr = Array.from(map)
+const arr1 = [...map]
+const arr2 = Array.from(map)
+const arr3 = Array.from(map, ([key, value]) => [key, value])
 ```
 
 В объект:
