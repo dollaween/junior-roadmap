@@ -302,7 +302,7 @@ for (let item of weakMap) {
 }
 ```
 
-1. `[{ login: 'Aragorn' }, 'online']``
+1. `[{ login: 'Aragorn' }, 'online']`
 2. `{ login: 'Aragorn' }`, `{ login: 'Aragorn' }`
 3. `[{ login: 'Aragorn' }, 'online']`, `[{ login: 'Aragorn' }, 'online']`
 4. `TypeError`
