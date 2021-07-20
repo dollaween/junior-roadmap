@@ -129,5 +129,35 @@ console.log(map.entries())
 
 ---
 
+##### 5. Какой будет вывод?
+
+```js
+const map = new Map()
+map.set({ id: 1 }, 'John')
+map.set({ id: 1 }, 'Richard')
+map.delete({ id: 1 })
+
+map.forEach((value) => {
+  console.log(value)
+})
+```
+
+1. `undefined`
+2. `John`
+3. `Richard`
+4. `John`, `Richard`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4**
+
+Объекты записываются по ссылке. Хотя `{ id: 1 }` во всех вариантах и одинаковый, но ссылки — разные. Все три записи `{ id: 1 }` указывают на разные объекты.
+
+</p>
+</details>
+
+---
+
 
 
