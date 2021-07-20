@@ -18,7 +18,7 @@
 
 <div align="center">
 
-# WeakMap
+### WeakMap
 
 </div>
 
@@ -77,7 +77,7 @@ user = null
 
 <div align="center">
 
-# WeakSet
+### WeakSet
 
 </div>
 
