@@ -103,4 +103,31 @@ console.log(map.get(NaN))
 
 ---
 
+##### 4. Какой будет вывод?
+
+```js
+const map = new Map()
+map.set('name', 'John').set('age', 33)
+
+console.log(map.entries())
+```
+
+1. `{}`
+2. `[{ name: 'John' }, { age: 33 }]`
+3. `{{ name: 'John' }, { age: 33 }}`
+4. `[]`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+`map.entries()` — возвращает итерируемый объект. В консоли такой объект отображается как `{}`.
+
+</p>
+</details>
+
+---
+
+
 
