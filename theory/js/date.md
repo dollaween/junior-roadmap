@@ -31,10 +31,9 @@
 Синтаксис создания экземпляра даты:
 
 ```js
-new Date(value)
+new Date(value)  // value — количество миллисекунд с 1 января 1970
 new Date(dateString)
 new Date(year, month, day, hour, minute, second, millisecond)
-// value — количество миллисекунд с 1 января 1970
 ```
 
 Пример:
@@ -42,7 +41,6 @@ new Date(year, month, day, hour, minute, second, millisecond)
 ```js
 new Date()
 // 2019-06-25T15:33:35.095Z
-
 
 new Date(2019)
 // 1970-01-01T00:00:02.019Z
