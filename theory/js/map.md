@@ -74,6 +74,36 @@ console.log(owners.get(house))
 
 ---
 
+<div align="center">
+
+### Преобразование в Map
+
+</div>
+
+---
+
+Из массива:
+```js
+const arr = [
+  ['04:17', 'sunrize'],
+  ['20:57', 'sunset']
+]
+
+const map = new Map(arr)
+```
+
+Из объекта:
+```js
+const obj = {
+  name: 'Sam',
+  age: 24
+}
+
+const map = new Map(Object.entries(obj))
+```
+
+---
+
 Источники:
 - [Map и Set](https://learn.javascript.ru/map-set)
 - [ECMAScript: Map](https://tc39.es/ecma262/#sec-map-objects)
