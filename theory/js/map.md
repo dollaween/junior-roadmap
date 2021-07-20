@@ -104,6 +104,37 @@ const map = new Map(Object.entries(obj))
 
 ---
 
+<div align="center">
+
+### Преобразование из Map
+
+</div>
+
+---
+
+В массив:
+```js
+const map = new Map([
+  '04:17': 'sunrize',
+  '20:57': 'sunset'
+])
+
+const arr = map.entries()
+```
+
+В объект:
+```js
+const map = new Map([
+  '04:17': 'sunrize',
+  '20:57': 'sunset'
+])
+
+const obj = Object.fromEntries(map)
+```
+
+
+---
+
 Источники:
 - [Map и Set](https://learn.javascript.ru/map-set)
 - [ECMAScript: Map](https://tc39.es/ecma262/#sec-map-objects)
