@@ -280,7 +280,7 @@ console.log(weakMap.keys())
 
 **Ответ: 4**
 
-`TypeError: weakMap.values is not a function`
+`TypeError: weakMap.keys is not a function`
 
 Ключи коллекции `WeakMap` не перечисляемы. Это значит, что у `WeakMap` нет методов, которые возвращали бы список ключей.
 
