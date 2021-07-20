@@ -298,13 +298,13 @@ weakMap.set({ login: 'Aragorn' }, 'online')
 weakMap.set({ login: 'Aragorn' }, 'online')
 
 for (let item of weakMap) {
-  console.log(1)
+  console.log(item)
 }
 ```
 
-1. `undefined`
+1. `[{ login: 'Aragorn' }, 'online']``
 2. `{ login: 'Aragorn' }`, `{ login: 'Aragorn' }`
-3. `{ login: 'Aragorn' }`
+3. `[{ login: 'Aragorn' }, 'online']`, `[{ login: 'Aragorn' }, 'online']`
 4. `TypeError`
 
 <details><summary><b>Ответ</b></summary>
