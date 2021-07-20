@@ -289,4 +289,34 @@ console.log(weakMap.keys())
 
 ---
 
+##### 11. Какой будет вывод?
+
+```js
+const weakMap = new WeakMap()
+
+weakMap.set({ login: 'Aragorn' }, 'online')
+weakMap.set({ login: 'Aragorn' }, 'online')
+
+for (let item in weakMap) {
+  console.log(item)
+}
+```
+
+1. `undefined`
+2. `{ login: 'Aragorn' }`, `{ login: 'Aragorn' }`
+3. `{ login: 'Aragorn' }`
+4. `TypeError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+Объект `WeakMap` не поддерживает методы для работы со всей коллекцией сразу.
+
+</p>
+</details>
+
+---
+
 
