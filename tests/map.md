@@ -260,4 +260,31 @@ console.log(set.size)
 
 ---
 
+##### 10. Какой будет вывод?
+
+```js
+const weakMap = new WeakMap()
+
+weakMap.set({ login: 'Aragorn' }, 'online')
+
+console.log(weakMap.keys())
+```
+
+1. `WeakMap(1) { { login: 'Aragorn' }: 'online' }`
+2. `[{ login: 'Aragorn' }]`
+3. `{ login: 'Aragorn' }`
+4. `TypeError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 4** `TypeError: weakMap.values is not a function`
+
+Ключи коллекции `WeakMap` не перечисляемы. Это значит, что у `WeakMap` нет методов, которые возвращали бы список ключей.
+
+</p>
+</details>
+
+---
+
 
