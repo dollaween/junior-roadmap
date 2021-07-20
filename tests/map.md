@@ -210,7 +210,6 @@ console.log(set.size)
 
 ---
 
-
 ##### 8. Какой будет вывод?
 
 ```js
@@ -236,5 +235,29 @@ console.log(set[2])
 
 ---
 
+##### 9. Какой будет вывод?
+
+```js
+const set = new Set([{ login: 'Aragorn' }, { login: 'Aragorn' }])
+
+console.log(set.size)
+```
+
+1. `1`
+2. `2`
+3. `undefined`
+4. `TypeError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Объекты храняться по ссылке. Оба объекта `{ login: 'Aragorn' }` имеют разные ссылки, поэтому они оба будут храниться в коллекции `Set`.
+
+</p>
+</details>
+
+---
 
 
