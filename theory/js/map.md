@@ -62,3 +62,4 @@ console.log(owners.get(house))
 Источники:
 - [Map и Set](https://learn.javascript.ru/map-set)
 - [ECMAScript: Map](https://tc39.es/ecma262/#sec-map-objects)
+- [MDN: Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
