@@ -112,7 +112,7 @@ map.set('name', 'John').set('age', 33)
 console.log(map.entries())
 ```
 
-1. `{}`
+1. `MapIterator {"name" => "John", "age" => 33}`
 2. `[{ name: 'John' }, { age: 33 }]`
 3. `{{ name: 'John' }, { age: 33 }}`
 4. `Symbol`
@@ -122,7 +122,7 @@ console.log(map.entries())
 
 **Ответ: 1**
 
-`map.entries()` — возвращает итерируемый объект. В консоли такой объект отображается как `{}`.
+`map.entries()` — возвращает итерируемый объект.
 
 </p>
 </details>
@@ -153,6 +153,32 @@ map.forEach((value) => {
 **Ответ: 4**
 
 Объекты хранятся по ссылке. Хотя `{ id: 1 }` во всех вариантах и одинаковый, но ссылки — разные. Все три записи `{ id: 1 }` указывают на разные объекты.
+
+</p>
+</details>
+
+---
+
+##### 6. Какой будет вывод?
+
+```js
+const set = new Set(['User'])
+
+console.log(set.delete('User'))
+console.log(set.delete('User'))
+```
+
+1. `true`, `true`
+2. `true`, `false`
+3. `true`, `undefined`
+4. `Set {}`, `Set {}`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 2**
+
+Если удаляемый объект содержится в коллекции — после удаления будет возвращено `true`, иначе — `false`.
 
 </p>
 </details>
