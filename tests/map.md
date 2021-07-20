@@ -77,4 +77,30 @@ for (let key of map.keys()) {
 
 ---
 
+##### 3. Какой будет вывод?
+
+```js
+const map = new Map()
+map.set(NaN, null)
+
+console.log(map.get(NaN))
+```
+
+1. `SyntaxError`
+2. `NaN`
+3. `null`
+4. `undefined`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 3**
+
+В качестве ключей, Map может хранить любой тип данных, включая NaN.
+
+</p>
+</details>
+
+---
+
 
