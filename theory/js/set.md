@@ -29,6 +29,26 @@
 - `set.clear()` — удаляет все имеющиеся значения.
 - `set.size` — возвращает количество элементов в коллекции.
 
+Пример:
+```js
+const character1 = 'Aragorn'
+const character2 = 'Frodo'
+const character3 = 'Gandalf'
+
+const set = new Set()
+
+set.add(character1)
+set.add(character1)
+set.add(character2)
+set.add(character3)
+set.add(character2)
+set.add(character1)
+
+// Повторяющиеся значения не будут записаны в Set еще раз, поэтому с помощью свойства size мы можем узнать количество уникальных значений в коллекции
+console.log(set.size)
+// 3
+```
+
 ---
 
 <div align="center">
