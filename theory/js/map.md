@@ -144,7 +144,7 @@ const map = new Map([
   ['20:57', 'sunset']
 ])
 
-const arr = map.entries()
+const arr = Array.from(map)
 ```
 
 В объект:
