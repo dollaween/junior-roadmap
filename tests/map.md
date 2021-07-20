@@ -46,3 +46,35 @@ for (let value of map.values()) {
 
 ---
 
+##### 2. Какой будет вывод?
+
+```js
+const map = new Map([
+  [8, 'Daniel'],
+  [3, 'Sam'],
+  [5, 'Michael']
+])
+
+for (let key of map.keys()) {
+  console.log(key)
+}
+```
+
+1. `8`, `3`, `5`
+2. `8`, `5`, `3`
+3. `3`, `5`, `8`
+4. `Daniel`, `Sam`, `Michael`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+В отличие от объектов, Map сохраняет порядок добавления элементов.
+
+</p>
+</details>
+
+---
+
+
