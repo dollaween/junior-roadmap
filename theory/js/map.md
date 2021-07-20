@@ -72,6 +72,31 @@ console.log(owners.get(house))
 - `map.values()` – возвращает итерируемый объект по значениям.
 - `map.entries()` – возвращает итерируемый объект по парам вида `[ключ, значение]`, этот вариант используется по умолчанию в `for..of`.
 
+```js
+const map = new Map([
+  ['04:17': 'sunrise'],
+  ['20:57': 'sunset']
+])
+
+for (let key of map.keys()) {
+  console.log(key)
+}
+// '04:17'
+// '20:57'
+
+for (let value of map.values()) {
+  console.log(value)
+}
+// 'sunrise'
+// 'sunset'
+
+for (let item of map) {
+  console.log(item)
+}
+// ['04:17', 'sunrise']
+// ['20:57', 'sunset']
+```
+
 ---
 
 <div align="center">
@@ -85,7 +110,7 @@ console.log(owners.get(house))
 Из массива:
 ```js
 const arr = [
-  ['04:17', 'sunrize'],
+  ['04:17', 'sunrise'],
   ['20:57', 'sunset']
 ]
 
@@ -115,7 +140,7 @@ const map = new Map(Object.entries(obj))
 В массив:
 ```js
 const map = new Map([
-  ['04:17', 'sunrize'],
+  ['04:17', 'sunrise'],
   ['20:57', 'sunset']
 ])
 
@@ -125,7 +150,7 @@ const arr = map.entries()
 В объект:
 ```js
 const map = new Map([
-  ['04:17', 'sunrize'],
+  ['04:17', 'sunrise'],
   ['20:57', 'sunset']
 ])
 
