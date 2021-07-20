@@ -108,4 +108,5 @@ set.forEach((value, valueAgain, set) => {
 
 Источники:
 - [Map и Set](https://learn.javascript.ru/map-set)
+- [MDN: Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
