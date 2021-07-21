@@ -16,7 +16,11 @@
 
 ---
 
+<div align="center">
+
 `A component is changing an uncontrolled input to be controlled`
+
+</div>
 
 ---
 
