@@ -282,7 +282,7 @@ p {
 
 <div align="center">
 
-### `text-decoration-line`
+### `text-decoration-color`
 
 </div>
 
