@@ -157,7 +157,7 @@
 
 * [`useEffect()`](./react/useEffect.md)
 * [`useCallback()`](./react/useCallback.md)
-
+* [Исправление популярных ошибок](./react/mistakes.md)
 
 ---
 
