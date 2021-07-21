@@ -18,6 +18,18 @@
 
 <div align="center">
 
+### HTML
+
+</div>
+
+---
+
+- [Контрольные вопросы](./html/exam.md)
+
+---
+
+<div align="center">
+
 ### CSS
 
 </div>
