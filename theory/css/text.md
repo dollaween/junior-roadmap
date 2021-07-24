@@ -24,6 +24,8 @@
   - `font-size`
   - `font-weight`
   - `text-transform`
+- Стилизация шрифта:
+  - `color`
 - Работа с переносами и пробелами:
   - `word-spacing`
   - `letter-spacing`
@@ -43,8 +45,6 @@
   - `text-decoration-style`
   - `text-decoration-thickness`
   - `text-underline-offset`
-- Стилизация шрифта:
-  - `color`
 - Работа с переполнением:
   - `text-overflow`
   - `-webkit-line-clamp`
