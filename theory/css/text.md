@@ -566,6 +566,7 @@ p {
 ---
 
 Источники:
+- [`@font-face`](https://developer.mozilla.org/ru/docs/Web/CSS/@font-face)
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
 - [`font-size`](https://developer.mozilla.org/ru/docs/Web/CSS/font-size)
