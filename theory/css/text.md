@@ -366,7 +366,6 @@ p {
 }
 ```
 
-
 ---
 
 <div align="center">
@@ -392,6 +391,29 @@ p {
 
 ---
 
+<div align="center">
+
+### `text-overflow`
+
+</div>
+
+---
+
+Свойство `text-overflow` — определяет, как будет отображаться переполненный текст (переполненный — это текст, не влезающий по ширине).
+
+По-умолчанию, текст не переполняет контейнер. Чтобы добиться переполнения, нужно у родительского контейнера задать свойства `overflow` и `white-space`. Например:
+
+```css
+overflow: hidden;
+white-space: nowrap;
+```
+
+Значения:
+- `clip` — переполненный текст просто обрезается (значение по-умолчанию).
+- `ellipsis` — добавляет троеточие `...` в конце переполненного текста.
+
+---
+
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
@@ -410,3 +432,4 @@ p {
 - [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
 - [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
 - [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)
+- [`text-overflow`]()
