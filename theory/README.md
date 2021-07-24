@@ -44,7 +44,7 @@
 * [Цвет](./css/color.md)
 * [Псевдоклассы](./css/pseudo-classes.md)
 * [Псевдоэлементы](./css/pseudo-elements.md)
-* [Работа с текстом](./css/text.md) [в разработке]
+* [Работа с текстом](./css/text.md)
 * [Блочная модель](./css/box-model.md)
 * [Базовый поток](./css/flow.md)
 * [`vertical-align`](./css/vertical-align.md)
