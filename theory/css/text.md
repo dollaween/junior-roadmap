@@ -502,6 +502,50 @@ p {
 
 ---
 
+<div align="center">
+
+### `font-family`
+
+</div>
+
+---
+
+Свойство [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) — определяет шрифт текста.
+
+Значения:
+- Название шрифта. Если в названии шрифта есть пробелы, знаки пунктуации или цифры, то оно должно быть в кавычках.
+- Общие семейства шрифтов:
+  - `serif` — шрифт с отстрыми окончаниями.
+  - `sans-serif` — шрифт с гладкими окончаниями.
+  - `monospace` — моноширинный шрифт.
+  - `cursive` — курсивный шрифт.
+  - `fantasy` — декоративный шрифт.
+  - `system-ui` — дефолтный шрифт взятый из пользовательского интерфейса данной платформы.
+  - `math` — шрифт, предназначенный для математики.
+  - `emoji` — шрифт, предназначенный для отображения эмодзи.
+  - `fangsong` — шрифт для китайских иероглифов.
+
+Если указать несколько шрифтов — то браузер будет использовать самый первый из них. Если использование самого первого невозможно — попробует взять второй из списка. Если и второй использовать невозможно — возьмет третий и так далее.
+
+В конце списка важно указывать хотя бы один шрифт из общего семейства шрифтов. Это позволит браузеру использовать запасной шрифт, если никакие другие не были найдены.
+
+Некоторые общие семейства шрифтов:
+```css
+.serif {
+  font-family: Times, Times New Roman, Georgia, serif;
+}
+
+.sansserif {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+  font-family: Lucida Console, Courier, monospace;
+}
+```
+
+---
+
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
@@ -526,3 +570,4 @@ p {
 - [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
 - [`-webkit-line-clamp`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)
 - [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
+- [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
