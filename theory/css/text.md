@@ -518,7 +518,7 @@ p {
 
 ---
 
-Свойство `text-decoration-thickness` — определяет толщину декоративной линии.
+Свойство [`text-decoration-thickness`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness) — определяет толщину декоративной линии.
 
 ```css
 p {
