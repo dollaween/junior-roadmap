@@ -176,6 +176,22 @@ p {
 
 <div align="center">
 
+### `text-align-last`
+
+</div>
+
+---
+
+> Не поддерживается в Safari
+
+Свойство `text-align-last` — выравнивает последнюю строку в блоке.
+
+Значения аналогичные `text-align`.
+
+---
+
+<div align="center">
+
 ### `white-space`
 
 </div>
@@ -422,6 +438,7 @@ white-space: nowrap;
 - [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing)
 - [`word-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/word-spacing)
 - [`line-height`](https://developer.mozilla.org/ru/docs/Web/CSS/line-height)
+- [`text-align-last`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align-last)
 - [`text-align`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align)
 - [`white-space`](https://developer.mozilla.org/ru/docs/Web/CSS/white-space)
 - [`word-break`](https://developer.mozilla.org/ru/docs/Web/CSS/word-break)
@@ -430,6 +447,7 @@ white-space: nowrap;
 - [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)
 - [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)
 - [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
+- [`text-decoration-thickness`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness)
 - [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
 - [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)
 - [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
