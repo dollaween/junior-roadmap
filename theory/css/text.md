@@ -84,6 +84,50 @@
 
 <div align="center">
 
+### `font-family`
+
+</div>
+
+---
+
+Свойство [`font-family`](https://developer.mozilla.org/ru/docs/Web/CSS/font-family) — определяет шрифт текста.
+
+Значения:
+- Название шрифта. Если в названии шрифта есть пробелы, знаки пунктуации или цифры, то оно должно быть в кавычках.
+- Общие семейства шрифтов:
+  - `serif` — шрифт с отстрыми окончаниями.
+  - `sans-serif` — шрифт с гладкими окончаниями.
+  - `monospace` — моноширинный шрифт.
+  - `cursive` — курсивный шрифт.
+  - `fantasy` — декоративный шрифт.
+  - `system-ui` — дефолтный шрифт взятый из пользовательского интерфейса данной платформы.
+  - `math` — шрифт, предназначенный для математики.
+  - `emoji` — шрифт, предназначенный для отображения эмодзи.
+  - `fangsong` — шрифт для китайских иероглифов.
+
+Если указать несколько шрифтов — то браузер будет использовать самый первый из них. Если использование самого первого невозможно — попробует взять второй из списка. Если и второй использовать невозможно — возьмет третий и так далее.
+
+В конце списка важно указывать хотя бы один шрифт из общего семейства шрифтов. Это позволит браузеру использовать запасной шрифт, если никакие другие не были найдены.
+
+Некоторые общие семейства шрифтов:
+```css
+.serif {
+  font-family: Times, Times New Roman, Georgia, serif;
+}
+
+.sansserif {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+  font-family: Lucida Console, Courier, monospace;
+}
+```
+
+---
+
+<div align="center">
+
 ### `font-size`
 
 </div>
@@ -564,73 +608,29 @@ p {
 
 ---
 
-<div align="center">
-
-### `font-family`
-
-</div>
-
----
-
-Свойство [`font-family`](https://developer.mozilla.org/ru/docs/Web/CSS/font-family) — определяет шрифт текста.
-
-Значения:
-- Название шрифта. Если в названии шрифта есть пробелы, знаки пунктуации или цифры, то оно должно быть в кавычках.
-- Общие семейства шрифтов:
-  - `serif` — шрифт с отстрыми окончаниями.
-  - `sans-serif` — шрифт с гладкими окончаниями.
-  - `monospace` — моноширинный шрифт.
-  - `cursive` — курсивный шрифт.
-  - `fantasy` — декоративный шрифт.
-  - `system-ui` — дефолтный шрифт взятый из пользовательского интерфейса данной платформы.
-  - `math` — шрифт, предназначенный для математики.
-  - `emoji` — шрифт, предназначенный для отображения эмодзи.
-  - `fangsong` — шрифт для китайских иероглифов.
-
-Если указать несколько шрифтов — то браузер будет использовать самый первый из них. Если использование самого первого невозможно — попробует взять второй из списка. Если и второй использовать невозможно — возьмет третий и так далее.
-
-В конце списка важно указывать хотя бы один шрифт из общего семейства шрифтов. Это позволит браузеру использовать запасной шрифт, если никакие другие не были найдены.
-
-Некоторые общие семейства шрифтов:
-```css
-.serif {
-  font-family: Times, Times New Roman, Georgia, serif;
-}
-
-.sansserif {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-
-.monospace {
-  font-family: Lucida Console, Courier, monospace;
-}
-```
-
----
-
 Источники:
 - [`@font-face`](https://developer.mozilla.org/ru/docs/Web/CSS/@font-face)
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
+- [`font-family`](https://developer.mozilla.org/ru/docs/Web/CSS/font-family)
 - [`font-size`](https://developer.mozilla.org/ru/docs/Web/CSS/font-size)
 - [`font-weight`](https://developer.mozilla.org/ru/docs/Web/CSS/font-weight)
 - [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing)
-- [`word-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/word-spacing)
 - [`line-height`](https://developer.mozilla.org/ru/docs/Web/CSS/line-height)
-- [`text-align-last`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align-last)
 - [`text-align`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align)
-- [`white-space`](https://developer.mozilla.org/ru/docs/Web/CSS/white-space)
-- [`word-break`](https://developer.mozilla.org/ru/docs/Web/CSS/word-break)
-- [`text-indent`](https://developer.mozilla.org/ru/docs/Web/CSS/text-indent)
+- [`text-align-last`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align-last)
 - [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
-- [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)
 - [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)
+- [`text-decoration-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-line)
 - [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
 - [`text-decoration-thickness`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness)
-- [`text-underline-offset`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset)
-- [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
+- [`text-indent`](https://developer.mozilla.org/ru/docs/Web/CSS/text-indent)
 - [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)
 - [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
-- [`-webkit-line-clamp`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)
 - [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
-- [`font-family`](https://developer.mozilla.org/ru/docs/Web/CSS/font-family)
+- [`text-underline-offset`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset)
+- [`white-space`](https://developer.mozilla.org/ru/docs/Web/CSS/white-space)
+- [`word-break`](https://developer.mozilla.org/ru/docs/Web/CSS/word-break)
+- [`word-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/word-spacing)
+- [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
+- [`-webkit-line-clamp`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)
