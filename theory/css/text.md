@@ -510,7 +510,7 @@ p {
 
 ---
 
-Свойство [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) — определяет шрифт текста.
+Свойство [`font-family`](https://developer.mozilla.org/ru/docs/Web/CSS/font-family) — определяет шрифт текста.
 
 Значения:
 - Название шрифта. Если в названии шрифта есть пробелы, знаки пунктуации или цифры, то оно должно быть в кавычках.
@@ -570,4 +570,4 @@ p {
 - [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
 - [`-webkit-line-clamp`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)
 - [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
-- [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+- [`font-family`](https://developer.mozilla.org/ru/docs/Web/CSS/font-family)
