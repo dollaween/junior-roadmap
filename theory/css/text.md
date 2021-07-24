@@ -486,7 +486,7 @@ p {
 
 ---
 
-Свойство `text-transform` — определяет, какие буквы отобразить прописными, а какие строчными.
+Свойство [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) — определяет, какие буквы отобразить прописными, а какие строчными.
 
 Значения:
 - `none` — не изменять текст.
@@ -525,3 +525,4 @@ p {
 - [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)
 - [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
 - [`-webkit-line-clamp`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)
+- [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
