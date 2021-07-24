@@ -362,6 +362,27 @@ p {
 
 <div align="center">
 
+### `text-underline-offset`
+
+</div>
+
+---
+
+Свойство [`text-underline-offset`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset) — устанавливает расстояние декоративной линии от текста.
+
+Свойство применимо только для декоративной линии со значением `text-decoration-line: underline;`.
+
+```css
+p {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+```
+
+---
+
+<div align="center">
+
 ### `writing-mode`
 
 </div>
@@ -428,6 +449,8 @@ white-space: nowrap;
 - `clip` — переполненный текст просто обрезается (значение по-умолчанию).
 - `ellipsis` — добавляет троеточие `...` в конце переполненного текста.
 
+
+
 ---
 
 Источники:
@@ -448,6 +471,7 @@ white-space: nowrap;
 - [`text-decoration-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-color)
 - [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
 - [`text-decoration-thickness`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness)
+- [`text-underline-offset`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset)
 - [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
 - [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)
 - [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
