@@ -449,7 +449,32 @@ white-space: nowrap;
 - `clip` — переполненный текст просто обрезается (значение по-умолчанию).
 - `ellipsis` — добавляет троеточие `...` в конце переполненного текста.
 
+---
 
+<div align="center">
+
+### `-webkit-line-clamp`
+
+</div>
+
+---
+
+> Данное свойство поддерживается только с префиксом `-webkit`.
+
+Свойство [`-webkit-line-clamp`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp) — позволяет отобразить в блоке не более чем указанное количество строк.
+
+Это свойство работает только в связке с двумя другими свойствами:
+- `display` со значением `-webkit-box` или `-webkit-inline-box`.
+- `-webkit-box-orient: vertical`.
+
+```css
+p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+```
 
 ---
 
@@ -475,3 +500,4 @@ white-space: nowrap;
 - [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
 - [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)
 - [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
+- [`-webkit-line-clamp`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)
