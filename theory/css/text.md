@@ -432,4 +432,4 @@ white-space: nowrap;
 - [`text-decoration-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-style)
 - [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode)
 - [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation)
-- [`text-overflow`]()
+- [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
