@@ -24,8 +24,18 @@
   - `font-size`
   - `font-weight`
   - `text-transform`
-- Стилизация шрифта
-  - `color`
+- Работа с переносами и пробелами:
+  - `word-spacing`
+  - `letter-spacing`
+  - `line-height`
+  - `white-space`
+  - `word-break`
+  - `text-indent`
+- Работа с распололожением букв:
+  - `text-align`
+  - `text-align-last`
+  - `writing-mode`
+  - `text-orientation`
 - Работа с декоративной линией:
   - `text-decoration`
   - `text-decoration-line`
@@ -33,18 +43,8 @@
   - `text-decoration-style`
   - `text-decoration-thickness`
   - `text-underline-offset`
-- Работа с переносами и пробелами:
-  - `line-height`
-  - `letter-spacing`
-  - `word-spacing`
-  - `white-space`
-  - `word-break`
-  - `text-indent`
-- Работа с написанием / Работа с распололожением букв:
-  - `text-align`
-  - `text-align-last`
-  - `writing-mode`
-  - `text-orientation`
+- Стилизация шрифта:
+  - `color`
 - Работа с переполнением:
   - `text-overflow`
   - `-webkit-line-clamp`
@@ -492,7 +492,7 @@ p {
 
 Свойство [`text-overflow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow) — определяет, как будет отображаться переполненный текст (переполненный — это текст, не влезающий по ширине).
 
-По-умолчанию, текст не переполняет контейнер. Чтобы добиться переполнения, нужно у родительского контейнера задать свойства `overflow` и `white-space`. Например:
+По-умолчанию, текст не переполняет контейнер. Чтобы добиться переполнения, нужно задать свойства `overflow` и `white-space`. Например:
 
 ```css
 overflow: hidden;
@@ -502,6 +502,14 @@ white-space: nowrap;
 Значения:
 - `clip` — переполненный текст просто обрезается (значение по-умолчанию).
 - `ellipsis` — добавляет троеточие `...` в конце переполненного текста.
+
+```css
+p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+```
 
 ---
 
