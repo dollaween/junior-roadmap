@@ -16,6 +16,41 @@
 
 ---
 
+Свойства для работы с текстом можно разбить на следующие категории:
+- Настройка шрифта:
+  - `@font-face`
+  - `font`
+  - `font-family`
+  - `font-size`
+  - `font-weight`
+  - `text-transform`
+- Стилизация шрифта
+  - `color`
+- Работа с декоративной линией:
+  - `text-decoration`
+  - `text-decoration-line`
+  - `text-decoration-color`
+  - `text-decoration-style`
+  - `text-decoration-thickness`
+  - `text-underline-offset`
+- Работа с переносами и пробелами:
+  - `line-height`
+  - `letter-spacing`
+  - `word-spacing`
+  - `white-space`
+  - `word-break`
+  - `text-indent`
+- Работа с написанием / Работа с распололожением букв:
+  - `text-align`
+  - `text-align-last`
+  - `writing-mode`
+  - `text-orientation`
+- Работа с переполнением:
+  - `text-overflow`
+  - `-webkit-line-clamp`
+
+---
+
 <div align="center">
 
 ### `@font-face`
