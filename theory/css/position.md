@@ -15,3 +15,11 @@
 </div>
 
 ---
+
+`static` — значение по-умолчанию для всех элементов, которое ставит элемент в его нормальное положение в документе.
+
+---
+
+Источники:
+- [MDN: Позиционирование](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Positioning)
+- [`position`](https://developer.mozilla.org/ru/docs/Web/CSS/position)
