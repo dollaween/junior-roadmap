@@ -18,6 +18,25 @@
 
 <div align="center">
 
+### `@font-face`
+
+</div>
+
+---
+
+Правило [`@font-face`](https://developer.mozilla.org/ru/docs/Web/CSS/@font-face) — загружает шрифты с удаленного сервера или компьютера пользователя.
+
+```css
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/OpenSans.woff2") format("woff2");
+}
+```
+
+---
+
+<div align="center">
+
 ### `color`
 
 </div>
