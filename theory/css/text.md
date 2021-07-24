@@ -478,6 +478,30 @@ p {
 
 ---
 
+<div align="center">
+
+### `text-transform`
+
+</div>
+
+---
+
+Свойство `text-transform` — определяет, какие буквы отобразить прописными, а какие строчными.
+
+Значения:
+- `none` — не изменять текст.
+- `capitalize` — первая буква каждого слова становится прописной.
+- `uppercase` — все буквы становятся прописными.
+- `lowercase` — все буквы становятся строчными.
+
+```css
+p {
+  text-transform: uppercase;
+}
+```
+
+---
+
 Источники:
 - [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 - [`font`](https://developer.mozilla.org/ru/docs/Web/CSS/font)
