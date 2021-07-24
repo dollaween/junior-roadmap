@@ -51,6 +51,7 @@
 * [Работа с блоком](./css/block.md) [в разработке]
 * [`vertical-align`](./css/vertical-align.md)
 * [Позиционирование](./css/position.md)
+* [Тени](./css/shadows.md) [в разработке]
 * [Flexbox](./css/flexbox.md)
 * [Grid](./css/grid.md)
 * [Работа с изображениями](./css/images.md)
