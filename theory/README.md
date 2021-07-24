@@ -47,10 +47,11 @@
 * [Работа с текстом](./css/text.md)
 * [Блочная модель](./css/box-model.md)
 * [Базовый поток](./css/flow.md)
+* [Работа с блоком](./css/block.md)
 * [`vertical-align`](./css/vertical-align.md)
+* [Позиционирование](./css/position.md)
 * [Flexbox](./css/flexbox.md)
 * [Grid](./css/grid.md)
-* [Позиционирование](./css/position.md)
 * [Работа с изображениями](./css/images.md)
 * [SVG](./css/svg.md) [в разработке]
 * [Анимация через ключевые кадры](./css/animation-keyframes.md)
