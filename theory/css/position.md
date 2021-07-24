@@ -173,6 +173,48 @@ body {
 
 ---
 
+<div align="center">
+
+### `z-index`
+
+</div>
+
+---
+
+Свойство [`z-index`](https://developer.mozilla.org/ru/docs/Web/CSS/z-index) — определяет положение позиционируемого элемента по оси z.
+
+В случае, если два и более блоков расположены в одном и том же месте, последний из них перекроет все остальные. С помощью `z-index` мы можем вручную управлять, какой элемент будет располагаться над другим.
+
+Значения:
+- `auto` — уровень элемента такой же, как и у родительского.
+- Число — чем выше число, тем выше элемент.
+
+Пример, при котором `.block-1` будет расположен над `.block-2`, потому что его `z-index` выше:
+```css
+.block-1 {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: orange;
+  z-index: 2;
+}
+
+.block-2 {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: red;
+  z-index: 1;
+}
+```
+
+---
+
 Источники:
 - [MDN: Позиционирование](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Positioning)
 - [`position`](https://developer.mozilla.org/ru/docs/Web/CSS/position)
+- [`z-index`](https://developer.mozilla.org/ru/docs/Web/CSS/z-index)
