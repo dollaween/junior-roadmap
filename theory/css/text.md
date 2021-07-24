@@ -72,25 +72,6 @@
 
 <div align="center">
 
-### `color`
-
-</div>
-
----
-
-Свойство [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) — задает цвет текста.  
-Цвет может быть указан несколькими способами (подробнее в главе [«Цвет»](./color.md)).
-
-```css
-p {
-  color: green;
-}
-```
-
----
-
-<div align="center">
-
 ### `font`
 
 </div>
@@ -148,19 +129,42 @@ span {
 
 <div align="center">
 
-### `letter-spacing`
+### `text-transform`
 
 </div>
 
 ---
 
-Свойство [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing) — определяет расстояние между буквами в тексте.  
+Свойство [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) — определяет, какие буквы отобразить прописными, а какие строчными.
 
-Положительные значения увеличивают расстояние между буквами, отрицательные значения — уменьшают.
+Значения:
+- `none` — не изменять текст.
+- `capitalize` — первая буква каждого слова становится прописной.
+- `uppercase` — все буквы становятся прописными.
+- `lowercase` — все буквы становятся строчными.
 
 ```css
 p {
-  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+```
+
+---
+
+<div align="center">
+
+### `color`
+
+</div>
+
+---
+
+Свойство [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) — задает цвет текста.  
+Цвет может быть указан несколькими способами (подробнее в главе [«Цвет»](./color.md)).
+
+```css
+p {
+  color: green;
 }
 ```
 
@@ -188,6 +192,26 @@ p {
 
 <div align="center">
 
+### `letter-spacing`
+
+</div>
+
+---
+
+Свойство [`letter-spacing`](https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing) — определяет расстояние между буквами в тексте.  
+
+Положительные значения увеличивают расстояние между буквами, отрицательные значения — уменьшают.
+
+```css
+p {
+  letter-spacing: 4px;
+}
+```
+
+---
+
+<div align="center">
+
 ### `line-height`
 
 </div>
@@ -201,46 +225,6 @@ p {
   line-height: 24px;
 }
 ```
-
----
-
-<div align="center">
-
-### `text-align`
-
-</div>
-
----
-
-Свойство [`text-align`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align) — выравнивает линейное содержимое (такое как `inline`, `inline-block`).
-
-Значения:
-- `left` — выравнивает содержимое по левому краю.
-- `right` — выравнивает содержимое по правому краю.
-- `center` — выравнивает содержимое по центру.
-- `justify` — выравнивает текст так, чтобы его левая и правая границы соприкасались с границами родительского контейнера.
-
-```css
-p {
-  text-align: right;
-}
-```
-
----
-
-<div align="center">
-
-### `text-align-last`
-
-</div>
-
----
-
-> Не поддерживается в Safari
-
-Свойство [`text-align-last`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align-last) — выравнивает последнюю строку в блоке.
-
-Значения аналогичные `text-align`.
 
 ---
 
@@ -308,6 +292,93 @@ p {
 ```css
 p {
   text-indent: 30px;
+}
+```
+
+---
+
+<div align="center">
+
+### `text-align`
+
+</div>
+
+---
+
+Свойство [`text-align`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align) — выравнивает линейное содержимое (такое как `inline`, `inline-block`).
+
+Значения:
+- `left` — выравнивает содержимое по левому краю.
+- `right` — выравнивает содержимое по правому краю.
+- `center` — выравнивает содержимое по центру.
+- `justify` — выравнивает текст так, чтобы его левая и правая границы соприкасались с границами родительского контейнера.
+
+```css
+p {
+  text-align: right;
+}
+```
+
+---
+
+<div align="center">
+
+### `text-align-last`
+
+</div>
+
+---
+
+> Не поддерживается в Safari
+
+Свойство [`text-align-last`](https://developer.mozilla.org/ru/docs/Web/CSS/text-align-last) — выравнивает последнюю строку в блоке.
+
+Значения аналогичные `text-align`.
+
+---
+
+<div align="center">
+
+### `writing-mode`
+
+</div>
+
+---
+
+Свойство [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode) — определяет как будет расположено содержимое — вертикально или горизонтально.
+
+Значения:
+- `horizontal-tb` — содержимое будет расположено по горизонтали слева направо, по вертикали — сверху вниз.
+- `horizontal-bt` — содержимое будет расположено по горизонтали слева направо, по вертикали — снизу вверх.
+- `vertical-rl` — содержимое будет расположено по вертикали сверху вниз, по горизонтали — справа налево.
+- `vertical-lr` — содержимое будет расположено по вертикали сверху вниз, по горизонтали — слева направо.
+
+```css
+p {
+  writing-mode: vertical-rl;
+}
+```
+
+---
+
+<div align="center">
+
+### `text-orientation`
+
+</div>
+
+---
+
+Свойство [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation) — определяет ориентацию букв в строке. Это свойство применимо только если `writing-mode` установлен в `vertical-rl`/`vertical-lr`.
+
+Значения:
+- `mixed` — поворачивает буквы на 90 градусов.
+- `upright` — размещает буквы в вертикальном положении.
+
+```css
+p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 ```
 
@@ -437,53 +508,6 @@ p {
 
 <div align="center">
 
-### `writing-mode`
-
-</div>
-
----
-
-Свойство [`writing-mode`](https://developer.mozilla.org/ru/docs/Web/CSS/writing-mode) — определяет как будет расположено содержимое — вертикально или горизонтально.
-
-Значения:
-- `horizontal-tb` — содержимое будет расположено по горизонтали слева направо, по вертикали — сверху вниз.
-- `horizontal-bt` — содержимое будет расположено по горизонтали слева направо, по вертикали — снизу вверх.
-- `vertical-rl` — содержимое будет расположено по вертикали сверху вниз, по горизонтали — справа налево.
-- `vertical-lr` — содержимое будет расположено по вертикали сверху вниз, по горизонтали — слева направо.
-
-```css
-p {
-  writing-mode: vertical-rl;
-}
-```
-
----
-
-<div align="center">
-
-### `text-orientation`
-
-</div>
-
----
-
-Свойство [`text-orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation) — определяет ориентацию букв в строке. Это свойство применимо только если `writing-mode` установлен в `vertical-rl`/`vertical-lr`.
-
-Значения:
-- `mixed` — поворачивает буквы на 90 градусов.
-- `upright` — размещает буквы в вертикальном положении.
-
-```css
-p {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-```
-
----
-
-<div align="center">
-
 ### `text-overflow`
 
 </div>
@@ -535,30 +559,6 @@ p {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-}
-```
-
----
-
-<div align="center">
-
-### `text-transform`
-
-</div>
-
----
-
-Свойство [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) — определяет, какие буквы отобразить прописными, а какие строчными.
-
-Значения:
-- `none` — не изменять текст.
-- `capitalize` — первая буква каждого слова становится прописной.
-- `uppercase` — все буквы становятся прописными.
-- `lowercase` — все буквы становятся строчными.
-
-```css
-p {
-  text-transform: uppercase;
 }
 ```
 
