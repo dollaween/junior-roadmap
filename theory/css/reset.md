@@ -28,6 +28,28 @@
 
 <div align="center">
 
+### Подключение
+
+</div>
+
+---
+
+Подключать сбрасывающие стили нужно обязательно перед всеми другими стилями.
+
+```html
+<html>
+  <head>
+    <title>Example</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+</html>
+```
+
+---
+
+<div align="center">
+
 ### Reset
 
 </div>
