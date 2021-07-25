@@ -36,7 +36,7 @@
 
 ---
 
-* [Сброс стилей](./css/reset.md) [в разработке]
+* [Сброс стилей](./css/reset.md)
 * [Наследование](./css/inheritance.md)
 * [Селекторы](./css/selectors.md)
 * [Комбинаторы](./css/combinators.md)
