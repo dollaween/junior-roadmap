@@ -23,3 +23,24 @@
 Существуют два разных подхода к сбросу стилей:
 1. Reset
 2. Normalize
+
+---
+
+<div align="center">
+
+### Reset
+
+</div>
+
+---
+
+---
+
+<div align="center">
+
+### Normalize
+
+</div>
+
+---
+
