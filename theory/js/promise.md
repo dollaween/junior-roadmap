@@ -53,6 +53,32 @@ new Promise((resolve, reject) => {
 3. `part 3` — блок кода, который будет выполнен, если сработает колбэк `reject` или если будет выброшена ошибка.
 4. `part 4` — блок кода, который будет выполнен при срабатывании `resolve` или `reject`.
 
+```js
+new Promise((resolve, reject) => {
+  resolve()
+}).then(() => {
+  console.log('Это сообщение будет выведено в консоль')
+}).catch(() => {
+  console.log('До этого блока дело не дойдет')
+})
+
+new Promise((resolve, reject) => {
+  reject()
+}).then(() => {
+  console.log('До этого блока дело не дойдет')
+}).catch(() => {
+  console.log('Это сообщение будет выведено в консоль')
+})
+
+new Promise((resolve, reject) => {
+  throw new Error()
+}).then(() => {
+  console.log('До этого блока дело не дойдет')
+}).catch(() => {
+  console.log('Это сообщение будет выведено в консоль')
+})
+```
+
 ---
 
 Источники:
