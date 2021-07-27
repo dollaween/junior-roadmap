@@ -59,13 +59,17 @@ new Promise((resolve, reject) => {
 })
   .then(() => console.log('Это сообщение будет выведено в консоль'))
   .catch(() => console.log('До этого блока дело не дойдет'))
+```
 
+```js
 new Promise((resolve, reject) => {
   reject()
 })
   .then(() => console.log('До этого блока дело не дойдет'))
   .catch(() => console.log('Это сообщение будет выведено в консоль'))
+```
 
+```js
 new Promise((resolve, reject) => {
   throw new Error()
 })
