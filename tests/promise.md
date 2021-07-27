@@ -72,3 +72,33 @@ console.log(promise)
 </details>
 
 ---
+
+##### 3. Какой будет вывод?
+
+```javascript
+const promise = new Promise((resolve, reject) => {
+  reject()
+})
+  .catch(() => {})
+
+console.log(promise)
+```
+
+1. `Promise {<pending>}`
+2. `Promise {<fulfilled>}`
+3. `Promise {<rejected>}`
+4. `Promise {<waiting>}`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+**Ответ: 1**
+
+  При создании и до тех пор, пока не сработает колбэк `resolve` или `reject` — промис будет иметь состояние `pending`.
+
+  `waiting` — такого состояния не существует.
+
+</p>
+</details>
+
+---
