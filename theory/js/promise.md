@@ -109,7 +109,6 @@ console.log(promise)
 
 > В Javascript нет метода, чтобы узнать текущее состояние промиса.
 
-
 ---
 
 <div align="center">
@@ -129,7 +128,8 @@ new Promise((resolve, reject) => {
 })
   .then((result) => console.log(result))
 
-// Через одну секунду будет выведено: 'Success message'
+// Через одну секунду будет выведено:
+// 'Success message'
 ```
 
 Метод `then()` возвращает промис. Это значит, что мы можем вызывать несколько `then()` подряд. Всё, что мы будем возвращать из `then()` — будет попадать как параметры в следующий `then()`:
@@ -146,6 +146,29 @@ new Promise((resolve, reject) => {
 // Через одну секунду будет выведено:
 // 'Success message'
 // 'Another message'
+```
+
+---
+
+<div align="center">
+
+### `catch`
+
+</div>
+
+---
+
+Метод `.catch(err)` — это функция, которая будет выполнена после вызова `reject(params)` или при выброшенной ошибке.
+
+Метод `catch()` используется для обработки ошибок.
+
+```js
+new Promise((resolve, reject) => {
+  throw new Error('Reject error')
+})
+  .catch((err) => console.log(err))
+
+// Error: Reject error
 ```
 
 ---
