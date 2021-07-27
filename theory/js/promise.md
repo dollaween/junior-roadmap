@@ -166,7 +166,7 @@ new Promise((resolve, reject) => {
 new Promise((resolve, reject) => {
   throw new Error('Reject error')
 })
-  .catch((err) => console.log(err))
+  .catch((err) => console.error(err))
 
 // Error: Reject error
 ```
