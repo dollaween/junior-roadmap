@@ -120,7 +120,7 @@ console.log(promise)
 
 ---
 
-Метод `.then(result)` — это функция, которая будет выполнена, после вызова `resolve(params)`,  
+Метод `.then(result)` — это функция, которая будет выполнена после вызова `resolve(params)`,  
 где `result` — это параметры, которые мы передаем при вызове `resolve(params)`.
 
 ```js
@@ -130,6 +130,22 @@ new Promise((resolve, reject) => {
   .then((result) => console.log(result))
 
 // Через одну секунду будет выведено: 'Success message'
+```
+
+Метод `then()` возвращает промис. Это значит, что мы можем вызывать несколько `then()` подряд. Всё, что мы будем возвращать из `then()` — будет попадать как `result` в следующий `then()`:
+```js
+new Promise((resolve, reject) => {
+  setTimeout(() => resolve('Success message'), 1000)
+})
+  .then((result) => {
+    console.log(result)
+    return 'Another message'
+  })
+  .then((result) => console.log(result))
+
+// Через одну секунду будет выведено:
+// 'Success message'
+// 'Another message'
 ```
 
 ---
