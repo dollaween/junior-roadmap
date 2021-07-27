@@ -176,5 +176,6 @@ new Promise((resolve, reject) => {
 ---
 
 Источники:
-- [Promise](https://learn.javascript.ru/promise)
-- [JavaScript Promise](https://www.w3schools.com/js/js_promise.asp)
+- [learn.javascript: Promise](https://learn.javascript.ru/promise)
+- [W3School: JavaScript Promise](https://www.w3schools.com/js/js_promise.asp)
+- [nodejs.dev: Understanding JavaScript Promises](https://nodejs.dev/learn/understanding-javascript-promises)
