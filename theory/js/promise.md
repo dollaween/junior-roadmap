@@ -47,13 +47,10 @@
 ```js
 new Promise((resolve, reject) => {
   /* part 1 */
-}).then(() => {
-  /* part 2 */
-}).catch(() => {
-  /* part 3 */
-}).finally(() => {
-  /* part 4 */
 })
+  .then(() => { /* part 2 */ })
+  .catch(() => { /* part 3 */ })
+  .finally(() => { /* part 4 */ })
 ```
 
 Промис состоит из четырех частей:
