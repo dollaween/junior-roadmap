@@ -53,6 +53,7 @@ new Promise((resolve, reject) => {
 3. `part 3` — блок кода, который будет выполнен, если сработает колбэк `reject` или если будет выброшена ошибка.
 4. `part 4` — блок кода, который будет выполнен при срабатывании `resolve` или `reject`.
 
+Пример успешного сценария:
 ```js
 new Promise((resolve, reject) => {
   resolve()
@@ -61,6 +62,7 @@ new Promise((resolve, reject) => {
   .catch(() => console.log('До этого блока дело не дойдет'))
 ```
 
+Пример отрицательного сценария:
 ```js
 new Promise((resolve, reject) => {
   reject()
@@ -69,6 +71,7 @@ new Promise((resolve, reject) => {
   .catch(() => console.log('Это сообщение будет выведено в консоль'))
 ```
 
+Пример ошибки в промисе:
 ```js
 new Promise((resolve, reject) => {
   throw new Error()
