@@ -36,9 +36,9 @@ console.log(2)
 <details><summary><b>Ответ</b></summary>
 <p>
 
-**Ответ: 2**
+  **Ответ: 2**
 
-Исполняющая функция в `Promise` будет выполнена сразу.
+  Исполняющая функция в `Promise` будет выполнена сразу.
 
 </p>
 </details>
@@ -62,7 +62,7 @@ console.log(promise)
 <details><summary><b>Ответ</b></summary>
 <p>
 
-**Ответ: 1**
+  **Ответ: 1**
 
   При создании и до тех пор, пока не сработает колбэк `resolve` или `reject` — промис будет иметь состояние `pending`.
 
@@ -81,22 +81,20 @@ const promise = new Promise((resolve, reject) => {
 })
   .catch(() => {})
 
-console.log(promise)
+setTimeout(() => console.log(promise), 1000)
 ```
 
 1. `Promise {<pending>}`
 2. `Promise {<fulfilled>}`
 3. `Promise {<rejected>}`
-4. `Promise {<waiting>}`
+4. `TypeError`
 
 <details><summary><b>Ответ</b></summary>
 <p>
 
-**Ответ: 1**
+  **Ответ: 2**
 
-  При создании и до тех пор, пока не сработает колбэк `resolve` или `reject` — промис будет иметь состояние `pending`.
-
-  `waiting` — такого состояния не существует.
+  Из тела промиса мы вызвали `reject()`, тем самым передав управление в метод `catch()`. Так как из метода `catch()` мы не выбросили ошибку, то промис считает, что все операции завершены успешно, а ошибки успешно обработаны, и выставляет состояние `fulfilled`.
 
 </p>
 </details>
