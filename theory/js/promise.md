@@ -177,5 +177,6 @@ new Promise((resolve, reject) => {
 
 Источники:
 - [learn.javascript: Promise](https://learn.javascript.ru/promise)
+- [MDN: Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [W3School: JavaScript Promise](https://www.w3schools.com/js/js_promise.asp)
 - [nodejs.dev: Understanding JavaScript Promises](https://nodejs.dev/learn/understanding-javascript-promises)
