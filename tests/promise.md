@@ -48,7 +48,9 @@ console.log(2)
 ##### 2. Какой будет вывод?
 
 ```javascript
-const promise = new Promise((resolve, reject) => {})
+const promise = new Promise((resolve, reject) => {
+  return true
+})
 console.log(promise)
 ```
 
