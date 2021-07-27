@@ -58,6 +58,10 @@
 * [Функции](./function.md)
 * [Конструкторы, прототипы, `this`](./constructor.md)
 
+### Часть 4. Асинхронность
+* [`Promise`](./promise.md)
+
+
 ---
 
 <div align="center">
