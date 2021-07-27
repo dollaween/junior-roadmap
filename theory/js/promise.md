@@ -37,6 +37,8 @@
 
 ---
 
+Promise API предоставляется конструктором `Promise`:
+
 ```js
 new Promise((resolve, reject) => {
   /* part 1 */
