@@ -56,27 +56,21 @@ new Promise((resolve, reject) => {
 ```js
 new Promise((resolve, reject) => {
   resolve()
-}).then(() => {
-  console.log('Это сообщение будет выведено в консоль')
-}).catch(() => {
-  console.log('До этого блока дело не дойдет')
 })
+  .then(() => console.log('Это сообщение будет выведено в консоль'))
+  .catch(() => console.log('До этого блока дело не дойдет'))
 
 new Promise((resolve, reject) => {
   reject()
-}).then(() => {
-  console.log('До этого блока дело не дойдет')
-}).catch(() => {
-  console.log('Это сообщение будет выведено в консоль')
 })
+  .then(() => console.log('До этого блока дело не дойдет'))
+  .catch(() => console.log('Это сообщение будет выведено в консоль'))
 
 new Promise((resolve, reject) => {
   throw new Error()
-}).then(() => {
-  console.log('До этого блока дело не дойдет')
-}).catch(() => {
-  console.log('Это сообщение будет выведено в консоль')
 })
+  .then(() => console.log('До этого блока дело не дойдет'))
+  .catch(() => console.log('Это сообщение будет выведено в консоль'))
 ```
 
 ---
