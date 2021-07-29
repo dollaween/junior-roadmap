@@ -185,7 +185,7 @@ new Promise((resolve, reject) => {
 
 Метод [`Promise.all(iterable)`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) — ожидает исполнения всех промисов или отклонения любого из них.
 
-Возвращает промис, который исполнится после исполнения всех промисов в iterable. В случае, если любой из промисов будет отклонён, Promise.all будет также отклонён.
+Возвращает промис, который исполнится после исполнения всех промисов в `iterable`. В случае, если любой из промисов будет отклонён, `Promise.all` будет также отклонён.
 
 ```js
 const p1 = new Promise((resolve, reject) => { /* ... */ })
