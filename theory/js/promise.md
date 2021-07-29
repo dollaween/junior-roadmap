@@ -175,6 +175,35 @@ new Promise((resolve, reject) => {
 
 ---
 
+<div align="center">
+
+### `Promise.all()`
+
+</div>
+
+---
+
+Метод `Promise.all(iterable)` — Ожидает исполнения всех промисов или отклонения любого из них.
+
+Возвращает промис, который исполнится после исполнения всех промисов в iterable. В случае, если любой из промисов будет отклонён, Promise.all будет также отклонён.
+
+```js
+const p1 = new Promise((resolve, reject) => { /* ... */ })
+const p2 = new Promise((resolve, reject) => { /* ... */ })
+const p3 = new Promise((resolve, reject) => { /* ... */ })
+
+Promise
+  .all([p1, p2, p3])
+  .then(() => {
+    console.log('Finished')
+  })
+  .catch((err) => {
+    console.error(err)
+  })
+```
+
+---
+
 Источники:
 - [learn.javascript: Promise](https://learn.javascript.ru/promise)
 - [MDN: Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
