@@ -278,6 +278,28 @@ counter.add().sub().sub().add().add().log() // 1
 ---
 
 ##### 9. Что такое замыкание?
+<details><summary><b>Ответ</b></summary>
+<p>
+
+Замыкание — это комбинация функции и лексического окружения, в котором эта функция была определена. Замыкание дает доступ к `Scope` внешней функции из внутренней функции.
+
+В JS замыкания создаются каждый раз при создании функции, во время её создания.
+
+```js
+function makeInit() {
+  const name = 'Sonya'
+  function displayName() {
+    alert(name)
+  }
+  return displayName
+}
+
+const init = makeInit()
+init()
+```
+
+</p>
+</details>
 
 ---
 
