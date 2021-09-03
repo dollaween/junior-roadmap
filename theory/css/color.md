@@ -128,8 +128,8 @@ div {
 
 ```css
 p {
-  color: hsl(120, 100%, 100%);         /* белый */
-  background: hsl(120, 100%, 0%);       /* черный */
+  color: hsl(0, 0%, 100%);         /* белый */
+  background: hsl(0, 0%, 0%);       /* черный */
   border: 1px solid hsl(0, 100%, 50%);  /* красный */
 }
 ```
