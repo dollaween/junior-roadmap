@@ -50,7 +50,7 @@
   box-sizing: content-box;
   width: 200px;
   height: 100px;
-  border: 10px;
+  border: 10px solid black;
   padding: 15px;
 }
 ```
@@ -65,7 +65,7 @@
   box-sizing: border-box;
   width: 200px;
   height: 100px;
-  border: 10px;
+  border: 10px solid black;
   padding: 15px;
 }
 ```
