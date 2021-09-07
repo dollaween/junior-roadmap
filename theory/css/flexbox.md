@@ -44,6 +44,7 @@
 * `flex-direction`
 * `justify-content`
 * `align-items`
+* `gap`
 
 Свойства, которые можно задавать отдельным элементам внутри flex-контейнера:
 * `align-self`
