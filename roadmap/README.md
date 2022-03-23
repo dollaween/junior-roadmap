@@ -285,34 +285,6 @@
 3. Что такое React Testing Library
 
 
-### HTML
-1. Что такое DOM
-2. Как работают теги
-	* `<html>`
-	* `<head>`
-	* `<title>`
-	* `<style>`
-	* `<link>`
-	* `<body>`
-	* `<script>`
-	* `<div>`
-	* `<header>`, `<footer>`, `<nav>`, `<section>`
-	* `<ul>`, `<ol>`, `<li>`
-	* `<h1>`–`<h6>`
-	* `<p>`, `<span>`
-	* `<a>`
-	* `<b>`, `<strong>`, `<i>`, `<u>`
-	* `<center>`
-	* `<img>`
-	* `<form>`
-	* `<label>`
-	* `<input>`
-	* `<select>`
-	* `<option>`
-	* `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<td>`
-3. Что такое BOM
-
-
 ### CSS
 1. Что такое CSSOM
 2. Как работают свойства:
