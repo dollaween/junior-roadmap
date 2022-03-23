@@ -95,6 +95,88 @@
 
 ---
 
+Темы:
+1. Как подключить CSS к странице
+    - Что такое инлайновые стили
+    - Что такое внутренние стили
+    - Что такое внешние стили
+    - В чем отличия этих стилей
+2. Синтаксис языка
+    - Что такое свойство
+    - Что такое значение
+3. Комментарии
+4. Что такое селекторы и какие виды селекторов бывают
+    - Селектор по типу
+    - Селектор по атрибуту
+    - Селектор по классу
+    - Селектор по идентификатору
+    - Универсальный селектор
+5. Что такое комбинаторы и какие комбинаторы существуют
+    - Комбинатор ИЛИ
+    - Комбинатор потомков
+    - Комбинатор прямых дочерних элементов
+    - Комбинатор следующего соседнего элемента
+    - Комбинатор всех следующих соседних элементов
+    - Комбинатор И
+6. Что такое псевдоклассы и какие псевдоклассы существуют
+    - `:first-child`, `:last-child`, `:nth-child`, `:first-of-type`, `:last-of-type`, `:nth-of-type`, `:only-child`, `:only-of-type`, `:empty`
+    - `:hover`, `:active`, `:focus`, `:focus-within`
+    - `:required`, `:optional`, `:checked`, `:disabled`
+    - `:not`, `:root`, `:target`
+7. Что такое псевдоэлементы и какие псевдоэлементы существуют
+    - `::first-letter`, `::first-line`, `::selection`, `::placeholder`, `::after`, `::before`
+8. Что такое наследование и как оно работает
+9. Что такое специфичность
+    - Правила определения специфичности
+    - Как работает ключевое слово `!important`
+10. Единицы измерения для работы с текстом
+    - `px`, `rem`, `em`, `%`
+11. Как задается цвет
+    - Задание цвета через хэш `#`
+    - Задание цвета через `rgb` и `rgba`
+    - Задание цвета через `hsl` и `hsla`
+12. Что такое сброс стилей
+    - В чем отличие `reset.css` от `normalize.css`
+13. Свойства для работы с текстом
+    - Свойства: `font-size`, `font-weight`, `font-style`, `text-transform`, `font-family`, `color`, `text-align`, `writing-mode`, `text-orientation`, `word-spacing`, `letter-spacing`, `line-height`, `white-space`, `word-break`, `text-indent`, `overflow`, `text-overflow`, `columns`, `text-decoration`, `text-underline-offset`
+    - Что такое переполнение
+14. Как подключить сторонние шрифты
+    - Сайт со шрифтами Google Fonts
+    - Как работает `@font-face`
+    - Как применять подключенные шрифты
+15. Что такое блочная модель
+    - Свойства: `width`, `max-width`, `min-width`, `height`, `max-height`, `min-height`, `margin`, `padding`
+16. Что такое поток и как он работает
+    - Свойство `display` и его значения `block`, `inline`, `inline-block`
+17. Что такое Flexbox, как работают свойства Flexbox
+    - Значения свойства `display`: `flex`, `inline-flex`
+    - Свойства: `flex-direction`, `justify-content`, `align-items`, `gap`, `align-self`, `flex-basis`, `flex-grow`, `flex-shrink`, `flex`, `order`
+18. Что такое Grid, как работают свойства Grid
+    - Значения свойства `display`: `grid`, `inline-grid`
+    - Свойства: `grid-template-columns`, `grid-template-rows`, `grid-template-areas`, `grid-auto-rows`, `grid`, `gap`, `grid-columns`, `grid-row`, `order`
+19. Как стилизовать таблицу
+20. Как стилизовать тени для текста и элементов
+    - Свойства: `text-shadow`, `box-shadow`
+21. Позиционирование
+    - Все значения свойства `position`
+    - Как работает `z-index`
+22. Как стилизовать списки
+23. Работа с фоном
+    - Свойства: `background-color`, `background-image`, `background-size`, `background-repeat`, `background-position`, `background-clip`, `background-origin`, `background-attachment`, `background`
+    - Работа с градиентами: `linear-gradient`, `repeating-linera-gradient`, `radial-gradient`, `repeating-radial-gradient`, `conic-gradient`, `repeating-conic-gradient`
+24. Работа с изображениями
+    - Свойства: `object-fit`, `object-position`
+25. Работа с SVG
+26. Работа с анимацией
+    - Анимация через свойство `transition` и `transform`
+    - Анимация через ключевые кадры `@keywords`
+27. Работа с адаптивностью
+    - Что такое и как работают медиавыражения
+28. Встроенные функции в CSS
+    - Функции: `calc`
+29. Что такое переменные и как с ними работать
+30. Что такое БЭМ
+
 ---
 
 <div align="center">
