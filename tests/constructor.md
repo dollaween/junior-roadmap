@@ -133,18 +133,28 @@ console.log(result)
 ##### 4. Какой будет вывод при запуске скрипта в браузере?
 
 ```javascript
+function Summary(name, birthday) {
+  this.name = name
+  this.birthday = birthday
 
+  return birthday
+}
+
+const result = new Summary('Lion', 1437)
+console.log(result)
 ```
 
-1. ``
-2. ``
-3. ``
-4. ``
+1. `{}`
+2. `{ name: 'Lion', birthday: 1437 }`
+3. `1437`
+4. `SyntaxError`
 
 <details><summary><b>Ответ</b></summary>
 <p>
 
-  **Ответ: **
+  **Ответ: 2**
+  
+  Если в функции-конструкторе через `return` мы возвращаем примитивное значение — в итоге оно будет отброшено, а возвращен будет `this`.
 
 </p>
 </details>
@@ -154,18 +164,26 @@ console.log(result)
 ##### 5. Какой будет вывод при запуске скрипта в браузере?
 
 ```javascript
+function User() {
+  return {}
+}
 
+console.log(new User)
+console.log(new User())
 ```
 
-1. ``
-2. ``
-3. ``
-4. ``
+1. `undefined`, `{}`
+2. `{}`, `undefined`
+3. `undefined`, `undefined`
+4. `{}`, `{}`
 
 <details><summary><b>Ответ</b></summary>
 <p>
 
-  **Ответ: **
+  **Ответ: 4**
+  
+  При вызове функции-конструктора без аргументов, нет разницы между `new User` и `new User()`.  
+  *Но вызова без круглых скобок считается плохой практикой.*
 
   ```
 
