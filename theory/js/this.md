@@ -163,14 +163,16 @@ fn.call({ name: 'John' }, 'Smith', 33)
 
 Метод `apply(this, [args])` — делает то же самое, что и `call()`, но набор параметров задается через массив.
 ```js
-function fn(args) {
+function fn(arg1, arg2) {
   console.log(this)
-  console.log(args)
+  console.log(arg1)
+  console.log(arg2)
 }
 
-fn.call({ name: 'John' }, ['Smith', 33])
+fn.apply({ name: 'John' }, ['Smith', 33])
 // { name: 'John' }
-// ['Smith', 33]
+// 'Smith'
+// 33
 ```
 
 ---
