@@ -371,7 +371,7 @@ new Person()
   ```js
   function Person(name) {
     // this = {} (неявно)
-    // тело функции
+    console.log(this)  // {}
     // return this (неявно)
   }
 
