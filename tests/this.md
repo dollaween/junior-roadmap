@@ -393,3 +393,41 @@ fn();
 
 </p>
 </details>
+
+---
+
+##### 14. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
+const obj = {
+  name: 'John',
+  sayHi: function() {
+    console.log(this.name)
+  }
+}
+
+obj.sayHi.bind({ name: 'Ralph' })
+obj.sayHi();
+```
+
+1. `'John'`
+2. `'Ralph'`
+3. `{ name: 'John', sayHi: ƒ }`
+4. `{ name: 'Ralph', sayHi: ƒ }`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  Метод `bind()` — возвращает новую функцию. На старую функцию он не имеет воздействия.
+ 
+  В нашем примере, чтобы вызвать метод `sayHi` с измененным контекстом нужно сделать следующее:
+ 
+  ```js
+  const fn = obj.sayHi.bind({ name: 'Ralph' })
+  fn()
+  ```
+
+</p>
+</details>
