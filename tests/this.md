@@ -337,3 +337,59 @@ setMessage.bind({ person: 'John' }, 'Hello, user')
 
 </p>
 </details>
+
+---
+
+##### 12. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
+function showCode(this) {
+  console.log(this.code)
+}
+
+const fn = showCode.bind({ code: '<br>' }, { code: '<hr>' })
+fn();
+```
+
+1. `'<br>'`
+2. `'<hr>'`
+3. `{ code: '<br>' }`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 4**
+
+  Ключевое слово `this` не может быть использовано как имя аргумента функции, это приведет к ошибке.
+
+</p>
+</details>
+
+---
+
+##### 13. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
+function showCode() {
+  console.log(this.code)
+}
+
+const fn = showCode.bind({ code: '<br>' }).bind({ code: '<hr>' })
+fn();
+```
+
+1. `'<br>'`
+2. `'<hr>'`
+3. `{ code: '<hr>' }`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  Через `bind()` контекст привязывается только один раз. Последующие вызовы метода `bind` не будут иметь эффекта.
+
+</p>
+</details>
