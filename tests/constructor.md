@@ -1,6 +1,6 @@
 <div align="center">
 
-# Конструктор, прототипы
+# Конструктор
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
@@ -187,28 +187,3 @@ console.log(new User())
 
 </p>
 </details>
-
----
-
-##### 6. Какой будет вывод при запуске скрипта в браузере?
-
-```javascript
-
-```
-
-1. ``
-2. ``
-3. ``
-4. ``
-
-<details><summary><b>Ответ</b></summary>
-<p>
-
-  **Ответ: **
-
-</p>
-</details>
-
----
-
-
