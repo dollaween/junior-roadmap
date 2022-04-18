@@ -1,6 +1,6 @@
 <div align="center">
 
-# Конструктор
+# Конструкторы
 
 [Главная](https://github.com/dollaween/junior-roadmap/)
 |
