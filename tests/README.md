@@ -57,7 +57,7 @@
 ### Часть 3. Функции и классы
 * [Функции](./function.md)
 * [`this`](./this.md)
-* [Конструкторы, прототипы, `this`](./constructor.md)
+* [Конструкторы](./constructor.md)
 
 ### Часть 4. Асинхронность
 * [`Promise`](./promise.md)
