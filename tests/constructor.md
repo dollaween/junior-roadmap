@@ -82,6 +82,8 @@ const phone = {
     getInfo()
   }
 }
+
+phone.getModel()
 ```
 
 1. `Window`
@@ -111,6 +113,8 @@ const burn = {
   },
   cost: 99.00
 }
+
+burn.buy()
 ```
 
 1. `Window`
@@ -136,6 +140,8 @@ const burn = {
 function sayHi() {
   console.log(this)
 }
+
+sayHi()
 ```
 
 1. `Window`
@@ -174,7 +180,7 @@ getGood.call({ cost: 17.50 }, 'Orbit', 'London')
 <details><summary><b>Ответ</b></summary>
 <p>
 
-  **Ответ: 2**
+  **Ответ: 4**
 
    Метод `call(this, arg1, arg2, ...)` — сразу вызывает функцию с указанным `this` и набором параметров через запятую.  
    В нашем примере в `this` попадет только объект `{ cost: 17.50 }`, остальные параметры должны быть записаны в аргументы функции.
