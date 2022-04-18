@@ -99,4 +99,100 @@ console.log(result)
 
 ---
 
+##### 3. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
+function Book(title, year) {
+  this.title = title
+  this.year = year
+  
+  return {}
+}
+
+const result = new Book('Clean Code', 2008)
+console.log(result)
+```
+
+1. `{}`
+2. `{ title: 'Clean Code', year: 2008 }`
+3. `undefined`
+4. `SyntaxError`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+  
+  Если в функции-конструкторе через `return` мы возвращаем объект — в итоге будет возвращен этот объект, а не `this`.
+
+</p>
+</details>
+
+---
+
+##### 4. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
+
+```
+
+1. ``
+2. ``
+3. ``
+4. ``
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: **
+
+</p>
+</details>
+
+---
+
+##### 5. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
+
+```
+
+1. ``
+2. ``
+3. ``
+4. ``
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: **
+
+  ```
+
+</p>
+</details>
+
+---
+
+##### 6. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
+
+```
+
+1. ``
+2. ``
+3. ``
+4. ``
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: **
+
+</p>
+</details>
+
+---
+
 
