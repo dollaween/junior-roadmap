@@ -165,6 +165,41 @@ sayHi()
 ##### 6. Какой будет вывод при запуске скрипта в браузере?
 
 ```javascript
+const phone = {
+  model: 'Samsung',
+  getModel: function() {
+    const getInfo = () => {
+      console.log(this)
+    }
+
+    getInfo()
+  }
+}
+
+phone.getModel()
+```
+
+1. `Window`
+2. `{ model: 'Samsung', getModel: ƒ }`
+3. `{ getInfo: ƒ }`
+4. `{}`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 2**
+
+  Стрелочные функции не имеют своего контекста выполнения, поэтому this в них берется из внешней функции.  
+  В нашем случае, `this` будет браться у функции `getModel`.
+
+</p>
+</details>
+
+---
+
+##### 7. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
 function getGood() {
   console.log(this)
 }
@@ -190,7 +225,7 @@ getGood.call({ cost: 17.50 }, 'Orbit', 'London')
 
 ---
 
-##### 7. Какой будет вывод при запуске скрипта в браузере?
+##### 8. Какой будет вывод при запуске скрипта в браузере?
 
 ```javascript
 function getGood(args) {
@@ -218,7 +253,7 @@ getGood.apply({ cost: 17.50 }, 'Orbit', 'London')
 
 ---
 
-##### 8. Какой будет вывод при запуске скрипта в браузере?
+##### 9. Какой будет вывод при запуске скрипта в браузере?
 
 ```javascript
 function showInfo(args) {
@@ -246,7 +281,7 @@ showInfo.call({ cost: 17.50 }, 'Orbit', 'London')
 
 ---
 
-##### 9. Какой будет вывод при запуске скрипта в браузере?
+##### 10. Какой будет вывод при запуске скрипта в браузере?
 
 ```javascript
 function showInfo(args) {
@@ -276,7 +311,7 @@ showInfo.apply({ cost: 17.50 }, ['Orbit', 'London'])
 
 ---
 
-##### 10. Какой будет вывод при запуске скрипта в браузере?
+##### 11. Какой будет вывод при запуске скрипта в браузере?
 
 ```javascript
 function setMessage(text) {
