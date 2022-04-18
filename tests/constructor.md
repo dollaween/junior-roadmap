@@ -369,13 +369,53 @@ new Person()
  
   Буквально произошло следующее:
   ```js
-  function Person(name) {
+  function Person() {
     // this = {} (неявно)
     console.log(this)  // {}
     // return this (неявно)
   }
 
   new Person()
+  ```
+
+</p>
+</details>
+
+---
+
+##### 13. Какой будет вывод при запуске скрипта в браузере?
+
+```javascript
+function Person(name, age) {
+  this.name = name
+  this.age = age
+}
+
+const result = new Person('John', 23)
+console.log(result)
+```
+
+1. `{ name: 'John', age: 23 }`
+2. `Window`
+3. `undefined`
+4. `{}`
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+  **Ответ: 1**
+
+  Буквально произошло следующее:
+  ```js
+  function Person(name, age) {
+    // this = {} (неявно)
+    this.name = name   // this = { name: 'John' }
+    this.age = age     // this = { name: 'John', age: 23 }
+    // return this (неявно)
+  }
+
+  const result = new Person('John', 23)
+  console.log(result)  // { name: 'John', age: 23 }
   ```
 
 </p>
