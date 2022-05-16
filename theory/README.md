@@ -148,6 +148,7 @@
 * [Разделение кода (Code Splitting)](./webpack/code-splitting.md)
 * [Переменные окружения (Environment Variables)](./webpack/environment.md)
 * [Пример сборки проекта](./webpack/example.md)
+* [Сборка проекта: React 18, SVG](./webpack/example-2.md)
 
 ---
 
