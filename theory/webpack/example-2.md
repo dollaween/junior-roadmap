@@ -25,9 +25,11 @@
 - Генерировать HTML-файл
 - Очищать папку `dist` при каждой сборке
 
-```
+```bash
 npm i webpack webpack-cli @babel/core @babel/preset-env @babel/preset-react @svgr/webpack babel-loader css-loader html-webpack-plugin node-sass path react react-dom sass sass-loader style-loader webpack-dev-server
 ```
+
+**Пакет `node-sass` установится только при наличии установленного Python.**
 
 `package.json`
 ```json
